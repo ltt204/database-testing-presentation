@@ -72,7 +72,7 @@ Giang Đức Nhật
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Mục tiêu của Kiểm thử CSDL
+## Mục tiêu
 
 ---
 <!-- _class: navbar -->
@@ -105,7 +105,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Các loại kiểm thử
 
 ---
 <!-- _class: navbar -->
@@ -124,7 +125,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Kiểm thử cấu trúc
 
 ---
 <!-- _class: navbar -->
@@ -152,7 +154,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Kiểm thử chức năng
 
 ---
 <!-- _class: navbar -->
@@ -170,7 +173,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Kiểm thử phi chức năng
 
 ---
 <!-- _class: navbar -->
@@ -198,7 +202,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Quy trình kiểm thử
 
 ---
 
@@ -216,7 +221,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Thách thức
 
 ---
 
@@ -233,7 +239,8 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
-
+<!-- _paginate: "" -->
+## Công cụ kiểm thử
 
 ---
 <!-- _class: navbar -->
