@@ -20,6 +20,14 @@ Nguyễn Bùi Vương Tiễn
 Giang Đức Nhật
 
 ---
+
+<!-- _class: cover_b --> 
+<!-- _paginate: "" --> 
+
+# DATABASE TESTING
+
+---
+
 <!-- _class: toc_a -->
 <!-- _header: "CONTENTS" -->
 <!-- _footer: "" -->
@@ -34,6 +42,7 @@ Giang Đức Nhật
 --- 
 
 <!-- _class: trans -->
+<!-- _paginate: "" -->
 
 ## Giới thiệu
 
@@ -61,8 +70,9 @@ Giang Đức Nhật
 ---
 
 <!-- _class: trans -->
+<!-- _paginate: "" -->
 
-## Mục tiêu
+## Mục tiêu của Kiểm thử CSDL
 
 ---
 <!-- _class: navbar -->
@@ -96,7 +106,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Các loại Kiểm thử
 
 ---
 <!-- _class: navbar -->
@@ -116,7 +125,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Kiểm thử Cấu trúc
 
 ---
 <!-- _class: navbar -->
@@ -145,7 +153,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Kiểm thử Chức năng
 
 ---
 <!-- _class: navbar -->
@@ -164,7 +171,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Kiểm thử Phi chức năng
 
 ---
 <!-- _class: navbar -->
@@ -193,7 +199,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Quy trình Kiểm thử
 
 ---
 
@@ -212,7 +217,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Thách thức
 
 ---
 
@@ -230,7 +234,6 @@ Giang Đức Nhật
 
 <!-- _class: trans -->
 
-## Công cụ
 
 ---
 <!-- _class: navbar -->
@@ -265,11 +268,11 @@ Giang Đức Nhật
 
 ---
 
-<!-- _class: caption -->
+## Kết luận
 
-![#c h:280](assets/hcmus-logo.webp)
-
-<div class="caption">HCMUS • Khoa Công nghệ Thông tin</div>
+- **Kiểm thử CSDL là cực kỳ quan trọng** để đảm bảo độ tin cậy, tính toàn vẹn và hiệu suất của ứng dụng.
+- Quá trình này bao gồm sự kết hợp của **kiểm thử cấu trúc, chức năng và phi chức năng**.
+- Mặc dù có nhiều thách thức, việc sử dụng **công cụ phù hợp và các phương pháp tốt nhất** sẽ giúp xây dựng một hệ thống CSDL mạnh mẽ và an toàn.
 
 ---
 
@@ -293,32 +296,9 @@ Giang Đức Nhật
 
 ---
 
-## Kết luận
-
-- **Kiểm thử CSDL là cực kỳ quan trọng** để đảm bảo độ tin cậy, tính toàn vẹn và hiệu suất của ứng dụng.
-- Quá trình này bao gồm sự kết hợp của **kiểm thử cấu trúc, chức năng và phi chức năng**.
-- Mặc dù có nhiều thách thức, việc sử dụng **công cụ phù hợp và các phương pháp tốt nhất** sẽ giúp xây dựng một hệ thống CSDL mạnh mẽ và an toàn.
-
----
-
-## Câu hỏi?
-
-```
-
----
-
 <!-- _class: lastpage -->
 <!-- _footer: "" -->
 
-###### Cảm ơn!
 
-<div class="icons">
+###### QnA
 
-- <i class="fa-solid fa-house"></i>
-  - HCMUS • Software Engineering
-- <i class="fa-solid fa-users"></i>
-  - Nhóm: Lý Trọng Tín, Phan Thanh Tiến, Nguyễn Bùi Vương Tiễn, Giang Đức Nhật
-- <i class="fa-solid fa-envelope"></i>
-  - Liên hệ: —
-
-<div>
