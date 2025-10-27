@@ -1,36 +1,37 @@
 ---
-theme: gaia
 _class: lead
 paginate: true
-backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
-style: |
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-  section {
-    font-family: 'Roboto', sans-serif;
-  }
+size: 16:9
 marp: true
+theme: am_blue
 ---
-![width:300px](assets/hcmus-logo.webp)
 
-### HCMUS - Software Engineering
+<!-- _class: cover_e --> 
+<!-- _footer: ![](assets/hcmus-logo.webp) --> 
+<!-- _paginate: "" --> 
+
+# HCMUS - Software Engineering
 ###### Date: Oct, 27. 2025
-<style scoped>
-table {
-    border: none;
-    background-color: transparent;
-}
-table th, table td, table tr {
-    background-color: transparent;
-    border: none;
-}
-</style>
 
-|||
-|---|---|
-|Lý Trọng Tín| Phan Thanh Tiến|
-|Nguyễn Bùi Vương Tiễn |Giang Đức Nhật|
+
+Lý Trọng Tín
+Phan Thanh Tiến
+Nguyễn Bùi Vương Tiễn
+Giang Đức Nhật
+
 ---
+<!-- _class: toc_a -->
+<!-- _header: "CONTENTS" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
+
+- [Giới thiệu về Kiểm thử Cơ sở dữ liệu](#giới-thiệu-về-kiểm-thử-cơ-sở-dữ-liệu)
+- [Mục tiêu của Kiểm thử CSDL](#mục-tiêu-của-kiểm-thử-csdl)
+- [Các loại Kiểm thử Cơ sở dữ liệu](#các-loại-kiểm-thử-cơ-sở-dữ-liệu)
+- [Quy trình Kiểm thử CSDL](#quy-trình-kiểm-thử-csdl)
+- [Thách thức trong Kiểm thử CSDL](#thách-thức-trong-kiểm-thử-csdl)
+- [Công cụ Kiểm thử CSDL](#công-cụ-kiểm-thử-csdl)
+--- 
 
 ## Giới thiệu về Kiểm thử Cơ sở dữ liệu
 
@@ -120,6 +121,7 @@ table th, table td, table tr {
 
 ## Kiểm thử Phi chức năng
 
+
 - **Kiểm thử Hiệu suất (Performance Testing):**
   - **Kiểm thử Tải (Load Testing):** Đánh giá hiệu suất của CSDL dưới tải trọng người dùng dự kiến và đo thời gian phản hồi của truy vấn.
   - **Kiểm thử Sức chịu đựng (Stress Testing):** Xác định điểm giới hạn của CSDL bằng cách áp dụng tải trọng cực lớn để tìm ra điểm gãy.
@@ -132,33 +134,27 @@ table th, table td, table tr {
 
 ---
 
+
 ## Quy trình Kiểm thử CSDL
 
-1. **Chuẩn bị Môi trường:**
-   - Thiết lập một máy chủ thử nghiệm riêng biệt với cấu hình CSDL cần thiết.
-2. **Thực thi Kiểm thử:**
-   - Chạy các kịch bản và trường hợp kiểm thử đã chuẩn bị.
-3. **Kiểm tra Kết quả:**
-   - Xác minh kết quả đầu ra và kiểm tra xem có lỗi hoặc sai lệch nào không.
-4. **Xác thực:**
-   - So sánh kết quả thực tế với kết quả mong đợi.
-5. **Báo cáo:**
-   - Ghi lại các phát hiện và báo cáo lỗi cho đội phát triển.
+<!-- _class: cols2_ol_sq fglass -->
+
+- **Chuẩn bị Môi trường:** Thiết lập một máy chủ thử nghiệm riêng biệt với cấu hình CSDL cần thiết.
+- **Thực thi Kiểm thử:** Chạy các kịch bản và trường hợp kiểm thử đã chuẩn bị.
+- **Kiểm tra Kết quả:** Xác minh kết quả đầu ra và kiểm tra xem có lỗi hoặc sai lệch nào không.
+- **Xác thực:** So sánh kết quả thực tế với kết quả mong đợi.
+- **Báo cáo:** Ghi lại các phát hiện và báo cáo lỗi cho đội phát triển.
 
 ---
 
 ## Thách thức trong Kiểm thử CSDL
+<!-- _class: cols2_ul_ci fglass -->
 
-- **Dữ liệu lớn và phức tạp:**
-  - Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
-- **Quản lý dữ liệu thử nghiệm:**
-  - Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
-- **Kiến thức về SQL:**
-  - Người kiểm thử cần có hiểu biết tốt về SQL và các khái niệm CSDL.
-- **Cô lập môi trường thử nghiệm:**
-  - Đảm bảo môi trường thử nghiệm được tách biệt hoàn toàn với môi trường sản phẩm.
-- **Chi phí và Thời gian:**
-  - Kiểm thử CSDL có thể tốn kém và mất nhiều thời gian, đặc biệt với các hệ thống lớn.
+- **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
+- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
+- **Kiến thức về SQL:** Người kiểm thử cần có hiểu biết tốt về SQL và các khái niệm CSDL.
+- **Cô lập môi trường thử nghiệm:** Đảm bảo môi trường thử nghiệm được tách biệt hoàn toàn với môi trường sản phẩm.
+- **Chi phí và Thời gian:** Kiểm thử CSDL có thể tốn kém và mất nhiều thời gian, đặc biệt với các hệ thống lớn.
 
 ---
 
