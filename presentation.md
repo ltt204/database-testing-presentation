@@ -49,7 +49,7 @@ Giang Đức Nhật
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** **Giới thiệu** *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** **Giới thiệu** *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Giới thiệu về Kiểm thử Cơ sở dữ liệu
 
@@ -76,7 +76,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 
 ## Mục đích của Database Testing
@@ -92,7 +92,7 @@ Giang Đức Nhật
   - Tăng cường bảo mật qua việc phát hiện lỗ hổng.
 ---
 <!-- _class: cols2_ul_ci fglass smalltext navbar-->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Mục tiêu chính của Database Testing:
 - **Ánh xạ Dữ liệu (Data Mapping):** 
@@ -114,7 +114,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Các loại Kiểm thử Cơ sở dữ liệu
 
@@ -131,7 +131,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc
 
@@ -145,7 +145,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc
 - **Kiểm thử Stored Procedure:** Xác minh logic, xử lý lỗi, và kết quả trả về có đúng với các đầu vào khác nhau.
@@ -158,7 +158,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Chức năng
 
@@ -177,7 +177,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Phi chức năng
 
@@ -187,7 +187,7 @@ Giang Đức Nhật
 - **Security Testing:** Ngăn chặn các lỗ hổng như SQL Injection và đảm bảo kiểm soát truy cập đúng đắn.
 ---
 <!-- _class: navbar  -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Phi chức năng
 - **Recovery Testing:** Xác minh rằng CSDL có thể được phục hồi từ các bản sao lưu sau sự cố.
@@ -211,7 +211,7 @@ Giang Đức Nhật
 ## Quy trình Kiểm thử CSDL
 
 <!-- _class: cols2_ol_ci fglass smalltext navbar-->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
 
 - **Chuẩn bị Môi trường:** Thiết lập một máy chủ thử nghiệm riêng biệt với cấu hình CSDL cần thiết.
 - **Thực thi Kiểm thử:** Chạy các kịch bản và trường hợp kiểm thử đã chuẩn bị.
@@ -229,7 +229,7 @@ Giang Đức Nhật
 
 ## Thách thức trong Kiểm thử CSDL
 <!-- _class: cols2_ul_ci fglass smalltext navbar-->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
 - **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
@@ -245,7 +245,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Công cụ Kiểm thử CSDL
 
@@ -260,7 +260,7 @@ Giang Đức Nhật
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Công cụ Kiểm thử CSDL
 
@@ -315,7 +315,7 @@ Giang Đức Nhật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Các phương pháp tốt nhất (Best Practices)
 
