@@ -52,13 +52,6 @@ Giang Đức Nhật
   - Là quá trình xác thực và xác minh chất lượng, chức năng, hiệu suất và bảo mật của CSDL.
   - Đảm bảo việc lưu trữ, truy xuất và quản lý dữ liệu hoạt động chính xác, hiệu quả và an toàn.
 
----
-
-<!-- _class: navbar -->
-<!-- _header: \\ ***HCMUS*** **Giới thiệu** *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
-
-## Giới thiệu về Kiểm thử Cơ sở dữ liệu
-
 - **Vai trò trong quy trình phát triển:**
   - Đảm bảo tính toàn vẹn và chính xác của dữ liệu.
   - Ngăn chặn mất mát hoặc hỏng hóc dữ liệu.
