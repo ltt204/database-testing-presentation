@@ -244,20 +244,6 @@ Giang Đức Nhật
 ## Công cụ kiểm thử
 
 ---
-<!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
-
-## Công cụ Kiểm thử CSDL
-
-- **Công cụ tạo dữ liệu:**
-  - **MS SQL Server Data Generator, ApexSQL Generate:** Dùng để tạo khối lượng lớn dữ liệu thử nghiệm.
-- **Công cụ quản lý và kiểm thử:**
-  - **tSQLt, DbUnit, TestNG:** Các framework cho kiểm thử đơn vị CSDL.
-  - **Selenium:** Dùng để kiểm thử giao diện người dùng và sự tương tác của nó với CSDL.
-- **Công cụ kiểm thử hiệu suất:**
-  - **JMeter, LoadRunner:** Dùng cho kiểm thử tải và sức chịu đựng.
-
----
 
 <!-- _class: cols-2 navbar -->
 <!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
