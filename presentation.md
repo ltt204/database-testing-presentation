@@ -33,6 +33,15 @@ Giang Đức Nhật
 - [Công cụ Kiểm thử CSDL](#công-cụ-kiểm-thử-csdl)
 --- 
 
+<!-- _class: trans -->
+
+## Giới thiệu
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** **Giới thiệu** *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+
 ## Giới thiệu về Kiểm thử Cơ sở dữ liệu
 
 - **Cơ sở dữ liệu (CSDL)**
@@ -45,6 +54,9 @@ Giang Đức Nhật
 
 ---
 
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** **Giới thiệu** *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+
 ## Giới thiệu về Kiểm thử Cơ sở dữ liệu
 
 - **Vai trò trong quy trình phát triển:**
@@ -55,6 +67,15 @@ Giang Đức Nhật
 
 ---
 
+<!-- _class: trans -->
+
+## Mục tiêu
+
+---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+
+
 ## Mục tiêu của Kiểm thử CSDL
 
 - **Ánh xạ Dữ liệu (Data Mapping):**
@@ -64,6 +85,8 @@ Giang Đức Nhật
   - Xác thực các mối quan hệ, ràng buộc (khóa ngoại, uniqueness) trong CSDL.
   - Đảm bảo dữ liệu tuân thủ đúng các quy tắc đã định nghĩa.
 ---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Mục tiêu của Kiểm thử CSDL
 
@@ -78,7 +101,16 @@ Giang Đức Nhật
 
 ---
 
+<!-- _class: trans -->
+
+## Các loại Kiểm thử
+
+---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+
 ## Các loại Kiểm thử Cơ sở dữ liệu
+
 
 - **Kiểm thử Cấu trúc (Structural Testing):**
   - Tập trung vào việc xác thực các thành phần cấu trúc của CSDL.
@@ -88,6 +120,14 @@ Giang Đức Nhật
   - Đánh giá các khía cạnh như hiệu suất, bảo mật và khả năng sử dụng của CSDL.
 
 ---
+
+<!-- _class: trans -->
+
+## Kiểm thử Cấu trúc
+
+---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc
 
@@ -100,6 +140,8 @@ Giang Đức Nhật
   - **Indexes:** Kiểm tra index được tạo ra đúng và có giúp tăng tốc độ truy vấn không.
 
 ---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc
 - **Kiểm thử Stored Procedure:**
@@ -107,6 +149,14 @@ Giang Đức Nhật
 - **Kiểm thử Trigger:**
   - Đảm bảo trigger được kích hoạt đúng sự kiện (`INSERT`, `UPDATE`, `DELETE`) và thực thi đúng logic.
 ---
+
+<!-- _class: trans -->
+
+## Kiểm thử Chức năng
+
+---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Chức năng
 
@@ -119,8 +169,15 @@ Giang Đức Nhật
 
 ---
 
+<!-- _class: trans -->
+
 ## Kiểm thử Phi chức năng
 
+---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+
+## Kiểm thử Phi chức năng
 
 - **Kiểm thử Hiệu suất (Performance Testing):**
   - **Kiểm thử Tải (Load Testing):** Đánh giá hiệu suất của CSDL dưới tải trọng người dùng dự kiến và đo thời gian phản hồi của truy vấn.
@@ -135,9 +192,22 @@ Giang Đức Nhật
 ---
 
 
+<!-- _class: bq-red -->
+
+> Bảo mật CSDL cần ưu tiên: đảm bảo kiểm soát truy cập chặt chẽ, phòng chống SQL Injection, và mã hóa dữ liệu nhạy cảm ở trạng thái nghỉ và khi truyền tải.
+
+---
+
+<!-- _class: trans -->
+
+## Quy trình Kiểm thử
+
+---
+
 ## Quy trình Kiểm thử CSDL
 
-<!-- _class: cols2_ol_sq fglass -->
+<!-- _class: cols2_ol_sq fglass smalltext navbar-->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
 
 - **Chuẩn bị Môi trường:** Thiết lập một máy chủ thử nghiệm riêng biệt với cấu hình CSDL cần thiết.
 - **Thực thi Kiểm thử:** Chạy các kịch bản và trường hợp kiểm thử đã chuẩn bị.
@@ -147,8 +217,15 @@ Giang Đức Nhật
 
 ---
 
+<!-- _class: trans -->
+
+## Thách thức
+
+---
+
 ## Thách thức trong Kiểm thử CSDL
-<!-- _class: cols2_ul_ci fglass -->
+<!-- _class: cols2_ul_ci fglass smalltext navbar-->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
 - **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
@@ -157,6 +234,14 @@ Giang Đức Nhật
 - **Chi phí và Thời gian:** Kiểm thử CSDL có thể tốn kém và mất nhiều thời gian, đặc biệt với các hệ thống lớn.
 
 ---
+
+<!-- _class: trans -->
+
+## Công cụ
+
+---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Công cụ Kiểm thử CSDL
 
@@ -169,6 +254,8 @@ Giang Đức Nhật
   - **JMeter, LoadRunner:** Dùng cho kiểm thử tải và sức chịu đựng.
 
 ---
+<!-- _class: navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Các phương pháp tốt nhất (Best Practices)
 
@@ -185,6 +272,34 @@ Giang Đức Nhật
 
 ---
 
+<!-- _class: caption -->
+
+![#c h:280](assets/hcmus-logo.webp)
+
+<div class="caption">HCMUS • Khoa Công nghệ Thông tin</div>
+
+---
+
+<!-- _class: footnote -->
+
+<div class="tdiv">
+
+## Thuật ngữ và tài liệu
+
+- Một số khái niệm tham chiếu trong bài trình bày.
+
+</div>
+
+<div class="bdiv">
+
+1 Elmasri, R., & Navathe, S. Fundamentals of Database Systems.
+
+2 Date, C. J. An Introduction to Database Systems.
+
+</div>
+
+---
+
 ## Kết luận
 
 - **Kiểm thử CSDL là cực kỳ quan trọng** để đảm bảo độ tin cậy, tính toàn vẹn và hiệu suất của ứng dụng.
@@ -194,3 +309,23 @@ Giang Đức Nhật
 ---
 
 ## Câu hỏi?
+
+```
+
+---
+
+<!-- _class: lastpage -->
+<!-- _footer: "" -->
+
+###### Cảm ơn!
+
+<div class="icons">
+
+- <i class="fa-solid fa-house"></i>
+  - HCMUS • Software Engineering
+- <i class="fa-solid fa-users"></i>
+  - Nhóm: Lý Trọng Tín, Phan Thanh Tiến, Nguyễn Bùi Vương Tiễn, Giang Đức Nhật
+- <i class="fa-solid fa-envelope"></i>
+  - Liên hệ: —
+
+<div>

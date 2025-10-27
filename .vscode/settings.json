@@ -1,0 +1,7 @@
+{
+  "markdown.marp.themes": [
+    "theme/am_template.scss",
+    "theme/am_blue.scss"
+  ],
+  "markdown.marp.exportType": "pdf"
+}
