@@ -34,7 +34,7 @@ Giang Đức Nhật
 <!-- _paginate: "" -->
 
 - [Giới thiệu về Kiểm thử Cơ sở dữ liệu](#giới-thiệu-về-kiểm-thử-cơ-sở-dữ-liệu)
-- [Mục tiêu của Kiểm thử CSDL](#mục-tiêu-của-kiểm-thử-csdl)
+- [Tổng quan về Database Testing](#tổng-quan-về-database-testing)
 - [Các loại Kiểm thử Cơ sở dữ liệu](#các-loại-kiểm-thử-cơ-sở-dữ-liệu)
 - [Quy trình Kiểm thử CSDL](#quy-trình-kiểm-thử-csdl)
 - [Thách thức trong Kiểm thử CSDL](#thách-thức-trong-kiểm-thử-csdl)
@@ -72,35 +72,39 @@ Giang Đức Nhật
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Mục tiêu
+## Tổng quan
 
 ---
 <!-- _class: navbar -->
 <!-- _header: \\ ***HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 
-## Mục tiêu của Kiểm thử CSDL
+## Mục đích của Database Testing
 
-- **Ánh xạ Dữ liệu (Data Mapping):**
-  - Đảm bảo dữ liệu được ánh xạ chính xác từ CSDL đến ứng dụng.
-  - Giúp bảo mật thông tin nhạy cảm qua DTO (Data Transfer Object).
-- **Toàn vẹn Dữ liệu (Data Integrity):**
-  - Xác thực các mối quan hệ, ràng buộc (khóa ngoại, uniqueness) trong CSDL.
-  - Đảm bảo dữ liệu tuân thủ đúng các quy tắc đã định nghĩa.
+- **Database Testing** là quá trình xác thực và xác minh chất lượng, chức năng, hiệu suất và bảo mật của hệ thống CSDL.
+- **So với UI Testing:**
+  - UI Testing: tập trung vào những gì người dùng thấy (giao diện, bố cục, tương tác).
+  - Database Testing: tập trung “bên dưới” giao diện, đảm bảo dữ liệu chính xác, toàn vẹn, an toàn.
+- **Vai trò trong quy trình phát triển:**
+  - Đảm bảo tính toàn vẹn và chính xác của dữ liệu.
+  - Ngăn chặn mất mát hoặc hỏng hóc dữ liệu.
+  - Tối ưu hiệu suất và khả năng mở rộng.
+  - Tăng cường bảo mật qua việc phát hiện lỗ hổng.
 ---
-<!-- _class: navbar -->
+<!-- _class: cols2_ul_ci fglass smalltext navbar-->
 <!-- _header: \\ ***HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
-## Mục tiêu của Kiểm thử CSDL
-
-- **Tuân thủ Quy tắc nghiệp vụ:**
-  - Đảm bảo CSDL hoạt động theo đúng logic nghiệp vụ.
-  - Tuân thủ các quy định về dữ liệu như GDPR hoặc HIPAA.
-- **Đảm bảo thuộc tính ACID:**
-  - **A**tomicity: Giao dịch thực hiện hoàn toàn hoặc không gì cả.
-  - **C**onsistency: Dữ liệu luôn đúng sau mỗi giao dịch.
-  - **I**solation: Các giao dịch không ảnh hưởng lẫn nhau.
-  - **D**urability: Dữ liệu được lưu trữ sau khi giao dịch hoàn tất.
+## Mục tiêu chính của Database Testing:
+- **Ánh xạ Dữ liệu (Data Mapping):** 
+  1. Đảm bảo dữ liệu đi từ DB → Backend → Frontend chính xác
+  2. Che giấu thông tin nhạy cảm qua DTO phù hợp ngữ cảnh.
+- **Toàn vẹn Dữ liệu (Data Integrity):** Xác thực quan hệ và ràng buộc (khóa ngoại, uniqueness, phụ thuộc dữ liệu) theo đặc tả.
+- **Tuân thủ & Quy định (Compliance & Regulations):** Bảo đảm thực thi quy tắc nghiệp vụ và tuân thủ GDPR/HIPAA… trong luồng dữ liệu.
+- **Thuộc tính ACID của giao dịch:**
+  1. Atomicity: hoặc thành công toàn phần, hoặc rollback khi thất bại.
+  2. Consistency: dữ liệu đúng sau mỗi giao dịch.
+  3. Isolation: các giao dịch độc lập.
+  4. Durability: dữ liệu bền vững sau khi commit.
 
 ---
 
@@ -115,12 +119,9 @@ Giang Đức Nhật
 ## Các loại Kiểm thử Cơ sở dữ liệu
 
 
-- **Kiểm thử Cấu trúc (Structural Testing):**
-  - Tập trung vào việc xác thực các thành phần cấu trúc của CSDL.
-- **Kiểm thử Chức năng (Functional Testing):**
-  - Kiểm tra các chức năng của CSDL từ góc độ người dùng cuối.
-- **Kiểm thử Phi chức năng (Non-functional Testing):**
-  - Đánh giá các khía cạnh như hiệu suất, bảo mật và khả năng sử dụng của CSDL.
+- **Structural Testing:** Tập trung vào việc xác thực các thành phần cấu trúc của CSDL.
+- **Functional Testing:** Kiểm tra các chức năng của CSDL từ góc độ người dùng cuối.
+- **Non-functional Testing:** Đánh giá các khía cạnh như hiệu suất, bảo mật và khả năng sử dụng của CSDL.
 
 ---
 
@@ -147,10 +148,8 @@ Giang Đức Nhật
 <!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc
-- **Kiểm thử Stored Procedure:**
-  - Xác minh logic, xử lý lỗi, và kết quả trả về có đúng với các đầu vào khác nhau.
-- **Kiểm thử Trigger:**
-  - Đảm bảo trigger được kích hoạt đúng sự kiện (`INSERT`, `UPDATE`, `DELETE`) và thực thi đúng logic.
+- **Kiểm thử Stored Procedure:** Xác minh logic, xử lý lỗi, và kết quả trả về có đúng với các đầu vào khác nhau.
+- **Kiểm thử Trigger:** Đảm bảo trigger được kích hoạt đúng sự kiện (`INSERT`, `UPDATE`, `DELETE`) và thực thi đúng logic.
 ---
 
 <!-- _class: trans -->
@@ -163,10 +162,10 @@ Giang Đức Nhật
 
 ## Kiểm thử Chức năng
 
-- **Kiểm thử Hộp đen (Black Box Testing):**
+- **Black Box Testing:**
   - Kiểm tra chức năng từ góc độ người dùng cuối, không quan tâm về cấu trúc bên trong.
   - **Hoạt động CRUD:** Xác minh các thao tác CRUD từ giao diện người dùng được phản ánh chính xác trong CSDL.
-- **Kiểm thử Hộp trắng (White Box Testing):**
+- **White Box Testing:**
   - **Logic:** Xác thực các trigger, stored procedure và view, đảm bảo tuân thủ đúng quy tắc nghiệp vụ.
   - **Kiểm tra ràng buộc:** Đảm bảo CSDL chỉ chấp nhận input hợp lệ.
 
@@ -182,15 +181,17 @@ Giang Đức Nhật
 
 ## Kiểm thử Phi chức năng
 
-- **Kiểm thử Hiệu suất (Performance Testing):**
-  - **Kiểm thử Tải (Load Testing):** Đánh giá hiệu suất của CSDL dưới tải trọng người dùng dự kiến và đo thời gian phản hồi của truy vấn.
-  - **Kiểm thử Sức chịu đựng (Stress Testing):** Xác định điểm giới hạn của CSDL bằng cách áp dụng tải trọng cực lớn để tìm ra điểm gãy.
-- **Kiểm thử Bảo mật (Security Testing):**
-  - Ngăn chặn các lỗ hổng như SQL Injection và đảm bảo kiểm soát truy cập đúng đắn.
-- **Kiểm thử Phục hồi (Recovery Testing):**
-  - Xác minh rằng CSDL có thể được phục hồi từ các bản sao lưu sau sự cố.
-- **Kiểm thử Tương thích (Compatibility Testing):**
-  - Đảm bảo CSDL hoạt động tốt trên các hệ điều hành, nền tảng khác nhau.
+- **Performance Testing:**
+  - **Load Testing:** Đánh giá hiệu suất của CSDL dưới tải trọng người dùng dự kiến và đo thời gian phản hồi của truy vấn.
+  - **Stress Testing:** Xác định điểm giới hạn của CSDL bằng cách áp dụng tải trọng cực lớn để tìm ra điểm gãy.
+- **Security Testing:** Ngăn chặn các lỗ hổng như SQL Injection và đảm bảo kiểm soát truy cập đúng đắn.
+---
+<!-- _class: navbar  -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+
+## Kiểm thử Phi chức năng
+- **Recovery Testing:** Xác minh rằng CSDL có thể được phục hồi từ các bản sao lưu sau sự cố.
+- **Compatibility Testing:** Đảm bảo CSDL hoạt động tốt trên các hệ điều hành, nền tảng khác nhau.
 
 ---
 
@@ -209,7 +210,7 @@ Giang Đức Nhật
 
 ## Quy trình Kiểm thử CSDL
 
-<!-- _class: cols2_ol_sq fglass smalltext navbar-->
+<!-- _class: cols2_ol_ci fglass smalltext navbar-->
 <!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
 
 - **Chuẩn bị Môi trường:** Thiết lập một máy chủ thử nghiệm riêng biệt với cấu hình CSDL cần thiết.
@@ -255,6 +256,62 @@ Giang Đức Nhật
   - **Selenium:** Dùng để kiểm thử giao diện người dùng và sự tương tác của nó với CSDL.
 - **Công cụ kiểm thử hiệu suất:**
   - **JMeter, LoadRunner:** Dùng cho kiểm thử tải và sức chịu đựng.
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \\ ***HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Công cụ Kiểm thử CSDL
+
+<div class=ldiv>
+
+  ![]()
+
+  - **Công cụ tạo dữ liệu:**
+
+  ![]()
+  ![]()
+  ![]()
+
+  - **Công cụ quản lý và kiểm thử:**
+
+  ![]()
+  ![]()
+  ![]()
+
+  - **Công cụ kiểm thử hiệu suất:**
+</div>
+
+<div class=rdiv>
+
+  <div class="cols-2">
+
+  ![#center height:100px](./assets/mssql.png)
+
+  ![#center height:100px](./assets/apexsql.png)
+
+  </div>
+  <div class="cols-2">
+
+  ![#center height:100px](./assets/tsqlt.jpeg)
+
+  ![#center height:100px](./assets/dbunit.png)
+
+  ![#center height:100px](./assets/selenium.webp)
+
+  ![#center height:100px](./assets/testng.webp)
+  </div>
+
+  <div class="cols-2">
+
+  ![#center height:100px](./assets/jmeter.png)
+
+  ![#center height:200px](./assets/loadrunner.png)
+
+  </div>
+
+</div>
 
 ---
 <!-- _class: navbar -->
