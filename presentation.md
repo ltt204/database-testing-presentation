@@ -356,23 +356,16 @@ Giang Đức Nhật
 
 ---
 
-<!-- _class: footnote -->
+<!-- _paginate: "" -->
 
-<div class="tdiv">
+## Tài liệu tham khảo
 
-## Thuật ngữ và tài liệu
-
-- Một số khái niệm tham chiếu trong bài trình bày.
-
-</div>
-
-<div class="bdiv">
-
-1 Elmasri, R., & Navathe, S. Fundamentals of Database Systems.
-
-2 Date, C. J. An Introduction to Database Systems.
-
-</div>
+- [Divesh Mehta — Database testing: What is it? Why & best practices](https://testsigma.com/blog/database-testing/) [truy cập: Oct. 22, 2025]
+- [Indaacademy — Database Testing Tutorial – Hướng dẫn kiểm thử Cơ sở dữ liệu (P2)](https://indaacademy.vn/database-testing/database-testing-tutorial-huong-dan-kiem-thu-co-so-du-lieu-p2/) [truy cập: Oct. 22, 2025]
+- [Thomas Hamilton — Database Testing Tutorial (Guru99)](https://www.guru99.com/data-testing.html#structural-database-testing) [truy cập: Oct. 22, 2025]
+- [Gunashree RS — Database Tests: Guide to Ensuring Data Integrity and Performance](https://www.devzery.com/post/comprehensive-guide-to-database-tests-strategies-andbest-practices) [truy cập: Oct. 22, 2025]
+- [David Ekete — Advanced Test Data Management: Techniques and Best Practices](https://blog.magicpod.com/advanced-test-data-management-techniques-and-best-practices#:~:text=Test%20data%20management%20(TDM)%20involves,scenarios%20for%20software%20performance%20insights) [truy cập: Oct. 23, 2025]
+- [HammerDB Documentation](https://www.devzery.com/post/comprehensive-guide-to-database-tests-strategies-and-best-practices) [truy cập: Oct. 23, 2025]
 
 ---
 
