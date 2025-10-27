@@ -1,0 +1,69 @@
+Dựa trên thông tin từ bảng so sánh ("TrackingSheet - Comparisions.pdf"), 10 công cụ đã được tìm hiểu có thể được phân loại theo các tác vụ kiểm thử cốt lõi mà chúng tập trung vào như sau:
+
+---
+
+### Phân loại 10 Công cụ theo Tác vụ Kiểm thử Cốt lõi
+
+Các công cụ trong nguồn tài liệu tập trung vào bốn loại kiểm thử cơ bản (Kiểm thử Cấu trúc, Chức năng, Phi chức năng, Bảo mật) cùng với các tác vụ chuyên biệt khác như Quản lý Dữ liệu Thử nghiệm và Kiểm thử ETL.
+
+#### 1. Kiểm thử Chức năng (Functional Testing) & Unit Test
+
+Nhóm công cụ này tập trung vào việc xác minh logic nghiệp vụ, các hoạt động CRUD (Create, Read, Update, Delete), và kiểm tra các đối tượng lập trình trong cơ sở dữ liệu (Stored Procedures, Functions).
+
+| Công cụ | Độ mạnh Cốt lõi | Chi tiết Hỗ trợ |
+| :--- | :--- | :--- |
+| **DBFit** | **Rất mạnh (Excellent)** | Đây là trọng tâm chính của DbFit. Cung cấp các "fixture" để thực thi và xác minh các hoạt động CRUD, đồng thời có thể gọi Stored Procedure/Function. |
+| **tSQLt** | **Rất mạnh (Excellent)** | Mục đích chính của công cụ này là Unit Test cho SQL Server. Thế mạnh cốt lõi là gọi Stored Procedures/Functions và kiểm tra kết quả hoặc các tác dụng phụ (side effects) bằng bộ thư viện Assert phong phú. |
+| **DBUnit** | Mạnh | Hỗ trợ Execute và Validate các hoạt động CRUD (yêu cầu JDBC). |
+| **JMeter** | **Rất mạnh (Excellent)** | Kiểm thử chức năng là trọng tâm chính của JMeter. |
+| **NoSQLUnit** | Có | Là thư viện Java/JUnit extension được sử dụng để kiểm thử các hoạt động chức năng cho các backend NoSQL. |
+
+#### 2. Kiểm thử Phi chức năng (Non-functional Testing)
+
+Nhóm công cụ này tập trung vào việc đánh giá hiệu suất, khả năng chịu tải (Load Testing), và kiểm tra độ căng (Stress Testing) của hệ thống cơ sở dữ liệu.
+
+| Công cụ | Độ mạnh Cốt lõi | Chi tiết Hỗ trợ |
+| :--- | :--- | :--- |
+| **HammerDB** | **Điểm mạnh lớn** | Công cụ này được thiết kế để Load/Stress testing và Performance Benchmarking các hệ quản trị DB lớn, sử dụng workload như TPC-C. |
+| **Swingbench** | **Điểm mạnh lớn** | Công cụ chuyên dùng để tạo tải lớn và stress hệ thống database, thường được dùng để benchmarking database. |
+| **JMeter** | **Thế mạnh** | Hỗ trợ Load/Stress testing. Đây là một trong những công cụ load testing quan trọng. |
+
+#### 3. Kiểm thử Cấu trúc (Structural Testing) & So sánh Schema
+
+Kiểm thử cấu trúc xác thực các thành phần bên trong kho dữ liệu, bao gồm schema, bảng, cột, khóa, chỉ mục, Stored Procedures, và triggers.
+
+| Công cụ | Độ mạnh Cốt lõi | Chi tiết Hỗ trợ |
+| :--- | :--- | :--- |
+| **Redgate SQL Compare** | **Rất mạnh (Excellent)** | Đây là chức năng chính của công cụ này: So sánh một CSDL với một "baseline" (ví dụ: Production). Nó so sánh mọi đối tượng: bảng, cột, kiểu dữ liệu, SPs, functions, triggers, indexes, permissions, v.v.. |
+| **DBUnit** | **Rất mạnh (Excellent)** | Hỗ trợ Schema Validation (xác thực schema) đối với một baseline JDBC. |
+| **tSQLt** | Mạnh (Strong) | Không "diff" (so sánh) schema trực tiếp, nhưng cung cấp các hàm Assert (ví dụ: `tSQLt.AssertObjectExists`) để xác minh sự tồn tại và tên gọi của đối tượng. |
+| **HammerDB** | Có | Cung cấp chức năng "Build Schema" để tạo cấu trúc bảng, chỉ mục, stored procedures và có khả năng "schema and consistency checks". |
+
+#### 4. Kiểm thử Bảo mật (Security Testing)
+
+Tác vụ này tập trung vào việc tìm kiếm lỗ hổng, đặc biệt là SQL Injection, và kiểm tra quyền truy cập của người dùng.
+
+| Công cụ | Độ mạnh Cốt lõi | Chi tiết Hỗ trợ |
+| :--- | :--- | :--- |
+| **SQL Map** | **Rất mạnh (Excellent)** | Đây là mục đích **DUY NHẤT** của SQL Map. Nó là công cụ tiêu chuẩn (de-facto standard) để tự động phát hiện và khai thác lỗ hổng SQL Injection. |
+| **DBFit / tSQLt** | Có (Gián tiếp) | Cả hai đều có thể được sử dụng để kiểm thử quyền truy cập của người dùng (user privileges) bằng cách xác minh rằng các hành động bị từ chối truy cập sẽ gây ra ngoại lệ (ExpectException). |
+
+#### 5. Kiểm thử Toàn vẹn Dữ liệu (Data Integrity) & ETL Testing
+
+Tác vụ này đảm bảo dữ liệu là chính xác, nhất quán và được ánh xạ đúng trong quá trình chuyển đổi (ETL).
+
+| Công cụ | Độ mạnh Cốt lõi | Chi tiết Hỗ trợ |
+| :--- | :--- | :--- |
+| **QuerySurge** | **Rất mạnh (Excellent)** | Công cụ này **chuyên cho ETL / mapping validation** và được thiết kế rõ ràng cho ETL Testing. Nó hỗ trợ tạo queries so sánh. |
+| **DBFit / tSQLt** | **Rất mạnh (Excellent)** | Cả hai đều rất phù hợp cho kiểm thử ETL bằng cách Insert dữ liệu nguồn, gọi SP chuyển đổi, và sau đó xác minh dữ liệu đích (ví dụ: dùng `AssertEqualsTable` trong tSQLt). |
+
+#### 6. Quản lý Dữ liệu Thử nghiệm (Test Data Management)
+
+Tác vụ này liên quan đến việc thiết lập, làm sạch (teardown), và duy trì trạng thái sạch của cơ sở dữ liệu giữa các lần chạy thử.
+
+| Công cụ | Độ mạnh Cốt lõi | Chi tiết Hỗ trợ |
+| :--- | :--- | :--- |
+| **tSQLt** | **Rất mạnh (Excellent)** | Tính năng cốt lõi là tự động chạy mỗi test case trong một Transaction và được **ROLLBACK** sau khi hoàn thành, đảm bảo CSDL luôn sạch sẽ. |
+| **DBFit** | Rất mạnh (Excellent) | Được thiết kế để chạy trong "Flow Mode", nơi mỗi test case được bọc trong một transaction và tự động ROLLBACK, giúp đảm bảo CSDL luôn sạch. |
+| **DBUnit** | Tốt | Hỗ trợ automated test data setup (seeding/teardown) bằng các lệnh như `CLEAN_INSERT`, `DELETE_ALL`, `REFRESH`. |
+| **NoSQLUnit** | Tốt | Cung cấp annotation `@UsingDataSet` để seed dữ liệu trước test, và Rule để thiết lập lifecycle DB, đảm bảo database ở "trạng thái biết trước". |

@@ -265,55 +265,85 @@ Giang Đức Nhật
 ## Công cụ Kiểm thử CSDL
 
 <div class=ldiv>
-
-  ![]()
-
-  - **Công cụ tạo dữ liệu:**
-
+  
   ![]()
   ![]()
+  - **Functional/Unit Testing:**
   ![]()
-
-  - **Công cụ quản lý và kiểm thử:**
-
+  ![]()
+  ![]()
+  ![]()
   ![]()
   ![]()
   ![]()
 
-  - **Công cụ kiểm thử hiệu suất:**
+  - **Structural Testing:**
+
 </div>
 
 <div class=rdiv>
 
   <div class="cols-2">
 
-  ![#center height:100px](./assets/mssql.png)
-
-  ![#center height:100px](./assets/apexsql.png)
-
-  </div>
-  <div class="cols-2">
+  ![#center height:100px](./assets/dbfit.jpeg)
 
   ![#center height:100px](./assets/tsqlt.jpeg)
 
-  ![#center height:100px](./assets/dbunit.png)
-
-  ![#center height:100px](./assets/selenium.webp)
-
-  ![#center height:100px](./assets/testng.webp)
-  </div>
-
-  <div class="cols-2">
-
   ![#center height:100px](./assets/jmeter.png)
 
-  ![#center height:200px](./assets/loadrunner.png)
+  </div>
+
+  <hr width="100%" size="1">
+
+  ![]()
+  <div class="cols-2">
+
+  ![#center height:100px](./assets/redgate.png)
+
+  ![#center height:100px](./assets/dbunit.png)
+
+  </div>
+
+</div>
+
+</div>
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Công cụ Kiểm thử CSDL
+
+<div class=ldiv>
+
+  ![]()
+  ![]()
+  ![]()
+  ![]()
+  ![]()
+  ![]()
+
+  **Công cụ kiểm thử hiệu suất:**
+</div>
+
+<div class=rdiv>
+
+  ![]()
+  <div class="cols-2">
+
+  ![#center](./assets/hammerdb.png)
+
+  ![#center](./assets/swingbench.png)
+
+  ![#center](./assets/sqlmap.jpeg)
 
   </div>
 
 </div>
 
 ---
+
 <!-- _class: navbar -->
 <!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
