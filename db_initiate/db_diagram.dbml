@@ -1,0 +1,48 @@
+//// --------------------------------------
+//// DBML for tSQLt vs DbFit Demo
+//// Business: E-commerce Order Management
+//// --------------------------------------
+
+Table Users {
+  UserID int [pk, identity]
+  Email varchar(100) [unique, not null]
+  FullName nvarchar(50)
+  CreatedAt datetime [default: `now()`]
+}
+
+Table Products {
+  ProductID int [pk, identity]
+  ProductName nvarchar(100) [not null]
+  UnitPrice decimal [not null]
+  StockQuantity int [not null, default: 0]
+  
+  // Kịch bản 4: Đảm bảo tồn kho không bao giờ âm
+  Note: 'StockQuantity >= 0'
+  Indexes {
+    (ProductName)
+  }
+}
+
+Table Orders {
+  OrderID int [pk, identity]
+  UserID int [ref: > Users.UserID, not null] // Khách hàng nào đặt
+  OrderDate datetime [default: `now()`, not null]
+  Status nvarchar(20) [default: 'Pending'] // 'Pending', 'Completed', 'Cancelled'
+  TotalAmount decimal [default: 0]
+}
+
+Table OrderItems {
+  OrderID int [ref: > Orders.OrderID]
+  ProductID int [ref: > Products.ProductID]
+  Quantity int [not null]
+  UnitPrice decimal [not null] // Giá tại thời điểm mua
+
+  // Kịch bản 4: Đảm bảo số lượng mua > 0
+  Note: 'Quantity > 0'
+  
+  // Indexes {
+  //   (OrderID),
+  //   (ProductID),
+  //   (OrderID, ProductID) [pk] // Một sản phẩm chỉ xuất hiện 1 lần trong 1 đơn hàng
+  // }
+}
