@@ -4,14 +4,29 @@ paginate: true
 size: 16:9
 marp: true
 theme: am_blue
+footer: 22120252 - 22120368 - 22120370 - 22120371 / Database Testing
 ---
 
 <!-- _class: cover_ -->
 <!-- _paginate: "" -->
 
-# Database Testing
+<style>
+/* Force black for the H1 on the first slide only */
+.remark-slide:first-of-type .remark-slide-content h1,
+section:first-of-type h1 {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  fill: #000 !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+</style>
+
+<h1>Database Testing</h1>
 
 #### Nov 13, 2025
+
+Speakers:
 
 - 22120252 - Giang Đức Nhật
 - 22120368 - Phan Thanh Tiến
@@ -21,9 +36,10 @@ theme: am_blue
 ---
 
 <!-- _class: toc_a -->
-<!-- _header: "CONTENTS" -->
 <!-- _footer: "" -->
 <!-- _paginate: "" -->
+
+## Table of contents
 
 - [Tổng quan về Database Testing](#tổng-quan)
 - [Các loại Kiểm thử Cơ sở dữ liệu](#Các-loại-kiểm-thử)
@@ -42,7 +58,7 @@ theme: am_blue
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Giới thiệu về Kiểm thử Cơ sở dữ liệu
 
@@ -63,7 +79,7 @@ theme: am_blue
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Mục đích
 
@@ -80,7 +96,7 @@ theme: am_blue
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Mục tiêu chính của Database Testing
 
@@ -116,7 +132,7 @@ theme: am_blue
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Các loại Kiểm thử Cơ sở dữ liệu
 
@@ -127,7 +143,7 @@ theme: am_blue
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc (Structural)
 
@@ -139,17 +155,18 @@ theme: am_blue
   - Kiểm tra **Schema Consistency** giữa các môi trường (DEV, TEST, PROD).
   - Đảm bảo không có đối tượng DB thừa/thiếu.
 
-- **Kiểm thử Keys & Indexes:**
-  - **Khóa (Keys):** Xác thực khóa chính/ngoại (tính duy nhất, not-null, toàn vẹn tham chiếu).
-  - **Chỉ mục (Indexes):** Đảm bảo index được tạo đúng, sử dụng hiệu quả và không thừa.
-
-</div>
-<div class=rdiv>
-
 - **Kiểm thử Stored Procedure:**
 
   - Xác minh logic nghiệp vụ, xử lý lỗi.
   - Kiểm tra kết quả trả về với các bộ dữ liệu đầu vào khác nhau (White-box).
+
+</div>
+<div class=rdiv>
+
+- **Kiểm thử Keys & Indexes:**
+
+  - **Khóa (Keys):** Xác thực khóa chính/ngoại (tính duy nhất, not-null, toàn vẹn tham chiếu).
+  - **Chỉ mục (Indexes):** Đảm bảo index được tạo đúng, sử dụng hiệu quả và không thừa.
 
 - **Kiểm thử Trigger:**
   - Đảm bảo trigger được kích hoạt đúng sự kiện (`INSERT`, `UPDATE`, `DELETE`).
@@ -157,8 +174,10 @@ theme: am_blue
 
 </div>
 
+---
+
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Chức năng (Functional)
 
@@ -168,13 +187,13 @@ theme: am_blue
 - Được thực hiện bởi **testers**.
 - Mục tiêu:
   - **Kiểm thử các thao tác CRUD:** Xác minh các thao tác `CREATE`, `READ`, `UPDATE`, `DELETE` từ giao diện/API được phản ánh chính xác trong CSDL.
-  - **Kiểm tra giá trị mặc định/ràng buộc:** Đảm bảo dữ liệu nhập vào tuân thủ đúng các ràng buộc (constrains: kiểu, giới hạn, not null...)
+  - **Kiểm tra giá trị mặc định/ràng buộc:** Đảm bảo dữ liệu nhập vào tuân thủ đúng các ràng buộc (constraints: kiểu, giới hạn, not null...)
   - **Kiểm tra xử lí lỗi:** Đảm bảo CSDL xử lí đúng các tình huống lỗi (ví dụ: vi phạm ràng buộc, dữ liệu không hợp lệ).
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Chức năng (Functional)
 
@@ -188,15 +207,8 @@ theme: am_blue
 
 ---
 
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-
-## Kiểm thử phi chức năng
-
----
-
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Phi chức năng (Non-functional)
 
@@ -248,7 +260,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 ## Quy trình Kiểm thử CSDL
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
 
 <div class=ldiv>
 
@@ -263,7 +275,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
     - Tạo bộ dữ liệu thử nghiệm (Test Data).
 
 3.  **Thực thi**
-    - Chạy các kịch bản kiểm thử (thủ công hoặc tự động).
+    - Chạy các kịch bản kiểm thử. _(auto/manual)_
     - Ghi lại kết quả và các lỗi phát sinh.
 
 </div>
@@ -277,7 +289,8 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 5.  **Kiểm thử Hồi quy và Hoàn tất**
     - Thực hiện lại các bài kiểm thử sau khi lỗi được sửa.
-    - Hoàn tất báo cáo đóng test cycle.
+    - Hoàn tất báo cáo.
+    - Đóng test cycle.
 
 </div>
 
@@ -293,7 +306,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 ## Thách thức trong Kiểm thử CSDL
 
 <!-- _class: cols2_ul_ci fglass smalltext navbar-->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
 - **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
@@ -311,15 +324,16 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 ---
 
 <!-- _class: bq-yellow navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-> - Chọn công cụ phù hợp với mục đích kiểm thử. Không có một công cụ nào có thể phù hợp với tất cả nhu cầu kiểm thử.
-> - Để kiểm thử một cách toàn diện, cần kết hợp nhiều công cụ khác nhau.
+> ###### - Chọn công cụ phù hợp với mục đích kiểm thử. Không có một công cụ nào có thể phù hợp với tất cả nhu cầu kiểm thử.
+>
+> ###### - Để kiểm thử một cách toàn diện, cần kết hợp nhiều công cụ khác nhau.
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Phân loại công cụ
 
@@ -334,9 +348,9 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## I. Phạm vi & Loại hình Kiểm thử (1/2)
+## I. Phạm vi & Loại hình Kiểm thử
 
 <div class=ldiv>
 
@@ -346,38 +360,34 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
   - Công cụ: JMeter, HammerDB, Swingbench.
 
 - **Kiểm thử Chức năng/Unit Test:**
-  - Xác minh logic nghiệp vụ và các thao tác CRUD.
-  - Công cụ: tSQLt (Unit Test), DbFit (Acceptance Test).
 
-</div>
-<div class=rdiv>
+  - Xác minh logic nghiệp vụ và thao tác CRUD.
+  - Công cụ: tSQLt (Unit Test), DbFit (Acceptance Test).
 
 - **Kiểm thử Cấu trúc (Structural):**
 
   - So sánh và xác thực schema, bảng, cột, khóa...
   - Công cụ: Redgate SQL Compare.
 
+</div>
+<div class=rdiv>
+
 - **Kiểm thử Dữ liệu và ETL:**
+
   - So sánh dữ liệu giữa nguồn và đích, đảm bảo tính toàn vẹn.
   - Công cụ: QuerySurge.
+
+- **Kiểm thử Bảo mật (Security):**
+  - Phát hiện các lỗ hổng bảo mật, đặc biệt là SQL Injection.
+  - Kiểm tra về phân quyền truy cập dữ liệu.
+  - Công cụ: SQLMap (SQL Injection), Các công cụ functional testing (dùng query kiểm tra phân quyền).
 
 </div>
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
-
-## I. Phạm vi & Loại hình Kiểm thử (2/2)
-
-- **Kiểm thử Bảo mật (Security):**
-  - Phát hiện các lỗ hổng bảo mật, đặc biệt là SQL Injection.
-  - Công cụ: SQLMap là công cụ tấn công chuyên dụng để tự động phát hiện và khai thác lỗ hổng.
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## II. Phương pháp tiếp cận
 
@@ -397,7 +407,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 presen
 
@@ -412,7 +422,7 @@ presen
 
 - **Mocking:**
   - Thay thế các đối tượng phụ thuộc (bảng, procedure) bằng đối tượng giả để cô lập test.
-  - **Công cụ:** _tSQLt_ cung cấp `FakeTable` và `SpyProcedure`.
+  - Công cụ: _tSQLt_ cung cấp `FakeTable` và `SpyProcedure`.
 
 </div>
 <div class=rdiv>
@@ -427,7 +437,7 @@ presen
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## IV. Tương thích
 
@@ -454,7 +464,7 @@ presen
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## V. Khả năng thiết kế test case
 
@@ -465,7 +475,7 @@ presen
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Structural Testing
 
@@ -490,7 +500,7 @@ presen
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Functional Testing (Unit test)
 
@@ -501,7 +511,7 @@ presen
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Non-functional: Performance & Security
 
@@ -529,10 +539,17 @@ presen
 
 ---
 
-<!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _class: trans -->
+<!-- _paginate: "" -->
 
-## Best Practices
+# Best practices & kết luận
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+
+## Best Practices (1/4)
 
 - Document chi tiết, đầy đủ:
 
@@ -547,6 +564,11 @@ presen
   - Kiểm tra cả functional data và metadata (migrations, schema versions).
 
 ---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+
+## Best Practicesc (2/4)
 
 - Chú ý ETL operations:
 
@@ -566,6 +588,11 @@ presen
 
 ---
 
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+
+## Best Practices (3/4)
+
 - Sử dụng dữ liệu đầu vào:
 
   - Validate input test data trước khi chạy.
@@ -579,6 +606,11 @@ presen
   - Nếu tự động hóa không khả thi: duy trì checklist, template logs và execution plan.
 
 ---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+
+## Best Practices (4/4)
 
 - Kiểm tra các yếu tố vận hành (operational checks):
   - DB logs: xác nhận logs được ghi và rotate đúng.
@@ -597,7 +629,7 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
 
 ## Kết luận
 
@@ -635,7 +667,7 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
 
 ## SQL Queries
 
@@ -658,7 +690,7 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Data-Driven
 
@@ -674,7 +706,7 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kỹ thuật Data-Driven
 
