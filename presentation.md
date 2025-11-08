@@ -6,25 +6,17 @@ marp: true
 theme: am_blue
 ---
 
-<!-- _class: cover_e -->
-<!-- _footer: ![](assets/hcmus-logo.webp) -->
+<!-- _class: cover_ -->
 <!-- _paginate: "" -->
 
-# HCMUS - Software Engineering
+# Database Testing
 
-###### Date: Oct, 27. 2025
+#### Nov 13, 2025
 
-Lý Trọng Tín
-Phan Thanh Tiến
-Nguyễn Bùi Vương Tiễn
-Giang Đức Nhật
-
----
-
-<!-- _class: cover_b -->
-<!-- _paginate: "" -->
-
-# DATABASE TESTING
+- 22120252 - Giang Đức Nhật
+- 22120368 - Phan Thanh Tiến
+- 22120370 - Nguyễn Bùi Vương Tiễn
+- 22120371 - Lý Trọng Tín
 
 ---
 
@@ -33,25 +25,24 @@ Giang Đức Nhật
 <!-- _footer: "" -->
 <!-- _paginate: "" -->
 
-- [Giới thiệu về Kiểm thử Cơ sở dữ liệu](#giới-thiệu-về-kiểm-thử-cơ-sở-dữ-liệu)
-- [Tổng quan về Database Testing](#tổng-quan-về-database-testing)
-- [Các loại Kiểm thử Cơ sở dữ liệu](#các-loại-kiểm-thử-cơ-sở-dữ-liệu)
-- [Quy trình Kiểm thử CSDL](#quy-trình-kiểm-thử-csdl)
+- [Tổng quan về Database Testing](#tổng-quan)
+- [Các loại Kiểm thử Cơ sở dữ liệu](#Các-loại-kiểm-thử)
+- [Quy trình Kiểm thử CSDL](#quy-trình-kiểm-thử)
 - [Kỹ thuật Kiểm thử CSDL](#kỹ-thuật-kiểm-thử-csdl)
 - [Thách thức trong Kiểm thử CSDL](#thách-thức-trong-kiểm-thử-csdl)
-- [Công cụ Kiểm thử CSDL](#công-cụ-kiểm-thử-csdl)
+- [Công cụ Kiểm thử CSDL](#công-cụ-kiểm-thử)
 
 ---
 
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Giới thiệu
+# Tổng quan
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** **Giới thiệu** *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Giới thiệu về Kiểm thử Cơ sở dữ liệu
 
@@ -61,20 +52,18 @@ Giang Đức Nhật
   - Ví dụ: MySQL, PostgreSQL, SQL Server, Oracle.
 
 - **Kiểm thử CSDL**
-  - Là quá trình xác thực và xác minh chất lượng, chức năng, hiệu suất và bảo mật của CSDL.
+  - Là quá trình verify và validate chất lượng, chức năng, hiệu suất và bảo mật của CSDL.
   - Đảm bảo việc lưu trữ, truy xuất và quản lý dữ liệu hoạt động chính xác, hiệu quả và an toàn.
 
----
-
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-
-## Tổng quan
+<!-- Notes:
+- What the fuck is "chat luong"
+-
+ -->
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Mục đích
 
@@ -91,7 +80,7 @@ Giang Đức Nhật
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* **Mục tiêu** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** **Tổng quan** *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Mục tiêu chính của Database Testing
 
@@ -122,12 +111,12 @@ Giang Đức Nhật
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Các loại kiểm thử
+# Các loại kiểm thử
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Các loại Kiểm thử Cơ sở dữ liệu
 
@@ -137,15 +126,8 @@ Giang Đức Nhật
 
 ---
 
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-
-## Kiểm thử cấu trúc
-
----
-
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Cấu trúc (Structural)
 
@@ -162,7 +144,6 @@ Giang Đức Nhật
   - **Chỉ mục (Indexes):** Đảm bảo index được tạo đúng, sử dụng hiệu quả và không thừa.
 
 </div>
-
 <div class=rdiv>
 
 - **Kiểm thử Stored Procedure:**
@@ -176,29 +157,33 @@ Giang Đức Nhật
 
 </div>
 
----
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
-<!-- _class: trans -->
-<!-- _paginate: "" -->
+## Kiểm thử Chức năng (Functional)
 
-## Kiểm thử chức năng
+#### Black Box Testing
+
+- Tập trung vào verify chức năng từ góc độ người dùng cuối, không cần biết logic bên trong.
+- Được thực hiện bởi **testers**.
+- Mục tiêu:
+  - **Kiểm thử các thao tác CRUD:** Xác minh các thao tác `CREATE`, `READ`, `UPDATE`, `DELETE` từ giao diện/API được phản ánh chính xác trong CSDL.
+  - **Kiểm tra giá trị mặc định/ràng buộc:** Đảm bảo dữ liệu nhập vào tuân thủ đúng các ràng buộc (constrains: kiểu, giới hạn, not null...)
+  - **Kiểm tra xử lí lỗi:** Đảm bảo CSDL xử lí đúng các tình huống lỗi (ví dụ: vi phạm ràng buộc, dữ liệu không hợp lệ).
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Chức năng (Functional)
 
-- **Kiểm thử Hộp đen (Black Box):**
+#### White Box Testing
 
-  - Tập trung vào xác thực chức năng từ góc độ người dùng cuối, không cần biết logic nội tại.
-  - **Kiểm thử hoạt động CRUD:** Xác minh các thao tác `CREATE`, `READ`, `UPDATE`, `DELETE` từ giao diện/API được phản ánh chính xác trong CSDL.
-  - **Kiểm tra giá trị mặc định/ràng buộc:** Đảm bảo dữ liệu nhập vào tuân thủ đúng quy tắc.
-
-- **Kiểm thử Hộp trắng (White Box):**
-  - Tập trung vào xác thực logic bên trong các đối tượng CSDL.
-  - **Xác thực logic nghiệp vụ:** Kiểm tra các trigger, stored procedure, và view đảm bảo chúng thực thi đúng yêu cầu.
+- Tập trung vào validate logic bên trong các đối tượng CSDL.
+- Được thực hiện bởi **developers**.
+- Mục tiêu:
+  - **Validate logic nghiệp vụ:** Kiểm tra các trigger, stored procedure, và view đảm bảo chúng thực thi đúng yêu cầu.
   - **Kiểm tra toàn vẹn dữ liệu:** Đảm bảo các ràng buộc (constraints) và quan hệ (relationships) hoạt động chính xác.
 
 ---
@@ -211,30 +196,30 @@ Giang Đức Nhật
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* **Loại kiểm thử** *Quy trình* *Thách thức* *Công cụ* *Kết luận* -->
 
 ## Kiểm thử Phi chức năng (Non-functional)
 
 <div class=ldiv>
 
-- **Kiểm thử Hiệu năng (Performance):**
+- **Hiệu năng (Performance):**
 
-  - **Load Testing:** Đánh giá hiệu suất CSDL dưới tải trọng dự kiến, đo thời gian phản hồi truy vấn.
-  - **Stress Testing:** Xác định điểm gãy (breaking point) của CSDL bằng cách tạo tải ảo rất lớn vào CSDL.
+  - **Load test:** Đánh giá hiệu suất CSDL dưới tải trọng dự kiến, đo thời gian phản hồi truy vấn.
+  - **Stress test:** Xác định điểm gãy (breaking point) của CSDL bằng cách tạo tải ảo rất lớn vào CSDL.
 
-- **Kiểm thử Bảo mật (Security):**
+- **Bảo mật (Security):**
   - Ngăn chặn các lỗ hổng phổ biến như **SQL Injection**.
   - Xác thực quyền truy cập, đảm bảo người dùng chỉ thấy dữ liệu được phép.
 
 </div>
 <div class=rdiv>
 
-- **Kiểm thử Phục hồi (Recovery):**
+- **Khả năng Phục hồi (Recovery):**
 
   - Xác minh việc sao lưu (backup) và phục hồi (restore) dữ liệu hoạt động đúng.
   - Xác minh CSDL có thể được phục hồi thành công từ các bản sao lưu (backups) sau sự cố.
 
-- **Kiểm thử Tương thích (Compatibility):**
+- **Tương thích (Compatibility):**
   - Đảm bảo CSDL hoạt động ổn định trên các phiên bản DBMS, hệ điều hành, và nền tảng được dùng để triển khai.
 
 </div>
@@ -248,33 +233,36 @@ Giang Đức Nhật
 > *Tránh các lỗi bảo mật cơ bản như SQL Injection
 > \*Mã hóa dữ liệu nhạy cảm ở trạng thái nghỉ và khi truyền tải.
 
-<!-- em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
+<!-- Speaker notes:
+em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
+
+---
 
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Quy trình kiểm thử
+# Quy trình kiểm thử
 
 ---
 
 ## Quy trình Kiểm thử CSDL
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* **Quy trình** *Thách thức* *Công cụ* *Kết luận* -->
 
 <div class=ldiv>
 
-1.  **Phân tích và Thiết kế:**
+1.  **Phân tích & Thiết kế Test cases**
 
     - Xác định yêu cầu nghiệp vụ, phạm vi kiểm thử.
     - Thiết kế test case, kịch bản và bộ dữ liệu.
 
-2.  **Chuẩn bị Môi trường & Dữ liệu:**
+2.  **Chuẩn bị Môi trường & Dữ liệu**
 
-    - Thiết lập máy chủ thử nghiệm riêng biệt.
-    - Tạo hoặc sao chép bộ dữ liệu thử nghiệm (Test Data).
+    - Thiết lập môi trường test riêng biệt, đảm bảo cô lập giữa các bộ test.
+    - Tạo bộ dữ liệu thử nghiệm (Test Data).
 
-3.  **Thực thi Kiểm thử:**
+3.  **Thực thi**
     - Chạy các kịch bản kiểm thử (thủ công hoặc tự động).
     - Ghi lại kết quả và các lỗi phát sinh.
 
@@ -282,14 +270,14 @@ Giang Đức Nhật
 
 <div class=rdiv>
 
-4.  **Báo cáo và Theo dõi:**
+4.  **Báo cáo**
 
     - Phân tích kết quả, so sánh với kết quả mong đợi.
     - Ghi nhận lỗi (log bug) và báo cáo cho đội phát triển.
 
-5.  **Kiểm thử Hồi quy và Hoàn tất:**
+5.  **Kiểm thử Hồi quy và Hoàn tất**
     - Thực hiện lại các bài kiểm thử sau khi lỗi được sửa.
-    - Hoàn tất báo cáo và ký duyệt (sign-off).
+    - Hoàn tất báo cáo đóng test cycle.
 
 </div>
 
@@ -298,70 +286,14 @@ Giang Đức Nhật
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Kỹ thuật kiểm thử
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## Kỹ thuật Kiểm thử SQL Queries
-
-- **Mục tiêu:**
-  - Đảm bảo các câu lệnh SQL trả về kết quả chính xác.
-  - Tối ưu hóa hiệu suất truy vấn.
-- **Cách thực hiện:**
-  - **Kiểm tra tính đúng đắn:** So sánh kết quả của truy vấn với dữ liệu mong đợi.
-  - **Kiểm tra hiệu suất:** Phân tích `Execution Plan` để xác định các truy vấn chậm, thiếu index hoặc có `full table scan`.
-  - **Kiểm tra với dữ liệu lớn:** Đánh giá thời gian phản hồi khi CSDL có hàng triệu bản ghi.
-
----
-
-<!-- _class: cols-2 navbar -->
-<!-- _header: \\ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## Kỹ thuật Data-Driven
-
-<div class=ldiv>
-
-- **Phân vùng Tương đương (EP):**
-  - Chia dữ liệu đầu vào thành các nhóm (lớp) mà hệ thống xử lý tương tự nhau.
-  - **Ví dụ:** Với trường `tuổi`, các lớp có thể là:
-    - `Âm` (không hợp lệ)
-    - `0-17` (trẻ em)
-    - `18-60` (người lớn)
-    - `> 60` (người cao tuổi)
-  - Chỉ cần chọn một giá trị đại diện trong mỗi lớp để kiểm thử.
-
-</div>
-<div class=rdiv>
-
-- **Phân tích Giá trị Biên (BVA):**
-  - Tập trung kiểm thử tại các giá trị biên của mỗi phân vùng.
-  - **Ví dụ:** Với lớp `18-60`, các giá trị biên cần kiểm thử là:
-    - `17` (ngay dưới)
-    - `18` (biên dưới)
-    - `19` (ngay trên)
-    - `59` (ngay dưới)
-    - `60` (biên trên)
-    - `61` (ngay trên)
-  - Giúp phát hiện lỗi logic tại các điểm chuyển tiếp.
-
-</div>
-
----
-
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-
-## Thách thức
+# Thách thức
 
 ---
 
 ## Thách thức trong Kiểm thử CSDL
 
 <!-- _class: cols2_ul_ci fglass smalltext navbar-->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
 - **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
@@ -374,27 +306,35 @@ Giang Đức Nhật
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-## Công cụ kiểm thử
+# Công cụ kiểm thử
+
+---
+
+<!-- _class: bq-yellow navbar -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+> - Chọn công cụ phù hợp với mục đích kiểm thử. Không có một công cụ nào có thể phù hợp với tất cả nhu cầu kiểm thử.
+> - Để kiểm thử một cách toàn diện, cần kết hợp nhiều công cụ khác nhau.
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## Phân loại Công cụ Kiểm thử CSDL
+## Phân loại công cụ
 
 Để chọn đúng công cụ, chúng ta cần xem xét chúng qua các khía cạnh sau:
 
-- **Phạm vi và Loại hình Kiểm thử:** Công cụ dùng để làm gì? (Hiệu năng, chức năng, bảo mật...).
-- **Phương pháp tiếp cận:** Kiểm thử hộp đen hay hộp trắng? Mức độ cô lập ra sao?
-- **Tự động hóa và Tích hợp:** Khả năng tích hợp vào CI/CD và quản lý dữ liệu.
-- **Tính tương thích:** Hỗ trợ những hệ quản trị CSDL nào?
-- **Thiết kế và Chức năng:** Giao diện, tính dễ sử dụng.
+- **Kiểm thử cái gì?** Hiệu năng, chức năng, bảo mật... Phạm vi kiểm thử?
+- **Phương pháp tiếp cận?** Black-box hay White-box?
+- **Tự động hóa và Khả năng tích hợp?** Khả năng tích hợp vào CI/CD và quản lý dữ liệu test.
+- **Tính tương thích?** Hỗ trợ những hệ quản trị CSDL nào? SQL hay NoSQL?
+- **Thiết kế và Chức năng?** Giao diện, tính dễ sử dụng, phù hợp với đối tượng nào (dev hay tester chẳng hạn).
 
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## I. Phạm vi & Loại hình Kiểm thử (1/2)
 
@@ -403,11 +343,11 @@ Giang Đức Nhật
 - **Kiểm thử Hiệu năng (Performance):**
 
   - Mô phỏng tải lớn, đo lường thời gian phản hồi và tìm breaking point.
-  - **Công cụ:** JMeter, HammerDB, Swingbench.
+  - Công cụ: JMeter, HammerDB, Swingbench.
 
 - **Kiểm thử Chức năng/Unit Test:**
   - Xác minh logic nghiệp vụ và các thao tác CRUD.
-  - **Công cụ:** tSQLt (Unit Test), DbFit (Acceptance Test).
+  - Công cụ: tSQLt (Unit Test), DbFit (Acceptance Test).
 
 </div>
 <div class=rdiv>
@@ -415,118 +355,117 @@ Giang Đức Nhật
 - **Kiểm thử Cấu trúc (Structural):**
 
   - So sánh và xác thực schema, bảng, cột, khóa...
-  - **Công cụ:** Redgate SQL Compare.
+  - Công cụ: Redgate SQL Compare.
 
 - **Kiểm thử Dữ liệu và ETL:**
   - So sánh dữ liệu giữa nguồn và đích, đảm bảo tính toàn vẹn.
-  - **Công cụ:** QuerySurge.
+  - Công cụ: QuerySurge.
 
 </div>
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## I. Phạm vi & Loại hình Kiểm thử (2/2)
 
 - **Kiểm thử Bảo mật (Security):**
   - Phát hiện các lỗ hổng bảo mật, đặc biệt là SQL Injection.
-  - **Công cụ:** `SQLMap` là công cụ tấn công chuyên dụng để tự động phát hiện và khai thác lỗ hổng.
+  - Công cụ: SQLMap là công cụ tấn công chuyên dụng để tự động phát hiện và khai thác lỗ hổng.
 
 ---
 
-<!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## II. Phương pháp & Độ cô lập
-
-<div class=ldiv>
+## II. Phương pháp tiếp cận
 
 - **Phương pháp tiếp cận:**
-  - **White Box Testing:** Can thiệp và kiểm tra logic bên trong CSDL.
-    - _Ví dụ:_ `tSQLt` cho phép viết test bằng T-SQL.
-  - **Black Box Testing:** Kiểm tra chức năng từ góc độ người dùng (input/output).
-    - _Ví dụ:_ `DbFit` dùng bảng để mô tả logic.
 
-</div>
-<div class=rdiv>
+  - **White Box Testing:** Kiểm tra trực tiếp logic thực thi bên trong CSDL.
+    - _VD:_ _tSQLt_ cho phép viết test bằng T-SQL.
+  - **Black Box Testing:** Kiểm tra kết quả cuối cùng từ góc độ người dùng mà không cần biết logic.
+    - _VD:_ _DbFit_ dùng bảng để mô tả logic.
 
-- **Tính Cô lập (Isolation):**
+- **Tính cô lập (Isolation):**
   - Đảm bảo mỗi test case chạy độc lập, không ảnh hưởng đến CSDL hay các test khác.
-  - **Ví dụ:**
-    - `tSQLt` tự động `ROLLBACK` sau mỗi test.
-    - `DBUnit` dùng `CLEAN_INSERT` để reset dữ liệu.
-
-</div>
+    _VD:_
+    - _tSQLt_ tự động `ROLLBACK` sau mỗi test.
+    - _DBUnit_ dùng `CLEAN_INSERT` để reset dữ liệu.
 
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## III. Tự động hóa & Tích hợp
+presen
+
+## III. Tự động hóa & khả năng tích hợp
 
 <div class=ldiv>
 
 - **Tích hợp CI/CD:**
 
-  - Khả năng chạy qua dòng lệnh (CLI) và xuất báo cáo (JUnit XML) để tích hợp vào `Jenkins`, `GitLab CI`.
+  - Khả năng chạy qua dòng lệnh (CLI) và xuất báo cáo để tích hợp vào Jenkins, GitLab CI.
+  - Điều này giúp tự động hóa việc kiểm thử trong quy trình phát triển phần mềm.
 
-- **Quản lý Dữ liệu Test:**
-  - Hỗ trợ thiết lập dữ liệu mẫu (dataset) trước khi test và dọn dẹp sau đó.
-  - **Công cụ:** `DBUnit`, `NoSQLUnit` sử dụng file XML/JSON để quản lý.
+- **Mocking:**
+  - Thay thế các đối tượng phụ thuộc (bảng, procedure) bằng đối tượng giả để cô lập test.
+  - **Công cụ:** _tSQLt_ cung cấp `FakeTable` và `SpyProcedure`.
 
 </div>
 <div class=rdiv>
 
-- **Khả năng Mô phỏng (Mocking):**
-  - Thay thế các đối tượng phụ thuộc (bảng, procedure) bằng đối tượng giả để cô lập test.
-  - **Công cụ:** `tSQLt` cung cấp `FakeTable` và `SpyProcedure`.
+- **Quản lý dữ liệu test:**
+  - Hỗ trợ thiết lập dữ liệu mẫu (dataset) trước khi test và dọn dẹp (teardown) sau đó.
+  - Công cụ: _DBUnit_, _NoSQLUnit_ sử dụng file XML/JSON để quản lí và xuất báo cáo.
+  - Việc hỗ trợ này giúp đội ngũ dễ dàng trong việc quan sát và phân tích kết quả test để nhanh chóng sửa lỗi
 
 </div>
 
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## IV. Tương thích & V. Thiết kế
+## IV. Tương thích
 
 <div class=ldiv>
 
-- **Hỗ trợ Hệ quản trị CSDL (DBMS):**
+- **Tính tương thích:** Tùy vào nhu cầu kiểm thử trên DBMS nào mà chọn công cụ phù hợp.
 
-  - **Chuyên dụng:** `tSQLt` (SQL Server), `Swingbench` (Oracle).
-  - **Đa nền tảng:** `JMeter` (qua JDBC), `NoSQLUnit` (MongoDB, Cassandra...).
-
-- **Giao diện và Tính dễ đọc:**
-  - Kịch bản test có dễ đọc, dễ hiểu không?
-  - **Ví dụ:** `DbFit` dùng bảng, phù hợp cho cả BA, QA.
+  - Một số công cụ chỉ hỗ trợ một (vài) DBMS cụ thể:
+    - MS SQL Server: _tSQLt_, _DBFit_.
+    - Oracle DB: _Swingbench_
+  - Một số công cụ có thể hỗ trợ đa nền tảng:
+    - _JMeter_ (các DBMS có hỗ trợ JDBC)
+    - _NoSQLUnit_ (MongoDB, Cassandra...).
 
 </div>
 <div class=rdiv>
 
-- **Hỗ trợ Kỹ thuật Thiết kế Test Case:**
-  - Hỗ trợ các kỹ thuật như **Data-Driven Testing (DDT)**.
-  - **Ví dụ:** `JMeter` có thể đọc dữ liệu từ file CSV để thực hiện nhiều kịch bản test.
+- **Giao diện và Tính dễ sử dụng:**
+  - Kịch bản test có dễ đọc, dễ hiểu không?
+  - **Ví dụ:** _DbFit_ dùng bảng, phù hợp cho cả BA, QA.
 
-</div>
+## </div>
 
 ---
 
-<!-- _class: bq-yellow navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## Best Practices
+## V. Khả năng thiết kế test case
 
-- Chọn công cụ phù hợp với mục đích kiểm thử. Không có một công cụ nào có thể phù hợp với tất cả nhu cầu kiểm thử.
-- Để kiểm thử một cách toàn diện, cần kết hợp nhiều công cụ khác nhau.
+- **Hỗ trợ Kỹ thuật Thiết kế Test Case:**
+  - Hỗ trợ các kỹ thuật như **Data-Driven Testing (DDT)**.
+  - **Ví dụ:** _JMeter_ có thể đọc dữ liệu từ file CSV để thực hiện nhiều kịch bản test.
 
 ---
 
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Structural Testing
 
@@ -550,81 +489,48 @@ Giang Đức Nhật
 
 ---
 
-<!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _class: navbar -->
+<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## Công cụ Performance & Security
+## Functional Testing (Unit test)
+
+- **tSQLt:** Framework mã nguồn mở cho SQL Server để thực hiện Unit Test.
+- **DbFit:** Hỗ trợ kiểm thử CSDL qua các bảng quyết định (decision tables), dễ dàng cho cả tester và BA.
+- **DbUnit:** Mở rộng của JUnit, chuyên dùng để quản lý trạng thái CSDL giữa các lần chạy test.
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Non-functional: Performance & Security
 
 <div class=ldiv>
 
 - **Apache JMeter**
 
-  - **Là gì:** Công cụ mã nguồn mở chuyên về kiểm thử tải và hiệu năng.
-  - **Chức năng:** Tạo ra lượng lớn truy vấn đồng thời (qua JDBC) để đo thời gian phản hồi và khả năng chịu tải của CSDL.
-  - **Chi phí:** Miễn phí.
+  - Kiểm thử tải và hiệu năng, bằng cách tạo ra lượng lớn truy vấn đồng thời để đo thời gian phản hồi và khả năng chịu tải của CSDL.
+  - Open source, miễn phí.
 
 - **HammerDB**
-  - **Là gì:** Công cụ benchmark và load testing mã nguồn mở.
-  - **Chức năng:** Đo lường hiệu suất của nhiều loại CSDL (Oracle, SQL Server, PostgreSQL...) dưới các kịch bản tải khác nhau.
-  - **Chi phí:** Miễn phí.
+  - Công cụ benchmark và load testing.
+  - Chuyên đo lường hiệu suất của nhiều loại CSDL (Oracle, SQL Server, PostgreSQL...) dưới các kịch bản tải khác nhau.
+  - Open source, miễn phí.
 
 </div>
 <div class=rdiv>
 
 - **SQLMap**
-  - **Là gì:** Công cụ mã nguồn mở chuyên dò tìm và khai thác lỗ hổng SQL Injection.
-  - **Chức năng:** Tự động hóa việc phát hiện các điểm yếu bảo mật liên quan đến SQL Injection trong ứng dụng.
-  - **Chi phí:** Miễn phí.
-
-</div>
-
----
-
-## Công cụ Unit/Functional & Structural
-
-<div class=ldiv>
-
-- **Kiểm thử Unit/Functional:**
-  - **tSQLt:** Framework mã nguồn mở cho SQL Server để thực hiện Unit Test.
-  - **DbFit:** Hỗ trợ kiểm thử CSDL qua các bảng quyết định (decision tables), dễ dàng cho cả tester và BA.
-  - **DbUnit:** Mở rộng của JUnit, chuyên dùng để quản lý trạng thái CSDL giữa các lần chạy test.
-
-</div>
-
-<div class=rdiv>
-
-- **Kiểm thử Cấu trúc (Structural):**
-  - **Redgate SQL Compare:** So sánh và đồng bộ hóa schema giữa các CSDL, lý tưởng để kiểm tra tính nhất quán.
-  - **ApexSQL Diff:** Công cụ mạnh mẽ để so sánh, phát hiện sự khác biệt trong schema và dữ liệu.
-
-</div>
-
----
-
-<!-- _class: cols-2 navbar -->
-<!-- _header: \\ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
-
-## Công cụ Performance & Security
-
-<div class=ldiv>
-
-- **Kiểm thử Hiệu năng (Performance):**
-  - **Apache JMeter:** Dù không chuyên về CSDL, JMeter có thể tạo tải (load) lên các API và đo lường thời gian phản hồi từ CSDL.
-  - **HammerDB:** Công cụ benchmark và load testing mã nguồn mở, hỗ trợ nhiều loại CSDL (Oracle, SQL Server, PostgreSQL).
-
-</div>
-
-<div class=rdiv>
-
-- **Kiểm thử Bảo mật (Security):**
-  - **SQLMap:** Công cụ mã nguồn mở tự động phát hiện và khai thác các lỗ hổng SQL Injection, giúp xác định điểm yếu bảo mật.
+  - Chuyên dò tìm và khai thác lỗ hổng SQL Injection.
+  - Tự động hóa việc phát hiện các điểm yếu bảo mật liên quan đến SQL Injection trong ứng dụng.
+  - Open source, miễn phí.
 
 </div>
 
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## Best Practices
 
@@ -644,7 +550,7 @@ Giang Đức Nhật
 
 - Chú ý ETL operations:
 
-  - Kiểm thử các bước extract/transform/load riêng biệt và end‑to‑end.
+  - Kiểm thử các bước extract/transform/load riêng biệt và toàn bộ quá trình (end‑to‑end).
   - So sánh dữ liệu nguồn và đích (row counts, checksums, sample records).
   - Kiểm tra incremental loads (chỉ thực hiện thay đổi trên dữ liệu mới so với lần chạy trước đó), error handling và idempotency.
 
@@ -653,6 +559,10 @@ Giang Đức Nhật
   - Mỗi test chạy độc lập (setup → execute → teardown) để tránh side‑effects.
   - Xác định thời điểm chạy setup/teardown và dùng transaction/rollback hoặc snapshot để reset.
   - Sử dụng môi trường test tách biệt (sandbox) hoặc containerized DB.
+
+<!-- Speaker notes:
+- Why ETL? -> In the industry, you don't just have one database. You have multiple databases, and you need to move data between them. So ETL testing is crucial to ensure data integrity during these operations.
+ -->
 
 ---
 
@@ -678,6 +588,8 @@ Giang Đức Nhật
   - Giám sát Recovery Time Object/Recovery Point Object và tài liệu quy trình khôi phục.
 
 <!-- Speaker notes:
+You may forgot this, but in realistic, this test is crucial because we don't know when an issue happens.
+Any mistake in the database in this test may cause such a large (thiet hai).
 RTO: thời gian cần để hệ thống có thể hoạt động lại sau sự cố. Tức là: Thời gian chấp nhận hệ thống bị gián đoạn.
 RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ chấp nhận mất dữ liệu phát sinh trong khoảng thời gian RPO này.
   -->
@@ -685,7 +597,7 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ---
 
 <!-- _class: navbar -->
-<!-- _header: \\ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
+<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
 
 ## Kết luận
 
@@ -712,3 +624,67 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 <!-- _footer: "" -->
 
 ###### Q&A
+
+---
+
+<!-- _class: trans -->
+<!-- _paginate: "" -->
+
+## Các kỹ thuật kiểm thử
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
+
+## SQL Queries
+
+- **Mục tiêu:**
+
+  - Đảm bảo các câu lệnh SQL trả về kết quả _chính xác_ và _toàn vẹn_.
+  - Kiểm tra _hiệu suất_ của truy vấn.
+
+- **Bao gồm:**
+  - **Kiểm tra tính đúng đắn:** So sánh kết quả của truy vấn với dữ liệu mong đợi, đảm bảo rằng dữ liệu khi thay đổi trong database phải chính xác.
+  - **Kiểm tra hiệu suất:** Phân tích `Execution Plan` để xác định các truy vấn chậm, thiếu index... Từ những phân tích này, tối ưu hóa câu lệnh SQL để cài thiện hiệu suất.
+  - **Kiểm tra với dữ liệu lớn:** Đánh giá thời gian phản hồi khi CSDL có hàng triệu bản ghi.
+  - **Kiểm tra bảo mật:** Đảm bảo truy vấn không dễ bị tấn công SQL Injection.
+
+<!-- Speaker notes
+- Dữ liệu không chỉ cần đúng. Trong thế giới phần mềm hiện đại, hiệu suất là rất quan trọng. Hiệu suất không chỉ là nhanh chậm, nó còn gây ảnh hưởng đến tính sẵn sàng và khả năng mở rộng của hệ thống. Đặc biệt là ảnh hưởng đến chi phí.
+-
+ -->
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
+
+## Data-Driven
+
+- **Phân vùng Tương đương (EP):**
+  - Chia dữ liệu đầu vào thành các nhóm (lớp) mà hệ thống xử lý tương tự nhau.
+  - **Ví dụ:** Với trường `tuổi`, các lớp có thể là:
+    - `Âm` (không hợp lệ)
+    - `0-17` (trẻ em)
+    - `18-60` (người lớn)
+    - `> 60` (người cao tuổi)
+  - Chỉ cần chọn một giá trị đại diện trong mỗi lớp để kiểm thử.
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \\ ***@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
+
+## Kỹ thuật Data-Driven
+
+- **Phân tích Giá trị Biên (BVA):**
+  - Tập trung kiểm thử tại các giá trị biên của mỗi phân vùng.
+  - **Ví dụ:** Với lớp `18-60`, các giá trị biên cần kiểm thử là:
+    - `17` (ngay dưới)
+    - `18` (biên dưới)
+    - `19` (ngay trên)
+    - `59` (ngay dưới)
+    - `60` (biên trên)
+    - `61` (ngay trên)
+  - Giúp phát hiện lỗi logic tại các điểm chuyển tiếp.
