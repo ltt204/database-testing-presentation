@@ -546,6 +546,145 @@ presen
 
 ---
 
+<!-- _class: trans -->
+<!-- _paginate: "" -->
+## Hai công cụ nổi bật
+
+---
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## tSQLt - Database Unit Testing Framework
+
+### **Giới thiệu**
+- **tSQLt** là framework **mã nguồn mở** chuyên về Unit Testing cho **SQL Server**.
+- Cho phép viết và thực thi test case trực tiếp bằng **T-SQL**, không cần chuyển đổi giữa các công cụ.
+- Tương thích với các phiên bản SQL Server từ **2005 SP2** trở lên.
+
+### **Đặc điểm nổi bật**
+- **Quản lý Transaction tự động:** Mỗi test chạy trong một transaction riêng.
+- **Tổ chức Test theo Schema:** Nhóm các test theo schema, dễ dàng quản lý và sử dụng chung phương thức setup.
+- **Khả năng Cô lập (Isolation):** Hỗ trợ `FakeTable` và `SpyProcedure` để thay thế các đối tượng phụ thuộc.
+- **Tích hợp CI/CD:** Xuất kết quả dạng plain text hoặc XML, tích hợp vào Jenkins, GitLab CI,...
+
+---
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## tSQLt - Ưu & Nhược điểm
+
+<div class=ldiv>
+
+### **Ưu điểm**
+- **Mã nguồn mở và miễn phí:** Không mất chi phí license.
+- **Viết test bằng T-SQL:** Phù hợp với DBA và SQL Developer, không cần học ngôn ngữ mới.
+- **Độc lập và Clean-up tự động:** Transaction tự động rollback sau mỗi test.
+- **Khả năng mở rộng:** Đã được chứng minh với các dự án lớn (hơn 6000 test cases).
+- **Hỗ trợ Mocking mạnh mẽ:** Tạo fake table, spy procedure để cô lập code.
+
+</div>
+<div class=rdiv>
+
+### **Nhược điểm**
+- **Chỉ hỗ trợ SQL Server:** Không thể sử dụng cho Oracle, MySQL, PostgreSQL...
+- **Yêu cầu CLR & TRUSTWORTHY:** Cần bật CLR và đặt thuộc tính `TRUSTWORTHY = ON`, có thể gây lo ngại về bảo mật.
+- **Hạn chế với Foreign Key phức tạp:** Chỉ mock được khóa ngoại đơn cột, không hỗ trợ cascading delete.
+- **Không mock được Function/Trigger:** Phải test trực tiếp với implementation thật.
+- **Vấn đề với Transaction lồng nhau:** Gặp khó khăn khi code có logic commit/rollback.
+
+</div>
+
+---
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## tSQLt - Ứng dụng thực tế
+
+- **Unit Testing cho Stored Procedures:**
+  - Xác thực logic nghiệp vụ phức tạp trong các stored procedure.
+  - Kiểm tra xử lý lỗi và các trường hợp biên (edge cases).
+
+- **Test-Driven Development (TDD) cho Database:**
+  - Viết test trước, sau đó implement code SQL.
+  - Giúp đảm bảo code database luôn đáp ứng yêu cầu nghiệp vụ.
+
+- **Regression Testing:**
+  - Phát hiện sớm các lỗi khi thay đổi schema hoặc logic database.
+  - Chạy tự động trong CI/CD pipeline để đảm bảo chất lượng.
+
+- **Validation của Business Rules:**
+  - Kiểm tra các ràng buộc, trigger và validation logic hoạt động đúng.
+
+---
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## DbFit - Table-Driven Database Testing
+
+### **Giới thiệu**
+- **DbFit** là framework **mã nguồn mở** hỗ trợ **Test-Driven Development** cho database.
+- Được xây dựng trên nền tảng **FitNesse**, một framework testing trưởng thành với cộng đồng lớn.
+- Hỗ trợ **đa nền tảng:** Oracle, SQL Server, MySQL, DB2, PostgreSQL, HSQLDB, Derby.
+
+### **Đặc điểm nổi bật**
+- **Kiểm thử dựa trên Bảng (Table-based):** Test được viết dưới dạng bảng wiki, dễ đọc hơn xUnit.
+- **Dễ tiếp cận với Non-technical Users:** BA và QA có thể đọc và hiểu test mà không cần kiến thức SQL sâu.
+- **Quản lý Transaction linh hoạt:** Hỗ trợ 2 chế độ (Flow và Standalone), tự động rollback sau mỗi test.
+- **Tích hợp đa dạng:** Chạy qua command-line, Java IDE, REST API, hoặc CI tools.
+- **Parameterization:** Hỗ trợ tham số hóa để tái sử dụng test với nhiều bộ dữ liệu khác nhau.
+
+---
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## DbFit - Ưu & Nhược điểm
+
+<div class=ldiv>
+
+### **Ưu điểm**
+- **Mã nguồn mở (GPL license):** Hoàn toàn miễn phí.
+- **Đa nền tảng:** Hỗ trợ nhiều loại CSDL khác nhau (Oracle, SQL Server, MySQL...).
+- **Dễ đọc và bảo trì:** Format bảng giúp test dễ hiểu, phù hợp cho cả team kỹ thuật và phi kỹ thuật.
+- **Hỗ trợ Acceptance Testing:** Cho phép viết test theo phong cách BDD (Behavior-Driven Development).
+- **Tích hợp tốt với CI/CD:** Có thể chạy qua JUnit, Maven, hoặc command line.
+- **Test nhiều loại đối tượng DB:** Query, Insert, Update, Stored Procedure, Function...
+
+</div>
+<div class=rdiv>
+
+### **Nhược điểm**
+- **Yêu cầu nhiều Runtime:** Cần cả Java và .NET 2.0 runtime (tùy cấu hình).
+- **Không tích hợp sẵn JDBC Drivers:** Phải tự cài đặt driver cho từng loại database do hạn chế license.
+- **Cấu hình phức tạp hơn:** So với tSQLt, việc setup ban đầu có thể khó khăn hơn.
+- **Phụ thuộc FitNesse:** Cần hiểu cách hoạt động của FitNesse để sử dụng hiệu quả.
+- **Cộng đồng nhỏ hơn:** Ít tài liệu và ví dụ hơn so với các framework phổ biến khác.
+
+</div>
+
+---
+<!-- _class: navbar -->
+<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## DbFit - Ứng dụng thực tế
+
+- **Regression Testing cho Data Warehouse:**
+  - So sánh kết quả query trước và sau khi thay đổi.
+  - Xác thực tính chính xác của các phép biến đổi dữ liệu (transformations).
+
+- **Data Migration Testing:**
+  - Kiểm tra việc di chuyển dữ liệu từ hệ thống cũ sang hệ thống mới.
+  - Đảm bảo không có dữ liệu bị mất hoặc sai lệch.
+
+- **ETL Testing:**
+  - Xác thực các quy trình Extract-Transform-Load hoạt động đúng.
+  - Kiểm tra tính toàn vẹn dữ liệu từ nguồn đến đích.
+
+- **Acceptance Testing cho Database:**
+  - Tạo test case dưới dạng bảng để stakeholder có thể review và approve.
+  - Làm cầu nối giữa yêu cầu nghiệp vụ và implementation kỹ thuật.
+
+---
+
 <!-- _class: navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
 
