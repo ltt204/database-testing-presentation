@@ -439,7 +439,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## Database Testing trong CI/CD
 
-### **Luồng CI/CD với Database Testing**
+**Luồng CI/CD với Database Testing**
 1. **Commit Code:** Developer commit thay đổi CSDL (schema, SP, migrations) lên Git.
 2. **Build & Deploy:** CI server deploy CSDL phiên bản mới lên môi trường test.
 3. **Test Execution:**
@@ -566,12 +566,12 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## tSQLt - Framework Unit Test cho SQL Server
 
-### **Giới thiệu**
+**Giới thiệu**
 - **tSQLt** là framework **Unit Test** mã nguồn mở dành riêng cho **Microsoft SQL Server**.
 - Cho phép lập trình viên viết và thực thi test case tự động bằng ngôn ngữ **T-SQL**.
 - Phương pháp **White Box Testing**, tập trung xác minh logic bên trong từng đoạn code CSDL.
 
-### **Tính Cô lập (Isolation)**
+### Tính Cô lập (Isolation)
 - Mỗi test được bọc trong transaction và tự động `ROLLBACK` sau khi chạy, đảm bảo CSDL luôn sạch.
 - **Giả lập đối tượng:**
   - `FakeTable`: Tạo bảng giả không có ràng buộc, khóa ngoại, trigger.
@@ -642,11 +642,11 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## DbFit - Đặc điểm nổi bật
 
-### **Test case dạng Bảng (Table-based)**
+**Test case dạng Bảng (Table-based)**
 
-### **Dễ đọc, dễ hiểu**
+**Dễ đọc, dễ hiểu**
 
-### **Kết quả trực quan**
+**Kết quả trực quan**
 
 [đợi thêm ảnh]
 
@@ -658,7 +658,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 <div class=ldiv>
 
-### **Ưu điểm**
+**Ưu điểm**
 - **Mã nguồn mở (GPL):** Hoàn toàn miễn phí.
 - **Đa nền tảng:** Hỗ trợ nhiều loại CSDL khác nhau (Oracle, SQL Server, MySQL, DB2, PostgreSQL...).
 - **Dễ tiếp cận:** Không yêu cầu kỹ năng lập trình sâu, phù hợp cho nhiều vai trò trong team.
@@ -667,10 +667,9 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 </div>
 <div class=rdiv>
 
-### **Nhược điểm**
+**Nhược điểm**
 - **Yêu cầu nhiều môi trường Runtime:** Cần Java và .NET 2.0 (tùy cấu hình).
 - **Cấu hình phức tạp:** Phải tự cài JDBC drivers, setup FitNesse.
-- **Cộng đồng nhỏ hơn:** Ít tài liệu so với các framework phổ biến.
 
 </div>
 
