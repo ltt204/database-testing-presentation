@@ -309,7 +309,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
-- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
+- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp (realistic, với referential integrity, đủ khối lượng) là rất quan trọng nhưng cũng đầy thách thức.
 - **Kiến thức về SQL:** Người kiểm thử cần có hiểu biết tốt về SQL và các khái niệm CSDL.
 - **Cô lập môi trường thử nghiệm:** Đảm bảo môi trường thử nghiệm được tách biệt hoàn toàn với môi trường sản phẩm.
 - **Chi phí và Thời gian:** Kiểm thử CSDL có thể tốn kém và mất nhiều thời gian, đặc biệt với các hệ thống lớn.
@@ -377,6 +377,10 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
   - So sánh dữ liệu giữa nguồn và đích, đảm bảo tính toàn vẹn.
   - Công cụ: QuerySurge.
 
+- **Tạo Dữ liệu Kiểm thử (Data Generation):**
+  - Tạo dữ liệu giả lập/khối lượng lớn cho kiểm thử tải, hiệu năng.
+  - Công cụ: Databene Benerator, IRI RowGen.
+
 - **Kiểm thử Bảo mật (Security):**
   - Phát hiện các lỗ hổng bảo mật, đặc biệt là SQL Injection.
   - Kiểm tra về phân quyền truy cập dữ liệu.
@@ -428,6 +432,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 - **Quản lý dữ liệu test:**
   - Hỗ trợ thiết lập dữ liệu mẫu (dataset) trước khi test và dọn dẹp (teardown) sau đó.
   - Công cụ: _DBUnit_, _NoSQLUnit_ sử dụng file XML/JSON để quản lí và xuất báo cáo.
+  - Data generation tools (_Databene Benerator_, _IRI RowGen_) giúp tạo dữ liệu test chất lượng cao.
   - Việc hỗ trợ này giúp đội ngũ dễ dàng trong việc quan sát và phân tích kết quả test để nhanh chóng sửa lỗi
 
 </div>
@@ -448,7 +453,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
    - **Performance Tests** (_JMeter, HammerDB_): Đánh giá hiệu năng dưới tải.
 4. **Report & Feedback:**
    - Xuất báo cáo (XML, HTML, JUnit format).
-   - Nếu có test **FAIL** → Build bị **broken** → Thông báo team ngay lập tức.
+   - Nếu có test **FAIL** → Dừng build → Thông báo team ngay lập tức.
 5. **Deploy to Production:** Chỉ deploy khi tất cả tests đều PASS.
 
 ---
@@ -556,6 +561,22 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ---
 
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Data Generation Tools
+
+**Tầm quan trọng của Data Generation:**
+- Tạo dữ liệu kiểm thử chất lượng cao là nền tảng cho việc kiểm thử CSDL hiệu quả.
+- Dữ liệu cần đảm bảo: tính đa dạng, đúng ràng buộc, phân phối gần thực tế, và khối lượng phù hợp với mục đích kiểm thử.
+
+**Mục đích sử ddụng:**
+- **Load/Performance Testing:** Tạo khối lượng lớn dữ liệu để kiểm thử hiệu năng.
+- **Functional Testing:** Tạo dữ liệu đa dạng để kiểm tra các trường hợp edge cases.
+- **Security & Compliance:** Dùng dữ liệu tổng hợp thay vì dữ liệu production để tránh rò rỉ thông tin nhạy cảm.
+
+---
+
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 ## Công cụ nổi bật
@@ -566,12 +587,11 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## tSQLt - Framework Unit Test cho SQL Server
 
-**Giới thiệu**
 - **tSQLt** là framework **Unit Test** mã nguồn mở dành riêng cho **Microsoft SQL Server**.
 - Cho phép lập trình viên viết và thực thi test case tự động bằng ngôn ngữ **T-SQL**.
 - Phương pháp **White Box Testing**, tập trung xác minh logic bên trong từng đoạn code CSDL.
 
-### Tính Cô lập (Isolation)
+**Tính Cô lập (Isolation)**
 - Mỗi test được bọc trong transaction và tự động `ROLLBACK` sau khi chạy, đảm bảo CSDL luôn sạch.
 - **Giả lập đối tượng:**
   - `FakeTable`: Tạo bảng giả không có ràng buộc, khóa ngoại, trigger.
@@ -625,7 +645,6 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## DbFit - Kiểm thử Chấp nhận cho CSDL
 
-**Giới thiệu**
 - **DbFit** là framework mã nguồn mở cho **Acceptance Testing** CSDL.
 - Được xây dựng trên **FIT/FitNesse**.
 - Hỗ trợ **đa nền tảng:** Oracle, SQL Server, MySQL, DB2, PostgreSQL, HSQLDB, Derby.
@@ -670,6 +689,106 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 **Nhược điểm**
 - **Yêu cầu nhiều môi trường Runtime:** Cần Java và .NET 2.0 (tùy cấu hình).
 - **Cấu hình phức tạp:** Phải tự cài JDBC drivers, setup FitNesse.
+
+</div>
+
+---
+
+<!-- _class: trans -->
+<!-- _paginate: "" -->
+## Demo
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## User Story & Lược đồ CSDL
+
+**User Story**
+
+Demo tập trung vào kịch bản xử lý đơn hàng, bao gồm:
+- Xác thực dữ liệu đầu vào
+- Kiểm tra tính toàn vẹn ràng buộc (constraints)
+- Kiểm tra tồn kho (Products)
+- Cập nhật trạng thái đơn hàng (Orders)
+- Đảm bảo quy tắc bảo mật
+
+---
+
+## Schema
+
+![Database Schema](assets/db.png)
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Kịch bản (1/2)
+
+<div class=ldiv>
+
+**1. Functional Testing**
+
+- **Setup:** Store Procedures
+  - `usp_CalculateOrderTotal`: Tính tổng tiền
+  - `usp_CompleteOrder`: Hoàn tất đơn hàng
+
+- **Test Cases:**
+  - Pending → Completed, trừ tồn kho, tính tổng tiền
+  - Hết hàng → Trả lỗi, giữ nguyên trạng thái
+  - Đã hoàn tất → Ngăn xử lý trùng
+
+</div>
+<div class=rdiv>
+
+**2. Constraint Testing**
+
+- **Setup:** Bổ sung ràng buộc vào schema
+
+- **Test Cases:**
+  - **CHECK:** StockQuantity < 0, Quantity = 0, UnitPrice < 0
+  - **UNIQUE:** Email trùng lặp
+  - **FOREIGN KEY:** UserID không tồn tại, xóa User có Orders
+  - **DEFAULT/NULL:** Status = 'Pending', ProductName NOT NULL
+
+</div>
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Kịch bản (2/2)
+
+<div class=ldiv>
+
+**3. Security Testing**
+
+- **Setup:**
+  3 roles: Admin, User, Read-only, grant quyền tương ứng. Kích hoạt Row-Level Security (RLS) trên Orders
+
+- **Test Cases:**
+  - Admin: SELECT tất cả, UPDATE Products
+  - User RLS USING: Chỉ thấy đơn hàng của mình
+  - User RLS WITH CHECK: Bị chặn INSERT cho UserID khác
+  - Read-only: SELECT được, bị chặn UPDATE/DELETE
+
+</div>
+<div class=rdiv>
+
+**4. Regression Testing**
+
+- **Setup:**
+  - Bảng `ProductPriceHistory`
+  - v1: `usp_AddOrderItem_v1` – Giá truyền thủ công
+  - v2: `usp_AddOrderItem_v2` – Giá tự động từ Products
+
+- **Test Cases:**
+  - v2 tự động lấy UnitPrice, ghi lịch sử
+  - Gọi v2 với tham số v1 → Lỗi "too many arguments"
+  - Giá thay đổi → v2 lấy đúng giá mới
 
 </div>
 
@@ -732,8 +851,9 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 - Sử dụng dữ liệu đầu vào:
 
   - Validate input test data trước khi chạy.
-  - Dùng mock/seed data gần thực tế: generator tools, anonymized production samples.
+  - Dùng mock/seed data gần thực tế: sử dụng data generation tools (Databene Benerator, IRI RowGen), anonymized production samples.
   - Thực hiện data‑driven tests với bộ dữ liệu đại diện cho các phân vùng và biên.
+  - Đảm bảo dữ liệu test tuân thủ referential integrity và realistic distributions.
 
 - Tự động hóa test execution:
 
@@ -785,6 +905,7 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 - [Gunashree RS — Database Tests: Guide to Ensuring Data Integrity and Performance](https://www.devzery.com/post/comprehensive-guide-to-database-tests-strategies-andbest-practices) [truy cập: Oct. 22, 2025]
 - [David Ekete — Advanced Test Data Management: Techniques and Best Practices](<https://blog.magicpod.com/advanced-test-data-management-techniques-and-best-practices#:~:text=Test%20data%20management%20(TDM)%20involves,scenarios%20for%20software%20performance%20insights>) [truy cập: Oct. 23, 2025]
 - [HammerDB Documentation](https://www.devzery.com/post/comprehensive-guide-to-database-tests-strategies-and-best-practices) [truy cập: Oct. 23, 2025]
+- [DbFit Tutorial](https://www.kiv.zcu.cz/~herout/db/dbfit-tutorial.pdf) [truy cập: Oct. 23, 2025] 
 
 ---
 
