@@ -409,15 +409,13 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: cols-2 navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-presen
-
 ## III. Tự động hóa & khả năng tích hợp
 
 <div class=ldiv>
 
 - **Tích hợp CI/CD:**
 
-  - Khả năng chạy qua dòng lệnh (CLI) và xuất báo cáo để tích hợp vào Jenkins, GitLab CI.
+  - Khả năng chạy qua dòng lệnh (CLI) và xuất báo cáo để tích hợp vào Jenkins, GitLab CI, Azure DevOps.
   - Điều này giúp tự động hóa việc kiểm thử trong quy trình phát triển phần mềm.
 
 - **Mocking:**
@@ -433,6 +431,25 @@ presen
   - Việc hỗ trợ này giúp đội ngũ dễ dàng trong việc quan sát và phân tích kết quả test để nhanh chóng sửa lỗi
 
 </div>
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Database Testing trong CI/CD
+
+### **Luồng CI/CD với Database Testing**
+1. **Commit Code:** Developer commit thay đổi CSDL (schema, SP, migrations) lên Git.
+2. **Build & Deploy:** CI server deploy CSDL phiên bản mới lên môi trường test.
+3. **Test Execution:**
+   - **Unit Tests** (_tSQLt_): Kiểm tra logic bên trong SP, Function, Trigger.
+   - **Acceptance Tests** (_DbFit_): Xác minh các luồng nghiệp vụ end-to-end.
+   - **Performance Tests** (_JMeter, HammerDB_): Đánh giá hiệu năng dưới tải.
+4. **Report & Feedback:**
+   - Xuất báo cáo (XML, HTML, JUnit format).
+   - Nếu có test **FAIL** → Build bị **broken** → Thông báo team ngay lập tức.
+5. **Deploy to Production:** Chỉ deploy khi tất cả tests đều PASS.
 
 ---
 
@@ -541,52 +558,45 @@ presen
 
 <!-- _class: trans -->
 <!-- _paginate: "" -->
-
-# Best practices & kết luận
-
----
-
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-## Hai công cụ nổi bật
+## Công cụ nổi bật
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## tSQLt - Framework Unit Test cho SQL Server
 
 ### **Giới thiệu**
-- **tSQLt** là framework **Unit Testing (Kiểm thử đơn vị)** mã nguồn mở dành riêng cho **Microsoft SQL Server**.
+- **tSQLt** là framework **Unit Test** mã nguồn mở dành riêng cho **Microsoft SQL Server**.
 - Cho phép lập trình viên viết và thực thi test case tự động bằng chính ngôn ngữ **T-SQL**.
-- Phương pháp **Kiểm thử Hộp trắng (White Box)**, tập trung xác minh logic bên trong từng "đơn vị" code CSDL.
+- Phương pháp **White Box Testing**, tập trung xác minh logic bên trong từng "đơn vị" code CSDL.
 
-### **Triết lý cốt lõi: Sự Cô lập (Isolation)**
+### **Triết lý cốt lõi: Sự Cô lập**
 - **Transaction tự động:** Mỗi test được bọc trong transaction và tự động `ROLLBACK` sau khi chạy, đảm bảo CSDL luôn sạch.
-- **Giả lập đối tượng (Mocking):**
+- **Giả lập đối tượng:**
   - `FakeTable`: Tạo bảng giả không có ràng buộc, khóa ngoại, trigger.
   - `SpyProcedure`: Thay thế SP bằng "gián điệp" để kiểm tra việc gọi SP.
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## tSQLt - Mô hình Arrange-Act-Assert
 
 ### **Quy trình kiểm thử AAA**
-- **Arrange (Thiết lập):**
+- **Arrange:**
   - Giả lập bảng/SP bằng `FakeTable` và `SpyProcedure`.
   - Chuẩn bị dữ liệu test và kết quả mong đợi.
 
-- **Act (Hành động):**
+- **Act:**
   - Thực thi SP hoặc Function cần kiểm thử.
 
-- **Assert (Xác minh):**
+- **Assert:**
   - So sánh kết quả thực tế với kỳ vọng bằng `AssertEqualsTable`.
 
 ---
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## tSQLt - Ưu điểm & Nhược điểm
 
@@ -598,7 +608,7 @@ presen
 - **Hỗ trợ CI/CD:**
   - Lệnh `tSQLt.RunAll` chạy toàn bộ test cases.
   - Xuất kết quả dạng **XML (JUnit format)** để tích hợp Jenkins, Azure DevOps, GitLab CI.
-  - "Phá vỡ build" (break the build) nếu phát hiện lỗi CSDL.
+  - Break build nếu phát hiện lỗi CSDL.
 
 </div>
 <div class=rdiv>
@@ -612,65 +622,39 @@ presen
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
-
-## tSQLt - Ứng dụng & Vai trò trong CI/CD
-
-- **Kiểm thử đơn vị cho DB Objects:**
-  - Xác thực logic bên trong từng **Stored Procedure, Function, Trigger**.
-  - Đảm bảo mỗi đơn vị code CSDL hoạt động chính xác một cách **độc lập**.
-
-- **Test-Driven Database Development:**
-  - Áp dụng mô hình **TDD**: Viết test trước → Implement code SQL → Refactor.
-  - Đảm bảo code database luôn đáp ứng yêu cầu nghiệp vụ ngay từ đầu.
-
-- **Lưới an toàn trong CI/CD:**
-  - Tự động chạy sau mỗi lần commit thay đổi CSDL (schema, SP).
-  - Ngăn chặn việc deploy code bị lỗi lên môi trường production.
-  - Phát hiện **regression** (lỗi hồi quy) ngay lập tức khi refactor hoặc tối ưu hóa.
-
----
-<!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## DbFit - Kiểm thử Chấp nhận cho CSDL
 
 ### **Giới thiệu**
-- **DbFit** là framework **mã nguồn mở** cho **Acceptance Testing (Kiểm thử Chấp nhận)** CSDL.
+- **DbFit** là framework **mã nguồn mở** cho **Acceptance Testing** CSDL.
 - Được xây dựng trên **FIT/FitNesse** – một công cụ kiểm thử dựa trên wiki.
 - Hỗ trợ **đa nền tảng:** Oracle, SQL Server, MySQL, DB2, PostgreSQL, HSQLDB, Derby.
 
-### **Phương pháp: Kiểm thử Hộp đen (Black Box)**
+### **Phương pháp Black Box**
 - **Không quan tâm logic bên trong SP**, chỉ quan tâm đầu vào/đầu ra.
 - Mô hình **Given-When-Then:**
-  - **Given (Thiết lập):** Chuẩn bị CSDL với dữ liệu A.
-  - **When (Hành động):** Thực thi nghiệp vụ B (ví dụ: gọi SP chuyển tiền).
-  - **Then (Kết quả):** Xác minh CSDL có ở trạng thái C không?
+  - **Given:** Chuẩn bị CSDL với dữ liệu A.
+  - **When:** Thực thi nghiệp vụ B (ví dụ: gọi SP chuyển tiền).
+  - **Then:** Xác minh CSDL có ở trạng thái C không?
 
 ---
 <!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## DbFit - Đặc điểm nổi bật
 
 ### **Test case dạng Bảng (Table-based)**
-- Viết test bằng các bảng trong trang wiki, không cần viết code.
-- Các "fixture tables": `Insert`, `Execute Procedure`, `Query`.
 
 ### **Dễ đọc, dễ hiểu**
-- Có thể được viết/xác minh bởi **Lập trình viên, QA, và cả BA**.
-- Làm cầu nối giữa yêu cầu nghiệp vụ và implementation kỹ thuật.
 
 ### **Kết quả trực quan**
-- **Test PASS:** Các ô so sánh được tô màu **xanh lá**.
-- **Test FAIL:** Ô bị lỗi tô màu **đỏ**, hiển thị rõ:
-  - Giá trị thực tế (Actual).
-  - Giá trị kỳ vọng (Expected).
-  - Giúp phát hiện lỗi ngay lập tức.
+
+[đợi thêm ảnh]
 
 ---
 <!-- _class: cols-2 navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
 ## DbFit - Ưu điểm & Nhược điểm
 
@@ -693,23 +677,11 @@ presen
 </div>
 
 ---
-<!-- _class: navbar -->
-<!-- _header: \ ***@HCMUS*** *Giới thiệu* *Mục tiêu* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## DbFit - Vai trò trong CI/CD
+<!-- _class: trans -->
+<!-- _paginate: "" -->
 
-### **Luồng CI với DbFit**
-1. **Commit Code:** Lập trình viên commit thay đổi CSDL (sửa SP, schema) lên Git.
-2. **Build:** CI server (Jenkins, GitLab CI) deploy CSDL phiên bản mới lên Test Database sạch.
-3. **Test (DbFit vào cuộc):**
-   - CI gọi DbFit qua command-line.
-   - DbFit kết nối Test Database, chạy toàn bộ kịch bản kiểm thử (các trang wiki).
-   - Kiểm tra các luồng nghiệp vụ quan trọng (ví dụ: chuyển tiền, đăng ký user...).
-4. **Report & Feedback:**
-   - DbFit xuất báo cáo XML/HTML: số lượng test PASS/FAIL.
-   - Nếu có test FAIL → CI build bị **broken** → Thông báo team ngay lập tức.
-
-### **Vai trò: Đảm bảo mọi thay đổi mới về CSDL không làm hỏng các chức năng cốt lõi đã chạy đúng trước đó (Regression Testing).**
+# Best practices & kết luận
 
 ---
 
@@ -735,7 +707,7 @@ presen
 <!-- _class: navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
 
-## Best Practicesc (2/4)
+## Best Practices (2/4)
 
 - Chú ý ETL operations:
 
@@ -825,65 +797,3 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ###### Q&A
 
 ---
-
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-
-## Các kỹ thuật kiểm thử
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## SQL Queries
-
-- **Mục tiêu:**
-
-  - Đảm bảo các câu lệnh SQL trả về kết quả _chính xác_ và _toàn vẹn_.
-  - Kiểm tra _hiệu suất_ của truy vấn.
-
-- **Bao gồm:**
-  - **Kiểm tra tính đúng đắn:** So sánh kết quả của truy vấn với dữ liệu mong đợi, đảm bảo rằng dữ liệu khi thay đổi trong database phải chính xác.
-  - **Kiểm tra hiệu suất:** Phân tích `Execution Plan` để xác định các truy vấn chậm, thiếu index... Từ những phân tích này, tối ưu hóa câu lệnh SQL để cài thiện hiệu suất.
-  - **Kiểm tra với dữ liệu lớn:** Đánh giá thời gian phản hồi khi CSDL có hàng triệu bản ghi.
-  - **Kiểm tra bảo mật:** Đảm bảo truy vấn không dễ bị tấn công SQL Injection.
-
-<!-- Speaker notes
-- Dữ liệu không chỉ cần đúng. Trong thế giới phần mềm hiện đại, hiệu suất là rất quan trọng. Hiệu suất không chỉ là nhanh chậm, nó còn gây ảnh hưởng đến tính sẵn sàng và khả năng mở rộng của hệ thống. Đặc biệt là ảnh hưởng đến chi phí.
--
- -->
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## Data-Driven
-
-- **Phân vùng Tương đương (EP):**
-  - Chia dữ liệu đầu vào thành các nhóm (lớp) mà hệ thống xử lý tương tự nhau.
-  - **Ví dụ:** Với trường `tuổi`, các lớp có thể là:
-    - `Âm` (không hợp lệ)
-    - `0-17` (trẻ em)
-    - `18-60` (người lớn)
-    - `> 60` (người cao tuổi)
-  - Chỉ cần chọn một giá trị đại diện trong mỗi lớp để kiểm thử.
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## Kỹ thuật Data-Driven
-
-- **Phân tích Giá trị Biên (BVA):**
-  - Tập trung kiểm thử tại các giá trị biên của mỗi phân vùng.
-  - **Ví dụ:** Với lớp `18-60`, các giá trị biên cần kiểm thử là:
-    - `17` (ngay dưới)
-    - `18` (biên dưới)
-    - `19` (ngay trên)
-    - `59` (ngay dưới)
-    - `60` (biên trên)
-    - `61` (ngay trên)
-  - Giúp phát hiện lỗi logic tại các điểm chuyển tiếp.
