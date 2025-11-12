@@ -568,11 +568,11 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ### **Giới thiệu**
 - **tSQLt** là framework **Unit Test** mã nguồn mở dành riêng cho **Microsoft SQL Server**.
-- Cho phép lập trình viên viết và thực thi test case tự động bằng chính ngôn ngữ **T-SQL**.
-- Phương pháp **White Box Testing**, tập trung xác minh logic bên trong từng "đơn vị" code CSDL.
+- Cho phép lập trình viên viết và thực thi test case tự động bằng ngôn ngữ **T-SQL**.
+- Phương pháp **White Box Testing**, tập trung xác minh logic bên trong từng đoạn code CSDL.
 
-### **Triết lý cốt lõi: Sự Cô lập**
-- **Transaction tự động:** Mỗi test được bọc trong transaction và tự động `ROLLBACK` sau khi chạy, đảm bảo CSDL luôn sạch.
+### **Tính Cô lập (Isolation)**
+- Mỗi test được bọc trong transaction và tự động `ROLLBACK` sau khi chạy, đảm bảo CSDL luôn sạch.
 - **Giả lập đối tượng:**
   - `FakeTable`: Tạo bảng giả không có ràng buộc, khóa ngoại, trigger.
   - `SpyProcedure`: Thay thế SP bằng "gián điệp" để kiểm tra việc gọi SP.
@@ -583,7 +583,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## tSQLt - Mô hình Arrange-Act-Assert
 
-### **Quy trình kiểm thử AAA**
+**Quy trình kiểm thử AAA**
 - **Arrange:**
   - Giả lập bảng/SP bằng `FakeTable` và `SpyProcedure`.
   - Chuẩn bị dữ liệu test và kết quả mong đợi.
@@ -602,20 +602,19 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 <div class=ldiv>
 
-### **Ưu điểm**
+**Ưu điểm**
 - **Độ tin cậy cao:** Tự tin refactor/tối ưu SP phức tạp mà không sợ làm hỏng logic.
 - **Phát hiện lỗi sớm:** Tìm ra lỗi ngay tại tầng CSDL, trước khi backend gọi đến.
 - **Hỗ trợ CI/CD:**
-  - Lệnh `tSQLt.RunAll` chạy toàn bộ test cases.
+  - Chạy tất cả test case
   - Xuất kết quả dạng **XML (JUnit format)** để tích hợp Jenkins, Azure DevOps, GitLab CI.
-  - Break build nếu phát hiện lỗi CSDL.
+  - Dừng build nếu phát hiện lỗi CSDL.
 
 </div>
 <div class=rdiv>
 
-### **Nhược điểm**
+**Nhược điểm**
 - **Chỉ hỗ trợ SQL Server:** Không dùng được cho Oracle, MySQL, PostgreSQL.
-- **Yêu cầu CLR & TRUSTWORTHY:** Cần bật CLR, có thể gây lo ngại bảo mật.
 - **Hạn chế mocking:** Chỉ mock khóa ngoại đơn cột, không mock được Function/Trigger.
 
 </div>
@@ -626,17 +625,16 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ## DbFit - Kiểm thử Chấp nhận cho CSDL
 
-### **Giới thiệu**
-- **DbFit** là framework **mã nguồn mở** cho **Acceptance Testing** CSDL.
-- Được xây dựng trên **FIT/FitNesse** – một công cụ kiểm thử dựa trên wiki.
+**Giới thiệu**
+- **DbFit** là framework mã nguồn mở cho **Acceptance Testing** CSDL.
+- Được xây dựng trên **FIT/FitNesse**.
 - Hỗ trợ **đa nền tảng:** Oracle, SQL Server, MySQL, DB2, PostgreSQL, HSQLDB, Derby.
-
-### **Phương pháp Black Box**
-- **Không quan tâm logic bên trong SP**, chỉ quan tâm đầu vào/đầu ra.
-- Mô hình **Given-When-Then:**
-  - **Given:** Chuẩn bị CSDL với dữ liệu A.
-  - **When:** Thực thi nghiệp vụ B (ví dụ: gọi SP chuyển tiền).
-  - **Then:** Xác minh CSDL có ở trạng thái C không?
+- Phương pháp Black Box
+  - **Không quan tâm logic bên trong SP**, chỉ quan tâm đầu vào/đầu ra.
+  - Mô hình **Given-When-Then:**
+    - **Given:** Chuẩn bị CSDL với dữ liệu.
+    - **When:** Thực thi nghiệp vụ, store procedure.
+    - **Then:** Xác minh trạng thái của CSDL.
 
 ---
 <!-- _class: navbar -->
@@ -662,7 +660,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 
 ### **Ưu điểm**
 - **Mã nguồn mở (GPL):** Hoàn toàn miễn phí.
-- **Đa nền tảng:** Hỗ trợ 7+ loại CSDL khác nhau (Oracle, SQL Server, MySQL, DB2, PostgreSQL...).
+- **Đa nền tảng:** Hỗ trợ nhiều loại CSDL khác nhau (Oracle, SQL Server, MySQL, DB2, PostgreSQL...).
 - **Dễ tiếp cận:** Không yêu cầu kỹ năng lập trình sâu, phù hợp cho nhiều vai trò trong team.
 - **Tích hợp CI/CD:** Có thể chạy qua command-line, JUnit, Maven.
 
@@ -670,7 +668,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <div class=rdiv>
 
 ### **Nhược điểm**
-- **Yêu cầu nhiều Runtime:** Cần Java và .NET 2.0 (tùy cấu hình).
+- **Yêu cầu nhiều môi trường Runtime:** Cần Java và .NET 2.0 (tùy cấu hình).
 - **Cấu hình phức tạp:** Phải tự cài JDBC drivers, setup FitNesse.
 - **Cộng đồng nhỏ hơn:** Ít tài liệu so với các framework phổ biến.
 
