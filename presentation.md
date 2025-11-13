@@ -834,6 +834,18 @@ Demo tập trung vào kịch bản xử lý đơn hàng, bao gồm:
 
 ---
 
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Link Youtube Demo
+
+Thực hiện test trên kịch bản với hai công cụ:
+
+- dbFit: https://youtu.be/s4oSxgitSgA 
+- tSQLt: https://youtu.be/DRxOTRa_DXs
+
+---
+
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
