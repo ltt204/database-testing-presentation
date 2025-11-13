@@ -570,7 +570,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 - Tạo dữ liệu kiểm thử chất lượng cao là nền tảng cho việc kiểm thử CSDL hiệu quả.
 - Dữ liệu cần đảm bảo: tính đa dạng, đúng ràng buộc, phân phối gần thực tế, và khối lượng phù hợp với mục đích kiểm thử.
 
-**Mục đích sử ddụng:**
+**Mục đích sử dụng:**
 - **Load/Performance Testing:** Tạo khối lượng lớn dữ liệu để kiểm thử hiệu năng.
 - **Functional Testing:** Tạo dữ liệu đa dạng để kiểm tra các trường hợp edge cases.
 - **Security & Compliance:** Dùng dữ liệu tổng hợp thay vì dữ liệu production để tránh rò rỉ thông tin nhạy cảm.
