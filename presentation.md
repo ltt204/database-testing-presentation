@@ -311,7 +311,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
-- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp (realistic, với referential integrity, đủ khối lượng) là rất quan trọng nhưng cũng đầy thách thức.
+- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp (thực tế, đảm bảo về các mối quan hệ, đủ khối lượng) là rất quan trọng nhưng cũng đầy thách thức.
 - **Kiến thức về SQL:** Người kiểm thử cần có hiểu biết tốt về SQL và các khái niệm CSDL.
 - **Cô lập môi trường thử nghiệm:** Đảm bảo môi trường thử nghiệm được tách biệt hoàn toàn với môi trường sản phẩm.
 - **Chi phí và Thời gian:** Kiểm thử CSDL có thể tốn kém và mất nhiều thời gian, đặc biệt với các hệ thống lớn.
@@ -692,15 +692,10 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## DbFit - Đặc điểm nổi bật
+## DBFit - Giao diện người dùng
 
-**Test case dạng Bảng (Table-based)**
+![Database Schema](assets/dbfit_ui.png)
 
-**Dễ đọc, dễ hiểu**
-
-**Kết quả trực quan**
-
-[đợi thêm ảnh]
 
 ---
 
@@ -905,7 +900,7 @@ Thực hiện test trên kịch bản với hai công cụ:
   - Validate input test data trước khi chạy.
   - Dùng mock/seed data gần thực tế: sử dụng data generation tools (Databene Benerator, IRI RowGen), anonymized production samples.
   - Thực hiện data‑driven tests với bộ dữ liệu đại diện cho các phân vùng và biên.
-  - Đảm bảo dữ liệu test tuân thủ referential integrity và realistic distributions.
+  - Đảm bảo dữ liệu test tuân thủ các mối quan hệ và phân phối thực tế.
 
 - Tự động hóa test execution:
 
@@ -960,6 +955,16 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 - [DbFit Tutorial](https://www.kiv.zcu.cz/~herout/db/dbfit-tutorial.pdf) [truy cập: Oct. 23, 2025]
 
 ---
+
+## Tài liệu 
+
+<div style="text-align: center;">
+<img src="assets/frame.png" width="400" />
+</div>
+
+---
+
+
 
 <!-- _class: lastpage -->
 <!-- _footer: "" -->
