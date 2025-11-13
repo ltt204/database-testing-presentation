@@ -53,7 +53,7 @@ Speakers:
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-# Tổng quan
+## Tổng quan
 
 ---
 
@@ -64,8 +64,8 @@ Speakers:
 
 - **Cơ sở dữ liệu (CSDL)**
 
-  - Là một tập hợp dữ liệu có cấu trúc được lưu trữ và quản lý bởi Hệ quản trị cơ sở dữ liệu (DBMS).
-  - Ví dụ: MySQL, PostgreSQL, SQL Server, Oracle.
+  - CSDL quan hệ: Là một tập hợp dữ liệu có cấu trúc được lưu trữ và quản lý bởi Hệ quản trị cơ sở dữ liệu (DBMS). Ví dụ: MySQL, PostgreSQL, SQL Server, Oracle.
+  - CSDL NoSQL: Là loại CSDL không sử dụng mô hình quan hệ truyền thống, thường dùng để lưu trữ dữ liệu phi cấu trúc hoặc bán cấu trúc. Ví dụ: MongoDB, Cassandra, Redis.
 
 - **Kiểm thử CSDL**
   - Là quá trình verify và validate chất lượng, chức năng, hiệu suất và bảo mật của CSDL.
@@ -83,7 +83,7 @@ Speakers:
 
 ## Mục đích
 
-- **Database Testing** là quá trình verify và validate chất lượng, chức năng, hiệu suất và bảo mật của hệ thống CSDL.
+- **Database Testing** là quá trình verify (xác minh) và validate (xác thực) chất lượng, chức năng, hiệu suất và bảo mật của hệ thống CSDL.
 - **So với UI Testing:**
   - UI Testing tập trung vào những gì người dùng thấy (giao diện, bố cục, tương tác).
   - Database Testing tập trung vào dữ liệu (logic xử lí, tính toán), đảm bảo dữ liệu chính xác, toàn vẹn, an toàn.
@@ -127,7 +127,7 @@ Speakers:
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-# Các loại kiểm thử
+## Các loại kiểm thử
 
 ---
 
@@ -214,25 +214,27 @@ Speakers:
 
 <div class=ldiv>
 
-- **Hiệu năng (Performance):**
+**Hiệu năng (Performance)**
 
-  - **Load test:** Đánh giá hiệu suất CSDL dưới tải trọng dự kiến, đo thời gian phản hồi truy vấn.
-  - **Stress test:** Xác định điểm gãy (breaking point) của CSDL bằng cách tạo tải ảo rất lớn vào CSDL.
+- **Load test:** Đánh giá hiệu suất CSDL dưới tải thiết kế, đo thời gian phản hồi truy vấn.
+- **Stress test:** Xác định điểm gãy (breaking point) của CSDL bằng cách tạo tải ảo rất lớn vào CSDL.
 
-- **Bảo mật (Security):**
-  - Ngăn chặn các lỗ hổng phổ biến như **SQL Injection**.
-  - Xác thực quyền truy cập, đảm bảo người dùng chỉ thấy dữ liệu được phép.
+**Bảo mật (Security)**
+
+- Ngăn chặn các lỗ hổng phổ biến như **SQL Injection**.
+- Xác thực quyền truy cập, đảm bảo người dùng chỉ thấy dữ liệu được phép.
 
 </div>
 <div class=rdiv>
 
-- **Khả năng Phục hồi (Recovery):**
+**Sao lưu & phục hồi (Backup & Recovery)**
 
-  - Xác minh việc sao lưu (backup) và phục hồi (restore) dữ liệu hoạt động đúng.
-  - Xác minh CSDL có thể được phục hồi thành công từ các bản sao lưu (backups) sau sự cố.
+- Xác minh việc sao lưu (backup) và phục hồi (restore) dữ liệu hoạt động đúng.
+- Xác minh CSDL có thể được phục hồi thành công từ các bản sao lưu (backups) sau sự cố.
 
-- **Tương thích (Compatibility):**
-  - Đảm bảo CSDL hoạt động ổn định trên các phiên bản DBMS, hệ điều hành, và nền tảng được dùng để triển khai.
+**Tương thích (Compatibility)**
+
+- Đảm bảo CSDL hoạt động ổn định trên các phiên bản DBMS, hệ điều hành, và nền tảng được dùng để triển khai.
 
 </div>
 
@@ -253,7 +255,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-# Quy trình kiểm thử
+## Quy trình kiểm thử
 
 ---
 
@@ -299,7 +301,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-# Thách thức
+## Thách thức
 
 ---
 
@@ -309,7 +311,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Thách thức** *Công cụ* *Kết luận* -->
 
 - **Dữ liệu lớn và phức tạp:** Việc kiểm thử với khối lượng dữ liệu lớn có thể rất khó khăn và tốn thời gian.
-- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp là rất quan trọng nhưng cũng đầy thách thức.
+- **Quản lý dữ liệu thử nghiệm:** Tạo và quản lý dữ liệu thử nghiệm phù hợp (thực tế, đảm bảo về các mối quan hệ, đủ khối lượng) là rất quan trọng nhưng cũng đầy thách thức.
 - **Kiến thức về SQL:** Người kiểm thử cần có hiểu biết tốt về SQL và các khái niệm CSDL.
 - **Cô lập môi trường thử nghiệm:** Đảm bảo môi trường thử nghiệm được tách biệt hoàn toàn với môi trường sản phẩm.
 - **Chi phí và Thời gian:** Kiểm thử CSDL có thể tốn kém và mất nhiều thời gian, đặc biệt với các hệ thống lớn.
@@ -319,7 +321,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-# Công cụ kiểm thử
+## Công cụ kiểm thử
 
 ---
 
@@ -350,7 +352,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: cols-2 navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-## I. Phạm vi & Loại hình Kiểm thử
+## I. Phạm vi & Loại hình Kiểm thử (1/2)
 
 <div class=ldiv>
 
@@ -364,23 +366,42 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
   - Xác minh logic nghiệp vụ và thao tác CRUD.
   - Công cụ: tSQLt (Unit Test), DbFit (Acceptance Test).
 
+</div>
+<div class=rdiv>
+
 - **Kiểm thử Cấu trúc (Structural):**
 
   - So sánh và xác thực schema, bảng, cột, khóa...
   - Công cụ: Redgate SQL Compare.
 
-</div>
-<div class=rdiv>
-
-- **Kiểm thử Dữ liệu và ETL:**
+- **Kiểm thử Dữ liệu và ETL**
 
   - So sánh dữ liệu giữa nguồn và đích, đảm bảo tính toàn vẹn.
   - Công cụ: QuerySurge.
 
-- **Kiểm thử Bảo mật (Security):**
+</div>
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## I. Phạm vi & Loại hình Kiểm thử (2/2)
+
+<div class=ldiv>
+
+- **Kiểm thử Bảo mật (Security)**
   - Phát hiện các lỗ hổng bảo mật, đặc biệt là SQL Injection.
   - Kiểm tra về phân quyền truy cập dữ liệu.
   - Công cụ: SQLMap (SQL Injection), Các công cụ functional testing (dùng query kiểm tra phân quyền).
+
+</div>
+<div class=rdiv>
+
+- **Tạo test data**
+
+  - Tạo dữ liệu giả lập/khối lượng lớn cho kiểm thử tải, hiệu năng.
+  - Công cụ: Databene Benerator, IRI RowGen.
 
 </div>
 
@@ -409,15 +430,13 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <!-- _class: cols-2 navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
 
-presen
-
 ## III. Tự động hóa & khả năng tích hợp
 
 <div class=ldiv>
 
 - **Tích hợp CI/CD:**
 
-  - Khả năng chạy qua dòng lệnh (CLI) và xuất báo cáo để tích hợp vào Jenkins, GitLab CI.
+  - Khả năng chạy qua dòng lệnh (CLI) và xuất báo cáo để tích hợp vào Jenkins, GitLab CI, Azure DevOps.
   - Điều này giúp tự động hóa việc kiểm thử trong quy trình phát triển phần mềm.
 
 - **Mocking:**
@@ -430,9 +449,27 @@ presen
 - **Quản lý dữ liệu test:**
   - Hỗ trợ thiết lập dữ liệu mẫu (dataset) trước khi test và dọn dẹp (teardown) sau đó.
   - Công cụ: _DBUnit_, _NoSQLUnit_ sử dụng file XML/JSON để quản lí và xuất báo cáo.
+  - Data generation tools (_Databene Benerator_, _IRI RowGen_) giúp tạo dữ liệu test chất lượng cao.
   - Việc hỗ trợ này giúp đội ngũ dễ dàng trong việc quan sát và phân tích kết quả test để nhanh chóng sửa lỗi
 
 </div>
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+**Ứng dụng Database Testing trong CI/CD**
+
+1. **Commit Code:** Developer commit thay đổi CSDL (schema, SP, migrations) lên Git.
+2. **Build & Deploy:** CI server deploy CSDL phiên bản mới lên môi trường test.
+3. **Test Execution:**
+   - Unit Tests (_tSQLt_): Kiểm tra logic bên trong SP, Function, Trigger.
+   - Acceptance Tests (_DbFit_): Xác minh các luồng nghiệp vụ end-to-end.
+   - Performance Tests (_JMeter, HammerDB_): Đánh giá hiệu năng dưới tải.
+4. **Report & Feedback:**
+   - Xuất báo cáo (XML, HTML, JUnit format).
+   - Nếu có test FAIL → Dừng build và gửi thông báo.
 
 ---
 
@@ -456,8 +493,11 @@ presen
 <div class=rdiv>
 
 - **Giao diện và Tính dễ sử dụng:**
+
   - Kịch bản test có dễ đọc, dễ hiểu không?
-  - **Ví dụ:** _DbFit_ dùng bảng, phù hợp cho cả BA, QA.
+  - Viết một test mới có đơn giản không?
+
+  **Ví dụ:** _DbFit_ dùng bảng, dễ sử dụng cho nhiều đối tượng, từ dev, QA/QC đến cả BA.
 
 ## </div>
 
@@ -482,18 +522,18 @@ presen
 <div class=ldiv>
 
 - **Redgate SQL Compare**
-  - **Là gì:** Công cụ thương mại mạnh mẽ để so sánh schema CSDL.
+  - Là công cụ trả phí mạnh mẽ để so sánh schema CSDL.
   - **Chức năng:** Tìm và đồng bộ hóa sự khác biệt về schema (bảng, cột, view...) giữa các môi trường (VD: DEV vs. PROD).
-  - **Chi phí:** Trả phí (Thương mại).
+  - **Chi phí:** Trả phí (Commercial).
 
 </div>
 
 <div class=rdiv>
 
 - **ApexSQL Diff**
-  - **Là gì:** Công cụ thương mại tương tự Redgate.
+  - Là công cụ trả phí tương tự Redgate.
   - **Chức năng:** So sánh, phát hiện sự khác biệt trong cả schema và dữ liệu.
-  - **Chi phí:** Trả phí (Thương mại).
+  - **Chi phí:** Trả phí (Commercial).
 
 </div>
 
@@ -505,8 +545,9 @@ presen
 ## Functional Testing (Unit test)
 
 - **tSQLt:** Framework mã nguồn mở cho SQL Server để thực hiện Unit Test.
-- **DbFit:** Hỗ trợ kiểm thử CSDL qua các bảng quyết định (decision tables), dễ dàng cho cả tester và BA.
+- **DbFit:** Hỗ trợ kiểm thử CSDL qua giao diện các bảng quyết định (decision tables), dễ dàng sủ dụng với các đối tượng khác nhau.
 - **DbUnit:** Mở rộng của JUnit, chuyên dùng để quản lý trạng thái CSDL giữa các lần chạy test.
+- **NoSQLUnit:** Tương tự DbUnit nhưng dành cho CSDL NoSQL như MongoDB, Cassandra.
 
 ---
 
@@ -539,10 +580,271 @@ presen
 
 ---
 
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Data Generation Tools
+
+**Tầm quan trọng của Data Generation:**
+
+- Tạo dữ liệu kiểm thử chất lượng cao là nền tảng cho việc kiểm thử CSDL hiệu quả.
+- Dữ liệu cần đảm bảo: tính đa dạng, đúng ràng buộc, phân phối gần thực tế, và khối lượng phù hợp với mục đích kiểm thử.
+
+**Mục đích sử dụng:**
+
+- **Load/Performance Testing:** Tạo khối lượng lớn dữ liệu để kiểm thử hiệu năng.
+- **Functional Testing:** Tạo dữ liệu đa dạng để kiểm tra các trường hợp edge cases.
+- **Security & Compliance:** Dùng dữ liệu tổng hợp thay vì dữ liệu production để tránh rò rỉ thông tin nhạy cảm.
+
+---
+
 <!-- _class: trans -->
 <!-- _paginate: "" -->
 
-# Best practices & kết luận
+## Công cụ thử nghiệm
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## tSQLt - Framework Unit Test cho SQL Server (1/2)
+
+- **tSQLt** là framework **Unit Test** mã nguồn mở dành riêng cho **Microsoft SQL Server**.
+- Cho phép lập trình viên viết và thực thi test case tự động bằng ngôn ngữ **T-SQL**.
+- Phương pháp **White Box Testing**, tập trung xác minh logic bên trong code CSDL.
+
+**Nguyên lí: Tính Cô lập (Isolation)**
+
+- Mỗi test được bọc trong transaction và tự động `ROLLBACK` sau khi chạy, đảm bảo CSDL luôn ở trạng thái chuẩn để tiếp tục chạy các bộ test khác.
+- Các đối tượng đặc trưng:
+  - `FakeTable`: Tạo bảng giả không có ràng buộc, khóa ngoại, trigger.
+  - `SpyProcedure`: Thay thế SP thật bằng một SP mock để kiểm tra các thao tác gọi SP.
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## tSQLt - Mô hình Arrange-Act-Assert
+
+**Quy trình kiểm thử AAA**
+
+- **Arrange:**
+
+  - Giả lập bảng/SP bằng `FakeTable` và `SpyProcedure`.
+  - Chuẩn bị dữ liệu test và kết quả mong đợi.
+
+- **Act:**
+
+  - Thực thi SP hoặc Function cần kiểm thử.
+
+- **Assert:**
+  - So sánh kết quả thực tế với kỳ vọng bằng `AssertEqualsTable`.
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## tSQLt - Ưu điểm & Nhược điểm
+
+<div class=ldiv>
+
+**Ưu điểm**
+
+- Mã nguồn mở, hoàn toàn miễn phí.
+- Hộ trợ regression test dễ dàng.
+- Phát hiện lỗi ngay tại tầng CSDL, trước khi backend gọi đến.
+
+- **Hỗ trợ CI/CD:**
+  - Hỗ trợ CLI để build script pipeline.
+  - Tích hợp test report vào pipeline.
+
+</div>
+<div class=rdiv>
+
+**Nhược điểm**
+
+- **Chỉ hỗ trợ SQL Server:** Không dùng được cho các CSDL khác Oracle, MySQL, PostgreSQL.
+
+</div>
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## DbFit - Kiểm thử Chấp nhận cho CSDL
+
+- **DbFit** là framework mã nguồn mở cho Acceptance Testing CSDL.
+- Được xây dựng trên **FIT/FitNesse**.
+- Hỗ trợ **đa nền tảng:** Oracle, SQL Server, MySQL, DB2, PostgreSQL, HSQLDB, Derby.
+- Phương pháp Black Box
+  - **Không quan tâm logic bên trong SP**, chỉ quan tâm đầu vào/đầu ra.
+  - Mô hình **Given-When-Then:**
+    - **Given:** Chuẩn bị CSDL với dữ liệu.
+    - **When:** Thực thi nghiệp vụ, store procedure.
+    - **Then:** Xác minh trạng thái của CSDL.
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## DBFit - Giao diện người dùng
+
+![Database Schema](assets/dbfit_ui.png)
+
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## DbFit - Ưu điểm & Nhược điểm
+
+<div class=ldiv>
+
+**Ưu điểm**
+
+- **Mã nguồn mở (GPL):** Hoàn toàn miễn phí.
+- **Đa nền tảng:** Hỗ trợ nhiều loại CSDL khác nhau (Oracle, SQL Server, MySQL, DB2, PostgreSQL...).
+- **Dễ tiếp cận:** Không yêu cầu kỹ năng lập trình sâu, phù hợp cho nhiều vai trò trong team.
+- **Tích hợp CI/CD:** Có thể chạy qua command-line, JUnit, Maven.
+
+</div>
+<div class=rdiv>
+
+**Nhược điểm**
+
+- **Yêu cầu nhiều môi trường Runtime:** Cần Java và .NET 2.0 (tùy cấu hình).
+- **Cấu hình phức tạp:** Phải tự cài JDBC drivers, setup FitNesse.
+
+</div>
+
+---
+
+<!-- _class: trans -->
+<!-- _paginate: "" -->
+
+## Demo
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## User Story & Lược đồ CSDL
+
+**User Story**
+
+Demo tập trung vào kịch bản xử lý đơn hàng, bao gồm:
+
+- Xác thực dữ liệu đầu vào
+- Kiểm tra tính toàn vẹn ràng buộc (constraints)
+- Kiểm tra tồn kho (Products)
+- Cập nhật trạng thái đơn hàng (Orders)
+- Đảm bảo quy tắc bảo mật
+
+---
+
+## Schema
+
+![Database Schema](assets/db.png)
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Kịch bản (1/2)
+
+<div class=ldiv>
+
+**1. Functional Testing**
+
+- **Setup:** Store Procedures
+
+  - `usp_CalculateOrderTotal`: Tính tổng tiền
+  - `usp_CompleteOrder`: Hoàn tất đơn hàng
+
+- **Test Cases:**
+  - Pending → Completed, trừ tồn kho, tính tổng tiền
+  - Hết hàng → Trả lỗi, giữ nguyên trạng thái
+  - Đã hoàn tất → Ngăn xử lý trùng
+
+</div>
+<div class=rdiv>
+
+**2. Constraint Testing**
+
+- **Setup:** Bổ sung ràng buộc vào schema
+
+- **Test Cases:**
+  - **CHECK:** StockQuantity < 0, Quantity = 0, UnitPrice < 0
+  - **UNIQUE:** Email trùng lặp
+  - **FOREIGN KEY:** UserID không tồn tại, xóa User có Orders
+  - **DEFAULT/NULL:** Status = 'Pending', ProductName NOT NULL
+
+</div>
+
+---
+
+<!-- _class: cols-2 navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Kịch bản (2/2)
+
+<div class=ldiv>
+
+**3. Security Testing**
+
+- **Setup:**
+  3 roles: Admin, User, Read-only, grant quyền tương ứng. Kích hoạt Row-Level Security (RLS) trên Orders
+
+- **Test Cases:**
+  - Admin: SELECT tất cả, UPDATE Products
+  - User RLS USING: Chỉ thấy đơn hàng của mình
+  - User RLS WITH CHECK: Bị chặn INSERT cho UserID khác
+  - Read-only: SELECT được, bị chặn UPDATE/DELETE
+
+</div>
+<div class=rdiv>
+
+**4. Regression Testing**
+
+- **Setup:**
+
+  - Bảng `ProductPriceHistory`
+  - v1: `usp_AddOrderItem_v1` – Giá truyền thủ công
+  - v2: `usp_AddOrderItem_v2` – Giá tự động từ Products
+
+- **Test Cases:**
+  - v2 tự động lấy UnitPrice, ghi lịch sử
+  - Gọi v2 với tham số v1 → Lỗi "too many arguments"
+  - Giá thay đổi → v2 lấy đúng giá mới
+
+</div>
+
+---
+
+<!-- _class: navbar -->
+<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* **Công cụ** *Kết luận* -->
+
+## Link Youtube Demo
+
+Thực hiện test trên kịch bản với hai công cụ:
+
+- dbFit: https://youtu.be/s4oSxgitSgA 
+- tSQLt: https://youtu.be/DRxOTRa_DXs
+
+---
+
+<!-- _class: trans -->
+<!-- _paginate: "" -->
+
+## Best practices & kết luận
 
 ---
 
@@ -568,7 +870,7 @@ presen
 <!-- _class: navbar -->
 <!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* *Thách thức* *Công cụ* **Kết luận** -->
 
-## Best Practicesc (2/4)
+## Best Practices (2/4)
 
 - Chú ý ETL operations:
 
@@ -596,8 +898,9 @@ presen
 - Sử dụng dữ liệu đầu vào:
 
   - Validate input test data trước khi chạy.
-  - Dùng mock/seed data gần thực tế: generator tools, anonymized production samples.
+  - Dùng mock/seed data gần thực tế: sử dụng data generation tools (Databene Benerator, IRI RowGen), anonymized production samples.
   - Thực hiện data‑driven tests với bộ dữ liệu đại diện cho các phân vùng và biên.
+  - Đảm bảo dữ liệu test tuân thủ các mối quan hệ và phân phối thực tế.
 
 - Tự động hóa test execution:
 
@@ -649,8 +952,19 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 - [Gunashree RS — Database Tests: Guide to Ensuring Data Integrity and Performance](https://www.devzery.com/post/comprehensive-guide-to-database-tests-strategies-andbest-practices) [truy cập: Oct. 22, 2025]
 - [David Ekete — Advanced Test Data Management: Techniques and Best Practices](<https://blog.magicpod.com/advanced-test-data-management-techniques-and-best-practices#:~:text=Test%20data%20management%20(TDM)%20involves,scenarios%20for%20software%20performance%20insights>) [truy cập: Oct. 23, 2025]
 - [HammerDB Documentation](https://www.devzery.com/post/comprehensive-guide-to-database-tests-strategies-and-best-practices) [truy cập: Oct. 23, 2025]
+- [DbFit Tutorial](https://www.kiv.zcu.cz/~herout/db/dbfit-tutorial.pdf) [truy cập: Oct. 23, 2025]
 
 ---
+
+## Tài liệu 
+
+<div style="text-align: center;">
+<img src="assets/frame.png" width="400" />
+</div>
+
+---
+
+
 
 <!-- _class: lastpage -->
 <!-- _footer: "" -->
@@ -658,65 +972,3 @@ RPO: lượng data chấp nhận mất khi gặp sự cố. Tức là: Sẽ ch�
 ###### Q&A
 
 ---
-
-<!-- _class: trans -->
-<!-- _paginate: "" -->
-
-## Các kỹ thuật kiểm thử
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## SQL Queries
-
-- **Mục tiêu:**
-
-  - Đảm bảo các câu lệnh SQL trả về kết quả _chính xác_ và _toàn vẹn_.
-  - Kiểm tra _hiệu suất_ của truy vấn.
-
-- **Bao gồm:**
-  - **Kiểm tra tính đúng đắn:** So sánh kết quả của truy vấn với dữ liệu mong đợi, đảm bảo rằng dữ liệu khi thay đổi trong database phải chính xác.
-  - **Kiểm tra hiệu suất:** Phân tích `Execution Plan` để xác định các truy vấn chậm, thiếu index... Từ những phân tích này, tối ưu hóa câu lệnh SQL để cài thiện hiệu suất.
-  - **Kiểm tra với dữ liệu lớn:** Đánh giá thời gian phản hồi khi CSDL có hàng triệu bản ghi.
-  - **Kiểm tra bảo mật:** Đảm bảo truy vấn không dễ bị tấn công SQL Injection.
-
-<!-- Speaker notes
-- Dữ liệu không chỉ cần đúng. Trong thế giới phần mềm hiện đại, hiệu suất là rất quan trọng. Hiệu suất không chỉ là nhanh chậm, nó còn gây ảnh hưởng đến tính sẵn sàng và khả năng mở rộng của hệ thống. Đặc biệt là ảnh hưởng đến chi phí.
--
- -->
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## Data-Driven
-
-- **Phân vùng Tương đương (EP):**
-  - Chia dữ liệu đầu vào thành các nhóm (lớp) mà hệ thống xử lý tương tự nhau.
-  - **Ví dụ:** Với trường `tuổi`, các lớp có thể là:
-    - `Âm` (không hợp lệ)
-    - `0-17` (trẻ em)
-    - `18-60` (người lớn)
-    - `> 60` (người cao tuổi)
-  - Chỉ cần chọn một giá trị đại diện trong mỗi lớp để kiểm thử.
-
----
-
-<!-- _class: navbar -->
-<!-- _header: \\ ***FIT@HCMUS*** *Tổng quan* *Loại kiểm thử* *Quy trình* **Kỹ thuật** *Thách thức* *Công cụ* *Kết luận* -->
-
-## Kỹ thuật Data-Driven
-
-- **Phân tích Giá trị Biên (BVA):**
-  - Tập trung kiểm thử tại các giá trị biên của mỗi phân vùng.
-  - **Ví dụ:** Với lớp `18-60`, các giá trị biên cần kiểm thử là:
-    - `17` (ngay dưới)
-    - `18` (biên dưới)
-    - `19` (ngay trên)
-    - `59` (ngay dưới)
-    - `60` (biên trên)
-    - `61` (ngay trên)
-  - Giúp phát hiện lỗi logic tại các điểm chuyển tiếp.
