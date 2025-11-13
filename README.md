@@ -1,5 +1,6 @@
-# database-testing-presentation
+# Thông tin sinh viên
 
-- For DBML preview, install these two VSCode extensions
-  1. DBML Language Support
-  2. DBML Preview 
+- 22120252 - Giang Đức Nhật
+- 22120368 - Phan Thanh Tiến
+- 22120370 - Nguyễn Bùi Vuơng Tiễn
+- 22120371 - Lý Trọng Tín
