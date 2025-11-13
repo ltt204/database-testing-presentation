@@ -623,6 +623,7 @@ em cần giải thích ỏ đây ạ, trạng thái nghỉ là cái éo gì  -->
 <div class=ldiv>
 
 **Ưu điểm**
+- **Mã nguồn mở (GPL):** Hoàn toàn miễn phí.
 - **Độ tin cậy cao:** Tự tin refactor/tối ưu SP phức tạp mà không sợ làm hỏng logic.
 - **Phát hiện lỗi sớm:** Tìm ra lỗi ngay tại tầng CSDL, trước khi backend gọi đến.
 - **Hỗ trợ CI/CD:**
