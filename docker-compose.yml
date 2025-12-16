@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: orangehrm_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  orangehrm:
+    image: orangehrm/orangehrm:latest
+    container_name: orangehrm_app
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:80" # Visit http://localhost:8080 to complete web installer
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - orangehrm_data:/var/www/html
+    networks:
+      - orangehrm_net
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: orangehrm_phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    ports:
+      - "8081:80" # Optional: phpMyAdmin at http://localhost:8081
+    networks:
+      - orangehrm_net
+
+volumes:
+  db_data:
+  orangehrm_data:
+
+networks:
+  orangehrm_net:
+    driver: bridge
