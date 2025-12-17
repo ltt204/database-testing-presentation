@@ -1,23 +1,25 @@
-const mysql = require("mysql2/promise");
-const { faker } = require("@faker-js/faker");
+import { faker } from "@faker-js/faker";
+import * as mysql from "mysql2/promise";
 
-// Configuration
-const CONFIG = {
-  db: {
-    host: process.env.DB_HOST || "localhost",
-    port: process.env.DB_PORT || 3306,
-    user: process.env.DB_USER || "root",
-    password: process.env.DB_PASS || "orangehrm",
-    database: process.env.DB_NAME || "orangehrm",
-  },
-  generation: {
-    vacancies: 10,
-    candidates: 50,
-    interviewsPerCandidate: { min: 0, max: 3 },
-  },
-};
+function getConfig() {
+  return {
+    db: {
+      host: process.env.MYSQL_HOST || "localhost",
+      port: Number(process.env.MYSQL_PORT || 3310),
+      user: process.env.MYSQL_USER || "root",
+      password: process.env.MYSQL_PASSWORD || "secret",
+      database: process.env.MYSQL_DATABASE || "orangehrm",
+    },
+    generation: {
+      vacancies: Number(process.env.GEN_VACANCIES || 10),
+      candidates: Number(process.env.GEN_CANDIDATES || 50),
+      interviewsPerCandidate: { min: 0, max: 3 },
+    },
+  };
+}
 
-// Job titles and departments for realistic vacancies
+const CONFIG = getConfig();
+
 const JOB_TITLES = [
   "Software Engineer",
   "Senior Developer",
@@ -31,17 +33,6 @@ const JOB_TITLES = [
   "Quality Assurance Engineer",
 ];
 
-const DEPARTMENTS = [
-  "Engineering",
-  "Product",
-  "Design",
-  "Marketing",
-  "Sales",
-  "Human Resources",
-  "Operations",
-];
-
-// Candidate statuses
 const CANDIDATE_STATUSES = {
   APPLICATION_INITIATED: 1,
   SHORTLISTED: 2,
@@ -62,19 +53,18 @@ class OrangeHRMDataGenerator {
 
   async connect() {
     this.connection = await mysql.createConnection(this.config.db);
-    console.log("✅ Connected to database successfully");
+    console.log("Connected to database successfully");
   }
 
   async disconnect() {
     if (this.connection) {
       await this.connection.end();
-      console.log("👋 Disconnected from database");
+      console.log("Disconnected from database");
     }
   }
 
   async getJobTitleId() {
-    // Try to get an existing job title
-    let [rows] = await this.connection.execute(
+    let [rows] = await this.connection.query(
       "SELECT id FROM ohrm_job_title LIMIT 1"
     );
 
@@ -82,25 +72,26 @@ class OrangeHRMDataGenerator {
       return rows[0].id;
     }
 
-    // If no job titles exist, create one
-    const jobTitle = faker.helpers.arrayElement(JOB_TITLES);
-    const [result] = await this.connection.execute(
+    // If no job titles exist, create all titles
+    for (const jobTitle of JOB_TITLES) {
+      await this.connection.query(
       "INSERT INTO ohrm_job_title (job_title, job_description, is_deleted) VALUES (?, ?, ?)",
       [jobTitle, faker.lorem.paragraph(), 0]
-    );
+      );
+    }
 
     return result.insertId;
   }
 
   async getHiringManagerId() {
-    const [rows] = await this.connection.execute(
+    const [rows] = await this.connection.query(
       "SELECT emp_number FROM hs_hr_employee LIMIT 1"
     );
     return rows.length > 0 ? rows[0].emp_number : null;
   }
 
   async generateVacancies() {
-    console.log("\n📋 Generating vacancies...");
+    console.log("Generating vacancies...");
 
     const jobTitleId = await this.getJobTitleId();
     const hiringManagerId = await this.getHiringManagerId();
@@ -122,9 +113,17 @@ class OrangeHRMDataGenerator {
       const jobTitleCode = jobTitleId;
 
       const sql = `
-        INSERT INTO ohrm_job_vacancy 
-        (name, description, status, published_in_feed, job_title_code, hiring_manager_id, no_of_positions, defined_time, updated_time)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO ohrm_job_vacancy (
+          name,
+          description,
+          status,
+          published_in_feed,
+          job_title_code,
+          hiring_manager_id,
+          no_of_positions,
+          defined_time,
+          updated_time
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
       const values = [
@@ -139,16 +138,16 @@ class OrangeHRMDataGenerator {
         updatedTime,
       ];
 
-      const [result] = await this.connection.execute(sql, values);
+      const [result] = await this.connection.query(sql, values);
       vacancyIds.push(result.insertId);
     }
 
-    console.log(`✅ Created ${vacancyIds.length} vacancies`);
+    console.log(`Created ${vacancyIds.length} vacancies`);
     return vacancyIds;
   }
 
   async generateCandidates(vacancyIds) {
-    console.log("\n👥 Generating candidates...");
+    console.log("Generating candidates...");
 
     if (vacancyIds.length === 0) {
       throw new Error("No vacancies available. Please create vacancies first.");
@@ -180,10 +179,18 @@ class OrangeHRMDataGenerator {
         .join(", ");
 
       const sql = `
-        INSERT INTO ohrm_job_candidate 
-        (first_name, middle_name, last_name, email, contact_number, status, comment, 
-         mode_of_application, date_of_application, keywords)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO ohrm_job_candidate (
+          first_name,
+          middle_name,
+          last_name,
+          email,
+          contact_number,
+          status,
+          comment,
+          mode_of_application,
+          date_of_application,
+          keywords
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
       const values = [
@@ -199,16 +206,16 @@ class OrangeHRMDataGenerator {
         keywords,
       ];
 
-      const [result] = await this.connection.execute(sql, values);
+      const [result] = await this.connection.query(sql, values);
       candidateIds.push(result.insertId);
     }
 
-    console.log(`✅ Created ${candidateIds.length} candidates`);
+    console.log(`Created ${candidateIds.length} candidates`);
     return candidateIds;
   }
 
   async generateInterviews(candidateIds, vacancyIds) {
-    console.log("\n📅 Generating interviews...");
+    console.log("Generating interviews...");
 
     let interviewCount = 0;
 
@@ -230,9 +237,12 @@ class OrangeHRMDataGenerator {
           .substring(0, 8);
 
         const sql = `
-          INSERT INTO ohrm_job_interview 
-          (candidate_id, interview_name, interview_date, interview_time)
-          VALUES (?, ?, ?, ?)
+          INSERT INTO ohrm_job_interview (
+            candidate_id,
+            interview_name,
+            interview_date,
+            interview_time
+          ) VALUES (?, ?, ?, ?)
         `;
 
         const values = [
@@ -243,21 +253,21 @@ class OrangeHRMDataGenerator {
         ];
 
         try {
-          await this.connection.execute(sql, values);
+          await this.connection.query(sql, values);
           interviewCount++;
         } catch (error) {
           console.warn(
-            `⚠️  Could not create interview for candidate ${candidateId}: ${error.message}`
+            `Could not create interview for candidate ${candidateId}: ${error.message}`
           );
         }
       }
     }
 
-    console.log(`✅ Created ${interviewCount} interviews`);
+    console.log(`Created ${interviewCount} interviews`);
   }
 
   async generateCandidateHistory(candidateIds) {
-    console.log("\n📜 Generating candidate history...");
+    console.log("Generating candidate history...");
 
     let historyCount = 0;
 
@@ -289,55 +299,55 @@ class OrangeHRMDataGenerator {
         const note = faker.lorem.sentence();
 
         const sql = `
-          INSERT INTO ohrm_job_candidate_history 
-          (candidate_id, action, performed_date, note)
-          VALUES (?, ?, ?, ?)
+          INSERT INTO ohrm_job_candidate_history (
+            candidate_id,
+            action,
+            performed_date,
+            note
+          ) VALUES (?, ?, ?, ?)
         `;
 
         const values = [candidateId, action, performedDate, note];
 
         try {
-          await this.connection.execute(sql, values);
+          await this.connection.query(sql, values);
           historyCount++;
         } catch (error) {
           console.warn(
-            `⚠️  Could not create history for candidate ${candidateId}: ${error.message}`
+            `Could not create history for candidate ${candidateId}: ${error.message}`
           );
         }
       }
     }
 
-    console.log(`✅ Created ${historyCount} history entries`);
+    console.log(`Created ${historyCount} history entries`);
   }
 
   async run() {
     try {
       await this.connect();
 
-      // Start transaction
-      await this.connection.execute("START TRANSACTION");
+      await this.connection.query("START TRANSACTION");
 
       const vacancyIds = await this.generateVacancies();
       const candidateIds = await this.generateCandidates(vacancyIds);
       await this.generateInterviews(candidateIds, vacancyIds);
       await this.generateCandidateHistory(candidateIds);
 
-      // Commit transaction
-      await this.connection.execute("COMMIT");
+      await this.connection.query("COMMIT");
 
-      console.log("\n🎉 Data generation completed successfully!");
-      console.log(`   - Vacancies: ${vacancyIds.length}`);
-      console.log(`   - Candidates: ${candidateIds.length}`);
+      console.log("Data generation completed successfully.");
+      console.log(`- Vacancies: ${vacancyIds.length}`);
+      console.log(`- Candidates: ${candidateIds.length}`);
     } catch (error) {
       // Rollback on error
       try {
-        await this.connection.execute("ROLLBACK");
+        await this.connection.query("ROLLBACK");
         console.error("   Transaction rolled back.");
       } catch (rollbackError) {
         console.error("   Rollback failed:", rollbackError.message);
       }
-
-      console.error("\n❌ Error:", error.message);
+      console.error("Error:", error.message);
       process.exit(1);
     } finally {
       await this.disconnect();
