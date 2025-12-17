@@ -18,22 +18,9 @@ function getConfig() {
   };
 }
 
-const CONFIG = getConfig();
+const config = getConfig();
 
-const JOB_TITLES = [
-  "Software Engineer",
-  "Senior Developer",
-  "Product Manager",
-  "UX Designer",
-  "Data Analyst",
-  "Marketing Manager",
-  "HR Manager",
-  "Sales Executive",
-  "DevOps Engineer",
-  "Quality Assurance Engineer",
-];
-
-const CANDIDATE_STATUSES = {
+const candidateStatuses = {
   APPLICATION_INITIATED: 1,
   SHORTLISTED: 2,
   REJECTED: 3,
@@ -45,10 +32,50 @@ const CANDIDATE_STATUSES = {
   HIRED: 9,
 };
 
-class OrangeHRMDataGenerator {
+const jobTitles = [
+  "Frontend Engineer",
+  "Backend Engineer",
+  "Full Stack Engineer",
+  "Mobile Engineer",
+  "Site Reliability Engineer",
+  "DevOps Engineer",
+  "Data Engineer",
+  "Machine Learning Engineer",
+  "Product Manager",
+  "UI/UX Engineer",
+  "Quality Assurance Engineer",
+  "Security Engineer",
+  "Engineering Manager",
+  "Technical Program Manager",
+  "Customer Success Engineer",
+];
+
+
+class OrangeHRMRecruimentDataGenerator {
   constructor(config) {
     this.config = config;
     this.connection = null;
+  }
+
+  // Small helpers to increase randomness and produce more varied mock data
+  _randomElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  _weightedStatus() {
+    // Make some statuses more likely than others
+    const pool = [
+      candidateStatuses.APPLICATION_INITIATED,
+      candidateStatuses.APPLICATION_INITIATED,
+      candidateStatuses.APPLICATION_INITIATED,
+      candidateStatuses.SHORTLISTED,
+      candidateStatuses.SHORTLISTED,
+      candidateStatuses.INTERVIEW_SCHEDULED,
+      candidateStatuses.INTERVIEW_PASSED,
+      candidateStatuses.REJECTED,
+      candidateStatuses.HIRED,
+    ];
+    return this._randomElement(pool);
   }
 
   async connect() {
@@ -64,52 +91,47 @@ class OrangeHRMDataGenerator {
   }
 
   async getJobTitleId() {
-    let [rows] = await this.connection.query(
-      "SELECT id FROM ohrm_job_title LIMIT 1"
-    );
-
-    if (rows.length > 0) {
-      return rows[0].id;
-    }
-
-    // If no job titles exist, create all titles
-    for (const jobTitle of JOB_TITLES) {
+    const values = jobTitles.map((t) => [t, faker.lorem.paragraph(), 0]);
+    try {
       await this.connection.query(
-      "INSERT INTO ohrm_job_title (job_title, job_description, is_deleted) VALUES (?, ?, ?)",
-      [jobTitle, faker.lorem.paragraph(), 0]
+        "INSERT INTO ohrm_job_title (job_title, job_description, is_deleted) VALUES ?",
+        [values]
       );
+    } catch (error) {
+      console.log("Job titles already exist or insertion issue:", error.message.split('\n')[0]);
     }
 
-    return result.insertId;
+    const [rows] = await this.connection.query("SELECT id FROM ohrm_job_title");
+    const ids = rows.map((r) => r.id);
+    return this._randomElement(ids);
   }
 
   async getHiringManagerId() {
-    const [rows] = await this.connection.query(
-      "SELECT emp_number FROM hs_hr_employee LIMIT 1"
-    );
-    return rows.length > 0 ? rows[0].emp_number : null;
+    // Set HR manager ID to 1
+    return 1;
   }
 
   async generateVacancies() {
     console.log("Generating vacancies...");
-
+    // pick a random job title id for each vacancy to introduce variety
     const jobTitleId = await this.getJobTitleId();
     const hiringManagerId = await this.getHiringManagerId();
 
     const vacancyIds = [];
 
     for (let i = 0; i < this.config.generation.vacancies; i++) {
-      const name = faker.helpers.arrayElement(JOB_TITLES);
+      // build a more varied vacancy name
+      const level = this._randomElement(["Junior", "Mid", "Senior", "Lead"]);
+      const team = this._randomElement(["Platform", "Growth", "Core", "Security", "Data"]);
+      const baseTitle = this._randomElement(jobTitles);
+      const name = `${level} ${baseTitle} - ${team}`;
       const description = faker.lorem.paragraph();
       const definedTime = faker.date
         .future({ years: 1 })
         .toISOString()
         .split("T")[0];
       const numOfPositions = faker.number.int({ min: 1, max: 5 });
-      const updatedTime = new Date()
-        .toISOString()
-        .slice(0, 19)
-        .replace("T", " ");
+      const updatedTime = faker.date.recent().toISOString();
       const jobTitleCode = jobTitleId;
 
       const sql = `
@@ -130,12 +152,13 @@ class OrangeHRMDataGenerator {
         name,
         description,
         1, // Active status
-        1, // Published in feed
+        // sometimes published, sometimes not
+        Math.random() < 0.75 ? 1 : 0,
         jobTitleCode,
         hiringManagerId,
         numOfPositions,
         definedTime,
-        updatedTime,
+        updatedTime.split('T')[0] + ' ' + updatedTime.split('T')[1].substring(0, 8),
       ];
 
       const [result] = await this.connection.query(sql, values);
@@ -154,6 +177,17 @@ class OrangeHRMDataGenerator {
     }
 
     const candidateIds = [];
+    const statusMap = {
+      1: "APPLICATION_INITIATED",
+      2: "SHORTLISTED",
+      3: "REJECTED",
+      4: "INTERVIEW_SCHEDULED",
+      5: "INTERVIEW_PASSED",
+      6: "INTERVIEW_FAILED",
+      7: "JOB_OFFERED",
+      8: "OFFER_DECLINED",
+      9: "HIRED",
+    };
 
     for (let i = 0; i < this.config.generation.candidates; i++) {
       const firstName = faker.person.firstName();
@@ -167,13 +201,11 @@ class OrangeHRMDataGenerator {
         .past({ years: 1 })
         .toISOString()
         .split("T")[0];
-      const status = faker.helpers.arrayElement(
-        Object.values(CANDIDATE_STATUSES)
-      );
+      const status = this._weightedStatus();
       const comment = faker.datatype.boolean() ? faker.lorem.sentence() : null;
       const keywords = faker.helpers
         .arrayElements(
-          ["JavaScript", "Python", "React", "Node.js", "SQL", "AWS", "Docker"],
+          ["JavaScript", "TypeScript", "Python", "React", "Node.js", "Postgres", "MySQL", "AWS", "Docker", "Kubernetes"],
           faker.number.int({ min: 1, max: 4 })
         )
         .join(", ");
@@ -189,8 +221,9 @@ class OrangeHRMDataGenerator {
           comment,
           mode_of_application,
           date_of_application,
-          keywords
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          keywords,
+          added_person
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
       const values = [
@@ -204,10 +237,37 @@ class OrangeHRMDataGenerator {
         1, // Manual mode
         dateOfApplication,
         keywords,
+        1, // added_person set to 1 (HR manager)
       ];
 
       const [result] = await this.connection.query(sql, values);
       candidateIds.push(result.insertId);
+      
+      // Assign candidate to a vacancy ~70% of the time
+      if (Math.random() < 0.7) {
+        const assignedVacancy = this._randomElement(vacancyIds);
+        const candidateVacancySql = `
+          INSERT INTO ohrm_job_candidate_vacancy (
+            candidate_id,
+            vacancy_id,
+            status,
+            applied_date
+          ) VALUES (?, ?, ?, ?)
+        `;
+        const candidateVacancyValues = [
+          result.insertId,
+          assignedVacancy,
+          statusMap[status],
+          dateOfApplication,
+        ];
+        try {
+          await this.connection.query(candidateVacancySql, candidateVacancyValues);
+        } catch (error) {
+          console.warn(
+            `Could not assign candidate ${result.insertId} to vacancy ${assignedVacancy}: ${error.message}`
+          );
+        }
+      }
     }
 
     console.log(`Created ${candidateIds.length} candidates`);
@@ -340,7 +400,6 @@ class OrangeHRMDataGenerator {
       console.log(`- Vacancies: ${vacancyIds.length}`);
       console.log(`- Candidates: ${candidateIds.length}`);
     } catch (error) {
-      // Rollback on error
       try {
         await this.connection.query("ROLLBACK");
         console.error("   Transaction rolled back.");
@@ -355,6 +414,5 @@ class OrangeHRMDataGenerator {
   }
 }
 
-// Run the generator
-const generator = new OrangeHRMDataGenerator(CONFIG);
+const generator = new OrangeHRMRecruimentDataGenerator(config);
 generator.run();
