@@ -64,15 +64,15 @@ def cleanup_database(conn):
         for table in leave_master_tables:
             try:
                 execute_query(conn, f"TRUNCATE TABLE {table}")
-                print(f"SUCCESS: Truncated {table}")
+                print(f"  SUCCESS: Truncated {table}")
             except Exception as e:
-                print(f"WARNING: Truncating {table}: {e}")
+                print(f"  WARNING: Truncating {table}: {e}")
         
     finally:
         # Re-enable foreign key checks
         execute_query(conn, "SET FOREIGN_KEY_CHECKS = 1")
     
-    print("SUCCESS: Cleanup completed - admin account (emp_number=1) preserved\n")
+    print("  SUCCESS: Cleanup completed - admin account (emp_number=1) preserved\n")
 
 def seed_employment_statuses(conn):
     """
