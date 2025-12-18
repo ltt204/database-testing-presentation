@@ -203,3 +203,9 @@ Dưới đây là mô tả mẫu dữ liệu đã được sinh ra thành công 
 ![alt text](assets/PIMDataInApp.png)
 - Với Leave (Leave Module)
 ![alt text](assets/LeaveDataInApp.png)
+
+---
+
+**Báo cáo được lập bởi:** Lý Trọng Tín \
+**Ngày lập:** 18/12/2025  
+**Phiên bản:** 1.0
