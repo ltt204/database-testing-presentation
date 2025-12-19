@@ -1,10 +1,10 @@
-import * as faker from "@faker-js/faker";
+import { faker } from "@faker-js/faker";
 import * as mysql from "mysql2/promise";
 
 function getConfig() {
   return {
     db: {
-      host: process.env.MYSQL_HOST || "db",
+      host: process.env.MYSQL_HOST || "localhost",
       port: Number(process.env.MYSQL_PORT || 3310),
       user: process.env.MYSQL_USER || "root",
       password: process.env.MYSQL_PASSWORD || "secret",
@@ -89,8 +89,13 @@ class OrangeHRMPerformanceGenerator {
    */
   async checkPrequisites() {
     console.log("Fetching existing employees and job titles...");
+    await this.ensureJobTitles();
+    await this.ensureEmployees(10);
+    await this.ensureReviewerGroup();
+    await this.ensureUsersForEmployees();
+    await this.ensureReportingRelationships();
 
-    const [empRows] = await this.connection.execute(`
+    const [empRows] = await this.connection.query(`
       SELECT
         emp_number,
         job_title_code
@@ -99,7 +104,7 @@ class OrangeHRMPerformanceGenerator {
     `);
     this.employees = empRows || [];
 
-    const [jobRows] = await this.connection.execute(`
+    const [jobRows] = await this.connection.query(`
       SELECT
         id
       FROM ohrm_job_title
@@ -108,41 +113,184 @@ class OrangeHRMPerformanceGenerator {
     this.jobTitles = (jobRows || []).map((row) => row.id);
 
     if (this.employees.length < 10) {
-      logger.error("Too few employees. Please run script to generate employees first.")
+      console.error("Warning: Too few employees (need at least 10).")
     }
 
-    if (this.jobTitles.length.length < 5) {
-      logger.error("Too few job titles. Please run script to generate job titles first.")
+    if (this.jobTitles.length < 5) {
+      console.error("Warning: Too few job titles (need at least 5).")
     }
-    // // Create sample employees if less than 2 exist
-    // if (this.employees.length < 2) {
-    //   console.log("Creating sample employees...");
-    //   for (let i = 0; i < 2 - this.employees.length; i++) {
-    //     const firstName = faker.person.firstName();
-    //     const lastName = faker.person.lastName();
-    //     const jobTitleCode = this.jobTitles.length > 0 ? this.jobTitles[0] : 1;
-
-    //     const [result] = await this.connection.execute(`
-    //       INSERT INTO hs_hr_employee (
-    //         emp_firstname,
-    //         emp_lastname,
-    //         emp_middle_name,
-    //         job_title_code
-    //       ) VALUES (?, ?, ?, ?)
-    //     `, [firstName, lastName, "", jobTitleCode]);
-
-    //     this.employees.push({
-    //       emp_number: result.insertId,
-    //       job_title_code: jobTitleCode,
-    //     });
-    //   }
-    // }
-
-    // if (this.jobTitles.length === 0) {
-    //   throw new Error("No Job Titles found. Please add Job Titles first.");
-    // }
 
     console.log(`Found ${this.employees.length} employees and ${this.jobTitles.length} job titles.`);
+  }
+
+  async ensureJobTitles() {
+    const titles = [
+      "Frontend Engineer",
+      "Backend Engineer",
+      "Full Stack Engineer",
+      "Mobile Engineer",
+      "Site Reliability Engineer",
+      "DevOps Engineer",
+      "Data Engineer",
+      "Machine Learning Engineer",
+      "Product Manager",
+      "UI/UX Engineer",
+    ];
+
+    const [existing] = await this.connection.query(
+      "SELECT id, LOWER(job_title) as jt FROM ohrm_job_title"
+    );
+    const existingMap = new Map(existing.map((r) => [r.jt, r.id]));
+    const inserted = [];
+    
+    for (const t of titles) {
+      const key = t.toLowerCase();
+      if (!existingMap.has(key)) {
+        const [res] = await this.connection.query(
+          "INSERT INTO ohrm_job_title (job_title, job_description, is_deleted) VALUES (?, ?, ?)",
+          [t, "Auto-generated job title", 0]
+        );
+        inserted.push({ title: t, id: res.insertId });
+      }
+    }
+    if (inserted.length) {
+      console.log("Inserted job titles:", inserted.map((t) => t.title).join(", "));
+    }
+  }
+
+  async ensureEmployees(count) {
+    const [rows] = await this.connection.query(
+      "SELECT emp_number FROM hs_hr_employee WHERE termination_id IS NULL"
+    );
+    const toCreate = Math.max(0, count - rows.length);
+    const created = [];
+    
+    if (toCreate > 0) {
+      for (let i = 0; i < toCreate; i++) {
+        const [res] = await this.connection.query(
+          "INSERT INTO hs_hr_employee (emp_firstname, emp_lastname, emp_middle_name, job_title_code) VALUES (?, ?, ?, ?)",
+          [faker.person.firstName(), faker.person.lastName(), "", 1]
+        );
+        created.push(res.insertId);
+      }
+    }
+    
+    if (created.length) {
+      console.log("Created employees:", created.join(", "));
+    }
+  }
+
+  async ensureReviewerGroup() {
+    try {
+      const [rows] = await this.connection.query(
+        "SELECT id FROM ohrm_reviewer_group WHERE LOWER(name) LIKE '%supervisor%' LIMIT 1"
+      );
+      if (rows.length) {
+        console.log("Supervisor reviewer group id:", rows[0].id);
+        return rows[0].id;
+      }
+      
+      const [res] = await this.connection.query(
+        "INSERT INTO ohrm_reviewer_group (name, description) VALUES (?, ?)",
+        ["Supervisor", "Auto generated group by script"]
+      );
+      console.log("Created supervisor reviewer group id:", res.insertId);
+      return res.insertId;
+    } catch (e) {
+      console.warn("ohrm_reviewer_group missing or different schema, skipping group creation");
+      return 1;
+    }
+  }
+
+  async ensureUsersForEmployees() {
+    try {
+      const [userColsDesc] = await this.connection.query("DESCRIBE ohrm_user");
+      const userCols = userColsDesc.map((r) => r.Field);
+      const employeeCol = userCols.find((c) =>
+        ["employee_id", "emp_number", "employee_number"].includes(c)
+      );
+      
+      if (!employeeCol) return [];
+
+      const [emps] = await this.connection.query(
+        "SELECT emp_number FROM hs_hr_employee WHERE emp_number NOT IN (SELECT DISTINCT " +
+          employeeCol +
+          " FROM ohrm_user)"
+      );
+      
+      const created = [];
+      for (const e of emps) {
+        const username = `user${e.emp_number}`;
+        const cols = ["user_name", employeeCol, "user_role_id", "deleted"];
+        const vals = [username, e.emp_number, 2, 0].slice(0, cols.length);
+        const placeholders = cols.map(() => "?").join(",");
+        await this.connection.query(
+          `INSERT INTO ohrm_user (${cols.join(",")}) VALUES (${placeholders})`,
+          vals
+        );
+        created.push(e.emp_number);
+      }
+      
+      if (created.length) {
+        console.log("Created users for employees:", created.join(", "));
+      }
+      return created;
+    } catch (e) {
+      console.error(e);
+      console.warn("ohrm_user not present or schema not supported, skipping user creation");
+      return [];
+    }
+  }
+
+  async ensureReportingRelationships() {
+    try {
+      // check table
+      const [tables] = await this.connection.query(
+        "SELECT table_name FROM information_schema.tables WHERE table_schema = ? AND table_name = 'hs_hr_emp_reportto'",
+        [this.config.db.database]
+      );
+      
+      if (!tables.length) return [];
+
+      // find a supervisor (use emp_number 1 if present)
+      const [sup] = await this.connection.query(
+        "SELECT emp_number FROM hs_hr_employee WHERE emp_number = 1 LIMIT 1"
+      );
+      
+      const supId = sup.length ? sup[0].emp_number : null;
+      if (!supId) return [];
+
+      // find employees without supervisors
+      const [rows] = await this.connection.query(
+        "SELECT emp_number FROM hs_hr_employee WHERE emp_number != ? AND termination_id IS NULL",
+        [supId]
+      );
+      
+      const created = [];
+      for (const r of rows) {
+        // check existing mapping
+        const [ex] = await this.connection.query(
+          "SELECT * FROM hs_hr_emp_reportto WHERE erep_sub_emp_number = ? LIMIT 1",
+          [r.emp_number]
+        );
+        
+        if (ex.length) continue;
+        
+        await this.connection.query(
+          "INSERT INTO hs_hr_emp_reportto (erep_sup_emp_number, erep_sub_emp_number, erep_reporting_mode) VALUES (?, ?, ?)",
+          [supId, r.emp_number, 1]
+        );
+        created.push(r.emp_number);
+      }
+      
+      if (created.length) {
+        console.log("Created reporting relationships for:", created.join(", "));
+      }
+      return created;
+    } catch (e) {
+      console.warn("Could not ensure reporting relationships:", e.message);
+      return [];
+    }
   }
 
 
@@ -169,7 +317,7 @@ class OrangeHRMPerformanceGenerator {
         `;
 
         try {
-          await this.connection.execute(sql, [
+          await this.connection.query(sql, [
             jobTitleId,
             indicator,
             minRating,
@@ -209,7 +357,7 @@ class OrangeHRMPerformanceGenerator {
       `;
 
       try {
-        const [trackResult] = await this.connection.execute(trackSql, [
+        const [trackResult] = await this.connection.query(trackSql, [
           employee.emp_number,
           trackerName,
           addedDate,
@@ -218,7 +366,7 @@ class OrangeHRMPerformanceGenerator {
           addedDate,
         ]);
 
-        await this.connection.execute(`
+        await this.connection.query(`
           INSERT INTO ohrm_performance_tracker_reviewer (
             performance_track_id,
             reviewer_id,
@@ -243,9 +391,9 @@ class OrangeHRMPerformanceGenerator {
     let logCount = 0;
 
     for (const trackerId of trackerIds) {
-      const logCount = faker.number.int(this.config.generation.logsPerTracker);
+      const numLogs = faker.number.int(this.config.generation.logsPerTracker);
 
-      for (let i = 0; i < logCount; i++) {
+      for (let i = 0; i < numLogs; i++) {
         const logComment = faker.lorem.sentence();
         const comment = faker.lorem.paragraph();
         const achievement = faker.helpers.arrayElement([
@@ -274,13 +422,13 @@ class OrangeHRMPerformanceGenerator {
         `;
 
         try {
-          await this.connection.execute(sql, [
+          await this.connection.query(sql, [
             trackerId,
             logComment,
             comment,
             1, // Status = 1 (active/visible in UI)
             addedDate,
-            reviewer.emp_number,
+            1, // user_id from ohrm_user table
             reviewer.emp_number,
             achievement,
           ]);
@@ -343,7 +491,7 @@ class OrangeHRMPerformanceGenerator {
       `;
 
       try {
-        const [result] = await this.connection.execute(sql, [
+        const [result] = await this.connection.query(sql, [
           statusId,
           employee.emp_number,
           workPeriodStart,
@@ -353,7 +501,7 @@ class OrangeHRMPerformanceGenerator {
         ]);
 
         // reviewer mapping (ohrm_reviewer)
-        await this.connection.execute(`
+        await this.connection.query(`
           INSERT INTO ohrm_reviewer (
             review_id,
             employee_number,
@@ -376,19 +524,19 @@ class OrangeHRMPerformanceGenerator {
       await this.checkPrequisites();
 
       // Begin transaction, for abort when error
-      await this.connection.execute("START TRANSACTION");
+      await this.connection.query("START TRANSACTION");
 
       await this.generateKPIs();
       const trackerIds = await this.generateTrackers();
       await this.generateTrackerLogs(trackerIds);
       await this.generateReviews();
 
-      await this.connection.execute("COMMIT");
+      await this.connection.query("COMMIT");
 
       console.log("Performance data generation completed successfully.");
     } catch (error) {
       try {
-        await this.connection.execute("ROLLBACK");
+        await this.connection.query("ROLLBACK");
         console.error("   Transaction rolled back.");
       } catch (rollbackError) {
         console.error("   Rollback failed:", rollbackError.message);

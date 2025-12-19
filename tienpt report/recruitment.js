@@ -178,14 +178,14 @@ class OrangeHRMRecruimentDataGenerator {
 
     const candidateIds = [];
     const statusMap = {
-      1: "APPLICATION_INITIATED",
+      1: "APPLICATION INITIATED",
       2: "SHORTLISTED",
       3: "REJECTED",
-      4: "INTERVIEW_SCHEDULED",
-      5: "INTERVIEW_PASSED",
-      6: "INTERVIEW_FAILED",
-      7: "JOB_OFFERED",
-      8: "OFFER_DECLINED",
+      4: "INTERVIEW SCHEDULED",
+      5: "INTERVIEW PASSED",
+      6: "INTERVIEW FAILED",
+      7: "JOB OFFERED",
+      8: "OFFER DECLINED",
       9: "HIRED",
     };
 
