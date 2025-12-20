@@ -16,16 +16,16 @@
 
 - Bảng phân công nhóm:
  
-| Tính năng                   | Thành viên phụ trách |
-| --------------------------- | -------------------- |
-| Recruitment                 | Phan Thanh Tiến      |
-| Performance Review          | Phan Thanh Tiến      |
-| HR Administration           |                      |
-| Employee Management (PIM)   |                      |
-| Leave Management            |                      |
-| Time and Attendance         |                      |
-| Reporting and Analytics     |                      |
-| Employee Self-Service (ESS) |                      |
+| Tính năng                   | Thành viên phụ trách  |
+| --------------------------- | --------------------- |
+| Recruitment                 | Phan Thanh Tiến       |
+| Performance Review          | Phan Thanh Tiến       |
+| HR Administration           | Giang Đức Nhật        |
+| Employee Management (PIM)   | Giang Đức Nhật        |
+| Leave Management            | Lý Trọng Tín          |
+| Tme and Attendance          | Lý Trọng Tín          |
+| Reporting and Analytics     | Nguyễn Bùi Vương Tiễn |
+| Employee Self-Service (ESS) | Nguyễn Bùi Vương Tiễn |
 
 
 
@@ -114,33 +114,7 @@ REC03.01	Tạo mới candidate với đầy đủ thông tin
 
 Sau đây là state diagram mô tả trạng thái của một candidate trong quá trình tuyển dụng:
 
-```mermaid
-stateDiagram-v2
-  [*] --> APPLICATION_INITIATED: init
-
-  APPLICATION_INITIATED --> SHORTLISTED: shortlist
-  APPLICATION_INITIATED --> INTERVIEW_SCHEDULED: schedule interview
-  APPLICATION_INITIATED --> REJECTED: reject
-
-  SHORTLISTED --> INTERVIEW_SCHEDULED: schedule interview
-  SHORTLISTED --> JOB_OFFERED: offer job
-  SHORTLISTED --> REJECTED: reject
-
-  INTERVIEW_SCHEDULED --> INTERVIEW_PASSED: pass interview
-  INTERVIEW_SCHEDULED --> INTERVIEW_FAILED: fail interview
-
-  INTERVIEW_PASSED --> JOB_OFFERED: offer job
-  INTERVIEW_FAILED --> REJECTED: reject
-
-  JOB_OFFERED --> HIRED: accept offer
-  JOB_OFFERED --> OFFER_DECLINED: decline offer
-
-  OFFER_DECLINED --> REJECTED: reject
-
-  %% Optional terminal states
-  REJECTED --> [*]
-  HIRED --> [*]
-```
+![recruitment-state](mermaid-diagram-2025-12-20-205942.png)
 
 Sử dụng sơ đồ trên, áp dụng kĩ thuật state transition testing, ta cần test trên các transition, với danh sách test như sau:
 
@@ -217,16 +191,7 @@ PERF03.13	Mở 2 tab trên cùng 1 màn hình review employee
 
 Dưới đây là state diagram mô tả trạng thái của một Performance Review trong hệ thống:
 
-```mermaid
-stateDiagram-v2
-  [*] --> DRAFT: create
-  DRAFT --> IN_REVIEW: activate
-  IN_REVIEW --> COMPLETED: complete review
-  DRAFT --> INACTIVE: deactivate
-  IN_REVIEW --> INACTIVE: deactivate
-  INACTIVE --> [*]
-  COMPLETED --> [*]
-```
+![performance review state diagram](./perf-state.png)
 
 Áp dụng kĩ thuật state transition testing, ta cần test trên các transition, với danh sách test như sau:
 
