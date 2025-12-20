@@ -27,6 +27,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    ports:
+      - "3310:3306"
 
   orangehrm:
     image: orangehrm/orangehrm:latest
