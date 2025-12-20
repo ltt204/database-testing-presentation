@@ -16,16 +16,16 @@
 
 - Bảng phân công nhóm:
  
-| Tính năng                   | Thành viên phụ trách |
-| --------------------------- | -------------------- |
-| Recruitment                 | Phan Thanh Tiến      |
-| Performance Review          | Phan Thanh Tiến      |
-| HR Administration           |                      |
-| Employee Management (PIM)   |                      |
-| Leave Management            |                      |
-| Time and Attendance         |                      |
-| Reporting and Analytics     |                      |
-| Employee Self-Service (ESS) |                      |
+| Tính năng                   | Thành viên phụ trách  |
+| --------------------------- | --------------------- |
+| Recruitment                 | Phan Thanh Tiến       |
+| Performance Review          | Phan Thanh Tiến       |
+| HR Administration           | Giang Đức Nhật        |
+| Employee Management (PIM)   | Giang Đức Nhật        |
+| Leave Management            | Lý Trọng Tín          |
+| Tme and Attendance          | Lý Trọng Tín          |
+| Reporting and Analytics     | Nguyễn Bùi Vương Tiễn |
+| Employee Self-Service (ESS) | Nguyễn Bùi Vương Tiễn |
 
 ## Requirememt 2: Data Generation
 
