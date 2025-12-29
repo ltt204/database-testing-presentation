@@ -52,17 +52,16 @@ style: |
 
 Theo yêu cầu của đồ án, các thành viên trong nhóm phân chia công việc như sau:
 
-| Member Name | Feature Assigned | Role |
-| :--- | :--- | :--- |
-| **Giang Đức Nhật** | **HR Administration & ESS** | **Tester** |
-| Phan Thanh Tiến | Performance Management & Recruitment | Tester |
-| Nguyễn Bùi Vương Tiễn | Reporting & Analytics & Time and Attendance | Tester |
-| Lý Trọng Tín | Employee Management (PIM) & Employee Management (PIM) | Tester |
-
-
-> **My Responsibility:**
-> 1.  **HR Administration:** Quản lý cấu trúc organization (Locations, Subunits), Job Titles, Users.
-> 2.  **ESS (Employee Self-Service):** Quản lý Leave Requests (Xin nghỉ phép).
+| Tính năng | Mô tả | Thành viên |
+|:---|:---|:---|
+| HR Administration | Quản trị hệ thống, cấu trúc tổ chức, user | Giang Đức Nhật |
+| Employee Self-Service (ESS) | Cổng thông tin nhân viên tự phục vụ | Giang Đức Nhật |
+| Recruitment | Tuyển dụng, theo dõi ứng viên | Phan Thanh Tiến |
+| Performance Management | Đánh giá KPI, đề nghị xem xét, lưu lịch sử performance review | Phan Thanh Tiến |
+| Reporting & Analytics | Báo cáo tùy chỉnh, xuất dữ liệu | Nguyễn Bùi Vương Tiễn |
+| Time and Attendance | Chấm công, Timesheets | Nguyễn Bùi Vương Tiễn |
+| Employee Management (PIM) | Quản lý hồ sơ nhân viên, báo cáo | Lý Trọng Tín |
+| Leave Management | Quản lý ngày nghỉ, quy tắc nghỉ phép | Lý Trọng Tín |
 
 ---
 
