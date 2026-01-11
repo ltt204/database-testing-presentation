@@ -1,4 +1,4 @@
-# Personal report - Requirement 2: Data Generation
+# Personal report - Requirement 3: Functional Testing
 
 ## Thông tin cá nhân & nhóm
 
@@ -16,22 +16,26 @@
 
 - Bảng phân công nhóm:
  
-| Tính năng                   | Thành viên phụ trách  |
-| --------------------------- | --------------------- |
-| Recruitment                 | Phan Thanh Tiến       |
-| Performance Review          | Phan Thanh Tiến       |
-| HR Administration           | Giang Đức Nhật        |
-| Employee Management (PIM)   | Giang Đức Nhật        |
-| Leave Management            | Lý Trọng Tín          |
-| Tme and Attendance          | Lý Trọng Tín          |
-| Reporting and Analytics     | Nguyễn Bùi Vương Tiễn |
-| Employee Self-Service (ESS) | Nguyễn Bùi Vương Tiễn |
+| Tính năng                   | Mô tả                                                             | Thành viên            |
+| :-------------------------- | :---------------------------------------------------------------- | :-------------------- |
+| HR Administration           | Quản trị hệ thống, cấu trúc tổ chức, user                         | Giang Đức Nhật        |
+| Employee Self-Service (ESS) | Cổng thông tin nhân viên tự phục vụ                               | Giang Đức Nhật        |
+| **Recruitment**             | **Tuyển dụng, theo dõi ứng viên**                                 | **Phan Thanh Tiến**   |
+| **Performance Management**  | **Đánh giá KPI, đề nghị xem xét, lưu lịch sử performance review** | **Phan Thanh Tiến**   |
+| Reporting & Analytics       | Báo cáo tùy chỉnh, xuất dữ liệu                                   | Nguyễn Bùi Vương Tiễn |
+| Time and Attendance         | Chấm công, Timesheets                                             | Nguyễn Bùi Vương Tiễn |
+| Employee Management (PIM)   | Quản lý hồ sơ nhân viên, báo cáo                                  | Lý Trọng Tín          |
+| Leave Management            | Quản lý ngày nghỉ, quy tắc nghỉ phép                              | Lý Trọng Tín          |
+
+- Các tính năng được phân công là: 
+  - Recruitment
+  - Performance Management & Review
 
 
 
 ## Mục lục
 
-- [Personal report - Requirement 2: Data Generation](#personal-report---requirement-2-data-generation)
+- [Personal report - Requirement 3: Functional Testing](#personal-report---requirement-3-functional-testing)
   - [Thông tin cá nhân \& nhóm](#thông-tin-cá-nhân--nhóm)
     - [Thông tin nhóm 11](#thông-tin-nhóm-11)
   - [Mục lục](#mục-lục)
