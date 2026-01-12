@@ -142,7 +142,7 @@ Kết luận: Với cấu hình hiện tại, hệ thống đáp ứng tốt nhu
 **Mục tiêu:** Xác định điểm giới hạn (Breaking Point) của hệ thống bằng cách tăng tải vượt quá mức bình thường.
 
 * **Cấu hình Thread Group:**
-* **Number of Threads (Users):** 100 *(Hoặc con số lớn hơn tùy máy bạn)*
+* **Number of Threads (Users):** 200 *(Hoặc con số lớn hơn tùy máy bạn)*
 * **Ramp-up period:** 100 giây (Tăng tải từ từ để quan sát thời điểm hệ thống bắt đầu chậm).
 * **Loop Count:** Infinite.
 * **Duration:** 300 giây.
