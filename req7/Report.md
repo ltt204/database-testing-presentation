@@ -155,9 +155,12 @@ Tổng số test case đã thiết kế: **63 test cases** (32 Recruitment + 31 
 #### Cách 1: Sử dụng Postman GUI (Manual/Runner)
 
 - Import `postman_collection.json` và `postman_environment.json` vào Postman.
-- Cấu hình Environment "OrangeHRM Environment".
-- Thực hiện request "Login" để lấy Token (Bearer Token).
+- Thực hiện Login để lấy Token (Tham khảo #appendix-a).
+- Thay token vào environment trên Postman để sẵn sàng chạy bộ test.
+![alt text](image-1.png)
 - Chạy Collection Runner cho thư mục "Recruitment" và "Performance".
+
+
 - Kiểm tra kết quả Pass/Fail trực quan trên giao diện.
 
 #### Cách 2: Sử dụng Newman (Automation CLI)
@@ -229,7 +232,10 @@ Nhóm đã phát triển một script Python để tự động đăng nhập v�
 ```
 
 ### Cách 2: Lấy thủ công qua Developer Tools (F12)
-Nếu không chạy script, bạn có thể lấy trực tiếp từ trình duyệt (Chrome/Edge):
+
+Việc lấy trực tiếp cookies từ Postman là không khả thi do OrangeHRM không cho phép login nếu không bật JavaScript (Postman không đáp ứng yêu cầu). Chính vì vậy, nếu không sử dụng script `python` như cách 1, ta có thể lấy trực tiếp từ trình duyệt (Chrome/Edge). 
+
+Để lấy được cookies đặt vào env, ta thực hiện các bước như sau:
 
 1.  Mở trang Login và nhấn **F12** (Developer Tools).
 2.  Chuyển sang tab **Network**.
@@ -238,6 +244,8 @@ Nếu không chạy script, bạn có thể lấy trực tiếp từ trình duy�
 5.  Click vào request, chọn tab **Headers**.
 6.  Tìm phần **Response Headers** (hoặc Request Headers của các request sau đó).
 7.  Copy giá trị của `_orangehrm` (bỏ phần `; path=/...`).
+
+![alt text](image.png)
 
 ![Network Tab Cookie](auth_guide_dashboard.png)
 

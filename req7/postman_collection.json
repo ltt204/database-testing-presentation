@@ -3811,7 +3811,7 @@
                             "listen": "test",
                             "script": {
                                 "exec": [
-                                    "pm.test(\"Status code is 422\", function () { pm.response.to.have.status(422); });"
+                                    "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
                                 ],
                                 "type": "text/javascript"
                             }
@@ -3852,7 +3852,7 @@
                             }
                         ],
                         "url": {
-                            "raw": "{{baseUrl}}/performance/manage/reviews?sortField=employeeName",
+                            "raw": "{{baseUrl}}/performance/manage/reviews?sortField=reviewerEmployee.lastName",
                             "host": [
                                 "{{baseUrl}}"
                             ],
@@ -3877,7 +3877,7 @@
                             "listen": "test",
                             "script": {
                                 "exec": [
-                                    "pm.test(\"Status code is 422\", function () { pm.response.to.have.status(422); });"
+                                    "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
                                 ],
                                 "type": "text/javascript"
                             }
@@ -3930,7 +3930,7 @@
                             "query": [
                                 {
                                     "key": "sortField",
-                                    "value": "reviewPeriodStart"
+                                    "value": "performanceReview.reviewPeriodStart"
                                 }
                             ]
                         }
