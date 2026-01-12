@@ -57,10 +57,8 @@
 ## 1. Tổng quan
 
 Trong yêu cầu 7, ta tập trung kiểm thử API trên 2 endpoints chính. Ở đây, 2 API được chọn để kiểm thử là:
-1. **Recruitment**: `POST /api/v2/recruitment/candidates` (Tạo ứng viên mới)
-2. **Performance**: `POST /api/v2/performance/manage/reviews` (Tạo bài đánh giá hiệu quả)
-
-Tổng số test case đã thiết kế: **63 test cases** (32 Recruitment + 31 Performance). Chi tiết như sau:
+1. **Recruitment: Create a candidate**: `POST /api/v2/recruitment/candidates` (https://api-starter-orangehrm.readme.io/reference/create-a-candidate) 
+2. **Performance: List all performance reviews**: `GET /api/v2/performance/manage/reviews` (https://api-starter-orangehrm.readme.io/reference/list-all-performance-reviews)
 
 ### 1.1. API Recruitment: Create candidate
 
@@ -167,7 +165,7 @@ Tổng số test case đã thiết kế: **63 test cases** (32 Recruitment + 31 
 
 Hình ảnh: Import API collection vào Postman
 
-- Thực hiện Login để lấy Token (Tham khảo #appendix-a).
+- Thực hiện Login để lấy Token (Tham khảo Phần 5).
 
 - Thay token vào environment trên Postman để sẵn sàng chạy bộ test.
 
@@ -248,7 +246,7 @@ Hình ảnh dưới đây minh họa kết quả chạy thực tế của toàn 
 
 Hỉnh ảnh: Test summary
 
-## 5. Appendix A: Hướng dẫn lấy Session Cookie (Authentication)
+## 5. Appendix: Hướng dẫn lấy Session Cookie (Authentication)
 
 Do hệ thống sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật, việc lấy cookie này thông qua Javascript console (`document.cookie`) là không thể. Dưới đây là 2 cách để lấy giá trị này cho Postman.
 
