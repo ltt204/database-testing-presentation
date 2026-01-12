@@ -7,8 +7,9 @@
   - [Thông tin cá nhân \& nhóm](#thông-tin-cá-nhân--nhóm)
     - [Thông tin nhóm 11](#thông-tin-nhóm-11)
   - [1. Tổng quan](#1-tổng-quan)
-    - [1.1. API Recruitment: Create candidate](#11-api-recruitment-create-candidate)
-    - [1.2. API Performance: List reviews](#12-api-performance-list-reviews)
+    - [1.1. Các kỹ thuật thiết kế Test Case](#11-các-kỹ-thuật-thiết-kế-test-case)
+    - [1.2. API Recruitment: Create candidate](#12-api-recruitment-create-candidate)
+    - [1.3. API Performance: List reviews](#13-api-performance-list-reviews)
   - [2. Quy trình chung kiểm thử API](#2-quy-trình-chung-kiểm-thử-api)
     - [2.1. Cách 1: Sử dụng Postman GUI](#21-cách-1-sử-dụng-postman-gui)
     - [2.2. Cách 2: Sử dụng Newman (Automation CLI)](#22-cách-2-sử-dụng-newman-automation-cli)
@@ -60,9 +61,66 @@ Trong yêu cầu 7, ta tập trung kiểm thử API trên 2 endpoints chính. �
 1. **Recruitment: Create a candidate**: `POST /api/v2/recruitment/candidates` (https://api-starter-orangehrm.readme.io/reference/create-a-candidate) 
 2. **Performance: List all performance reviews**: `GET /api/v2/performance/manage/reviews` (https://api-starter-orangehrm.readme.io/reference/list-all-performance-reviews)
 
-### 1.1. API Recruitment: Create candidate
+### 1.1. Các kỹ thuật thiết kế Test Case
 
-**API Specifications:**
+1.  Equivalence Partitioning
+    
+    Kỹ thuật này chia dữ liệu đầu vào thành các lớp tương đương, nơi hệ thống dự kiến sẽ xử lý giống nhau. Thay vì test tất cả giá trị, ta chỉ chọn đại diện từ mỗi lớp.
+
+    *   Giả sử xem xét field `limit` (Int) - khoảng giá trị [1, 50]:
+        1.  Phân tích yêu cầu input của API (kiểu dữ liệu, khoảng giá trị).
+            *   `limit` chấp nhận số nguyên, min = 1, max = 50.
+        2.  Xác định các lớp hợp lệ (Valid partitions) mà hệ thống nên chấp nhận.
+            *   Khoảng [1, 50]. Chọn giá trị đại diện `limit = 10`.
+        3.  Xác định các lớp không hợp lệ (Invalid partitions) mà hệ thống nên từ chối.
+            *   Khoảng nhỏ hơn 1: Chọn `limit = -1`.
+            *   Khoảng lớn hơn 50: Chọn `limit = 51`.
+            *   Sai kiểu dữ liệu: Chọn `limit = "abc"`.
+
+2.  Boundary Value Analysis
+    
+    Lỗi thường xuất hiện tại các biên của miền giá trị input. Kỹ thuật này tập trung kiểm thử tại các điểm biên đó (giá trị nhỏ nhất, lớn nhất, cận dưới, cận trên).
+
+    *   Giả sử xem xét field `firstName` (String) - bắt buộc, tối đa 30 ký tự:
+        1.  Xác định các biên của miền giá trị hợp lệ (Min, Max).
+            *   Độ dài ngắn nhất = 1 (do bắt buộc), Độ dài dài nhất = 30.
+        2.  Tạo test case cho giá trị ngay tại biên (Boundary).
+            *   `firstName` có độ dài 30 ký tự (Max).
+        3.  Tạo test case cho giá trị ngay sát biên (ngay ngoài khoảng hợp lệ).
+            *   `firstName` có độ dài 31 ký tự (Max + 1) -> Mong đợi lỗi.
+        4.  Tạo test case cho biên đặc biệt (rỗng/null).
+            *   `firstName` = "" (Empty) -> Mong đợi lỗi.
+
+3.  Error Guessing
+    
+    Dựa trên kinh nghiệm và trực giác của tester để đoán các tình huống hệ thống dễ bị lỗi mà các kỹ thuật trên có thể bỏ sót.
+
+    *   **Quy trình & Ví dụ minh họa**:
+        1.  Liệt kê các tình huống lỗi tiềm năng thường gặp.
+            *   Sai kiểu dữ liệu (Type mismatch), ký tự đặc biệt, giá trị Null.
+        2.  Thiết kế test case để cố ý kích hoạt các lỗi này.
+                - Sai kiểu: Gửi `consentToKeepData`="true" (String) thay vì Boolean.
+                - Ký tự đặc biệt: Gửi `contactNumber` chứa `$`.
+                - Null: Gửi `email` = null.
+
+4.  Security Testing
+    
+    Kiểm tra các lỗ hổng bảo mật phổ biến để đảm bảo API không bị khai thác.
+
+    *   **Quy trình & Ví dụ minh họa**:
+        1.  Xác định các điểm nhập dữ liệu (input fields).
+            *   Các trường text như `lastName`, `firstName`.
+        2.  Lựa chọn payload tấn công (SQL Injection, XSS).
+            *   Chuỗi SQL `' OR 1=1 --` hoặc thẻ `<script>alert(1)</script>`.
+        3.  Gửi payload vào API và kiểm tra phản hồi.
+                - Gửi `lastName` = `' OR 1=1 --`. Nếu API trả về dữ liệu database hoặc lỗi SQL -> Lỗi bảo mật.
+                - Gửi `firstName` = `<script>...`. Nếu API lưu và trả về nguyên văn script -> Lỗi XSS.
+
+
+
+### 1.2. API Recruitment: Create candidate
+
+**Đặc tả API:**
 - **Endpoint**: `POST /api/v2/recruitment/candidates`
 - **Fields**:
   - `firstName` (Required, String, Max 30): Tên ứng viên.
@@ -108,7 +166,7 @@ Trong yêu cầu 7, ta tập trung kiểm thử API trên 2 endpoints chính. �
 | REC.API.30 | firstName         | Test SQL Injection thứ cấp để đảm bảo sanitize mạnh mẽ chống lại các mẫu tấn công phổ biến.                                    |
 | REC.API.31 | lastName          | Test XSS Injection thứ cấp để đảm bảo bảo vệ mạnh mẽ chống lại thẻ script trong text fields.                                   |
 
-### 1.2. API Performance: List reviews
+### 1.3. API Performance: List reviews
 
 **API Specifications:**
 - **Endpoint**: `GET /api/v2/performance/manage/reviews`
@@ -163,7 +221,7 @@ Trong yêu cầu 7, ta tập trung kiểm thử API trên 2 endpoints chính. �
 - Import `postman_collection.json` và `postman_environment.json` vào Postman.
 ![alt text](image-2.png)
 
-Hình ảnh: Import API collection vào Postman
+Hình 1: Import API collection vào Postman
 
 - Thực hiện Login để lấy Token (Tham khảo Phần 5).
 
@@ -171,19 +229,19 @@ Hình ảnh: Import API collection vào Postman
 
 ![alt text](image-1.png)
 
-Hình ảnh: Thay token vào environment trên Postman
+Hình 2: Thay token vào environment trên Postman
 
 - Chạy Collection Runner cho thư mục "Recruitment" và "Performance", sử dụng environment đã cấu hình (1), click các bước (2) và Run (3).
 
 ![alt text](image-4.png)
 
-Hình ảnh: Chạy Collection Runner trên Postman.
+Hình 3: Chạy Collection Runner trên Postman.
 
 - Kiểm tra kết quả Pass/Fail trực quan trên giao diện. Như hình ảnh dưới đây ở vị trí (4), ta thấy có tổng 63 test cases, trong đó 61 test passed và 2 test failed.
 
 ![alt text](image-5.png)
 
-Hình ảnh: Kết quả chạy test trên Postman GUI.
+Hình 4: Kết quả chạy test trên Postman GUI.
 
 Nhìn chi tiết hơn hình ảnh này, ở mỗi test case, có các thông tin đáng chú ý sau: 
   - Số (1) màu xanh: Tên test case
@@ -203,33 +261,19 @@ Nhìn chi tiết hơn hình ảnh này, ở mỗi test case, có các thông tin
   ```
 - Kết quả được xuất ra console hoặc report dạng HTML/JSON.
 
-## 3. Các bug tìm thấy
+## 3. Test Results
 
-### 3.1. Authentication (OAuth 404)
-
-**Issue: OAuth Token Endpoint 404 Not Found**
-- **Mô tả**: Khi gọi endpoint lấy token `/oauth/issueToken`, server trả về 404 Not Found.
-- **Cách xử lý (Workaround)**: Do không thể lấy token qua OAuth, nhóm đã thực hiện **trích xuất Session Cookie (`_orangehrm`)** từ quá trình đăng nhập qua trình duyệt/cURL để xác thực cho các request API.
-- **Chi tiết thực hiện (Authentication Steps)**:
-  1. Lấy mã nguồn trang đăng nhập để tìm CSRF Token.
-  2. Sử dụng `curl` để POST credentials và Token lên endpoint `/auth/validate`.
-  3. Lấy giá trị `Set-Cookie` (`_orangehrm`) từ response 302.
-  4. Cấu hình Postman để sử dụng Header `Cookie` thay vì `Authorization: Bearer`.
-
-
-## 4. Test Results
-
-### 4.1. Summary
+### 3.1. Summary
 
 - Total Tests: 63 (Functional Tests) + 2 (Auth Setup) = 65
 - Passed: 63
 - Failed: 2 
 - Execution Environment: Localhost (Admin user), Authentication bằng login script.
 
-### 4.2. Detailed Findings
+### 3.2. Các bug tìm thấy
 1.  **Recruitment API**:
     -   `REC.API.07_Empty_FirstName`: **FAIL (BUG)**.
-        -   **Mô tả**: Trường `firstName` là bắt buộc nhưng khi gửi giá trị rỗng (""), API vẫn trả về `200 OK`.
+        -   **Description**: Trường `firstName` là bắt buộc nhưng khi gửi giá trị rỗng (""), API vẫn trả về `200 OK`.
         -   **Expected**: `422 Unprocessable Content`.
     -   `REC.API.29_SQLi_FirstName` & `REC.API.30_XSS_LastName`: Trả về `200 OK` (Accepted). Cần xác minh thêm liệu hệ thống có Sanitize dữ liệu trước khi lưu xuống DB hay không.
 
@@ -238,15 +282,15 @@ Nhìn chi tiết hơn hình ảnh này, ở mỗi test case, có các thông tin
         -   Tham số `sortField=employeeName` (trường hợp lệ) bị API từ chối với lỗi `422 Unprocessable Content` ("Invalid Parameter").
         -   **Expected**: `200 OK` và danh sách được sắp xếp theo tên nhân viên.
 
-### 4.3. Test Execution Screenshot
+### 3.3. Test Execution Screenshot
 Hình ảnh dưới đây minh họa kết quả chạy thực tế của toàn bộ 63 requests (V5 Optimized Suite):
 
 ![alt text](image-6.png)
 ![alt text](image-7.png)
 
-Hỉnh ảnh: Test summary
+Hình 5: Tổng quan kết quả test (Test summary)
 
-## 5. Appendix: Hướng dẫn lấy Session Cookie (Authentication)
+## 4. Phụ lục A: Hướng dẫn lấy Session Cookie (Authentication)
 
 Do hệ thống sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật, việc lấy cookie này thông qua Javascript console (`document.cookie`) là không thể. Dưới đây là 2 cách để lấy giá trị này cho Postman.
 
@@ -263,7 +307,7 @@ Do hệ thống sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật
 
 ![alt text](image-3.png)
 
-Hình ảnh: Lấy cookie thông qua script Python
+Hình 6: Lấy cookie thông qua script Python
 
 ### Cách 2: Lấy thủ công qua Developer Tools (F12)
 
@@ -280,6 +324,6 @@ Việc lấy trực tiếp cookies từ Postman là không khả thi do OrangeHR
 
 ![Lấy cookie trên trình duyệt](image.png)
 
-Hình ảnh: Network tab cookies
+Hình 7: Cookie trong tab Network
 
 ![Network Tab Cookie](auth_guide_dashboard.png)
