@@ -242,3 +242,7 @@ Sử dụng chiến thuật "Mỏ neo" (Anchor): Tìm các icon SVG tĩnh (như 
 Khó khăn: Khi nhập liệu các ký tự Emoji (🚀, 😊) vào ô textarea bằng lệnh WebUI.setText, driver đôi khi không gõ được hoặc gõ bị lỗi font.
 
 Giải pháp: Sử dụng JavascriptExecutor để gán trực tiếp giá trị vào thuộc tính value của thẻ HTML, bỏ qua lớp giả lập bàn phím của trình duyệt.
+
+## 7. Links
+
+Link đến google drive chứa toàn bộ project Katalon đã sử dụng để automation testing: https://drive.google.com/drive/folders/1478Ou9if00AW-dCOYKIoso9zk0MknEiq?usp=sharing
