@@ -138,7 +138,11 @@
                             "script": {
                                 "exec": [
                                     "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-                                    "pm.test(\"Response has ID\", function () { var jsonData = pm.response.json(); pm.expect(jsonData.data).to.have.property(\"id\"); });"
+                                    "var jsonData = pm.response.json();",
+                                    "pm.test(\"Response contains ID\", function () { pm.expect(jsonData.data).to.have.property(\"id\"); });",
+                                    "pm.test(\"FirstName matches\", function () { pm.expect(jsonData.data.firstName).to.eql(\"John\"); });",
+                                    "pm.test(\"LastName matches\", function () { pm.expect(jsonData.data.lastName).to.eql(\"Doe\"); });",
+                                    "pm.test(\"Email matches\", function () { pm.expect(jsonData.data.email).to.eql(\"johndoe@example.com\"); });"
                                 ],
                                 "type": "text/javascript"
                             }
@@ -201,7 +205,10 @@
                             "listen": "test",
                             "script": {
                                 "exec": [
-                                    "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+                                    "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
+                                    "var jsonData = pm.response.json();",
+                                    "pm.test(\"FirstName matches\", function () { pm.expect(jsonData.data.firstName).to.eql(\"Jane\"); });",
+                                    "pm.test(\"LastName matches\", function () { pm.expect(jsonData.data.lastName).to.eql(\"Smith\"); });"
                                 ],
                                 "type": "text/javascript"
                             }
@@ -3811,7 +3818,7 @@
                             "listen": "test",
                             "script": {
                                 "exec": [
-                                    "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+                                    "pm.test(\"Status code is 422\", function () { pm.response.to.have.status(422); });"
                                 ],
                                 "type": "text/javascript"
                             }
@@ -3852,7 +3859,7 @@
                             }
                         ],
                         "url": {
-                            "raw": "{{baseUrl}}/performance/manage/reviews?sortField=reviewerEmployee.lastName",
+                            "raw": "{{baseUrl}}/performance/manage/reviews?sortField=employeeName",
                             "host": [
                                 "{{baseUrl}}"
                             ],
@@ -3871,7 +3878,7 @@
                     }
                 },
                 {
-                    "name": "PERF.API.28_SortField_Valid_Date",
+                    "name": "PERF.API.28_Sort_ASC",
                     "event": [
                         {
                             "listen": "test",
@@ -3918,7 +3925,7 @@
                             }
                         ],
                         "url": {
-                            "raw": "{{baseUrl}}/performance/manage/reviews?sortField=reviewPeriodStart",
+                            "raw": "{{baseUrl}}/performance/manage/reviews?sortOrder=ASC",
                             "host": [
                                 "{{baseUrl}}"
                             ],
@@ -3929,8 +3936,8 @@
                             ],
                             "query": [
                                 {
-                                    "key": "sortField",
-                                    "value": "performanceReview.reviewPeriodStart"
+                                    "key": "sortOrder",
+                                    "value": "ASC"
                                 }
                             ]
                         }

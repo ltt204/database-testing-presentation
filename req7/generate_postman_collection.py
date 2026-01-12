@@ -165,14 +165,25 @@ base_candidate = {
 recruitment_folder["item"].append(create_request_item(
     "REC.API.01_Valid_Full", "POST", "/recruitment/candidates",
     base_candidate,
-    ['pm.test("Status code is 200", function () { pm.response.to.have.status(200); });',
-     'pm.test("Response has ID", function () { var jsonData = pm.response.json(); pm.expect(jsonData.data).to.have.property("id"); });']
+    [
+        'pm.test("Status code is 200", function () { pm.response.to.have.status(200); });',
+        'var jsonData = pm.response.json();',
+        'pm.test("Response contains ID", function () { pm.expect(jsonData.data).to.have.property("id"); });',
+        'pm.test("FirstName matches", function () { pm.expect(jsonData.data.firstName).to.eql("' + base_candidate["firstName"] + '"); });',
+        'pm.test("LastName matches", function () { pm.expect(jsonData.data.lastName).to.eql("' + base_candidate["lastName"] + '"); });',
+        'pm.test("Email matches", function () { pm.expect(jsonData.data.email).to.eql("' + base_candidate["email"] + '"); });'
+    ]
 ))
 
 recruitment_folder["item"].append(create_request_item(
     "REC.API.02_Valid_Minimal", "POST", "/recruitment/candidates",
     {"firstName": "Jane", "lastName": "Smith", "email": "jane@example.com"},
-    ['pm.test("Status code is 200", function () { pm.response.to.have.status(200); });']
+    [
+        'pm.test("Status code is 200", function () { pm.response.to.have.status(200); });',
+        'var jsonData = pm.response.json();',
+        'pm.test("FirstName matches", function () { pm.expect(jsonData.data.firstName).to.eql("Jane"); });',
+        'pm.test("LastName matches", function () { pm.expect(jsonData.data.lastName).to.eql("Smith"); });'
+    ]
 ))
 
 # 2.3 New Edge Cases (Replacing redundant bulk loops)
@@ -302,7 +313,7 @@ performance_folder["item"].append(create_request_item(
 ))
 
 # 3.2 Filters & Edge Cases
-perf_cases = [
+per_cases = [
     # Limit/Offset
     ("PERF.API.02_Limit_10", [{"key": "limit", "value": "10"}], 200),
     ("PERF.API.03_Limit_0", [{"key": "limit", "value": "0"}], 200),
@@ -338,12 +349,12 @@ perf_cases = [
     ("PERF.API.25_Limit_OverMax", [{"key": "limit", "value": "1000000"}], 200), # Capped or 200
     ("PERF.API.26_Offset_Negative", [{"key": "offset", "value": "-1"}], 422),
     ("PERF.API.27_SortField_Valid_Emp", [{"key": "sortField", "value": "employeeName"}], 422), # Observed Invalid Field
-    ("PERF.API.28_SortField_Valid_Date", [{"key": "sortField", "value": "reviewPeriodStart"}], 422), # Observed Invalid Field
+    ("PERF.API.28_Sort_ASC", [{"key": "sortOrder", "value": "ASC"}], 200), 
     ("PERF.API.29_Complex_Filter_1", [{"key": "limit", "value": "5"}, {"key": "offset", "value": "5"}], 200),
     ("PERF.API.30_Complex_Filter_2", [{"key": "fromDate", "value": "2023-01-01"}, {"key": "limit", "value": "10"}], 200)
 ]
 
-for name, params, status in perf_cases:
+for name, params, status in per_cases:
     script = [f'pm.test("Status code is {status}", function () {{ pm.response.to.have.status({status}); }});']
     performance_folder["item"].append(create_request_item(
         name, "GET", endpoint_review,
