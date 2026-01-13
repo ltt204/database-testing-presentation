@@ -171,7 +171,7 @@ Tuy nhiên, mỗi container sẽ được giới hạn với **1 core CPU và 1G
 
 ## 3. Quy trình thực hiện kiểm thử
 
-### 3.1. Cách 1: Sử dụng JMeter GUI
+Chúng ta sẽ sử dụng JMeter GUI cho phần kiểm thử này. JMeter cũng hỗ trợ CLI, nhưng sử dụng GUI sẽ có phần report chi tiết và dễ xem hơn.
 
 #### Bước 1: Import Test Plan
 
@@ -184,7 +184,7 @@ Tuy nhiên, mỗi container sẽ được giới hạn với **1 core CPU và 1G
 2. Mở JMeter và import file `performance_test.jmx` bằng cách:
    - File → Open → Chọn `performance_test.jmx`
 
-![Cấu trúc Test Plan trong JMeter](jmeter-test-plan.png)
+![Cấu trúc Test Plan trong JMeter](image-1.png)
 
 Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HTTP Header Manager, HTTP Request Defaults, Create Candidate Request, và Summary Report.
 
@@ -192,21 +192,21 @@ Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HT
 
 Điều chỉnh các tham số trong Thread Group theo kịch bản test:
 
-![Cấu hình Thread Group](jmeter-thread-config.png)
+![Cấu hình Thread Group](image-4.png)
 
 Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `${LOOP}` cho phép linh hoạt thay đổi qua CLI.
 
-| Tham số             | Ý nghĩa                                     | Giá trị mặc định |
-| :------------------ | :------------------------------------------ | :--------------- |
-| `Number of Threads` | Số lượng virtual users đồng thời            | 10               |
-| `Ramp-up Period`    | Thời gian để khởi tạo tất cả threads (giây) | 10               |
-| `Loop Count`        | Số lần lặp cho mỗi thread                   | 5                |
+| Tham số             | Ý nghĩa                                     | 
+| :------------------ | :------------------------------------------ | 
+| `Number of Threads` | Số lượng virtual users đồng thời            | 
+| `Ramp-up Period`    | Thời gian để khởi tạo tất cả threads (giây) | 
+| `Loop Count`        | Số lần lặp cho mỗi thread                   | 
 
 #### Bước 3: Cấu hình Data-Driven Testing (CSV)
 
 Dữ liệu ứng viên được tham số hóa thông qua file CSV để đảm bảo mỗi request tạo một ứng viên với thông tin khác nhau.
 
-![Cấu hình CSV Data Set](jmeter-csv-config.png)
+![Cấu hình CSV Data Set](image-2.png)
 
 Hình 3: Cấu hình CSV Data Set Config để đọc dữ liệu từ file `data/candidates.csv`.
 
@@ -220,6 +220,8 @@ TestUser3,Perf3,test.user.3@perf.com
 TestUser50,Perf50,test.user.50@perf.com
 ```
 
+![alt text](image-3.png)
+
 #### Bước 4: Cấu hình Authentication Cookie
 
 1. Lấy session cookie hợp lệ (Tham khảo Phụ lục B).
@@ -227,139 +229,77 @@ TestUser50,Perf50,test.user.50@perf.com
 
 #### Bước 5: Chạy Test và Xem Kết Quả
 
-1. Click nút **Start** (biểu tượng play màu xanh) trên thanh công cụ.
-2. Quan sát kết quả realtime trong **View Results Tree** và **Summary Report**.
+Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới.
 
-![Kết quả View Results Tree](jmeter-results-tree.png)
+## 4. Test Results
 
-Hình 4: View Results Tree hiển thị từng request với status 200 OK, response time ~35ms, và response body JSON.
+### 4.1 Load test
 
-### 3.2. Cách 2: Sử dụng JMeter CLI (Non-GUI Mode)
+- Cấu hình bộ test: 
+    - Threads: 100
+    - Rampup time: 2 seconds
+    - Loop: 5
 
-> **Khuyên dùng**: Non-GUI mode cho hiệu năng tốt hơn khi chạy với số lượng threads lớn.
+- Kết quả:
+    - Hệ thống hoạt động ổn định dưới tải (100 concurrent users), không có dấu hiệu quá tải CPU/RAM đáng kể. CPU chỉ tăng lên 100% rất nhanh rồi hạ xuống.
+    
+    - Summary report: Quan sát thấy các thông tin sau:
+        - Số lượng request: 500
+        - Thời gian phản hồi trung bình (Avg Response Time): **2,789 ms** (~2.8s)
+        - Thời gian phản hồi tối đa (Max Response Time): **3,791 ms** (~3.8s)
+        - Tỷ lệ lỗi (Error Rate): **0.00%**
+        - Thông lượng (Throughput): **31.4 req/sec**
 
-#### Các lệnh thực thi cho từng kịch bản:
+        ![Dashboard Summary](images/load_dashboard.png)
+    - Quan sát danh sách các lỗi, ta thấy **không có lỗi nào xảy ra** (0% Error Rate), cho thấy hệ thống xử lý tốt ở mức tải này.
+    ![Errors Summary](images/load_errors.png)
 
-```bash
-# Di chuyển đến thư mục chứa test plan
-cd tien.pt/req6
+    - Graph (Chi tiết vui lòng xem report tương ứng ở link đính kèm)
+        - Response time: Response time dao động quanh mức trung bình 2.8s, không có sự tăng đột biến nào đáng kể.
+        ![Response Time Graph](images/load_response_time.png)
 
-# Lấy session cookie (chạy trước khi test)
-COOKIE=$(python3 ../req7/get_auth_cookie.py | grep "VALID_COOKIE" | cut -d: -f2 | tr -d ' ')
+        - Response time percentile: Các đường P90, P95, P99 nằm khá gần nhau và gần với mức trung bình, chứng tỏ độ ổn định cao.
+        ![Percentiles Graph](images/load_percentiles.png)
 
-# Load Testing (10 Users, 5 loops)
-jmeter -n -t performance_test.jmx \
-  -Jthreads=10 -Jrampup=10 -Jloop=5 \
-  -Jcookie="orangehrm=$COOKIE" \
-  -l load.jtl
+        - Latency: Latency duy trì ở mức thấp và ổn định trong suốt quá trình test.
+        ![Latency Graph](images/load_latency.png)
 
-# Stress Testing (100 Users, 10 loops)
-jmeter -n -t performance_test.jmx \
-  -Jthreads=100 -Jrampup=10 -Jloop=10 \
-  -Jcookie="orangehrm=$COOKIE" \
-  -l stress.jtl
+### 4.2. Stress test
 
-# Spike Testing (500 Users, 1 loop, 1s ramp-up)
-jmeter -n -t performance_test.jmx \
-  -Jthreads=500 -Jrampup=1 -Jloop=1 \
-  -Jcookie="orangehrm=$COOKIE" \
-  -l spike.jtl
+- Cấu hình bộ test: 
+    - Threads: 1000
+    - Rampup time: 2 seconds
+    - Loop: 20
 
-# Limit Testing 1 (1000 Users)
-jmeter -n -t performance_test.jmx \
-  -Jthreads=1000 -Jrampup=1 -Jloop=1 \
-  -Jcookie="orangehrm=$COOKIE" \
-  -l limit_1000.jtl
+    ![alt text](image-7.png)
 
-# Limit Testing 2 (2000 Users)
-jmeter -n -t performance_test.jmx \
-  -Jthreads=2000 -Jrampup=1 -Jloop=1 \
-  -Jcookie="orangehrm=$COOKIE" \
-  -l limit_2000.jtl
-```
+- Kết quả:
+    - Quan sát rằng, khi thực thi, hệ thống bị đẩy đến mức sử dụng tối đa CPU (100% ~ 1 core, là giới hạn đã set cho docker container). RAM chiếm hơn 60% trong suốt quá trình test. 
+    ![alt text](image-6.png)
+    - Ta có thể thấy các request fail xuất hiện trong kết quả: 
+    ![alt text](image-5.png)
+    - Summary report: Quan sát thấy các thông tin sau:
+        - Số lượng request: 20,000
+        - Avg Response Time: **20,452 ms** (~20.5s)
+        - Max Response Time: **136,296 ms** (~2.3 phút)
+        - Error Rate: **4.97%**
+        - Throughput: **38.0 req/sec**
+        - P90-P95-P99: **18,836 ms** - **86,237 ms** - **135,841 ms** (90%, 95% và 99% các yêu cầu có thời gian phản hồi thấp hơn hoặc bằng giá trị này).
 
-**Giải thích các tham số:**
-| Tham số           | Mô tả                                   |
-| :---------------- | :-------------------------------------- |
-| `-n`              | Non-GUI mode (headless)                 |
-| `-t`              | Đường dẫn đến file Test Plan (.jmx)     |
-| `-Jthreads=N`     | Override biến THREADS = N               |
-| `-Jrampup=N`      | Override biến RAMPUP = N giây           |
-| `-Jloop=N`        | Override biến LOOP = N lần              |
-| `-Jcookie=VALUE`  | Override biến COOKIE cho authentication |
-| `-l filename.jtl` | Lưu kết quả vào file JTL                |
+        ![Dashboard Summary](images/stress_dashboard.png)
+    - Quan sát danh sách các lỗi, ta thấy đây là các lỗi connection, xuất hiện do server không handle được lượng request quá lớn
+    ![Errors Summary](images/stress_errors.png)
 
-![Kết quả chạy Stress Test trên CLI](jmeter-cli-stress.png)
+    - Graph (Đây là danh sách 3 biểu đồ điển hình thể hiện được kết quả test. Chi tiết vui lòng xem report tương ứng ở link đính kèm)
+        - Response time: Response time tăng cao ở thời điểm giữa, là thời điểm server đã chịu tải nặng một thời gian tương đối để khiến server quá tải. Sau thời điểm đỉnh, khi các request đã fail hoặc được giải quyết phần nào, ta thấy response time giảm đáng kế.
+        ![Response Time Graph](images/stress_response_time.png)
 
-Hình 5: Output của JMeter CLI khi chạy Stress Test với 100 threads, hiển thị realtime statistics.
+        - Response time percentile: Quan sát thấy P90, P95 và P99 lệch rất đáng kể. Điều này cho thấy khi server quá tải sẽ gây ảnh hưởng lớn đến response time. 
+        ![Percentiles Graph](images/stress_percentiles.png)
 
-## 4. Kết quả kiểm thử (Test Results)
+        - Latency: Quan sát thấy latency từ thấp ở thời điểm bắt đầu, tăng mạnh lên khi server bắt đầu quá tải, và giảm dần khi các request được giải quyết.
+        ![Latency Graph](images/stress_latency.png)
 
-> Kết quả dưới đây được ghi nhận từ lần chạy thực tế vào ngày **13/01/2026**.
-
-### 4.1. Bảng tổng hợp (Summary Table)
-
-| Test Type   | Users | Total Requests | Avg Time (ms) | Min (ms) | Max (ms) | Throughput (req/s) | Error Rate |   Status   |
-| :---------- | :---: | :------------: | :-----------: | :------: | :------: | :----------------: | :--------: | :--------: |
-| **Load**    |  10   |       50       |    **35**     |    31    |    89    |        10.6        | **0.00%**  | ✅ **PASS** |
-| **Stress**  |  100  |      1000      |   **1,389**   |    34    |  10,190  |        35.5        | **0.00%**  | ✅ **PASS** |
-| **Spike**   |  500  |      500       |   **5,750**   |   890    |  10,200  |        44.6        | **0.00%**  | ⚠️ **WARN** |
-| **Limit 1** | 1000  |      1000      |   **9,310**   |  1,200   |  18,270  |        52.0        | **0.00%**  | ⚠️ **WARN** |
-| **Limit 2** | 2000  |      2000      |  **18,240**   |  2,500   |  35,430  |        53.0        | **0.00%**  | ⚠️ **WARN** |
-
-### 4.2. Phân tích chi tiết (Detailed Analysis)
-
-#### 4.2.1. Load Testing (10 Users)
-
-| Metric                | Value      | Đánh giá               |
-| :-------------------- | :--------- | :--------------------- |
-| Average Response Time | 35ms       | 🟢 Xuất sắc (< 100ms)   |
-| Max Response Time     | 89ms       | 🟢 Chấp nhận được       |
-| Throughput            | 10.6 req/s | 🟢 Phù hợp với 10 users |
-| Error Rate            | 0.00%      | 🟢 Không có lỗi         |
-
-**Nhận xét**: Hệ thống hoạt động hoàn hảo dưới tải bình thường. Thời gian phản hồi tức thì (~35ms) cho thấy API được tối ưu tốt cho use case chuẩn.
-
-#### 4.2.2. Stress Testing (100 Users)
-
-| Metric                | Value      | Đánh giá                     |
-| :-------------------- | :--------- | :--------------------------- |
-| Average Response Time | 1,389ms    | 🟡 Chấp nhận được nhưng cao   |
-| Max Response Time     | 10,190ms   | 🟠 Cần lưu ý (timeout risk)   |
-| Throughput            | 35.5 req/s | 🟢 Tăng x3.5 so với Load Test |
-| Error Rate            | 0.00%      | 🟢 Không có lỗi               |
-
-**Nhận xét**: 
-- Độ trễ tăng đáng kể (~1.4s) do server phải xếp hàng xử lý (Request Queueing).
-- Throughput tăng từ 10.6 lên 35.5 req/s cho thấy hệ thống scale được nhưng với trade-off về latency.
-- Mọi request đều được phục vụ thành công (0% error).
-
-#### 4.2.3. Spike Testing (500 Users)
-
-| Metric                | Value      | Đánh giá             |
-| :-------------------- | :--------- | :------------------- |
-| Average Response Time | 5,750ms    | 🟠 Cao, ảnh hưởng UX  |
-| Max Response Time     | 10,200ms   | 🔴 Nguy cơ timeout    |
-| Throughput            | 44.6 req/s | 🟢 Throughput ổn định |
-| Error Rate            | 0.00%      | 🟢 Không có lỗi       |
-
-![Kết quả Spike Test](jmeter-spike-results.png)
-
-Hình 6: Summary Report của Spike Test (500 users) với average response time ~5.7s nhưng 0% error rate.
-
-**Nhận xét**:
-- Khi có lượng truy cập đột biến đập vào trong 1 giây, hệ thống **vẫn không crash**.
-- PHP Server process quản lý tốt việc xếp hàng, nhưng người dùng phải chờ trung bình ~6 giây.
-- Throughput đạt 44.6 req/s cho thấy hệ thống có khả năng scale.
-
-#### 4.2.4. Limit Testing (1000 - 2000 Users)
-
-**Thử nghiệm cực hạn:**
-
-| Users | Avg Time | Max Time | Error Rate | Kết luận            |
-| :---: | :------: | :------: | :--------: | :------------------ |
-| 1000  |  9.31s   |  18.27s  |   0.00%    | Vẫn hoạt động       |
-| 2000  |  18.24s  |  35.43s  |   0.00%    | Vượt client timeout |
 
 **Phát hiện quan trọng:**
 1. **Độ ổn định (Availability)**: Hệ thống cho thấy độ ổn định đáng kinh ngạc. Tại 2000 users đồng thời, **tỷ lệ lỗi vẫn là 0%**.
