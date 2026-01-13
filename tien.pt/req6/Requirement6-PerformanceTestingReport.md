@@ -242,7 +242,7 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
 
 - Kết quả:
     - Hệ thống hoạt động ổn định dưới tải (100 concurrent users), không có dấu hiệu quá tải CPU/RAM đáng kể. CPU chỉ tăng lên 100% rất nhanh rồi hạ xuống.
-    
+    ![alt text](image-16.png)
     - Summary report: Quan sát thấy các thông tin sau:
         - Số lượng request: 500
         - Thời gian phản hồi trung bình (Avg Response Time): **2,789 ms** (~2.8s)
