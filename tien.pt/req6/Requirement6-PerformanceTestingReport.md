@@ -8,20 +8,40 @@
     - [Thông tin nhóm 11](#thông-tin-nhóm-11)
   - [1. Tổng quan](#1-tổng-quan)
     - [1.1. Các kỹ thuật kiểm thử hiệu năng](#11-các-kỹ-thuật-kiểm-thử-hiệu-năng)
-    - [1.2. Đối tượng kiểm thử (SUT)](#12-đối-tượng-kiểm-thử-sut)
-  - [2. Môi trường kiểm thử (Test Environment)](#2-môi-trường-kiểm-thử-test-environment)
+      - [Chi tiết các kỹ thuật:](#chi-tiết-các-kỹ-thuật)
+    - [1.2. System under test](#12-system-under-test)
+  - [2. Môi trường kiểm thử](#2-môi-trường-kiểm-thử)
     - [2.1. Server (SUT)](#21-server-sut)
     - [2.2. Client (Test Runner)](#22-client-test-runner)
   - [3. Quy trình thực hiện kiểm thử](#3-quy-trình-thực-hiện-kiểm-thử)
     - [3.1. Cách 1: Sử dụng JMeter GUI](#31-cách-1-sử-dụng-jmeter-gui)
+      - [Bước 1: Import Test Plan](#bước-1-import-test-plan)
+      - [Bước 2: Cấu hình Thread Group](#bước-2-cấu-hình-thread-group)
+      - [Bước 3: Cấu hình Data-Driven Testing (CSV)](#bước-3-cấu-hình-data-driven-testing-csv)
+      - [Bước 4: Cấu hình Authentication Cookie](#bước-4-cấu-hình-authentication-cookie)
+      - [Bước 5: Chạy Test và Xem Kết Quả](#bước-5-chạy-test-và-xem-kết-quả)
     - [3.2. Cách 2: Sử dụng JMeter CLI (Non-GUI Mode)](#32-cách-2-sử-dụng-jmeter-cli-non-gui-mode)
+      - [Các lệnh thực thi cho từng kịch bản:](#các-lệnh-thực-thi-cho-từng-kịch-bản)
   - [4. Kết quả kiểm thử (Test Results)](#4-kết-quả-kiểm-thử-test-results)
     - [4.1. Bảng tổng hợp (Summary Table)](#41-bảng-tổng-hợp-summary-table)
     - [4.2. Phân tích chi tiết (Detailed Analysis)](#42-phân-tích-chi-tiết-detailed-analysis)
+      - [4.2.1. Load Testing (10 Users)](#421-load-testing-10-users)
+      - [4.2.2. Stress Testing (100 Users)](#422-stress-testing-100-users)
+      - [4.2.3. Spike Testing (500 Users)](#423-spike-testing-500-users)
+      - [4.2.4. Limit Testing (1000 - 2000 Users)](#424-limit-testing-1000---2000-users)
     - [4.3. Test Execution Screenshots](#43-test-execution-screenshots)
+      - [Load Test Results (Summary Report)](#load-test-results-summary-report)
   - [5. Kết luận \& Khuyến nghị](#5-kết-luận--khuyến-nghị)
+    - [5.1. Kết luận](#51-kết-luận)
+    - [5.2. Khuyến nghị cải thiện](#52-khuyến-nghị-cải-thiện)
   - [6. Phụ lục A: Hướng dẫn cài đặt Apache JMeter](#6-phụ-lục-a-hướng-dẫn-cài-đặt-apache-jmeter)
+    - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
+    - [Cài đặt trên Linux](#cài-đặt-trên-linux)
+    - [Cấu hình JVM cho High Load Testing](#cấu-hình-jvm-cho-high-load-testing)
   - [7. Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)](#7-phụ-lục-b-hướng-dẫn-lấy-session-cookie-authentication)
+    - [Cách 1: Sử dụng Script Python (Khuyên dùng)](#cách-1-sử-dụng-script-python-khuyên-dùng)
+    - [Cách 2: Lấy thủ công qua Developer Tools (F12)](#cách-2-lấy-thủ-công-qua-developer-tools-f12)
+    - [Lưu ý quan trọng về Cookie](#lưu-ý-quan-trọng-về-cookie)
 
 
 ## Thông tin cá nhân & nhóm
@@ -59,12 +79,12 @@ Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Te
 
 ### 1.1. Các kỹ thuật kiểm thử hiệu năng
 
-| Kỹ thuật | Mô tả | Mục tiêu |
-| :--- | :--- | :--- |
-| **Load Testing** | Đánh giá hiệu năng hệ thống dưới tải người dùng dự kiến (Normal Load) | Xác định thời gian phản hồi và throughput ở điều kiện bình thường |
-| **Stress Testing** | Đẩy tải vượt quá mức bình thường để tìm giới hạn của hệ thống | Xác định điểm mà hệ thống bắt đầu suy giảm hiệu năng |
-| **Spike Testing** | Tăng tải đột ngột trong thời gian ngắn | Đánh giá khả năng phục hồi khi có traffic burst |
-| **Limit Testing** | Tăng tải cực đại để tìm "điểm gãy" (Breaking Point) | Xác định ngưỡng chịu đựng tối đa của hệ thống |
+| Kỹ thuật           | Mô tả                                                                 | Mục tiêu                                                          |
+| :----------------- | :-------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| **Load Testing**   | Đánh giá hiệu năng hệ thống dưới tải người dùng dự kiến (Normal Load) | Xác định thời gian phản hồi và throughput ở điều kiện bình thường |
+| **Stress Testing** | Đẩy tải vượt quá mức bình thường để tìm giới hạn của hệ thống         | Xác định điểm mà hệ thống bắt đầu suy giảm hiệu năng              |
+| **Spike Testing**  | Tăng tải đột ngột trong thời gian ngắn                                | Đánh giá khả năng phục hồi khi có traffic burst                   |
+| **Limit Testing**  | Tăng tải cực đại để tìm "điểm gãy" (Breaking Point)                   | Xác định ngưỡng chịu đựng tối đa của hệ thống                     |
 
 #### Chi tiết các kỹ thuật:
 
@@ -88,7 +108,7 @@ Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Te
    - *Cấu hình*: 1000-2000 threads, ramp-up 1 giây.
    - *Kết quả mong đợi*: Xác định được số lượng concurrent users tối đa.
 
-### 1.2. Đối tượng kiểm thử (SUT)
+### 1.2. System under test
 
 **API Specifications:**
 - **Endpoint**: `POST /api/v2/recruitment/candidates`
@@ -114,27 +134,40 @@ Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Te
 - **Success**: `200 OK` với JSON Object chứa thông tin ứng viên vừa tạo.
 - **Failure**: `401 Unauthorized` nếu cookie hết hạn.
 
-## 2. Môi trường kiểm thử (Test Environment)
+## 2. Môi trường kiểm thử
 
-### 2.1. Server (SUT)
+### 2.1. Server
 
-| Thành phần | Thông tin |
-| :--- | :--- |
-| **Application** | OrangeHRM 5.x (Open Source) |
-| **Base URL** | `http://localhost:8080/web/index.php` |
-| **Web Server** | Apache HTTP Server với PHP |
-| **Database** | MySQL 8.x |
-| **Deployment** | Docker Container (localhost) |
+| Thành phần      | Thông tin                             |
+| :-------------- | :------------------------------------ |
+| **Application** | OrangeHRM 5.x (Open Source)           |
+| **Base URL**    | `http://localhost:8080/web/index.php` |
+| **Web Server**  | Apache HTTP Server với PHP            |
+| **Database**    | MySQL 8.x                             |
+| **Deployment**  | Docker Container (localhost)          |
+
+Sau đây là thông tin của máy host server:
+
+| Thành phần           | Thông tin            |
+| :------------------- | :------------------- |
+| **Operating System** | Linux (Ubuntu 25.10) |
+| **CPU**              | Intel Core i5-1135G7 |
+| **RAM**              | 24GB DDR4            |
+| **Disk**             | SSD 512GB            |
+
+Tuy nhiên, mỗi container sẽ được giới hạn với **1 core CPU và 1GB RAM**.
+
+![alt text](image.png)
 
 ### 2.2. Client (Test Runner)
 
-| Thành phần | Thông tin |
-| :--- | :--- |
-| **Operating System** | Linux (Ubuntu/Debian) |
-| **Test Tool** | Apache JMeter 5.6.3 |
-| **Java Version** | OpenJDK 11+ |
-| **Network** | Localhost loopback (127.0.0.1) |
-| **Memory Allocation** | JVM Heap: 1GB (-Xms1g -Xmx1g) |
+| Thành phần            | Thông tin                      |
+| :-------------------- | :----------------------------- |
+| **Operating System**  | Linux (Ubuntu/Debian)          |
+| **Test Tool**         | Apache JMeter 5.6.3            |
+| **Java Version**      | OpenJDK 21+                    |
+| **Network**           | Localhost  |
+| **Memory Allocation** | JVM Heap: 1GB (-Xms1g -Xmx1g)  |
 
 ## 3. Quy trình thực hiện kiểm thử
 
@@ -148,12 +181,7 @@ Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Te
    cd tien.pt/req6
    ```
 
-2. Mở JMeter:
-   ```bash
-   jmeter
-   ```
-
-3. Import file `performance_test.jmx` bằng cách:
+2. Mở JMeter và import file `performance_test.jmx` bằng cách:
    - File → Open → Chọn `performance_test.jmx`
 
 ![Cấu trúc Test Plan trong JMeter](jmeter-test-plan.png)
@@ -168,11 +196,11 @@ Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HT
 
 Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `${LOOP}` cho phép linh hoạt thay đổi qua CLI.
 
-| Tham số | Ý nghĩa | Giá trị mặc định |
-| :--- | :--- | :--- |
-| `Number of Threads` | Số lượng virtual users đồng thời | 10 |
-| `Ramp-up Period` | Thời gian để khởi tạo tất cả threads (giây) | 10 |
-| `Loop Count` | Số lần lặp cho mỗi thread | 5 |
+| Tham số             | Ý nghĩa                                     | Giá trị mặc định |
+| :------------------ | :------------------------------------------ | :--------------- |
+| `Number of Threads` | Số lượng virtual users đồng thời            | 10               |
+| `Ramp-up Period`    | Thời gian để khởi tạo tất cả threads (giây) | 10               |
+| `Loop Count`        | Số lần lặp cho mỗi thread                   | 5                |
 
 #### Bước 3: Cấu hình Data-Driven Testing (CSV)
 
@@ -251,15 +279,15 @@ jmeter -n -t performance_test.jmx \
 ```
 
 **Giải thích các tham số:**
-| Tham số | Mô tả |
-| :--- | :--- |
-| `-n` | Non-GUI mode (headless) |
-| `-t` | Đường dẫn đến file Test Plan (.jmx) |
-| `-Jthreads=N` | Override biến THREADS = N |
-| `-Jrampup=N` | Override biến RAMPUP = N giây |
-| `-Jloop=N` | Override biến LOOP = N lần |
-| `-Jcookie=VALUE` | Override biến COOKIE cho authentication |
-| `-l filename.jtl` | Lưu kết quả vào file JTL |
+| Tham số           | Mô tả                                   |
+| :---------------- | :-------------------------------------- |
+| `-n`              | Non-GUI mode (headless)                 |
+| `-t`              | Đường dẫn đến file Test Plan (.jmx)     |
+| `-Jthreads=N`     | Override biến THREADS = N               |
+| `-Jrampup=N`      | Override biến RAMPUP = N giây           |
+| `-Jloop=N`        | Override biến LOOP = N lần              |
+| `-Jcookie=VALUE`  | Override biến COOKIE cho authentication |
+| `-l filename.jtl` | Lưu kết quả vào file JTL                |
 
 ![Kết quả chạy Stress Test trên CLI](jmeter-cli-stress.png)
 
@@ -271,35 +299,35 @@ Hình 5: Output của JMeter CLI khi chạy Stress Test với 100 threads, hiể
 
 ### 4.1. Bảng tổng hợp (Summary Table)
 
-| Test Type | Users | Total Requests | Avg Time (ms) | Min (ms) | Max (ms) | Throughput (req/s) | Error Rate | Status |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Load** | 10 | 50 | **35** | 31 | 89 | 10.6 | **0.00%** | ✅ **PASS** |
-| **Stress** | 100 | 1000 | **1,389** | 34 | 10,190 | 35.5 | **0.00%** | ✅ **PASS** |
-| **Spike** | 500 | 500 | **5,750** | 890 | 10,200 | 44.6 | **0.00%** | ⚠️ **WARN** |
-| **Limit 1** | 1000 | 1000 | **9,310** | 1,200 | 18,270 | 52.0 | **0.00%** | ⚠️ **WARN** |
-| **Limit 2** | 2000 | 2000 | **18,240** | 2,500 | 35,430 | 53.0 | **0.00%** | ⚠️ **WARN** |
+| Test Type   | Users | Total Requests | Avg Time (ms) | Min (ms) | Max (ms) | Throughput (req/s) | Error Rate |   Status   |
+| :---------- | :---: | :------------: | :-----------: | :------: | :------: | :----------------: | :--------: | :--------: |
+| **Load**    |  10   |       50       |    **35**     |    31    |    89    |        10.6        | **0.00%**  | ✅ **PASS** |
+| **Stress**  |  100  |      1000      |   **1,389**   |    34    |  10,190  |        35.5        | **0.00%**  | ✅ **PASS** |
+| **Spike**   |  500  |      500       |   **5,750**   |   890    |  10,200  |        44.6        | **0.00%**  | ⚠️ **WARN** |
+| **Limit 1** | 1000  |      1000      |   **9,310**   |  1,200   |  18,270  |        52.0        | **0.00%**  | ⚠️ **WARN** |
+| **Limit 2** | 2000  |      2000      |  **18,240**   |  2,500   |  35,430  |        53.0        | **0.00%**  | ⚠️ **WARN** |
 
 ### 4.2. Phân tích chi tiết (Detailed Analysis)
 
 #### 4.2.1. Load Testing (10 Users)
 
-| Metric | Value | Đánh giá |
-| :--- | :--- | :--- |
-| Average Response Time | 35ms | 🟢 Xuất sắc (< 100ms) |
-| Max Response Time | 89ms | 🟢 Chấp nhận được |
-| Throughput | 10.6 req/s | 🟢 Phù hợp với 10 users |
-| Error Rate | 0.00% | 🟢 Không có lỗi |
+| Metric                | Value      | Đánh giá               |
+| :-------------------- | :--------- | :--------------------- |
+| Average Response Time | 35ms       | 🟢 Xuất sắc (< 100ms)   |
+| Max Response Time     | 89ms       | 🟢 Chấp nhận được       |
+| Throughput            | 10.6 req/s | 🟢 Phù hợp với 10 users |
+| Error Rate            | 0.00%      | 🟢 Không có lỗi         |
 
 **Nhận xét**: Hệ thống hoạt động hoàn hảo dưới tải bình thường. Thời gian phản hồi tức thì (~35ms) cho thấy API được tối ưu tốt cho use case chuẩn.
 
 #### 4.2.2. Stress Testing (100 Users)
 
-| Metric | Value | Đánh giá |
-| :--- | :--- | :--- |
-| Average Response Time | 1,389ms | 🟡 Chấp nhận được nhưng cao |
-| Max Response Time | 10,190ms | 🟠 Cần lưu ý (timeout risk) |
-| Throughput | 35.5 req/s | 🟢 Tăng x3.5 so với Load Test |
-| Error Rate | 0.00% | 🟢 Không có lỗi |
+| Metric                | Value      | Đánh giá                     |
+| :-------------------- | :--------- | :--------------------------- |
+| Average Response Time | 1,389ms    | 🟡 Chấp nhận được nhưng cao   |
+| Max Response Time     | 10,190ms   | 🟠 Cần lưu ý (timeout risk)   |
+| Throughput            | 35.5 req/s | 🟢 Tăng x3.5 so với Load Test |
+| Error Rate            | 0.00%      | 🟢 Không có lỗi               |
 
 **Nhận xét**: 
 - Độ trễ tăng đáng kể (~1.4s) do server phải xếp hàng xử lý (Request Queueing).
@@ -308,12 +336,12 @@ Hình 5: Output của JMeter CLI khi chạy Stress Test với 100 threads, hiể
 
 #### 4.2.3. Spike Testing (500 Users)
 
-| Metric | Value | Đánh giá |
-| :--- | :--- | :--- |
-| Average Response Time | 5,750ms | 🟠 Cao, ảnh hưởng UX |
-| Max Response Time | 10,200ms | 🔴 Nguy cơ timeout |
-| Throughput | 44.6 req/s | 🟢 Throughput ổn định |
-| Error Rate | 0.00% | 🟢 Không có lỗi |
+| Metric                | Value      | Đánh giá             |
+| :-------------------- | :--------- | :------------------- |
+| Average Response Time | 5,750ms    | 🟠 Cao, ảnh hưởng UX  |
+| Max Response Time     | 10,200ms   | 🔴 Nguy cơ timeout    |
+| Throughput            | 44.6 req/s | 🟢 Throughput ổn định |
+| Error Rate            | 0.00%      | 🟢 Không có lỗi       |
 
 ![Kết quả Spike Test](jmeter-spike-results.png)
 
@@ -328,10 +356,10 @@ Hình 6: Summary Report của Spike Test (500 users) với average response time
 
 **Thử nghiệm cực hạn:**
 
-| Users | Avg Time | Max Time | Error Rate | Kết luận |
-| :---: | :---: | :---: | :---: | :--- |
-| 1000 | 9.31s | 18.27s | 0.00% | Vẫn hoạt động |
-| 2000 | 18.24s | 35.43s | 0.00% | Vượt client timeout |
+| Users | Avg Time | Max Time | Error Rate | Kết luận            |
+| :---: | :------: | :------: | :--------: | :------------------ |
+| 1000  |  9.31s   |  18.27s  |   0.00%    | Vẫn hoạt động       |
+| 2000  |  18.24s  |  35.43s  |   0.00%    | Vượt client timeout |
 
 **Phát hiện quan trọng:**
 1. **Độ ổn định (Availability)**: Hệ thống cho thấy độ ổn định đáng kinh ngạc. Tại 2000 users đồng thời, **tỷ lệ lỗi vẫn là 0%**.
@@ -352,12 +380,12 @@ Hình 7: Kết quả Load Test với 50 samples, average 35ms, 0% error rate.
 
 ### 5.1. Kết luận
 
-| Tiêu chí | Kết quả | Đánh giá |
-| :--- | :--- | :--- |
-| **Stability** | 0% error rate ở mọi mức tải | 🟢 Xuất sắc |
-| **Scalability** | Throughput tăng từ 10.6 → 53 req/s | 🟢 Tốt |
-| **Latency under load** | Tăng tuyến tính, max 35s | 🟠 Cần cải thiện |
-| **Breaking Point** | ~2000 concurrent users (client timeout) | 🟡 Chấp nhận được |
+| Tiêu chí               | Kết quả                                 | Đánh giá         |
+| :--------------------- | :-------------------------------------- | :--------------- |
+| **Stability**          | 0% error rate ở mọi mức tải             | 🟢 Xuất sắc       |
+| **Scalability**        | Throughput tăng từ 10.6 → 53 req/s      | 🟢 Tốt            |
+| **Latency under load** | Tăng tuyến tính, max 35s                | 🟠 Cần cải thiện  |
+| **Breaking Point**     | ~2000 concurrent users (client timeout) | 🟡 Chấp nhận được |
 
 ### 5.2. Khuyến nghị cải thiện
 
