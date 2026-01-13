@@ -103,11 +103,6 @@ Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Te
    - *Cấu hình*: 500 threads, ramp-up 1 giây = 500 requests đồng thời.
    - *Chỉ số quan trọng*: Hệ thống có crash không? Recovery time?
 
-4. **Limit Testing (1000 - 2000 Users)**
-   - *Mục đích*: Tìm điểm gãy của hệ thống (Breaking Point).
-   - *Cấu hình*: 1000-2000 threads, ramp-up 1 giây.
-   - *Kết quả mong đợi*: Xác định được số lượng concurrent users tối đa.
-
 ### 1.2. System under test
 
 **API Specifications:**
@@ -184,7 +179,7 @@ Chúng ta sẽ sử dụng JMeter GUI cho phần kiểm thử này. JMeter cũng
 2. Mở JMeter và import file `performance_test.jmx` bằng cách:
    - File → Open → Chọn `performance_test.jmx`
 
-![Cấu trúc Test Plan trong JMeter](image-1.png)
+![Cấu trúc Test Plan trong JMeter](images/jmeter_test_plan_structure.png)
 
 Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HTTP Header Manager, HTTP Request Defaults, Create Candidate Request, và Summary Report.
 
@@ -192,7 +187,7 @@ Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HT
 
 Điều chỉnh các tham số trong Thread Group theo kịch bản test:
 
-![Cấu hình Thread Group](image-4.png)
+![Cấu hình Thread Group](images/jmeter_thread_group_config.png)
 
 Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `${LOOP}` cho phép linh hoạt thay đổi qua CLI.
 
@@ -206,7 +201,7 @@ Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `
 
 Dữ liệu ứng viên được tham số hóa thông qua file CSV để đảm bảo mỗi request tạo một ứng viên với thông tin khác nhau.
 
-![Cấu hình CSV Data Set](image-2.png)
+![Cấu hình CSV Data Set](images/jmeter_csv_config.png)
 
 Hình 3: Cấu hình CSV Data Set Config để đọc dữ liệu từ file `data/candidates.csv`.
 
@@ -220,7 +215,7 @@ TestUser3,Perf3,test.user.3@perf.com
 TestUser50,Perf50,test.user.50@perf.com
 ```
 
-![alt text](image-3.png)
+![alt text](images/jmeter_http_config.png)
 
 #### Bước 4: Cấu hình Authentication Cookie
 
@@ -242,7 +237,7 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
 
 - Kết quả:
     - Hệ thống hoạt động ổn định dưới tải (100 concurrent users), không có dấu hiệu quá tải CPU/RAM đáng kể. CPU chỉ tăng lên 100% rất nhanh rồi hạ xuống.
-    ![alt text](image-16.png)
+    ![alt text](images/docker_stats_cpu_load.png)
     - Summary report: Quan sát thấy các thông tin sau:
         - Số lượng request: 500
         - Thời gian phản hồi trung bình (Avg Response Time): **2,789 ms** (~2.8s)
@@ -271,13 +266,13 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
     - Rampup time: 2 seconds
     - Loop: 20
 
-    ![alt text](image-7.png)
+    ![alt text](images/stress_test_cli_execution.png)
 
 - Kết quả:
     - Quan sát rằng, khi thực thi, hệ thống bị đẩy đến mức sử dụng tối đa CPU (100% ~ 1 core, là giới hạn đã set cho docker container). RAM chiếm hơn 60% trong suốt quá trình test. 
-    ![alt text](image-6.png)
+    ![alt text](images/docker_stats_cpu_stress.png)
     - Ta có thể thấy các request fail xuất hiện trong kết quả: 
-    ![alt text](image-5.png)
+    ![alt text](images/stress_test_cli_errors.png)
     - Summary report: Quan sát thấy các thông tin sau:
         - Số lượng request: 20,000
         - Avg Response Time: **20,452 ms** (~20.5s)
