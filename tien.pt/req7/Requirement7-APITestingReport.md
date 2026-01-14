@@ -17,7 +17,7 @@
     - [3.1. Summary](#31-summary)
     - [3.2. Các bug tìm thấy](#32-các-bug-tìm-thấy)
     - [3.3. Test Execution Screenshot](#33-test-execution-screenshot)
-  - [4. Phụ lục A: Hướng dẫn lấy Session Cookie (Authentication)](#4-phụ-lục-a-hướng-dẫn-lấy-session-cookie-authentication)
+  - [Phụ lục: Hướng dẫn lấy Session Cookie (Authentication)](#phụ-lục-hướng-dẫn-lấy-session-cookie-authentication)
     - [Cách 1: Sử dụng Script tự động (Khuyên dùng)](#cách-1-sử-dụng-script-tự-động-khuyên-dùng)
     - [Cách 2: Lấy thủ công qua Developer Tools (F12)](#cách-2-lấy-thủ-công-qua-developer-tools-f12)
 
@@ -288,7 +288,7 @@ Hình ảnh dưới đây minh họa kết quả chạy thực tế của toàn 
 
 Hình 5: Tổng quan kết quả test (Test summary)
 
-## 4. Phụ lục A: Hướng dẫn lấy Session Cookie (Authentication)
+## Phụ lục: Hướng dẫn lấy Session Cookie (Authentication)
 
 Do hệ thống sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật, việc lấy cookie này thông qua Javascript console (`document.cookie`) là không thể. Dưới đây là 2 cách để lấy giá trị này cho Postman.
 

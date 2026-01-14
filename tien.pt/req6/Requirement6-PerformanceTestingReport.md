@@ -11,34 +11,25 @@
       - [Chi tiết các kỹ thuật:](#chi-tiết-các-kỹ-thuật)
     - [1.2. System under test](#12-system-under-test)
   - [2. Môi trường kiểm thử](#2-môi-trường-kiểm-thử)
-    - [2.1. Server (SUT)](#21-server-sut)
+    - [2.1. Server](#21-server)
     - [2.2. Client (Test Runner)](#22-client-test-runner)
   - [3. Quy trình thực hiện kiểm thử](#3-quy-trình-thực-hiện-kiểm-thử)
-    - [3.1. Cách 1: Sử dụng JMeter GUI](#31-cách-1-sử-dụng-jmeter-gui)
       - [Bước 1: Import Test Plan](#bước-1-import-test-plan)
       - [Bước 2: Cấu hình Thread Group](#bước-2-cấu-hình-thread-group)
       - [Bước 3: Cấu hình Data-Driven Testing (CSV)](#bước-3-cấu-hình-data-driven-testing-csv)
       - [Bước 4: Cấu hình Authentication Cookie](#bước-4-cấu-hình-authentication-cookie)
       - [Bước 5: Chạy Test và Xem Kết Quả](#bước-5-chạy-test-và-xem-kết-quả)
-    - [3.2. Cách 2: Sử dụng JMeter CLI (Non-GUI Mode)](#32-cách-2-sử-dụng-jmeter-cli-non-gui-mode)
-      - [Các lệnh thực thi cho từng kịch bản:](#các-lệnh-thực-thi-cho-từng-kịch-bản)
-  - [4. Kết quả kiểm thử (Test Results)](#4-kết-quả-kiểm-thử-test-results)
-    - [4.1. Bảng tổng hợp (Summary Table)](#41-bảng-tổng-hợp-summary-table)
-    - [4.2. Phân tích chi tiết (Detailed Analysis)](#42-phân-tích-chi-tiết-detailed-analysis)
-      - [4.2.1. Load Testing (10 Users)](#421-load-testing-10-users)
-      - [4.2.2. Stress Testing (100 Users)](#422-stress-testing-100-users)
-      - [4.2.3. Spike Testing (500 Users)](#423-spike-testing-500-users)
-      - [4.2.4. Limit Testing (1000 - 2000 Users)](#424-limit-testing-1000---2000-users)
+  - [4. Test Results](#4-test-results)
+    - [4.1 Load test](#41-load-test)
+    - [4.2. Stress test](#42-stress-test)
     - [4.3. Test Execution Screenshots](#43-test-execution-screenshots)
       - [Load Test Results (Summary Report)](#load-test-results-summary-report)
-  - [5. Kết luận \& Khuyến nghị](#5-kết-luận--khuyến-nghị)
-    - [5.1. Kết luận](#51-kết-luận)
-    - [5.2. Khuyến nghị cải thiện](#52-khuyến-nghị-cải-thiện)
-  - [6. Phụ lục A: Hướng dẫn cài đặt Apache JMeter](#6-phụ-lục-a-hướng-dẫn-cài-đặt-apache-jmeter)
+    - [4.3. Spike Test](#43-spike-test)
+  - [Phụ lục A: Hướng dẫn cài đặt Apache JMeter](#phụ-lục-a-hướng-dẫn-cài-đặt-apache-jmeter)
     - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
     - [Cài đặt trên Linux](#cài-đặt-trên-linux)
     - [Cấu hình JVM cho High Load Testing](#cấu-hình-jvm-cho-high-load-testing)
-  - [7. Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)](#7-phụ-lục-b-hướng-dẫn-lấy-session-cookie-authentication)
+  - [Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)](#phụ-lục-b-hướng-dẫn-lấy-session-cookie-authentication)
     - [Cách 1: Sử dụng Script Python (Khuyên dùng)](#cách-1-sử-dụng-script-python-khuyên-dùng)
     - [Cách 2: Lấy thủ công qua Developer Tools (F12)](#cách-2-lấy-thủ-công-qua-developer-tools-f12)
     - [Lưu ý quan trọng về Cookie](#lưu-ý-quan-trọng-về-cookie)
@@ -156,13 +147,13 @@ Tuy nhiên, mỗi container sẽ được giới hạn với **1 core CPU và 1G
 
 ### 2.2. Client (Test Runner)
 
-| Thành phần            | Thông tin                      |
-| :-------------------- | :----------------------------- |
-| **Operating System**  | Linux (Ubuntu/Debian)          |
-| **Test Tool**         | Apache JMeter 5.6.3            |
-| **Java Version**      | OpenJDK 21+                    |
-| **Network**           | Localhost  |
-| **Memory Allocation** | JVM Heap: 1GB (-Xms1g -Xmx1g)  |
+| Thành phần            | Thông tin                     |
+| :-------------------- | :---------------------------- |
+| **Operating System**  | Linux (Ubuntu/Debian)         |
+| **Test Tool**         | Apache JMeter 5.6.3           |
+| **Java Version**      | OpenJDK 21+                   |
+| **Network**           | Localhost                     |
+| **Memory Allocation** | JVM Heap: 1GB (-Xms1g -Xmx1g) |
 
 ## 3. Quy trình thực hiện kiểm thử
 
@@ -191,11 +182,11 @@ Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HT
 
 Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `${LOOP}` cho phép linh hoạt thay đổi qua CLI.
 
-| Tham số             | Ý nghĩa                                     | 
-| :------------------ | :------------------------------------------ | 
-| `Number of Threads` | Số lượng virtual users đồng thời            | 
-| `Ramp-up Period`    | Thời gian để khởi tạo tất cả threads (giây) | 
-| `Loop Count`        | Số lần lặp cho mỗi thread                   | 
+| Tham số             | Ý nghĩa                                     |
+| :------------------ | :------------------------------------------ |
+| `Number of Threads` | Số lượng virtual users đồng thời            |
+| `Ramp-up Period`    | Thời gian để khởi tạo tất cả threads (giây) |
+| `Loop Count`        | Số lần lặp cho mỗi thread                   |
 
 #### Bước 3: Cấu hình Data-Driven Testing (CSV)
 
