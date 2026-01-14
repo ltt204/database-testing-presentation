@@ -239,14 +239,14 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
     - Hệ thống hoạt động ổn định dưới tải (100 concurrent users), không có dấu hiệu quá tải CPU/RAM đáng kể. CPU chỉ tăng lên 100% rất nhanh rồi hạ xuống.
     ![alt text](images/docker_stats_cpu_load.png)
     - Summary report: Quan sát thấy các thông tin sau:
-        - Số lượng request: 500
-        - Thời gian phản hồi trung bình (Avg Response Time): **2,789 ms** (~2.8s)
-        - Thời gian phản hồi tối đa (Max Response Time): **3,791 ms** (~3.8s)
+        - Số lượng request: 800
+        - Thời gian phản hồi trung bình (Avg Response Time): **2,499 ms** (~2.5s)
+        - Thời gian phản hồi tối đa (Max Response Time): **6,322 ms** (~6.3s)
         - Tỷ lệ lỗi (Error Rate): **0.00%**
-        - Thông lượng (Throughput): **31.4 req/sec**
+        - Thông lượng (Throughput): **30.5 req/sec**
 
         ![Dashboard Summary](images/load_dashboard.png)
-    - Quan sát danh sách các lỗi, ta thấy **không có lỗi nào xảy ra** (0% Error Rate), cho thấy hệ thống xử lý tốt ở mức tải này.
+    - Quan sát danh sách các lỗi, ta thấy danh sách lỗi rỗng, cho thấy hệ thống xử lý tốt ở mức tải này.
     ![Errors Summary](images/load_errors.png)
 
     - Graph (Chi tiết vui lòng xem report tương ứng ở link đính kèm)
@@ -307,45 +307,40 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
 
 #### Load Test Results (Summary Report)
 
-![Load Test Summary Report](jmeter-load-results.png)
+![Load Test Summary Report](images/load_dashboard.png)
 
-Hình 7: Kết quả Load Test với 50 samples, average 35ms, 0% error rate.
+Hình 7: Kết quả Load Test với 800 samples, average 2.5s, 0% error rate.
 
-## 5. Kết luận & Khuyến nghị
 
-### 5.1. Kết luận
+### 4.3. Spike Test
 
-| Tiêu chí               | Kết quả                                 | Đánh giá         |
-| :--------------------- | :-------------------------------------- | :--------------- |
-| **Stability**          | 0% error rate ở mọi mức tải             | 🟢 Xuất sắc       |
-| **Scalability**        | Throughput tăng từ 10.6 → 53 req/s      | 🟢 Tốt            |
-| **Latency under load** | Tăng tuyến tính, max 35s                | 🟠 Cần cải thiện  |
-| **Breaking Point**     | ~2000 concurrent users (client timeout) | 🟡 Chấp nhận được |
+- Cấu hình bộ test:
+    - Threads: 1500 (Tăng đột ngột)
+    - Rampup time: 1 second (Mô phỏng spike)
+    - Loop: 1
 
-### 5.2. Khuyến nghị cải thiện
+    ![Active Threads Over Time](images/spike_threads_over_time.png)
+    *Hình minh họa: Lượng user (Active Threads) tăng dựng đứng trong 1s để tạo áp lực đột ngột.*
 
-1. **Web Server Tuning**
-   - Cấu hình `MaxClients` / `MaxRequestWorkers` trong Apache để giới hạn số lượng xử lý đồng thời.
-   - Tránh để request xếp hàng quá lâu gây treo hệ thống.
-   ```apache
-   # /etc/apache2/mods-available/mpm_prefork.conf
-   MaxRequestWorkers 150
-   MaxConnectionsPerChild 10000
-   ```
+- Kết quả:
+    - Hệ thống vẫn duy trì được hoạt động và xử lý toàn bộ request mà **không có lỗi** (0% Error Rate).
+    - Tuy nhiên, thời gian phản hồi bị ảnh hưởng nghiêm trọng do số lượng request đến cùng lúc quá lớn.
+    
+    ![Response Time Graph](images/spike_response_time.png)
 
-2. **Database Optimization**
-   - Sử dụng connection pooling để tối ưu database connections.
-   - Index các trường thường xuyên query (email, firstName, lastName).
+    - Response time percentile: Các đường P90, P95, P99 tăng vọt và phân tách rõ rệt, chứng tỏ người dùng ở nhóm tail (nhóm chậm nhất) chịu độ trễ cực lớn (lên tới 45s-50s) trong thời điểm spike.
+    ![Percentiles Graph](images/spike_percentiles.png)
 
-3. **Caching Layer**
-   - Triển khai Redis/Memcached để cache các truy vấn database đọc.
-   - Giảm tải cho MySQL khi xử lý concurrent requests.
+    - Summary report: Quan sát thấy các thông tin sau:
+        - Số lượng request: 1500
+        - Thời gian phản hồi trung bình (Avg Response Time): **26,720 ms** (~26.7s)
+        - Thời gian phản hồi tối đa (Max Response Time): **54,251 ms** (~54.3s)
+        - Tỷ lệ lỗi (Error Rate): **0.00%**
+        - Thông lượng (Throughput): **26.9 req/sec**
 
-4. **Asynchronous Processing**
-   - Với tác vụ ghi (Create Candidate), có thể đẩy vào Message Queue (RabbitMQ/Redis Queue).
-   - Trả về `202 Accepted` ngay lập tức cho người dùng thay vì chờ xử lý xong.
+        ![Dashboard Summary](images/spike_dashboard.png)
 
-## 6. Phụ lục A: Hướng dẫn cài đặt Apache JMeter
+## Phụ lục A: Hướng dẫn cài đặt Apache JMeter
 
 ### Yêu cầu hệ thống
 - Java JDK 11 hoặc cao hơn
@@ -386,7 +381,7 @@ jmeter -n -t test.jmx -l results.jtl
 HEAP="-Xms2g -Xmx4g -XX:MaxMetaspaceSize=512m"
 ```
 
-## 7. Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)
+## Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)
 
 Do hệ thống OrangeHRM sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật, việc lấy cookie này thông qua JavaScript console (`document.cookie`) là không thể. Dưới đây là 2 cách để lấy giá trị này.
 
@@ -417,6 +412,6 @@ jmeter -n -t performance_test.jmx -Jcookie="orangehrm=abc123xyz..." -l results.j
 
 ### Lưu ý quan trọng về Cookie
 
-- Session cookie có thời gian sống giới hạn (~30 phút không hoạt động).
+- Session cookie có TTL 30 phút nếu không hoạt động.
 - Cần lấy cookie mới trước mỗi lần chạy test nếu session đã hết hạn.
 - Kiểm tra response code `401 Unauthorized` để biết cookie đã hết hạn.

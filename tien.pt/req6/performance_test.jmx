@@ -7,28 +7,30 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="THREADS" elementType="Argument">
             <stringProp name="Argument.name">THREADS</stringProp>
-            <stringProp name="Argument.value">${__P(threads,100)}</stringProp>
+            <stringProp name="Argument.value">${__P(threads,1500)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="RAMPUP" elementType="Argument">
             <stringProp name="Argument.name">RAMPUP</stringProp>
-            <stringProp name="Argument.value">${__P(rampup,2)}</stringProp>
+            <stringProp name="Argument.value">${__P(rampup,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP" elementType="Argument">
             <stringProp name="Argument.name">LOOP</stringProp>
-            <stringProp name="Argument.value">${__P(loop,5)}</stringProp>
+            <stringProp name="Argument.value">${__P(loop,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="COOKIE" elementType="Argument">
             <stringProp name="Argument.name">COOKIE</stringProp>
-            <stringProp name="Argument.value">${__P(cookie,_orangehrm=7k68bmvmvhpg2lobgi0a6oo90k)}</stringProp>
+            <stringProp name="Argument.value">${__P(cookie,_orangehrm=dlp5ipek5o1drs0o8cbm50e323)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -57,7 +59,7 @@
           <stringProp name="variableNames">firstName,lastName,email</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
@@ -70,7 +72,7 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -251,7 +253,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/media/Data/OneDrive-HCMUS/Documents/Testing/testing-project/tien.pt/req6/load_draft.csv</stringProp>
+          <stringProp name="filename">/media/Data/OneDrive-HCMUS/Documents/Testing/testing-project/tien.pt/req6/peak.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>

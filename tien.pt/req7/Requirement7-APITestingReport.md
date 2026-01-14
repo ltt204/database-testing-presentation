@@ -13,13 +13,11 @@
   - [2. Quy trình chung kiểm thử API](#2-quy-trình-chung-kiểm-thử-api)
     - [2.1. Cách 1: Sử dụng Postman GUI](#21-cách-1-sử-dụng-postman-gui)
     - [2.2. Cách 2: Sử dụng Newman (Automation CLI)](#22-cách-2-sử-dụng-newman-automation-cli)
-  - [3. Các bug tìm thấy](#3-các-bug-tìm-thấy)
-    - [3.1. Authentication (OAuth 404)](#31-authentication-oauth-404)
-  - [4. Test Results](#4-test-results)
-    - [4.1. Summary](#41-summary)
-    - [4.2. Detailed Findings](#42-detailed-findings)
-    - [4.3. Test Execution Screenshot](#43-test-execution-screenshot)
-  - [5. Appendix A: Hướng dẫn lấy Session Cookie (Authentication)](#5-appendix-a-hướng-dẫn-lấy-session-cookie-authentication)
+  - [3. Test Results](#3-test-results)
+    - [3.1. Summary](#31-summary)
+    - [3.2. Các bug tìm thấy](#32-các-bug-tìm-thấy)
+    - [3.3. Test Execution Screenshot](#33-test-execution-screenshot)
+  - [4. Phụ lục A: Hướng dẫn lấy Session Cookie (Authentication)](#4-phụ-lục-a-hướng-dẫn-lấy-session-cookie-authentication)
     - [Cách 1: Sử dụng Script tự động (Khuyên dùng)](#cách-1-sử-dụng-script-tự-động-khuyên-dùng)
     - [Cách 2: Lấy thủ công qua Developer Tools (F12)](#cách-2-lấy-thủ-công-qua-developer-tools-f12)
 
@@ -217,7 +215,7 @@ Trong yêu cầu 7, ta tập trung kiểm thử API trên 2 endpoints chính. �
 
 ### 2.1. Cách 1: Sử dụng Postman GUI 
 
-- Clone code được cung cấp: [wait for link]
+- Sử dụng Postman collection và environment ở link sau: [wait for link]
 - Import `postman_collection.json` và `postman_environment.json` vào Postman.
 ![alt text](image-2.png)
 
@@ -325,5 +323,3 @@ Việc lấy trực tiếp cookies từ Postman là không khả thi do OrangeHR
 ![Lấy cookie trên trình duyệt](image.png)
 
 Hình 7: Cookie trong tab Network
-
-![Network Tab Cookie](auth_guide_dashboard.png)
