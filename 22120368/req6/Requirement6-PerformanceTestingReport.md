@@ -320,7 +320,6 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
 - Kết quả:
     - Hệ thống vẫn duy trì được hoạt động và xử lý toàn bộ request mà **không có lỗi** (0% Error Rate).
     - Tuy nhiên, thời gian phản hồi bị ảnh hưởng nghiêm trọng do số lượng request đến cùng lúc quá lớn. Độ chênh lệch giữa request nhanh nhất và chậm nhất là rất đáng kể, nhanh nhất là 298ms, trong khi chậm nhất 54251ms, khoảng hơn 54s.
-
       ![Spike Response Time](images/fig21_spike_response_time.png)
       *Hình 21: Response Time tăng vọt tương ứng với Spike.*    
 
