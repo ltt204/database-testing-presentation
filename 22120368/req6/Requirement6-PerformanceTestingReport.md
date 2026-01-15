@@ -65,32 +65,57 @@
 
 Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Testing) cho tính năng **Recruitment: Create Candidate** của hệ thống OrangeHRM. Kiểm thử được thực hiện sử dụng công cụ **Apache JMeter 5.6.3** với các kịch bản kiểm thử hiệu năng tiêu chuẩn.
 
-### 1.1. Các kỹ thuật kiểm thử hiệu năng
+### 1.1. Các thông số cần chú ý trong JMeter
 
-| Kỹ thuật           | Mô tả                                                                 | Mục tiêu                                                          |
-| :----------------- | :-------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| **Load Testing**   | Đánh giá hiệu năng hệ thống dưới tải người dùng dự kiến (Normal Load) | Xác định thời gian phản hồi và throughput ở điều kiện bình thường |
-| **Stress Testing** | Đẩy tải vượt quá mức bình thường để tìm giới hạn của hệ thống         | Xác định điểm mà hệ thống bắt đầu suy giảm hiệu năng              |
-| **Spike Testing**  | Tăng tải đột ngột trong thời gian ngắn                                | Đánh giá khả năng phục hồi khi có traffic burst                   |
+Trong quá trình kiểm thử hiệu năng với Apache JMeter, chúng ta sử dụng ba thông số cấu hình chính để điều khiển tải tạo ra trên hệ thống:
 
-#### Chi tiết các kỹ thuật:
+- **Number of Threads:** số virtual users giả lập để truy cập hệ thống đồng thời. Mỗi thread tương ứng với một người dùng thực hiện các thao tác theo kịch bản đã định nghĩa.
+- **Ramp-up Period:** Khoảng thời gian khởi tạo toàn bộ số lượng threads đã khai báo. Ví dụ, nếu sử dụng 100 threads với ramp-up 10 giây, JMeter sẽ khởi tạo dần các threads sao cho sau 10 giây, toàn bộ 100 threads đều đang hoạt động.
+- **Loop Count:** Số lần lặp lại kịch bản kiểm thử của mỗi thread. Tổng số request gửi đi sẽ bằng (Number of Threads) * (Loop Count).
 
-1. **Load Testing (10 Users)**
-   - *Mục đích*: Đo lường hiệu năng baseline của API dưới tải bình thường.
-   - *Cấu hình*: 10 threads, ramp-up 10 giây, loop 5 lần = 50 requests.
-   - *Chỉ số đánh giá*: Response time < 500ms, Error rate = 0%.
+### 1.2. Các kỹ thuật kiểm thử hiệu năng
 
-2. **Stress Testing (100 Users)**
-   - *Mục đích*: Đánh giá hành vi hệ thống khi tải tăng lên 10 lần.
-   - *Cấu hình*: 100 threads, ramp-up 10 giây, loop 10 lần = 1000 requests.
-   - *Quan sát*: Request queueing, degradation pattern.
+#### 1.2.1 Load Testing
 
-3. **Spike Testing (500 Users)**
-   - *Mục đích*: Mô phỏng tình huống traffic đột biến (flash crowd).
-   - *Cấu hình*: 500 threads, ramp-up 1 giây = 500 requests đồng thời.
-   - *Chỉ số quan trọng*: Hệ thống có crash không? Recovery time?
+Load Testing là kỹ thuật kiểm thử được sử dụng để đánh giá hoạt động của hệ thống trong điều kiện tải bình thường. 
 
-### 1.2. System under test
+Trong bài test này, kịch bản được thiết lập như sau:
+- Lượng truy cập đồng thời: 100
+- Thời gian khởi động: 2 giây.
+- **Lặp lại 5 lần**, tạo ra tổng cộng 500 requests.
+
+Mục tiêu chính của bài test:
+- Xác định thời gian phản hồi (response time) và thông lượng (throughput) tiêu chuẩn.
+- Đảm bảo hệ thống không phát sinh lỗi.
+- Đảm bảo tài nguyên phần cứng (CPU, RAM) được sử dụng ở mức an toàn.
+
+#### 1.2.2 Stress Testing
+
+Stress Testing đẩy hệ thống vượt qua giới hạn hoạt động bình thường để tìm điểm gãy (breaking point). 
+
+Thông số kịch bản test:
+- Lượng truy cập đồng thời: 1000
+- Thời gian khởi động: 2 giây.
+- **Lặp lại 20 lần**, tổng cộng 20,000 requests.
+
+Mục tiêu chính là xem xét:
+- Khả năng chịu đựng tối đa của hệ thống.
+- Sự suy giảm về hiệu năng (như response time tăng vọt).
+- Thời điểm bắt đầu xuất hiện các lỗi quá tải hoặc connection timeout.
+
+#### 1.2.3 Spike Testing
+
+Spike Testing mô phỏng tình huống lượng truy cập tăng đột biến trong thời gian cực ngắn, thường xảy ra trong các sự kiện đặc biệt. (Ví dụ thực tế như hàng loạt người vào đặt một món hàng khi nó vừa ra mắt)
+
+Kịch bản thực hiện:
+- Thiết lập **1500 người dùng** cùng ập vào hệ thống gần như tức thì.
+- Thời gian ramp-up vỏng vẹn trong **1 giây**.
+
+Mục đích của bài test này:
+- Đo lường độ trễ cực đại mà người dùng phải chịu đựng.
+- Kiểm tra khả năng phục hồi của hệ thống sau lượng tải lớn như vậy (liệu server có bị sập hoàn toàn hay có thể giữ được trạng thái ổn định). 
+
+### 1.3. System under test
 
 **API Specifications:**
 - **Endpoint**: `POST /api/v2/recruitment/candidates`
@@ -242,7 +267,7 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
     ![Load Errors](images/fig08_load_errors.png)
     *Hình 8: Danh sách lỗi Load Test (0%).*
 
-    - Graph (Chi tiết vui lòng xem report tương ứng ở link đính kèm)
+    - Graph (Report đầy đủ: https://github.com/ltt204/database-testing-presentation/tree/main/22120368/req6/load)
         - Response time: Response time dao động quanh mức trung bình 2.8s, không có sự tăng đột biến nào đáng kể.
         ![Load Response Time](images/fig09_load_response_time.png)
         *Hình 9: Biểu đồ Response Time theo thời gian (Load Test).*
@@ -287,7 +312,7 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
     ![Stress Errors](images/fig16_stress_errors.png)
     *Hình 16: Danh sách các lỗi*
 
-    - Graph (Đây là danh sách 3 biểu đồ điển hình thể hiện được kết quả test. Chi tiết vui lòng xem report tương ứng ở link đính kèm)
+    - Graph (Đây là danh sách 3 biểu đồ điển hình thể hiện được kết quả test. Report đầy đủ: https://github.com/ltt204/database-testing-presentation/tree/main/22120368/req6/stress)
         - Response time: Response time tăng cao ở thời điểm giữa, là thời điểm server đã chịu tải nặng một thời gian tương đối để khiến server quá tải. Sau thời điểm đỉnh, khi các request đã fail hoặc được giải quyết phần nào, ta thấy response time giảm đáng kế.
         ![Stress Response Time](images/fig17_stress_response_time.png)
         *Hình 17: Biểu đồ Response Time (Stress Test).*
@@ -318,6 +343,7 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
   ![alt text](image.png)
 
 - Kết quả:
+    - Report đầy đủ: https://github.com/ltt204/database-testing-presentation/tree/main/22120368/req6/peak
     - Hệ thống vẫn duy trì được hoạt động và xử lý toàn bộ request mà **không có lỗi** (0% Error Rate).
     - Tuy nhiên, thời gian phản hồi bị ảnh hưởng nghiêm trọng do số lượng request đến cùng lúc quá lớn. Độ chênh lệch giữa request nhanh nhất và chậm nhất là rất đáng kể, nhanh nhất là 298ms, trong khi chậm nhất 54251ms, khoảng hơn 54s.
       ![Spike Response Time](images/fig21_spike_response_time.png)
