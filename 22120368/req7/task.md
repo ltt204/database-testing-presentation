@@ -1,0 +1,7 @@
+- [ ] Analyze API docs for response structure and sortable fields
+- [ ] Update `generate_postman_collection.py`
+    - [ ] Implement sorting assertion logic for `PERF.API.08_Sort_DESC`
+    - [ ] Add field verification for `REC.API` valid creation tests
+- [ ] Regenerate Postman Collection
+- [ ] Run Newman tests
+- [ ] Update Report
