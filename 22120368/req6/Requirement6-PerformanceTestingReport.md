@@ -12,7 +12,7 @@
     - [1.2. System under test](#12-system-under-test)
   - [2. Môi trường kiểm thử](#2-môi-trường-kiểm-thử)
     - [2.1. Server](#21-server)
-    - [2.2. Client (Test Runner)](#22-client-test-runner)
+    - [2.2. Client chạy Test](#22-client-chạy-test)
   - [3. Quy trình thực hiện kiểm thử](#3-quy-trình-thực-hiện-kiểm-thử)
       - [Bước 1: Import Test Plan](#bước-1-import-test-plan)
       - [Bước 2: Cấu hình Thread Group](#bước-2-cấu-hình-thread-group)
@@ -22,15 +22,12 @@
   - [4. Test Results](#4-test-results)
     - [4.1 Load test](#41-load-test)
     - [4.2. Stress test](#42-stress-test)
-    - [4.3. Test Execution Screenshots](#43-test-execution-screenshots)
-      - [Load Test Results (Summary Report)](#load-test-results-summary-report)
     - [4.3. Spike Test](#43-spike-test)
   - [Phụ lục A: Hướng dẫn cài đặt Apache JMeter](#phụ-lục-a-hướng-dẫn-cài-đặt-apache-jmeter)
     - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
     - [Cài đặt trên Linux](#cài-đặt-trên-linux)
-    - [Cấu hình JVM cho High Load Testing](#cấu-hình-jvm-cho-high-load-testing)
   - [Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)](#phụ-lục-b-hướng-dẫn-lấy-session-cookie-authentication)
-    - [Cách 1: Sử dụng Script Python (Khuyên dùng)](#cách-1-sử-dụng-script-python-khuyên-dùng)
+    - [Cách 1: Sử dụng Script Python](#cách-1-sử-dụng-script-python)
     - [Cách 2: Lấy thủ công qua Developer Tools (F12)](#cách-2-lấy-thủ-công-qua-developer-tools-f12)
     - [Lưu ý quan trọng về Cookie](#lưu-ý-quan-trọng-về-cookie)
 
@@ -75,7 +72,6 @@ Báo cáo này trình bày kết quả kiểm thử hiệu năng (Performance Te
 | **Load Testing**   | Đánh giá hiệu năng hệ thống dưới tải người dùng dự kiến (Normal Load) | Xác định thời gian phản hồi và throughput ở điều kiện bình thường |
 | **Stress Testing** | Đẩy tải vượt quá mức bình thường để tìm giới hạn của hệ thống         | Xác định điểm mà hệ thống bắt đầu suy giảm hiệu năng              |
 | **Spike Testing**  | Tăng tải đột ngột trong thời gian ngắn                                | Đánh giá khả năng phục hồi khi có traffic burst                   |
-| **Limit Testing**  | Tăng tải cực đại để tìm "điểm gãy" (Breaking Point)                   | Xác định ngưỡng chịu đựng tối đa của hệ thống                     |
 
 #### Chi tiết các kỹ thuật:
 
@@ -143,9 +139,10 @@ Sau đây là thông tin của máy host server:
 
 Tuy nhiên, mỗi container sẽ được giới hạn với **1 core CPU và 1GB RAM**.
 
-![alt text](image.png)
+![Docker Resource Limits](images/fig01_docker_resource_limits.png)
+*Hình 1: Cấu hình giới hạn container 1 CPU / 1GB RAM.*
 
-### 2.2. Client (Test Runner)
+### 2.2. Client chạy Test
 
 | Thành phần            | Thông tin                     |
 | :-------------------- | :---------------------------- |
@@ -153,7 +150,7 @@ Tuy nhiên, mỗi container sẽ được giới hạn với **1 core CPU và 1G
 | **Test Tool**         | Apache JMeter 5.6.3           |
 | **Java Version**      | OpenJDK 21+                   |
 | **Network**           | Localhost                     |
-| **Memory Allocation** | JVM Heap: 1GB (-Xms1g -Xmx1g) |
+| **Memory Allocation** | JVM Heap: 2GB (-Xms2g -Xmx4g) |
 
 ## 3. Quy trình thực hiện kiểm thử
 
@@ -170,17 +167,17 @@ Chúng ta sẽ sử dụng JMeter GUI cho phần kiểm thử này. JMeter cũng
 2. Mở JMeter và import file `performance_test.jmx` bằng cách:
    - File → Open → Chọn `performance_test.jmx`
 
-![Cấu trúc Test Plan trong JMeter](images/jmeter_test_plan_structure.png)
+![Cấu trúc Test Plan trong JMeter](images/fig02_jmeter_test_plan.png)
 
-Hình 1: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HTTP Header Manager, HTTP Request Defaults, Create Candidate Request, và Summary Report.
+*Hình 2: Cấu trúc Test Plan với các thành phần: CSV Data Set Config, HTTP Header Manager, HTTP Request Defaults, Create Candidate Request, và Summary Report.*
 
 #### Bước 2: Cấu hình Thread Group
 
 Điều chỉnh các tham số trong Thread Group theo kịch bản test:
 
-![Cấu hình Thread Group](images/jmeter_thread_group_config.png)
+![Cấu hình Thread Group](images/fig03_thread_group_config.png)
 
-Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `${LOOP}` cho phép linh hoạt thay đổi qua CLI.
+*Hình 3: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `${LOOP}` cho phép linh hoạt thay đổi.*
 
 | Tham số             | Ý nghĩa                                     |
 | :------------------ | :------------------------------------------ |
@@ -192,9 +189,9 @@ Hình 2: Cấu hình Thread Group với các biến `${THREADS}`, `${RAMPUP}`, `
 
 Dữ liệu ứng viên được tham số hóa thông qua file CSV để đảm bảo mỗi request tạo một ứng viên với thông tin khác nhau.
 
-![Cấu hình CSV Data Set](images/jmeter_csv_config.png)
+![Cấu hình CSV Data Set](images/fig04_csv_config.png)
 
-Hình 3: Cấu hình CSV Data Set Config để đọc dữ liệu từ file `data/candidates.csv`.
+*Hình 4: Cấu hình CSV Data Set Config để đọc dữ liệu từ file `data/candidates.csv`.*
 
 **Cấu trúc file `data/candidates.csv`:**
 ```csv
@@ -206,7 +203,8 @@ TestUser3,Perf3,test.user.3@perf.com
 TestUser50,Perf50,test.user.50@perf.com
 ```
 
-![alt text](images/jmeter_http_config.png)
+![HTTP Request Defaults](images/fig05_http_config.png)
+*Hình 5: Cấu hình HTTP Request Defaults (domain, port).*
 
 #### Bước 4: Cấu hình Authentication Cookie
 
@@ -227,8 +225,10 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
     - Loop: 5
 
 - Kết quả:
-    - Hệ thống hoạt động ổn định dưới tải (100 concurrent users), không có dấu hiệu quá tải CPU/RAM đáng kể. CPU chỉ tăng lên 100% rất nhanh rồi hạ xuống.
-    ![alt text](images/docker_stats_cpu_load.png)
+    - Hệ thống hoạt động ổn định dưới tải (100 concurrent users), không có dấu hiệu quá tải CPU/RAM. CPU không được sử dụng hết. **[Lưu ý: Số phần trăm hiển thị trên công cụ là của tổng 8 CPU -> 1 core sử dụng tối đa 12.5%]**
+
+    ![Docker Load Stats](images/fig06_load_cpu_stats.png)
+    *Hình 6: Sử dụng tài nguyên hệ thống ổn định.*
     - Summary report: Quan sát thấy các thông tin sau:
         - Số lượng request: 800
         - Thời gian phản hồi trung bình (Avg Response Time): **2,499 ms** (~2.5s)
@@ -236,19 +236,24 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
         - Tỷ lệ lỗi (Error Rate): **0.00%**
         - Thông lượng (Throughput): **30.5 req/sec**
 
-        ![Dashboard Summary](images/load_dashboard.png)
+        ![Load Dashboard Summary](images/fig07_load_dashboard.png)
+        *Hình 7: Dashboard Summary - Load Test Results.*
     - Quan sát danh sách các lỗi, ta thấy danh sách lỗi rỗng, cho thấy hệ thống xử lý tốt ở mức tải này.
-    ![Errors Summary](images/load_errors.png)
+    ![Load Errors](images/fig08_load_errors.png)
+    *Hình 8: Danh sách lỗi Load Test (0%).*
 
     - Graph (Chi tiết vui lòng xem report tương ứng ở link đính kèm)
         - Response time: Response time dao động quanh mức trung bình 2.8s, không có sự tăng đột biến nào đáng kể.
-        ![Response Time Graph](images/load_response_time.png)
+        ![Load Response Time](images/fig09_load_response_time.png)
+        *Hình 9: Biểu đồ Response Time theo thời gian (Load Test).*
 
         - Response time percentile: Các đường P90, P95, P99 nằm khá gần nhau và gần với mức trung bình, chứng tỏ độ ổn định cao.
-        ![Percentiles Graph](images/load_percentiles.png)
+        ![Load Percentiles](images/fig10_load_percentiles.png)
+        *Hình 10: Biểu đồ Percentiles (Load Test).*
 
         - Latency: Latency duy trì ở mức thấp và ổn định trong suốt quá trình test.
-        ![Latency Graph](images/load_latency.png)
+        ![Load Latency](images/fig11_load_latency.png)
+        *Hình 11: Biểu đồ Latency (Load Test).*
 
 ### 4.2. Stress test
 
@@ -257,13 +262,17 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
     - Rampup time: 2 seconds
     - Loop: 20
 
-    ![alt text](images/stress_test_cli_execution.png)
+    ![Stress CLI Execution](images/fig12_stress_cli.png)
+    *Hình 12: Thực thi Stress Test.*
 
 - Kết quả:
     - Quan sát rằng, khi thực thi, hệ thống bị đẩy đến mức sử dụng tối đa CPU (100% ~ 1 core, là giới hạn đã set cho docker container). RAM chiếm hơn 60% trong suốt quá trình test. 
-    ![alt text](images/docker_stats_cpu_stress.png)
+    ![Stress Docker Stats](images/fig13_stress_cpu_stats.png)
+    ![alt text](images/fig13-2.png)
+    *Hình 13: Docker Stats - CPU 100% liên tục.*
     - Ta có thể thấy các request fail xuất hiện trong kết quả: 
-    ![alt text](images/stress_test_cli_errors.png)
+    ![Stress CLI Errors](images/fig14_stress_cli_errors.png)
+    *Hình 14: Các lỗi ghi nhận.*
     - Summary report: Quan sát thấy các thông tin sau:
         - Số lượng request: 20,000
         - Avg Response Time: **20,452 ms** (~20.5s)
@@ -272,55 +281,52 @@ Về kết quả chạy thực tế sẽ được nêu ở phần 4 bên dưới
         - Throughput: **38.0 req/sec**
         - P90-P95-P99: **18,836 ms** - **86,237 ms** - **135,841 ms** (90%, 95% và 99% các yêu cầu có thời gian phản hồi thấp hơn hoặc bằng giá trị này).
 
-        ![Dashboard Summary](images/stress_dashboard.png)
+        ![Stress Dashboard Summary](images/fig15_stress_dashboard.png)
+        *Hình 15: Dashboard Summary - Stress Test Results.*
     - Quan sát danh sách các lỗi, ta thấy đây là các lỗi connection, xuất hiện do server không handle được lượng request quá lớn
-    ![Errors Summary](images/stress_errors.png)
+    ![Stress Errors](images/fig16_stress_errors.png)
+    *Hình 16: Danh sách các lỗi*
 
     - Graph (Đây là danh sách 3 biểu đồ điển hình thể hiện được kết quả test. Chi tiết vui lòng xem report tương ứng ở link đính kèm)
         - Response time: Response time tăng cao ở thời điểm giữa, là thời điểm server đã chịu tải nặng một thời gian tương đối để khiến server quá tải. Sau thời điểm đỉnh, khi các request đã fail hoặc được giải quyết phần nào, ta thấy response time giảm đáng kế.
-        ![Response Time Graph](images/stress_response_time.png)
+        ![Stress Response Time](images/fig17_stress_response_time.png)
+        *Hình 17: Biểu đồ Response Time (Stress Test).*
 
         - Response time percentile: Quan sát thấy P90, P95 và P99 lệch rất đáng kể. Điều này cho thấy khi server quá tải sẽ gây ảnh hưởng lớn đến response time. 
-        ![Percentiles Graph](images/stress_percentiles.png)
+        ![Stress Percentiles](images/fig18_stress_percentiles.png)
+        *Hình 18: Biểu đồ Percentiles phân tách rõ rệt khi quá tải.*
 
         - Latency: Quan sát thấy latency từ thấp ở thời điểm bắt đầu, tăng mạnh lên khi server bắt đầu quá tải, và giảm dần khi các request được giải quyết.
-        ![Latency Graph](images/stress_latency.png)
-
-
-**Phát hiện quan trọng:**
-1. **Độ ổn định (Availability)**: Hệ thống cho thấy độ ổn định đáng kinh ngạc. Tại 2000 users đồng thời, **tỷ lệ lỗi vẫn là 0%**.
-
-2. **Vấn đề Latency**: Thời gian chờ tăng tuyến tính với số lượng user. Tại mức 2000 users, người dùng cuối cùng phải chờ tới **35 giây**.
-
-3. **Breaking Point**: "Điểm gãy" của hệ thống này không phải là Server Crash (500 Internal Error) mà là **Client Timeout**. Mặc dù server vẫn trả lời sau 35s, nhưng hầu hết trình duyệt/ứng dụng client sẽ ngắt kết nối trước thời điểm đó (thường timeout mặc định là 30s).
-
-### 4.3. Test Execution Screenshots
-
-#### Load Test Results (Summary Report)
-
-![Load Test Summary Report](images/load_dashboard.png)
-
-Hình 7: Kết quả Load Test với 800 samples, average 2.5s, 0% error rate.
-
+        ![Stress Latency](images/fig19_stress_latency.png)
+        *Hình 19: Biểu đồ Latency tăng mạnh (Stress Test).*
 
 ### 4.3. Spike Test
 
 - Cấu hình bộ test:
-    - Threads: 1500 (Tăng đột ngột)
-    - Rampup time: 1 second (Mô phỏng spike)
+    - Threads: 1500 
+    - Rampup time: 1 second (1500 user cùng đổ vào hệ thống trong 1s)
     - Loop: 1
 
-    ![Active Threads Over Time](images/spike_threads_over_time.png)
-    *Hình minh họa: Lượng user (Active Threads) tăng dựng đứng trong 1s để tạo áp lực đột ngột.*
+- Quan sát chart dưới, dễ dàng thấy rằng lượng request tăng cao ở thời gian đầu mô phỏng cho trường hợp người dùng đổ dồn vào hệ thống trong thời gian ngắn. (Gần 800 thread ở thời gian đầu, giảm dần khi các request được xử lý).
+
+    ![Spike Threads](images/fig20_spike_threads.png)
+    *Hình 20: Lượng user (Active Threads) tăng dựng đứng trong 1s.*
+
+- Tài nguyên hệ thống sử dụng:
+  - CPU liên tục ở mức 100% (1 core).
+  - RAM sử dụng ổn định ở mức ~600MB (trong giới hạn 1GB).
+  ![alt text](image.png)
 
 - Kết quả:
     - Hệ thống vẫn duy trì được hoạt động và xử lý toàn bộ request mà **không có lỗi** (0% Error Rate).
-    - Tuy nhiên, thời gian phản hồi bị ảnh hưởng nghiêm trọng do số lượng request đến cùng lúc quá lớn.
-    
-    ![Response Time Graph](images/spike_response_time.png)
+    - Tuy nhiên, thời gian phản hồi bị ảnh hưởng nghiêm trọng do số lượng request đến cùng lúc quá lớn. Độ chênh lệch giữa request nhanh nhất và chậm nhất là rất đáng kể, nhanh nhất là 298ms, trong khi chậm nhất 54251ms, khoảng hơn 54s.
+
+      ![Spike Response Time](images/fig21_spike_response_time.png)
+      *Hình 21: Response Time tăng vọt tương ứng với Spike.*    
 
     - Response time percentile: Các đường P90, P95, P99 tăng vọt và phân tách rõ rệt, chứng tỏ người dùng ở nhóm tail (nhóm chậm nhất) chịu độ trễ cực lớn (lên tới 45s-50s) trong thời điểm spike.
-    ![Percentiles Graph](images/spike_percentiles.png)
+    ![Spike Percentiles](images/fig22_spike_percentiles.png)
+    *Hình 22: Percentiles Graph - P99 chạm ngưỡng ~50s.*
 
     - Summary report: Quan sát thấy các thông tin sau:
         - Số lượng request: 1500
@@ -329,13 +335,20 @@ Hình 7: Kết quả Load Test với 800 samples, average 2.5s, 0% error rate.
         - Tỷ lệ lỗi (Error Rate): **0.00%**
         - Thông lượng (Throughput): **26.9 req/sec**
 
-        ![Dashboard Summary](images/spike_dashboard.png)
+        ![Spike Dashboard](images/fig23_spike_dashboard.png)
+        *Hình 23: Dashboard Summary - Spike Test Results.*
 
 ## Phụ lục A: Hướng dẫn cài đặt Apache JMeter
 
 ### Yêu cầu hệ thống
+
 - Java JDK 11 hoặc cao hơn
-- RAM: Tối thiểu 2GB (khuyên 4GB cho stress testing)
+- Cấu hình cho JVM:
+```bash
+# Chỉnh sửa file jmeter (hoặc jmeter.bat trên Windows)
+# Tăng heap size cho JVM
+HEAP="-Xms2g -Xmx4g -XX:MaxMetaspaceSize=512m"
+```
 
 ### Cài đặt trên Linux
 
@@ -364,21 +377,13 @@ jmeter
 jmeter -n -t test.jmx -l results.jtl
 ```
 
-### Cấu hình JVM cho High Load Testing
-
-```bash
-# Chỉnh sửa file jmeter (hoặc jmeter.bat trên Windows)
-# Tăng heap size cho JVM
-HEAP="-Xms2g -Xmx4g -XX:MaxMetaspaceSize=512m"
-```
-
 ## Phụ lục B: Hướng dẫn lấy Session Cookie (Authentication)
 
 Do hệ thống OrangeHRM sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật, việc lấy cookie này thông qua JavaScript console (`document.cookie`) là không thể. Dưới đây là 2 cách để lấy giá trị này.
 
-### Cách 1: Sử dụng Script Python (Khuyên dùng)
+### Cách 1: Sử dụng Script Python
 
-Script Python đã được phát triển để tự động login và lấy session cookie.
+Script Python đã được phát triển để tự động login và lấy session cookie một cách nhanh chóng. Để sử dụng, chạy lệnh sau:
 
 ```bash
 # Chạy script
