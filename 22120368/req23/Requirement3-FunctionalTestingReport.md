@@ -1,5 +1,18 @@
 # Personal report - Requirement 3: Functional Testing
 
+
+## Phân công 
+| Tính năng | Mô tả | Thành viên |
+|:---|:---|:---|
+| HR Administration | Quản trị hệ thống, cấu trúc tổ chức, user | Giang Đức Nhật |
+| Employee Self-Service (ESS) | Cổng thông tin nhân viên tự phục vụ | Giang Đức Nhật |
+| Recruitment | Tuyển dụng, theo dõi ứng viên | Phan Thanh Tiến |
+| Performance Management | Đánh giá KPI, đề nghị xem xét, lưu lịch sử performance review | Phan Thanh Tiến |
+| Reporting & Analytics | Báo cáo tùy chỉnh, xuất dữ liệu | Nguyễn Bùi Vương Tiễn |
+| Time and Attendance | Chấm công, Timesheets | Nguyễn Bùi Vương Tiễn |
+| Employee Management (PIM) | Quản lý hồ sơ nhân viên, báo cáo | Lý Trọng Tín |
+| Leave Management | Quản lý ngày nghỉ, quy tắc nghỉ phép | Lý Trọng Tín |
+
 ## Thông tin cá nhân & nhóm
 
 - Họ tên: Phan Thanh Tiến
@@ -35,7 +48,12 @@
 
 ## Mục lục
 
+<<<<<<< Updated upstream:22120368/req23/Requirement3-FunctionalTestingReport.md
 - [Personal report - Requirement 3: Functional Testing](#personal-report---requirement-3-functional-testing)
+=======
+- [Personal report - Requirement 2: Data Generation](#personal-report---requirement-2-data-generation)
+  - [Phân công](#phân-công)
+>>>>>>> Stashed changes:tienpt report/Requirement3-FunctionalTestingReport.md
   - [Thông tin cá nhân \& nhóm](#thông-tin-cá-nhân--nhóm)
     - [Thông tin nhóm 11](#thông-tin-nhóm-11)
   - [Mục lục](#mục-lục)

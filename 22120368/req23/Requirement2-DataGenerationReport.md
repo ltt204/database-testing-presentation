@@ -1,5 +1,17 @@
 # Personal report - Requirement 2: Data Generation
 
+## Phân công 
+| Tính năng | Mô tả | Thành viên |
+|:---|:---|:---|
+| HR Administration | Quản trị hệ thống, cấu trúc tổ chức, user | Giang Đức Nhật |
+| Employee Self-Service (ESS) | Cổng thông tin nhân viên tự phục vụ | Giang Đức Nhật |
+| Recruitment | Tuyển dụng, theo dõi ứng viên | Phan Thanh Tiến |
+| Performance Management | Đánh giá KPI, đề nghị xem xét, lưu lịch sử performance review | Phan Thanh Tiến |
+| Reporting & Analytics | Báo cáo tùy chỉnh, xuất dữ liệu | Nguyễn Bùi Vương Tiễn |
+| Time and Attendance | Chấm công, Timesheets | Nguyễn Bùi Vương Tiễn |
+| Employee Management (PIM) | Quản lý hồ sơ nhân viên, báo cáo | Lý Trọng Tín |
+| Leave Management | Quản lý ngày nghỉ, quy tắc nghỉ phép | Lý Trọng Tín |
+
 ## Thông tin cá nhân
 
 - Họ tên: Phan Thanh Tiến
