@@ -215,7 +215,9 @@ Trong yêu cầu 7, ta tập trung kiểm thử API trên 2 endpoints chính. �
 
 ### 2.1. Cách 1: Sử dụng Postman GUI 
 
-- Sử dụng Postman collection và environment ở link sau: [wait for link]
+- Sử dụng Postman collection và environment ở link sau: 
+  - Postman collection: https://github.com/ltt204/database-testing-presentation/blob/main/22120368/req7/postman_collection.json
+  - Postman environment: https://github.com/ltt204/database-testing-presentation/blob/main/22120368/req7/postman_environment.json
 - Import `postman_collection.json` và `postman_environment.json` vào Postman.
 ![alt text](image-2.png)
 
@@ -294,7 +296,9 @@ Do hệ thống sử dụng **HttpOnly Cookie** (`_orangehrm`) để bảo mật
 
 ### Cách 1: Sử dụng Script tự động (Khuyên dùng)
 
-Để lấy được cookie hợp lệ, script python đã được phát triển, sử dụng thư viện HTTP của Python. Để chạy được script, thực hiện các bước như sau:
+Để lấy được cookie hợp lệ, script python đã được phát triển, sử dụng thư viện HTTP của Python: https://github.com/ltt204/database-testing-presentation/blob/main/22120368/req7/get_auth_cookie.py
+
+Để chạy được script, thực hiện các bước như sau:
 
 - Bước 1: Chạy lệnh trên terminal:
   ```bash
