@@ -1,0 +1,3 @@
+test_case_type,username,password,description
+valid,Admin,admin123,Standard admin login
+invalid,invalid_user,invalid_pass,Invalid credentials test
