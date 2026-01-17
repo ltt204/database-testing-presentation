@@ -48,12 +48,7 @@
 
 ## Mục lục
 
-<<<<<<< Updated upstream:22120368/req23/Requirement3-FunctionalTestingReport.md
 - [Personal report - Requirement 3: Functional Testing](#personal-report---requirement-3-functional-testing)
-=======
-- [Personal report - Requirement 2: Data Generation](#personal-report---requirement-2-data-generation)
-  - [Phân công](#phân-công)
->>>>>>> Stashed changes:tienpt report/Requirement3-FunctionalTestingReport.md
   - [Thông tin cá nhân \& nhóm](#thông-tin-cá-nhân--nhóm)
     - [Thông tin nhóm 11](#thông-tin-nhóm-11)
   - [Mục lục](#mục-lục)
