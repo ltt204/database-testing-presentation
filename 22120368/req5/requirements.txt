@@ -1,0 +1,24 @@
+# Selenium WebDriver
+selenium==4.27.1
+
+# Testing Framework
+pytest==8.3.4
+pytest-html==4.1.1
+pytest-xdist==3.6.1
+
+# Test Data Management
+faker==33.1.0
+openpyxl==3.1.5
+
+# Utilities
+python-dotenv==1.0.1
+webdriver-manager==4.0.2
+
+# Reporting
+allure-pytest==2.13.5
+
+# Screenshot and Visual Testing
+Pillow==11.0.0
+
+# Logging
+colorlog==6.9.0

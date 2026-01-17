@@ -5,6 +5,9 @@ services:
     image: mysql:8.0
     container_name: orangehrm_db
     restart: unless-stopped
+    privileged: true
+    ports:
+      - "3310:3306"
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -23,12 +26,17 @@ services:
           "mysqladmin",
           "ping",
           "-h",
-          "localhost",
-          "-p$${MYSQL_ROOT_PASSWORD}",
+          "127.0.0.1",
+          "-u",
+          "root",
+          "-p${MYSQL_ROOT_PASSWORD}",
+          "--silent",
         ]
       interval: 10s
       timeout: 5s
       retries: 5
+    ports:
+      - "3310:3306"
 
   orangehrm:
     image: orangehrm/orangehrm:latest
@@ -40,7 +48,7 @@ services:
     ports:
       - "8080:80"
     environment:
-      TZ: ${TZ}
+      TZ: ${TZ:-UTC}
     volumes:
       - orangehrm_data:/var/www/html
     networks:
@@ -57,6 +65,8 @@ services:
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     networks:
       - orangehrm_net
 

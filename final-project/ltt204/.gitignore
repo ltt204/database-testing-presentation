@@ -1,0 +1,5 @@
+.vnev
+
+*.csv
+
+__pycache__
