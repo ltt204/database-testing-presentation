@@ -1,0 +1,1001 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1768635132381,62,01 - Get Login Page,200,OK,Timesheet Users 1-1,text,true,,3770,140,1,1,http://localhost:8080/web/index.php/auth/login,61,0,14
+1768635133445,55,02 - Submit Login,200,OK,Timesheet Users 1-1,text,true,,4509,513,2,2,http://localhost:8080/web/index.php/auth/login,26,0,2
+1768635133445,26,02 - Submit Login-0,302,Found,Timesheet Users 1-1,text,true,,698,326,2,2,http://localhost:8080/web/index.php/auth/validate,26,0,2
+1768635133472,28,02 - Submit Login-1,200,OK,Timesheet Users 1-1,text,true,,3811,187,2,2,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635133535,30,01 - Get Login Page,200,OK,Timesheet Users 1-2,text,true,,3768,140,2,2,http://localhost:8080/web/index.php/auth/login,30,0,1
+1768635134501,58,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-1,text,true,,4384,390,3,3,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635134501,28,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-1,text,true,,698,203,3,3,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,28,0,1
+1768635134530,29,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-1,text,true,,3686,187,3,3,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635134565,53,02 - Submit Login,200,OK,Timesheet Users 1-2,text,true,,4518,512,3,3,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635134565,24,02 - Submit Login-0,302,Found,Timesheet Users 1-2,text,true,,698,325,3,3,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635134589,29,02 - Submit Login-1,200,OK,Timesheet Users 1-2,text,true,,3820,187,3,3,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635134734,29,01 - Get Login Page,200,OK,Timesheet Users 1-3,text,true,,3761,140,3,3,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635135560,51,04 - View My Timesheet,200,OK,Timesheet Users 1-1,text,true,,4401,384,4,4,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635135560,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-1,text,true,,698,197,4,4,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635135584,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-1,text,true,,3703,187,4,4,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635135618,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-2,text,true,,4378,390,4,4,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635135618,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-2,text,true,,698,203,4,4,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635135642,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-2,text,true,,3680,187,4,4,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635135763,51,02 - Submit Login,200,OK,Timesheet Users 1-3,text,true,,4520,514,4,4,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635135763,24,02 - Submit Login-0,302,Found,Timesheet Users 1-3,text,true,,698,327,4,4,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635135787,27,02 - Submit Login-1,200,OK,Timesheet Users 1-3,text,true,,3822,187,4,4,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635135934,28,01 - Get Login Page,200,OK,Timesheet Users 1-4,text,true,,3782,140,4,4,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635136612,28,01 - Get Login Page,200,OK,Timesheet Users 1-1,text,true,,3786,140,5,5,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635136669,54,04 - View My Timesheet,200,OK,Timesheet Users 1-2,text,true,,4385,384,5,5,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635136669,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-2,text,true,,698,197,5,5,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635136695,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-2,text,true,,3687,187,5,5,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635136815,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-3,text,true,,4402,390,5,5,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635136815,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-3,text,true,,698,203,5,5,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635136840,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-3,text,true,,3704,187,5,5,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635136963,52,02 - Submit Login,200,OK,Timesheet Users 1-4,text,true,,4518,511,5,5,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635136963,24,02 - Submit Login-0,302,Found,Timesheet Users 1-4,text,true,,698,324,5,5,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635136988,27,02 - Submit Login-1,200,OK,Timesheet Users 1-4,text,true,,3820,187,5,5,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635137133,31,01 - Get Login Page,200,OK,Timesheet Users 1-5,text,true,,3765,140,5,5,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635137641,52,02 - Submit Login,200,OK,Timesheet Users 1-1,text,true,,4510,514,6,6,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635137641,24,02 - Submit Login-0,302,Found,Timesheet Users 1-1,text,true,,698,327,6,6,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635137665,28,02 - Submit Login-1,200,OK,Timesheet Users 1-1,text,true,,3812,187,6,6,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635137724,27,01 - Get Login Page,200,OK,Timesheet Users 1-2,text,true,,3790,140,6,6,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635137869,52,04 - View My Timesheet,200,OK,Timesheet Users 1-3,text,true,,4384,384,6,6,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635137869,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-3,text,true,,698,197,6,6,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635137894,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-3,text,true,,3686,187,6,6,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635138016,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-4,text,true,,4373,390,6,6,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635138016,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-4,text,true,,698,203,6,6,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635138041,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-4,text,true,,3675,187,6,6,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635138165,53,02 - Submit Login,200,OK,Timesheet Users 1-5,text,true,,4506,513,6,6,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635138165,25,02 - Submit Login-0,302,Found,Timesheet Users 1-5,text,true,,698,326,6,6,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635138190,28,02 - Submit Login-1,200,OK,Timesheet Users 1-5,text,true,,3808,187,6,6,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635138333,29,01 - Get Login Page,200,OK,Timesheet Users 1-6,text,true,,3787,140,6,6,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635138694,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-1,text,true,,4402,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635138694,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-1,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635138719,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-1,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635138752,52,02 - Submit Login,200,OK,Timesheet Users 1-2,text,true,,4517,516,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635138752,24,02 - Submit Login-0,302,Found,Timesheet Users 1-2,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635138776,28,02 - Submit Login-1,200,OK,Timesheet Users 1-2,text,true,,3819,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635138922,29,01 - Get Login Page,200,OK,Timesheet Users 1-3,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635139069,53,04 - View My Timesheet,200,OK,Timesheet Users 1-4,text,true,,4397,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635139069,26,04 - View My Timesheet-0,302,Found,Timesheet Users 1-4,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635139095,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-4,text,true,,3699,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635139218,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-5,text,true,,4386,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635139218,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-5,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635139243,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-5,text,true,,3688,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635139362,52,02 - Submit Login,200,OK,Timesheet Users 1-6,text,true,,4519,516,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635139362,23,02 - Submit Login-0,302,Found,Timesheet Users 1-6,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635139386,28,02 - Submit Login-1,200,OK,Timesheet Users 1-6,text,true,,3821,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635139533,27,01 - Get Login Page,200,OK,Timesheet Users 1-7,text,true,,3766,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635139746,52,04 - View My Timesheet,200,OK,Timesheet Users 1-1,text,true,,4372,384,8,8,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635139746,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-1,text,true,,698,197,8,8,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635139770,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-1,text,true,,3674,187,8,8,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635139804,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-2,text,true,,4401,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635139804,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-2,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635139829,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-2,text,true,,3703,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635139952,53,02 - Submit Login,200,OK,Timesheet Users 1-3,text,true,,4518,510,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635139952,24,02 - Submit Login-0,302,Found,Timesheet Users 1-3,text,true,,698,323,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635139976,29,02 - Submit Login-1,200,OK,Timesheet Users 1-3,text,true,,3820,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635140123,29,01 - Get Login Page,200,OK,Timesheet Users 1-4,text,true,,3780,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635140272,53,04 - View My Timesheet,200,OK,Timesheet Users 1-5,text,true,,4381,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635140272,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-5,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635140297,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-5,text,true,,3683,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635140414,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-6,text,true,,4394,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635140414,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-6,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635140440,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-6,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635140561,53,02 - Submit Login,200,OK,Timesheet Users 1-7,text,true,,4516,510,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635140561,25,02 - Submit Login-0,302,Found,Timesheet Users 1-7,text,true,,698,323,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635140587,27,02 - Submit Login-1,200,OK,Timesheet Users 1-7,text,true,,3818,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635140732,30,01 - Get Login Page,200,OK,Timesheet Users 1-8,text,true,,3759,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635140858,52,04 - View My Timesheet,200,OK,Timesheet Users 1-2,text,true,,4383,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635140858,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-2,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635140883,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-2,text,true,,3685,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635141005,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-3,text,true,,4388,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635141005,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-3,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635141031,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-3,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635141153,52,02 - Submit Login,200,OK,Timesheet Users 1-4,text,true,,4515,515,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635141153,25,02 - Submit Login-0,302,Found,Timesheet Users 1-4,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635141178,27,02 - Submit Login-1,200,OK,Timesheet Users 1-4,text,true,,3817,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635141325,29,01 - Get Login Page,200,OK,Timesheet Users 1-5,text,true,,3787,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635141469,53,04 - View My Timesheet,200,OK,Timesheet Users 1-6,text,true,,4398,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635141469,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-6,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635141494,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-6,text,true,,3700,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635141615,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-7,text,true,,4372,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635141615,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-7,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635141640,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-7,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635141762,52,02 - Submit Login,200,OK,Timesheet Users 1-8,text,true,,4533,512,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635141762,25,02 - Submit Login-0,302,Found,Timesheet Users 1-8,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635141787,27,02 - Submit Login-1,200,OK,Timesheet Users 1-8,text,true,,3835,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635141931,29,01 - Get Login Page,200,OK,Timesheet Users 1-9,text,true,,3772,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635142059,53,04 - View My Timesheet,200,OK,Timesheet Users 1-3,text,true,,4390,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635142059,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-3,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635142084,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-3,text,true,,3692,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635142206,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-4,text,true,,4376,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635142206,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-4,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635142230,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-4,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635142355,53,02 - Submit Login,200,OK,Timesheet Users 1-5,text,true,,4515,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635142355,24,02 - Submit Login-0,302,Found,Timesheet Users 1-5,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635142379,29,02 - Submit Login-1,200,OK,Timesheet Users 1-5,text,true,,3817,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635142523,29,01 - Get Login Page,200,OK,Timesheet Users 1-6,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635142669,52,04 - View My Timesheet,200,OK,Timesheet Users 1-7,text,true,,4372,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635142669,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-7,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635142694,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-7,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635142815,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-8,text,true,,4394,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635142815,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-8,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,0
+1768635142840,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-8,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635142961,50,02 - Submit Login,200,OK,Timesheet Users 1-9,text,true,,4530,516,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635142961,23,02 - Submit Login-0,302,Found,Timesheet Users 1-9,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635142985,26,02 - Submit Login-1,200,OK,Timesheet Users 1-9,text,true,,3832,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635143131,29,01 - Get Login Page,200,OK,Timesheet Users 1-10,text,true,,3780,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635143259,55,04 - View My Timesheet,200,OK,Timesheet Users 1-4,text,true,,4384,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635143259,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-4,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635143284,30,04 - View My Timesheet-1,200,OK,Timesheet Users 1-4,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635143408,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-5,text,true,,4393,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635143408,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-5,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635143433,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-5,text,true,,3695,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635143552,54,02 - Submit Login,200,OK,Timesheet Users 1-6,text,true,,4513,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635143552,24,02 - Submit Login-0,302,Found,Timesheet Users 1-6,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635143576,30,02 - Submit Login-1,200,OK,Timesheet Users 1-6,text,true,,3815,187,7,7,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635143722,28,01 - Get Login Page,200,OK,Timesheet Users 1-7,text,true,,3782,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635143868,53,04 - View My Timesheet,200,OK,Timesheet Users 1-8,text,true,,4400,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635143868,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-8,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635143893,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-8,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635144012,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-9,text,true,,4401,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635144012,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-9,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635144037,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-9,text,true,,3703,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635144160,53,02 - Submit Login,200,OK,Timesheet Users 1-10,text,true,,4505,512,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635144160,25,02 - Submit Login-0,302,Found,Timesheet Users 1-10,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635144185,28,02 - Submit Login-1,200,OK,Timesheet Users 1-10,text,true,,3807,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635144331,31,01 - Get Login Page,200,OK,Timesheet Users 1-11,text,true,,3784,140,7,7,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635144461,54,04 - View My Timesheet,200,OK,Timesheet Users 1-5,text,true,,4389,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635144461,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-5,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635144486,29,04 - View My Timesheet-1,200,OK,Timesheet Users 1-5,text,true,,3691,187,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635144607,58,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-6,text,true,,4402,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635144607,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-6,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635144632,33,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-6,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635144750,54,02 - Submit Login,200,OK,Timesheet Users 1-7,text,true,,4527,513,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635144750,25,02 - Submit Login-0,302,Found,Timesheet Users 1-7,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635144776,28,02 - Submit Login-1,200,OK,Timesheet Users 1-7,text,true,,3829,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635144922,31,01 - Get Login Page,200,OK,Timesheet Users 1-8,text,true,,3765,140,7,7,http://localhost:8080/web/index.php/auth/login,30,0,1
+1768635145065,56,04 - View My Timesheet,200,OK,Timesheet Users 1-9,text,true,,4384,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635145065,26,04 - View My Timesheet-0,302,Found,Timesheet Users 1-9,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635145091,30,04 - View My Timesheet-1,200,OK,Timesheet Users 1-9,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635145213,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-10,text,true,,4383,390,7,7,http://localhost:8080/web/index.php/auth/login,26,0,1
+1768635145213,26,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-10,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,26,0,1
+1768635145239,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-10,text,true,,3685,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635145363,55,02 - Submit Login,200,OK,Timesheet Users 1-11,text,true,,4510,512,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635145363,25,02 - Submit Login-0,302,Found,Timesheet Users 1-11,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635145388,30,02 - Submit Login-1,200,OK,Timesheet Users 1-11,text,true,,3812,187,7,7,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635145530,31,01 - Get Login Page,200,OK,Timesheet Users 1-12,text,true,,3774,140,7,7,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635145666,54,04 - View My Timesheet,200,OK,Timesheet Users 1-6,text,true,,4396,384,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635145666,26,04 - View My Timesheet-0,302,Found,Timesheet Users 1-6,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,26,0,0
+1768635145692,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-6,text,true,,3698,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635145805,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-7,text,true,,4377,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635145805,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-7,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,0
+1768635145830,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-7,text,true,,3679,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635145954,56,02 - Submit Login,200,OK,Timesheet Users 1-8,text,true,,4504,515,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635145954,29,02 - Submit Login-0,302,Found,Timesheet Users 1-8,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,29,0,0
+1768635145983,27,02 - Submit Login-1,200,OK,Timesheet Users 1-8,text,true,,3806,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635146122,29,01 - Get Login Page,200,OK,Timesheet Users 1-9,text,true,,3769,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635146268,53,04 - View My Timesheet,200,OK,Timesheet Users 1-10,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635146268,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-10,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635146293,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-10,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635146419,55,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-11,text,true,,4376,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635146419,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-11,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635146443,31,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-11,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635146562,52,02 - Submit Login,200,OK,Timesheet Users 1-12,text,true,,4512,514,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635146562,25,02 - Submit Login-0,302,Found,Timesheet Users 1-12,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635146587,27,02 - Submit Login-1,200,OK,Timesheet Users 1-12,text,true,,3814,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635146729,29,01 - Get Login Page,200,OK,Timesheet Users 1-13,text,true,,3782,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635146859,53,04 - View My Timesheet,200,OK,Timesheet Users 1-7,text,true,,4380,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635146859,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-7,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635146884,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-7,text,true,,3682,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635147011,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-8,text,true,,4372,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635147011,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-8,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,0
+1768635147036,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-8,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635147152,51,02 - Submit Login,200,OK,Timesheet Users 1-9,text,true,,4510,510,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635147152,23,02 - Submit Login-0,302,Found,Timesheet Users 1-9,text,true,,698,323,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635147175,28,02 - Submit Login-1,200,OK,Timesheet Users 1-9,text,true,,3812,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635147322,27,01 - Get Login Page,200,OK,Timesheet Users 1-10,text,true,,3759,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635147476,52,04 - View My Timesheet,200,OK,Timesheet Users 1-11,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635147476,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-11,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635147501,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-11,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635147616,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-12,text,true,,4391,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635147616,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-12,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635147639,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-12,text,true,,3693,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635147760,51,02 - Submit Login,200,OK,Timesheet Users 1-13,text,true,,4534,511,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635147760,24,02 - Submit Login-0,302,Found,Timesheet Users 1-13,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635147784,27,02 - Submit Login-1,200,OK,Timesheet Users 1-13,text,true,,3836,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635147931,27,01 - Get Login Page,200,OK,Timesheet Users 1-14,text,true,,3772,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635148065,52,04 - View My Timesheet,200,OK,Timesheet Users 1-8,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635148065,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-8,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635148090,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-8,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635148205,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-9,text,true,,4372,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635148205,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-9,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635148229,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-9,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635148350,51,02 - Submit Login,200,OK,Timesheet Users 1-10,text,true,,4508,517,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635148350,24,02 - Submit Login-0,302,Found,Timesheet Users 1-10,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635148374,27,02 - Submit Login-1,200,OK,Timesheet Users 1-10,text,true,,3810,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635148529,33,01 - Get Login Page,200,OK,Timesheet Users 1-11,text,true,,3788,140,7,7,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635148666,51,04 - View My Timesheet,200,OK,Timesheet Users 1-12,text,true,,4385,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635148666,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-12,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635148690,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-12,text,true,,3687,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635148812,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-13,text,true,,4400,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635148812,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-13,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635148835,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-13,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635148959,51,02 - Submit Login,200,OK,Timesheet Users 1-14,text,true,,4526,513,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635148959,24,02 - Submit Login-0,302,Found,Timesheet Users 1-14,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635148983,27,02 - Submit Login-1,200,OK,Timesheet Users 1-14,text,true,,3828,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635149130,28,01 - Get Login Page,200,OK,Timesheet Users 1-15,text,true,,3766,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635149256,52,04 - View My Timesheet,200,OK,Timesheet Users 1-9,text,true,,4372,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635149256,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-9,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635149279,29,04 - View My Timesheet-1,200,OK,Timesheet Users 1-9,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635149402,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-10,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635149402,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-10,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,0
+1768635149427,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-10,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635149562,53,02 - Submit Login,200,OK,Timesheet Users 1-11,text,true,,4514,511,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635149562,25,02 - Submit Login-0,302,Found,Timesheet Users 1-11,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635149588,27,02 - Submit Login-1,200,OK,Timesheet Users 1-11,text,true,,3816,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635149718,29,01 - Get Login Page,200,OK,Timesheet Users 1-12,text,true,,3763,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635149863,53,04 - View My Timesheet,200,OK,Timesheet Users 1-13,text,true,,4393,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635149863,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-13,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635149888,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-13,text,true,,3695,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635150011,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-14,text,true,,4384,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635150011,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-14,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635150036,29,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-14,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635150159,56,02 - Submit Login,200,OK,Timesheet Users 1-15,text,true,,4512,511,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635150159,27,02 - Submit Login-0,302,Found,Timesheet Users 1-15,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,27,0,0
+1768635150186,29,02 - Submit Login-1,200,OK,Timesheet Users 1-15,text,true,,3814,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635150331,30,01 - Get Login Page,200,OK,Timesheet Users 1-16,text,true,,3773,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635150455,53,04 - View My Timesheet,200,OK,Timesheet Users 1-10,text,true,,4375,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635150455,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-10,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635150480,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-10,text,true,,3677,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635150615,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-11,text,true,,4392,390,7,7,http://localhost:8080/web/index.php/auth/login,26,0,1
+1768635150615,26,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-11,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,26,0,1
+1768635150642,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-11,text,true,,3694,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635150747,52,02 - Submit Login,200,OK,Timesheet Users 1-12,text,true,,4504,510,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635150747,25,02 - Submit Login-0,302,Found,Timesheet Users 1-12,text,true,,698,323,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635150772,27,02 - Submit Login-1,200,OK,Timesheet Users 1-12,text,true,,3806,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635150917,29,01 - Get Login Page,200,OK,Timesheet Users 1-13,text,true,,3763,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635151066,54,04 - View My Timesheet,200,OK,Timesheet Users 1-14,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635151066,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-14,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635151091,29,04 - View My Timesheet-1,200,OK,Timesheet Users 1-14,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635151215,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-15,text,true,,4396,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635151215,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-15,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635151239,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-15,text,true,,3698,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635151361,53,02 - Submit Login,200,OK,Timesheet Users 1-16,text,true,,4528,509,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635151361,25,02 - Submit Login-0,302,Found,Timesheet Users 1-16,text,true,,698,322,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635151386,28,02 - Submit Login-1,200,OK,Timesheet Users 1-16,text,true,,3830,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635151530,29,01 - Get Login Page,200,OK,Timesheet Users 1-17,text,true,,3773,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635151670,54,04 - View My Timesheet,200,OK,Timesheet Users 1-11,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635151670,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-11,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635151695,29,04 - View My Timesheet-1,200,OK,Timesheet Users 1-11,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635151800,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-12,text,true,,4396,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635151800,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-12,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635151824,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-12,text,true,,3698,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635151947,52,02 - Submit Login,200,OK,Timesheet Users 1-13,text,true,,4505,511,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635151947,24,02 - Submit Login-0,302,Found,Timesheet Users 1-13,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635151971,28,02 - Submit Login-1,200,OK,Timesheet Users 1-13,text,true,,3807,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635152121,30,01 - Get Login Page,200,OK,Timesheet Users 1-14,text,true,,3764,140,7,7,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635152267,53,04 - View My Timesheet,200,OK,Timesheet Users 1-15,text,true,,4371,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635152267,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-15,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635152292,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-15,text,true,,3673,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635152415,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-16,text,true,,4396,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635152415,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-16,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635152440,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-16,text,true,,3698,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635152560,53,02 - Submit Login,200,OK,Timesheet Users 1-17,text,true,,4506,513,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635152560,25,02 - Submit Login-0,302,Found,Timesheet Users 1-17,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635152585,28,02 - Submit Login-1,200,OK,Timesheet Users 1-17,text,true,,3808,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635152728,28,01 - Get Login Page,200,OK,Timesheet Users 1-18,text,true,,3784,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635152852,53,04 - View My Timesheet,200,OK,Timesheet Users 1-12,text,true,,4391,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635152852,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-12,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635152877,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-12,text,true,,3693,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635152999,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-13,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635152999,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-13,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635153024,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-13,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635153152,52,02 - Submit Login,200,OK,Timesheet Users 1-14,text,true,,4508,509,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635153152,24,02 - Submit Login-0,302,Found,Timesheet Users 1-14,text,true,,698,322,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635153176,28,02 - Submit Login-1,200,OK,Timesheet Users 1-14,text,true,,3810,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635153321,31,01 - Get Login Page,200,OK,Timesheet Users 1-15,text,true,,3780,140,7,7,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635153468,53,04 - View My Timesheet,200,OK,Timesheet Users 1-16,text,true,,4387,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635153468,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-16,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635153493,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-16,text,true,,3689,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635153614,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-17,text,true,,4372,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635153614,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-17,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,0
+1768635153639,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-17,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635153756,52,02 - Submit Login,200,OK,Timesheet Users 1-18,text,true,,4528,516,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635153756,25,02 - Submit Login-0,302,Found,Timesheet Users 1-18,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,1
+1768635153781,27,02 - Submit Login-1,200,OK,Timesheet Users 1-18,text,true,,3830,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635153928,29,01 - Get Login Page,200,OK,Timesheet Users 1-19,text,true,,3786,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635154052,51,04 - View My Timesheet,200,OK,Timesheet Users 1-13,text,true,,4376,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635154052,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-13,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635154076,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-13,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635154205,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-14,text,true,,4375,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635154205,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-14,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635154228,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-14,text,true,,3677,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635154353,50,02 - Submit Login,200,OK,Timesheet Users 1-15,text,true,,4515,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635154353,23,02 - Submit Login-0,302,Found,Timesheet Users 1-15,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635154376,27,02 - Submit Login-1,200,OK,Timesheet Users 1-15,text,true,,3817,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635154522,27,01 - Get Login Page,200,OK,Timesheet Users 1-16,text,true,,3759,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635154668,51,04 - View My Timesheet,200,OK,Timesheet Users 1-17,text,true,,4393,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635154668,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-17,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635154692,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-17,text,true,,3695,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635154809,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-18,text,true,,4387,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635154809,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-18,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635154833,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-18,text,true,,3689,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635154957,51,02 - Submit Login,200,OK,Timesheet Users 1-19,text,true,,4505,516,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635154957,23,02 - Submit Login-0,302,Found,Timesheet Users 1-19,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635154980,28,02 - Submit Login-1,200,OK,Timesheet Users 1-19,text,true,,3807,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635155127,28,01 - Get Login Page,200,OK,Timesheet Users 1-20,text,true,,3764,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635155255,51,04 - View My Timesheet,200,OK,Timesheet Users 1-14,text,true,,4390,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635155255,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-14,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635155279,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-14,text,true,,3692,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635155403,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-15,text,true,,4389,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635155403,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-15,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635155427,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-15,text,true,,3691,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635155549,51,02 - Submit Login,200,OK,Timesheet Users 1-16,text,true,,4512,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635155549,24,02 - Submit Login-0,302,Found,Timesheet Users 1-16,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635155573,27,02 - Submit Login-1,200,OK,Timesheet Users 1-16,text,true,,3814,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635155719,28,01 - Get Login Page,200,OK,Timesheet Users 1-17,text,true,,3763,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635155860,51,04 - View My Timesheet,200,OK,Timesheet Users 1-18,text,true,,4375,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635155860,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-18,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635155883,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-18,text,true,,3677,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635156008,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-19,text,true,,4378,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635156008,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-19,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635156032,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-19,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635156156,50,02 - Submit Login,200,OK,Timesheet Users 1-20,text,true,,4522,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635156156,23,02 - Submit Login-0,302,Found,Timesheet Users 1-20,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635156179,27,02 - Submit Login-1,200,OK,Timesheet Users 1-20,text,true,,3824,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635156326,29,01 - Get Login Page,200,OK,Timesheet Users 1-21,text,true,,3789,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635156454,51,04 - View My Timesheet,200,OK,Timesheet Users 1-15,text,true,,4401,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635156454,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-15,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635156477,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-15,text,true,,3703,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635156601,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-16,text,true,,4397,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635156601,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-16,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635156625,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-16,text,true,,3699,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635156748,49,02 - Submit Login,200,OK,Timesheet Users 1-17,text,true,,4527,514,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635156748,22,02 - Submit Login-0,302,Found,Timesheet Users 1-17,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635156771,26,02 - Submit Login-1,200,OK,Timesheet Users 1-17,text,true,,3829,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635156912,28,01 - Get Login Page,200,OK,Timesheet Users 1-18,text,true,,3777,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635157059,50,04 - View My Timesheet,200,OK,Timesheet Users 1-19,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635157059,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-19,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635157082,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-19,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635157207,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-20,text,true,,4378,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635157207,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-20,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635157231,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-20,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635157355,51,02 - Submit Login,200,OK,Timesheet Users 1-21,text,true,,4517,510,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635157355,23,02 - Submit Login-0,302,Found,Timesheet Users 1-21,text,true,,698,323,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635157378,28,02 - Submit Login-1,200,OK,Timesheet Users 1-21,text,true,,3819,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635157528,28,01 - Get Login Page,200,OK,Timesheet Users 1-22,text,true,,3762,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635157653,52,04 - View My Timesheet,200,OK,Timesheet Users 1-16,text,true,,4374,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635157653,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-16,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635157677,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-16,text,true,,3676,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635157798,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-17,text,true,,4402,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635157798,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-17,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635157822,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-17,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635157940,50,02 - Submit Login,200,OK,Timesheet Users 1-18,text,true,,4510,514,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635157940,23,02 - Submit Login-0,302,Found,Timesheet Users 1-18,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635157963,27,02 - Submit Login-1,200,OK,Timesheet Users 1-18,text,true,,3812,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635158110,28,01 - Get Login Page,200,OK,Timesheet Users 1-19,text,true,,3789,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635158259,51,04 - View My Timesheet,200,OK,Timesheet Users 1-20,text,true,,4388,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635158259,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-20,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635158283,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-20,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635158407,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-21,text,true,,4377,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635158407,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-21,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635158430,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-21,text,true,,3679,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635158557,50,02 - Submit Login,200,OK,Timesheet Users 1-22,text,true,,4524,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635158557,23,02 - Submit Login-0,302,Found,Timesheet Users 1-22,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635158580,27,02 - Submit Login-1,200,OK,Timesheet Users 1-22,text,true,,3826,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635158726,29,01 - Get Login Page,200,OK,Timesheet Users 1-23,text,true,,3762,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635158850,51,04 - View My Timesheet,200,OK,Timesheet Users 1-17,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635158850,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-17,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635158873,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-17,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635158991,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-18,text,true,,4382,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635158991,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-18,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635159014,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-18,text,true,,3684,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635159139,50,02 - Submit Login,200,OK,Timesheet Users 1-19,text,true,,4510,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635159139,23,02 - Submit Login-0,302,Found,Timesheet Users 1-19,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635159162,27,02 - Submit Login-1,200,OK,Timesheet Users 1-19,text,true,,3812,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635159311,28,01 - Get Login Page,200,OK,Timesheet Users 1-20,text,true,,3762,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635159458,50,04 - View My Timesheet,200,OK,Timesheet Users 1-21,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635159458,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-21,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635159482,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-21,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635159608,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-22,text,true,,4398,390,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635159608,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-22,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,22,0,0
+1768635159631,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-22,text,true,,3700,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635159756,50,02 - Submit Login,200,OK,Timesheet Users 1-23,text,true,,4534,513,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635159756,23,02 - Submit Login-0,302,Found,Timesheet Users 1-23,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635159779,27,02 - Submit Login-1,200,OK,Timesheet Users 1-23,text,true,,3836,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635159925,28,01 - Get Login Page,200,OK,Timesheet Users 1-24,text,true,,3759,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635160042,50,04 - View My Timesheet,200,OK,Timesheet Users 1-18,text,true,,4386,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635160042,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-18,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635160065,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-18,text,true,,3688,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635160190,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-19,text,true,,4400,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635160190,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-19,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635160213,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-19,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635160340,49,02 - Submit Login,200,OK,Timesheet Users 1-20,text,true,,4534,517,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635160340,22,02 - Submit Login-0,302,Found,Timesheet Users 1-20,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635160363,26,02 - Submit Login-1,200,OK,Timesheet Users 1-20,text,true,,3836,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635160509,28,01 - Get Login Page,200,OK,Timesheet Users 1-21,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635160658,52,04 - View My Timesheet,200,OK,Timesheet Users 1-22,text,true,,4390,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635160658,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-22,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635160682,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-22,text,true,,3692,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635160807,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-23,text,true,,4392,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635160807,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-23,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635160831,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-23,text,true,,3694,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635160953,60,02 - Submit Login,200,OK,Timesheet Users 1-24,text,true,,4524,512,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635160953,28,02 - Submit Login-0,302,Found,Timesheet Users 1-24,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,28,0,1
+1768635160982,31,02 - Submit Login-1,200,OK,Timesheet Users 1-24,text,true,,3826,187,7,7,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635161124,33,01 - Get Login Page,200,OK,Timesheet Users 1-25,text,true,,3760,140,7,7,http://localhost:8080/web/index.php/auth/login,33,0,1
+1768635161240,51,04 - View My Timesheet,200,OK,Timesheet Users 1-19,text,true,,4395,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635161240,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-19,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635161264,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-19,text,true,,3697,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635161390,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-20,text,true,,4377,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635161390,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-20,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635161414,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-20,text,true,,3679,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635161537,50,02 - Submit Login,200,OK,Timesheet Users 1-21,text,true,,4506,514,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635161537,24,02 - Submit Login-0,302,Found,Timesheet Users 1-21,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635161561,26,02 - Submit Login-1,200,OK,Timesheet Users 1-21,text,true,,3808,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635161711,28,01 - Get Login Page,200,OK,Timesheet Users 1-22,text,true,,3786,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635161859,50,04 - View My Timesheet,200,OK,Timesheet Users 1-23,text,true,,4390,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635161859,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-23,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635161882,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-23,text,true,,3692,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635162013,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-24,text,true,,4394,390,7,7,http://localhost:8080/web/index.php/auth/login,26,0,1
+1768635162013,26,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-24,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,26,0,1
+1768635162039,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-24,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635162158,53,02 - Submit Login,200,OK,Timesheet Users 1-25,text,true,,4504,515,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635162158,26,02 - Submit Login-0,302,Found,Timesheet Users 1-25,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635162184,27,02 - Submit Login-1,200,OK,Timesheet Users 1-25,text,true,,3806,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635162325,27,01 - Get Login Page,200,OK,Timesheet Users 1-26,text,true,,3774,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635162440,51,04 - View My Timesheet,200,OK,Timesheet Users 1-20,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635162440,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-20,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635162464,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-20,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635162588,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-21,text,true,,4384,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635162588,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-21,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635162611,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-21,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635162740,51,02 - Submit Login,200,OK,Timesheet Users 1-22,text,true,,4531,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635162740,24,02 - Submit Login-0,302,Found,Timesheet Users 1-22,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635162764,27,02 - Submit Login-1,200,OK,Timesheet Users 1-22,text,true,,3833,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635162910,27,01 - Get Login Page,200,OK,Timesheet Users 1-23,text,true,,3769,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635163068,51,04 - View My Timesheet,200,OK,Timesheet Users 1-24,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635163068,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-24,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635163092,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-24,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635163212,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-25,text,true,,4392,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635163212,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-25,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635163235,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-25,text,true,,3694,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635163353,50,02 - Submit Login,200,OK,Timesheet Users 1-26,text,true,,4516,510,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635163353,23,02 - Submit Login-0,302,Found,Timesheet Users 1-26,text,true,,698,323,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635163376,27,02 - Submit Login-1,200,OK,Timesheet Users 1-26,text,true,,3818,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635163525,28,01 - Get Login Page,200,OK,Timesheet Users 1-27,text,true,,3774,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635163639,51,04 - View My Timesheet,200,OK,Timesheet Users 1-21,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635163639,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-21,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635163663,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-21,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635163791,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-22,text,true,,4382,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635163791,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-22,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635163814,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-22,text,true,,3684,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635163938,50,02 - Submit Login,200,OK,Timesheet Users 1-23,text,true,,4506,513,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635163938,23,02 - Submit Login-0,302,Found,Timesheet Users 1-23,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635163961,27,02 - Submit Login-1,200,OK,Timesheet Users 1-23,text,true,,3808,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635164120,27,01 - Get Login Page,200,OK,Timesheet Users 1-24,text,true,,3767,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635164263,51,04 - View My Timesheet,200,OK,Timesheet Users 1-25,text,true,,4389,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635164263,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-25,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635164287,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-25,text,true,,3691,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635164403,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-26,text,true,,4377,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635164403,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-26,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635164427,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-26,text,true,,3679,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635164553,50,02 - Submit Login,200,OK,Timesheet Users 1-27,text,true,,4524,513,7,7,http://localhost:8080/web/index.php/auth/login,22,0,1
+1768635164553,22,02 - Submit Login-0,302,Found,Timesheet Users 1-27,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,1
+1768635164576,27,02 - Submit Login-1,200,OK,Timesheet Users 1-27,text,true,,3826,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635164724,27,01 - Get Login Page,200,OK,Timesheet Users 1-28,text,true,,3761,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635164842,50,04 - View My Timesheet,200,OK,Timesheet Users 1-22,text,true,,4379,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635164842,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-22,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635164865,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-22,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635164988,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-23,text,true,,4401,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635164988,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-23,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635165012,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-23,text,true,,3703,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635165148,50,02 - Submit Login,200,OK,Timesheet Users 1-24,text,true,,4518,514,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635165148,23,02 - Submit Login-0,302,Found,Timesheet Users 1-24,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635165171,27,02 - Submit Login-1,200,OK,Timesheet Users 1-24,text,true,,3820,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635165314,30,01 - Get Login Page,200,OK,Timesheet Users 1-25,text,true,,3761,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635165454,51,04 - View My Timesheet,200,OK,Timesheet Users 1-26,text,true,,4376,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635165454,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-26,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635165478,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-26,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635165603,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-27,text,true,,4395,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635165603,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-27,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635165627,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-27,text,true,,3697,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635165752,50,02 - Submit Login,200,OK,Timesheet Users 1-28,text,true,,4519,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635165752,23,02 - Submit Login-0,302,Found,Timesheet Users 1-28,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635165775,27,02 - Submit Login-1,200,OK,Timesheet Users 1-28,text,true,,3821,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635165925,28,01 - Get Login Page,200,OK,Timesheet Users 1-29,text,true,,3776,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635166040,51,04 - View My Timesheet,200,OK,Timesheet Users 1-23,text,true,,4380,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635166040,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-23,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635166063,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-23,text,true,,3682,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635166198,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-24,text,true,,4394,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635166198,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-24,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635166221,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-24,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635166344,50,02 - Submit Login,200,OK,Timesheet Users 1-25,text,true,,4513,512,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635166344,23,02 - Submit Login-0,302,Found,Timesheet Users 1-25,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635166368,26,02 - Submit Login-1,200,OK,Timesheet Users 1-25,text,true,,3815,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635166506,28,01 - Get Login Page,200,OK,Timesheet Users 1-26,text,true,,3767,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635166654,51,04 - View My Timesheet,200,OK,Timesheet Users 1-27,text,true,,4400,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635166654,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-27,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635166678,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-27,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635166803,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-28,text,true,,4372,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635166803,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-28,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635166826,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-28,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635166954,50,02 - Submit Login,200,OK,Timesheet Users 1-29,text,true,,4514,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635166954,23,02 - Submit Login-0,302,Found,Timesheet Users 1-29,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635166977,27,02 - Submit Login-1,200,OK,Timesheet Users 1-29,text,true,,3816,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635167123,28,01 - Get Login Page,200,OK,Timesheet Users 1-30,text,true,,3782,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635167249,50,04 - View My Timesheet,200,OK,Timesheet Users 1-24,text,true,,4391,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635167249,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-24,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635167272,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-24,text,true,,3693,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635167394,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-25,text,true,,4396,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635167394,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-25,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635167418,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-25,text,true,,3698,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635167534,50,02 - Submit Login,200,OK,Timesheet Users 1-26,text,true,,4526,512,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635167534,23,02 - Submit Login-0,302,Found,Timesheet Users 1-26,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635167557,27,02 - Submit Login-1,200,OK,Timesheet Users 1-26,text,true,,3828,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635167705,28,01 - Get Login Page,200,OK,Timesheet Users 1-27,text,true,,3759,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635167853,50,04 - View My Timesheet,200,OK,Timesheet Users 1-28,text,true,,4400,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635167853,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-28,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635167877,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-28,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635168004,49,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-29,text,true,,4388,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635168004,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-29,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635168027,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-29,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635168150,50,02 - Submit Login,200,OK,Timesheet Users 1-30,text,true,,4528,517,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635168150,23,02 - Submit Login-0,302,Found,Timesheet Users 1-30,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635168174,26,02 - Submit Login-1,200,OK,Timesheet Users 1-30,text,true,,3830,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635168321,28,01 - Get Login Page,200,OK,Timesheet Users 1-31,text,true,,3763,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635168445,51,04 - View My Timesheet,200,OK,Timesheet Users 1-25,text,true,,4398,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635168445,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-25,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635168469,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-25,text,true,,3700,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635168585,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-26,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635168585,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-26,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635168609,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-26,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635168733,50,02 - Submit Login,200,OK,Timesheet Users 1-27,text,true,,4513,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635168733,23,02 - Submit Login-0,302,Found,Timesheet Users 1-27,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635168756,27,02 - Submit Login-1,200,OK,Timesheet Users 1-27,text,true,,3815,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635168904,28,01 - Get Login Page,200,OK,Timesheet Users 1-28,text,true,,3763,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635169054,50,04 - View My Timesheet,200,OK,Timesheet Users 1-29,text,true,,4380,384,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635169054,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-29,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,22,0,0
+1768635169077,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-29,text,true,,3682,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635169201,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-30,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635169201,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-30,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635169225,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-30,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635169349,50,02 - Submit Login,200,OK,Timesheet Users 1-31,text,true,,4535,513,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635169349,23,02 - Submit Login-0,302,Found,Timesheet Users 1-31,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635169372,27,02 - Submit Login-1,200,OK,Timesheet Users 1-31,text,true,,3837,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635169520,28,01 - Get Login Page,200,OK,Timesheet Users 1-32,text,true,,3787,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635169637,51,04 - View My Timesheet,200,OK,Timesheet Users 1-26,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635169637,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-26,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635169661,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-26,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635169784,49,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-27,text,true,,4402,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635169784,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-27,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635169807,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-27,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635169932,51,02 - Submit Login,200,OK,Timesheet Users 1-28,text,true,,4521,509,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635169932,24,02 - Submit Login-0,302,Found,Timesheet Users 1-28,text,true,,698,322,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635169956,27,02 - Submit Login-1,200,OK,Timesheet Users 1-28,text,true,,3823,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635170104,28,01 - Get Login Page,200,OK,Timesheet Users 1-29,text,true,,3778,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635170252,53,04 - View My Timesheet,200,OK,Timesheet Users 1-30,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635170252,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-30,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635170275,30,04 - View My Timesheet-1,200,OK,Timesheet Users 1-30,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,30,0,1
+1768635170399,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-31,text,true,,4387,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635170399,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-31,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635170425,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-31,text,true,,3689,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635170549,50,02 - Submit Login,200,OK,Timesheet Users 1-32,text,true,,4513,513,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635170549,23,02 - Submit Login-0,302,Found,Timesheet Users 1-32,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635170572,27,02 - Submit Login-1,200,OK,Timesheet Users 1-32,text,true,,3815,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635170722,28,01 - Get Login Page,200,OK,Timesheet Users 1-33,text,true,,3768,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635170833,51,04 - View My Timesheet,200,OK,Timesheet Users 1-27,text,true,,4397,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635170833,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-27,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635170857,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-27,text,true,,3699,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635170984,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-28,text,true,,4380,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635170984,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-28,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635171008,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-28,text,true,,3682,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635171133,52,02 - Submit Login,200,OK,Timesheet Users 1-29,text,true,,4507,517,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635171133,25,02 - Submit Login-0,302,Found,Timesheet Users 1-29,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635171158,27,02 - Submit Login-1,200,OK,Timesheet Users 1-29,text,true,,3809,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635171306,27,01 - Get Login Page,200,OK,Timesheet Users 1-30,text,true,,3779,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635171452,51,04 - View My Timesheet,200,OK,Timesheet Users 1-31,text,true,,4376,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635171452,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-31,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635171476,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-31,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635171599,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-32,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635171599,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-32,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635171623,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-32,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635171750,51,02 - Submit Login,200,OK,Timesheet Users 1-33,text,true,,4518,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635171750,23,02 - Submit Login-0,302,Found,Timesheet Users 1-33,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635171774,27,02 - Submit Login-1,200,OK,Timesheet Users 1-33,text,true,,3820,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635171920,28,01 - Get Login Page,200,OK,Timesheet Users 1-34,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635172036,51,04 - View My Timesheet,200,OK,Timesheet Users 1-28,text,true,,4392,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635172036,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-28,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635172059,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-28,text,true,,3694,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635172185,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-29,text,true,,4400,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635172185,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-29,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635172209,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-29,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635172334,51,02 - Submit Login,200,OK,Timesheet Users 1-30,text,true,,4533,514,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635172334,23,02 - Submit Login-0,302,Found,Timesheet Users 1-30,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635172357,28,02 - Submit Login-1,200,OK,Timesheet Users 1-30,text,true,,3835,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635172503,28,01 - Get Login Page,200,OK,Timesheet Users 1-31,text,true,,3782,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635172649,52,04 - View My Timesheet,200,OK,Timesheet Users 1-32,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635172649,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-32,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635172673,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-32,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635172801,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-33,text,true,,4378,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635172801,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-33,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635172825,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-33,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635172949,50,02 - Submit Login,200,OK,Timesheet Users 1-34,text,true,,4525,517,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635172949,23,02 - Submit Login-0,302,Found,Timesheet Users 1-34,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635172972,27,02 - Submit Login-1,200,OK,Timesheet Users 1-34,text,true,,3827,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635173119,28,01 - Get Login Page,200,OK,Timesheet Users 1-35,text,true,,3772,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635173236,51,04 - View My Timesheet,200,OK,Timesheet Users 1-29,text,true,,4389,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635173236,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-29,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635173260,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-29,text,true,,3691,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635173386,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-30,text,true,,4376,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635173386,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-30,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635173411,29,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-30,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635173532,51,02 - Submit Login,200,OK,Timesheet Users 1-31,text,true,,4520,511,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635173532,24,02 - Submit Login-0,302,Found,Timesheet Users 1-31,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635173556,27,02 - Submit Login-1,200,OK,Timesheet Users 1-31,text,true,,3822,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635173702,27,01 - Get Login Page,200,OK,Timesheet Users 1-32,text,true,,3790,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635173852,51,04 - View My Timesheet,200,OK,Timesheet Users 1-33,text,true,,4392,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635173852,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-33,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635173876,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-33,text,true,,3694,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635174000,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-34,text,true,,4384,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635174000,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-34,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635174023,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-34,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635174147,50,02 - Submit Login,200,OK,Timesheet Users 1-35,text,true,,4518,520,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635174147,23,02 - Submit Login-0,302,Found,Timesheet Users 1-35,text,true,,698,333,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635174170,27,02 - Submit Login-1,200,OK,Timesheet Users 1-35,text,true,,3820,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635174319,27,01 - Get Login Page,200,OK,Timesheet Users 1-36,text,true,,3790,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635174440,53,04 - View My Timesheet,200,OK,Timesheet Users 1-30,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635174440,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-30,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635174465,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-30,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635174584,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-31,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635174584,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-31,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635174607,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-31,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635174730,50,02 - Submit Login,200,OK,Timesheet Users 1-32,text,true,,4531,514,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635174730,23,02 - Submit Login-0,302,Found,Timesheet Users 1-32,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635174753,27,02 - Submit Login-1,200,OK,Timesheet Users 1-32,text,true,,3833,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635174904,28,01 - Get Login Page,200,OK,Timesheet Users 1-33,text,true,,3784,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635175050,50,04 - View My Timesheet,200,OK,Timesheet Users 1-34,text,true,,4401,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635175050,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-34,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635175074,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-34,text,true,,3703,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635175197,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-35,text,true,,4378,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635175197,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-35,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635175221,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-35,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635175347,51,02 - Submit Login,200,OK,Timesheet Users 1-36,text,true,,4517,517,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635175347,24,02 - Submit Login-0,302,Found,Timesheet Users 1-36,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635175371,27,02 - Submit Login-1,200,OK,Timesheet Users 1-36,text,true,,3819,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635175519,28,01 - Get Login Page,200,OK,Timesheet Users 1-37,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635175634,50,04 - View My Timesheet,200,OK,Timesheet Users 1-31,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635175634,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-31,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635175658,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-31,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635175780,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-32,text,true,,4402,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635175780,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-32,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635175804,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-32,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635175933,50,02 - Submit Login,200,OK,Timesheet Users 1-33,text,true,,4516,513,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635175933,23,02 - Submit Login-0,302,Found,Timesheet Users 1-33,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635175956,27,02 - Submit Login-1,200,OK,Timesheet Users 1-33,text,true,,3818,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635176101,27,01 - Get Login Page,200,OK,Timesheet Users 1-34,text,true,,3774,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635176248,51,04 - View My Timesheet,200,OK,Timesheet Users 1-35,text,true,,4391,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635176248,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-35,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635176272,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-35,text,true,,3693,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635176399,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-36,text,true,,4390,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635176399,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-36,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635176424,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-36,text,true,,3692,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635176548,51,02 - Submit Login,200,OK,Timesheet Users 1-37,text,true,,4514,513,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635176548,24,02 - Submit Login-0,302,Found,Timesheet Users 1-37,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,0
+1768635176572,27,02 - Submit Login-1,200,OK,Timesheet Users 1-37,text,true,,3816,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635176717,27,01 - Get Login Page,200,OK,Timesheet Users 1-38,text,true,,3781,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635176831,50,04 - View My Timesheet,200,OK,Timesheet Users 1-32,text,true,,4383,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635176831,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-32,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635176854,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-32,text,true,,3685,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635176984,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-33,text,true,,4379,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635176984,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-33,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635177007,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-33,text,true,,3681,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635177129,50,02 - Submit Login,200,OK,Timesheet Users 1-34,text,true,,4527,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635177129,23,02 - Submit Login-0,302,Found,Timesheet Users 1-34,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635177152,27,02 - Submit Login-1,200,OK,Timesheet Users 1-34,text,true,,3829,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635177300,27,01 - Get Login Page,200,OK,Timesheet Users 1-35,text,true,,3761,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635177453,50,04 - View My Timesheet,200,OK,Timesheet Users 1-36,text,true,,4395,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635177453,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-36,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635177476,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-36,text,true,,3697,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635177601,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-37,text,true,,4380,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635177601,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-37,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635177624,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-37,text,true,,3682,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635177746,51,02 - Submit Login,200,OK,Timesheet Users 1-38,text,true,,4516,513,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635177746,23,02 - Submit Login-0,302,Found,Timesheet Users 1-38,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635177770,27,02 - Submit Login-1,200,OK,Timesheet Users 1-38,text,true,,3818,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635177919,28,01 - Get Login Page,200,OK,Timesheet Users 1-39,text,true,,3775,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635178036,51,04 - View My Timesheet,200,OK,Timesheet Users 1-33,text,true,,4390,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635178036,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-33,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635178060,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-33,text,true,,3692,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635178181,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-34,text,true,,4400,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635178181,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-34,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635178204,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-34,text,true,,3702,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,1
+1768635178329,50,02 - Submit Login,200,OK,Timesheet Users 1-35,text,true,,4530,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635178329,23,02 - Submit Login-0,302,Found,Timesheet Users 1-35,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635178352,27,02 - Submit Login-1,200,OK,Timesheet Users 1-35,text,true,,3832,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635178503,28,01 - Get Login Page,200,OK,Timesheet Users 1-36,text,true,,3760,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635178651,51,04 - View My Timesheet,200,OK,Timesheet Users 1-37,text,true,,4374,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635178651,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-37,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635178675,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-37,text,true,,3676,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635178797,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-38,text,true,,4392,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635178797,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-38,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635178821,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-38,text,true,,3694,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635178947,50,02 - Submit Login,200,OK,Timesheet Users 1-39,text,true,,4522,519,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635178947,23,02 - Submit Login-0,302,Found,Timesheet Users 1-39,text,true,,698,332,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635178970,27,02 - Submit Login-1,200,OK,Timesheet Users 1-39,text,true,,3824,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635179118,28,01 - Get Login Page,200,OK,Timesheet Users 1-40,text,true,,3774,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635179231,50,04 - View My Timesheet,200,OK,Timesheet Users 1-34,text,true,,4384,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635179231,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-34,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635179255,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-34,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635179380,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-35,text,true,,4375,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635179380,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-35,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635179403,29,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-35,text,true,,3677,187,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635179531,51,02 - Submit Login,200,OK,Timesheet Users 1-36,text,true,,4535,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635179531,24,02 - Submit Login-0,302,Found,Timesheet Users 1-36,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635179555,27,02 - Submit Login-1,200,OK,Timesheet Users 1-36,text,true,,3837,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635179703,28,01 - Get Login Page,200,OK,Timesheet Users 1-37,text,true,,3766,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635179848,51,04 - View My Timesheet,200,OK,Timesheet Users 1-38,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635179848,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-38,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635179872,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-38,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635179998,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-39,text,true,,4388,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635179998,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-39,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635180021,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-39,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635180146,50,02 - Submit Login,200,OK,Timesheet Users 1-40,text,true,,4529,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635180146,23,02 - Submit Login-0,302,Found,Timesheet Users 1-40,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635180170,26,02 - Submit Login-1,200,OK,Timesheet Users 1-40,text,true,,3831,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635180318,28,01 - Get Login Page,200,OK,Timesheet Users 1-41,text,true,,3770,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635180433,51,04 - View My Timesheet,200,OK,Timesheet Users 1-35,text,true,,4387,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635180433,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-35,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635180457,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-35,text,true,,3689,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635180583,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-36,text,true,,4396,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635180583,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-36,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635180606,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-36,text,true,,3698,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635180731,50,02 - Submit Login,200,OK,Timesheet Users 1-37,text,true,,4506,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635180731,23,02 - Submit Login-0,302,Found,Timesheet Users 1-37,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635180754,27,02 - Submit Login-1,200,OK,Timesheet Users 1-37,text,true,,3808,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635180900,28,01 - Get Login Page,200,OK,Timesheet Users 1-38,text,true,,3761,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635181049,51,04 - View My Timesheet,200,OK,Timesheet Users 1-39,text,true,,4388,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635181049,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-39,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635181073,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-39,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635181197,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-40,text,true,,4383,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635181197,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-40,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635181221,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-40,text,true,,3685,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635181346,51,02 - Submit Login,200,OK,Timesheet Users 1-41,text,true,,4509,516,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635181346,23,02 - Submit Login-0,302,Found,Timesheet Users 1-41,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635181369,28,02 - Submit Login-1,200,OK,Timesheet Users 1-41,text,true,,3811,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635181518,27,01 - Get Login Page,200,OK,Timesheet Users 1-42,text,true,,3764,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635181634,50,04 - View My Timesheet,200,OK,Timesheet Users 1-36,text,true,,4375,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635181634,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-36,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635181657,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-36,text,true,,3677,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635181782,49,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-37,text,true,,4374,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635181782,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-37,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635181805,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-37,text,true,,3676,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635181929,50,02 - Submit Login,200,OK,Timesheet Users 1-38,text,true,,4533,513,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635181929,23,02 - Submit Login-0,302,Found,Timesheet Users 1-38,text,true,,698,326,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635181952,27,02 - Submit Login-1,200,OK,Timesheet Users 1-38,text,true,,3835,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635182100,28,01 - Get Login Page,200,OK,Timesheet Users 1-39,text,true,,3773,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635182249,51,04 - View My Timesheet,200,OK,Timesheet Users 1-40,text,true,,4394,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635182249,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-40,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635182273,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-40,text,true,,3696,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635182397,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-41,text,true,,4380,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635182397,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-41,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635182421,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-41,text,true,,3682,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635182546,51,02 - Submit Login,200,OK,Timesheet Users 1-42,text,true,,4508,517,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635182546,23,02 - Submit Login-0,302,Found,Timesheet Users 1-42,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635182569,28,02 - Submit Login-1,200,OK,Timesheet Users 1-42,text,true,,3810,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635182718,30,01 - Get Login Page,200,OK,Timesheet Users 1-43,text,true,,3764,140,7,7,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635182832,50,04 - View My Timesheet,200,OK,Timesheet Users 1-37,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635182832,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-37,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635182855,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-37,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635182979,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-38,text,true,,4401,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635182979,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-38,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635183002,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-38,text,true,,3703,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635183128,51,02 - Submit Login,200,OK,Timesheet Users 1-39,text,true,,4522,516,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635183128,24,02 - Submit Login-0,302,Found,Timesheet Users 1-39,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635183152,27,02 - Submit Login-1,200,OK,Timesheet Users 1-39,text,true,,3824,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635183300,28,01 - Get Login Page,200,OK,Timesheet Users 1-40,text,true,,3777,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635183448,50,04 - View My Timesheet,200,OK,Timesheet Users 1-41,text,true,,4372,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635183448,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-41,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635183472,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-41,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635183598,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-42,text,true,,4391,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635183598,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-42,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635183621,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-42,text,true,,3693,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635183748,52,02 - Submit Login,200,OK,Timesheet Users 1-43,text,true,,4509,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635183748,24,02 - Submit Login-0,302,Found,Timesheet Users 1-43,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635183772,28,02 - Submit Login-1,200,OK,Timesheet Users 1-43,text,true,,3811,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635183917,28,01 - Get Login Page,200,OK,Timesheet Users 1-44,text,true,,3769,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635184029,52,04 - View My Timesheet,200,OK,Timesheet Users 1-38,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635184029,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-38,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635184053,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-38,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635184179,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-39,text,true,,4376,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635184179,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-39,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635184203,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-39,text,true,,3678,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635184329,49,02 - Submit Login,200,OK,Timesheet Users 1-40,text,true,,4524,518,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635184329,23,02 - Submit Login-0,302,Found,Timesheet Users 1-40,text,true,,698,331,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635184352,26,02 - Submit Login-1,200,OK,Timesheet Users 1-40,text,true,,3826,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635184499,28,01 - Get Login Page,200,OK,Timesheet Users 1-41,text,true,,3788,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635184649,51,04 - View My Timesheet,200,OK,Timesheet Users 1-42,text,true,,4373,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635184649,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-42,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635184673,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-42,text,true,,3675,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635184801,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-43,text,true,,4388,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635184801,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-43,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635184826,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-43,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635184946,50,02 - Submit Login,200,OK,Timesheet Users 1-44,text,true,,4529,517,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635184946,23,02 - Submit Login-0,302,Found,Timesheet Users 1-44,text,true,,698,330,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635184969,27,02 - Submit Login-1,200,OK,Timesheet Users 1-44,text,true,,3831,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635185117,27,01 - Get Login Page,200,OK,Timesheet Users 1-45,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635185230,50,04 - View My Timesheet,200,OK,Timesheet Users 1-39,text,true,,4386,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635185230,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-39,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635185254,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-39,text,true,,3688,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635185379,54,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-40,text,true,,4371,390,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635185379,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-40,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,22,0,0
+1768635185402,31,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-40,text,true,,3673,187,7,7,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635185527,53,02 - Submit Login,200,OK,Timesheet Users 1-41,text,true,,4524,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635185527,24,02 - Submit Login-0,302,Found,Timesheet Users 1-41,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635185551,29,02 - Submit Login-1,200,OK,Timesheet Users 1-41,text,true,,3826,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635185701,29,01 - Get Login Page,200,OK,Timesheet Users 1-42,text,true,,3778,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635185854,52,04 - View My Timesheet,200,OK,Timesheet Users 1-43,text,true,,4388,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635185854,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-43,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635185878,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-43,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635185997,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-44,text,true,,4386,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635185997,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-44,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635186021,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-44,text,true,,3688,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635186145,50,02 - Submit Login,200,OK,Timesheet Users 1-45,text,true,,4515,516,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635186145,22,02 - Submit Login-0,302,Found,Timesheet Users 1-45,text,true,,698,329,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635186167,28,02 - Submit Login-1,200,OK,Timesheet Users 1-45,text,true,,3817,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635186316,28,01 - Get Login Page,200,OK,Timesheet Users 1-46,text,true,,3760,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635186434,50,04 - View My Timesheet,200,OK,Timesheet Users 1-40,text,true,,4371,384,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635186434,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-40,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,22,0,0
+1768635186457,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-40,text,true,,3673,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635186580,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-41,text,true,,4389,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635186580,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-41,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635186604,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-41,text,true,,3691,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635186731,51,02 - Submit Login,200,OK,Timesheet Users 1-42,text,true,,4529,514,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635186731,24,02 - Submit Login-0,302,Found,Timesheet Users 1-42,text,true,,698,327,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635186755,27,02 - Submit Login-1,200,OK,Timesheet Users 1-42,text,true,,3831,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635186906,28,01 - Get Login Page,200,OK,Timesheet Users 1-43,text,true,,3771,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635187048,51,04 - View My Timesheet,200,OK,Timesheet Users 1-44,text,true,,4402,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635187048,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-44,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635187072,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-44,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635187195,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-45,text,true,,4371,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635187195,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-45,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,0
+1768635187219,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-45,text,true,,3673,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635187345,50,02 - Submit Login,200,OK,Timesheet Users 1-46,text,true,,4511,519,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635187345,23,02 - Submit Login-0,302,Found,Timesheet Users 1-46,text,true,,698,332,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635187368,27,02 - Submit Login-1,200,OK,Timesheet Users 1-46,text,true,,3813,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635187516,28,01 - Get Login Page,200,OK,Timesheet Users 1-47,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635187631,51,04 - View My Timesheet,200,OK,Timesheet Users 1-41,text,true,,4381,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635187631,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-41,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635187655,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-41,text,true,,3683,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635187782,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-42,text,true,,4371,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635187782,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-42,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635187805,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-42,text,true,,3673,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635187935,50,02 - Submit Login,200,OK,Timesheet Users 1-43,text,true,,4510,521,7,7,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635187935,22,02 - Submit Login-0,302,Found,Timesheet Users 1-43,text,true,,698,334,7,7,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635187957,28,02 - Submit Login-1,200,OK,Timesheet Users 1-43,text,true,,3812,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635188100,28,01 - Get Login Page,200,OK,Timesheet Users 1-44,text,true,,3780,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635188246,51,04 - View My Timesheet,200,OK,Timesheet Users 1-45,text,true,,4378,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635188246,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-45,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635188270,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-45,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635188395,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-46,text,true,,4389,390,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635188395,25,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-46,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,25,0,1
+1768635188420,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-46,text,true,,3691,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635188545,50,02 - Submit Login,200,OK,Timesheet Users 1-47,text,true,,4535,512,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635188545,24,02 - Submit Login-0,302,Found,Timesheet Users 1-47,text,true,,698,325,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635188569,26,02 - Submit Login-1,200,OK,Timesheet Users 1-47,text,true,,3837,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635188716,28,01 - Get Login Page,200,OK,Timesheet Users 1-48,text,true,,3759,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635188832,51,04 - View My Timesheet,200,OK,Timesheet Users 1-42,text,true,,4388,384,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635188832,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-42,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635188856,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-42,text,true,,3690,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635188985,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-43,text,true,,4378,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635188985,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-43,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635189009,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-43,text,true,,3680,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635189128,51,02 - Submit Login,200,OK,Timesheet Users 1-44,text,true,,4521,518,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635189128,24,02 - Submit Login-0,302,Found,Timesheet Users 1-44,text,true,,698,331,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635189152,27,02 - Submit Login-1,200,OK,Timesheet Users 1-44,text,true,,3823,187,7,7,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635189297,28,01 - Get Login Page,200,OK,Timesheet Users 1-45,text,true,,3787,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635189447,50,04 - View My Timesheet,200,OK,Timesheet Users 1-46,text,true,,4393,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635189447,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-46,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635189470,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-46,text,true,,3695,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635189596,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-47,text,true,,4385,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635189596,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-47,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635189619,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-47,text,true,,3687,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635189744,50,02 - Submit Login,200,OK,Timesheet Users 1-48,text,true,,4530,515,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635189744,23,02 - Submit Login-0,302,Found,Timesheet Users 1-48,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635189767,27,02 - Submit Login-1,200,OK,Timesheet Users 1-48,text,true,,3832,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635189915,27,01 - Get Login Page,200,OK,Timesheet Users 1-49,text,true,,3775,140,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635190037,50,04 - View My Timesheet,200,OK,Timesheet Users 1-43,text,true,,4398,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635190037,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-43,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635190060,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-43,text,true,,3700,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635190179,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-44,text,true,,4372,390,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635190179,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-44,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,1
+1768635190202,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-44,text,true,,3674,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635190325,51,02 - Submit Login,200,OK,Timesheet Users 1-45,text,true,,4529,511,7,7,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635190325,24,02 - Submit Login-0,302,Found,Timesheet Users 1-45,text,true,,698,324,7,7,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635190349,27,02 - Submit Login-1,200,OK,Timesheet Users 1-45,text,true,,3831,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635190497,28,01 - Get Login Page,200,OK,Timesheet Users 1-46,text,true,,3790,140,7,7,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635190647,52,04 - View My Timesheet,200,OK,Timesheet Users 1-47,text,true,,4402,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635190647,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-47,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635190672,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-47,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635190794,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-48,text,true,,4391,390,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635190794,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-48,text,true,,698,203,7,7,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635190818,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-48,text,true,,3693,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635190943,51,02 - Submit Login,200,OK,Timesheet Users 1-49,text,true,,4517,515,7,7,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635190943,24,02 - Submit Login-0,302,Found,Timesheet Users 1-49,text,true,,698,328,7,7,http://localhost:8080/web/index.php/auth/validate,24,0,1
+1768635190967,27,02 - Submit Login-1,200,OK,Timesheet Users 1-49,text,true,,3819,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635191116,29,01 - Get Login Page,200,OK,Timesheet Users 1-50,text,true,,3783,140,7,7,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635191229,53,04 - View My Timesheet,200,OK,Timesheet Users 1-44,text,true,,4384,384,7,7,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635191229,25,04 - View My Timesheet-0,302,Found,Timesheet Users 1-44,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635191254,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-44,text,true,,3686,187,7,7,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635191376,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-45,text,true,,4384,390,6,6,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635191376,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-45,text,true,,698,203,6,6,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635191400,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-45,text,true,,3686,187,6,6,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635191526,50,02 - Submit Login,200,OK,Timesheet Users 1-46,text,true,,4530,512,6,6,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635191526,23,02 - Submit Login-0,302,Found,Timesheet Users 1-46,text,true,,698,325,6,6,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635191549,27,02 - Submit Login-1,200,OK,Timesheet Users 1-46,text,true,,3832,187,6,6,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635191700,28,01 - Get Login Page,200,OK,Timesheet Users 1-47,text,true,,3764,140,6,6,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635191846,50,04 - View My Timesheet,200,OK,Timesheet Users 1-48,text,true,,4399,384,6,6,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635191846,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-48,text,true,,698,197,6,6,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635191869,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-48,text,true,,3701,187,6,6,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635191995,49,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-49,text,true,,4371,390,6,6,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635191995,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-49,text,true,,698,203,6,6,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635192018,26,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-49,text,true,,3673,187,6,6,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635192146,50,02 - Submit Login,200,OK,Timesheet Users 1-50,text,true,,4513,518,6,6,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635192146,23,02 - Submit Login-0,302,Found,Timesheet Users 1-50,text,true,,698,331,6,6,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635192169,27,02 - Submit Login-1,200,OK,Timesheet Users 1-50,text,true,,3815,187,6,6,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635192429,51,04 - View My Timesheet,200,OK,Timesheet Users 1-45,text,true,,4384,384,6,6,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635192429,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-45,text,true,,698,197,6,6,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635192452,28,04 - View My Timesheet-1,200,OK,Timesheet Users 1-45,text,true,,3686,187,6,6,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635192577,53,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-46,text,true,,4394,390,5,5,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635192577,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-46,text,true,,698,203,5,5,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635192600,30,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-46,text,true,,3696,187,5,5,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635192728,50,02 - Submit Login,200,OK,Timesheet Users 1-47,text,true,,4516,514,5,5,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635192728,24,02 - Submit Login-0,302,Found,Timesheet Users 1-47,text,true,,698,327,5,5,http://localhost:8080/web/index.php/auth/validate,23,0,1
+1768635192752,26,02 - Submit Login-1,200,OK,Timesheet Users 1-47,text,true,,3818,187,5,5,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635192896,27,01 - Get Login Page,200,OK,Timesheet Users 1-48,text,true,,3771,140,5,5,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635193045,55,04 - View My Timesheet,200,OK,Timesheet Users 1-49,text,true,,4397,384,5,5,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635193045,27,04 - View My Timesheet-0,302,Found,Timesheet Users 1-49,text,true,,698,197,5,5,http://localhost:8080/web/index.php/time/viewMyTimesheet,27,0,0
+1768635193073,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-49,text,true,,3699,187,5,5,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635193196,52,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-50,text,true,,4385,390,5,5,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635193196,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-50,text,true,,698,203,5,5,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,24,0,1
+1768635193220,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-50,text,true,,3687,187,5,5,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635193630,50,04 - View My Timesheet,200,OK,Timesheet Users 1-46,text,true,,4392,384,5,5,http://localhost:8080/web/index.php/auth/login,23,0,1
+1768635193630,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-46,text,true,,698,197,5,5,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,1
+1768635193653,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-46,text,true,,3694,187,5,5,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635193779,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-47,text,true,,4378,390,4,4,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635193779,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-47,text,true,,698,203,4,4,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635193802,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-47,text,true,,3680,187,4,4,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635193924,50,02 - Submit Login,200,OK,Timesheet Users 1-48,text,true,,4516,517,4,4,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635193924,22,02 - Submit Login-0,302,Found,Timesheet Users 1-48,text,true,,698,330,4,4,http://localhost:8080/web/index.php/auth/validate,22,0,0
+1768635193947,27,02 - Submit Login-1,200,OK,Timesheet Users 1-48,text,true,,3818,187,4,4,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635194101,27,01 - Get Login Page,200,OK,Timesheet Users 1-49,text,true,,3771,140,4,4,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635194248,50,04 - View My Timesheet,200,OK,Timesheet Users 1-50,text,true,,4381,384,4,4,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635194248,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-50,text,true,,698,197,4,4,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635194271,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-50,text,true,,3683,187,4,4,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635194829,51,04 - View My Timesheet,200,OK,Timesheet Users 1-47,text,true,,4398,384,4,4,http://localhost:8080/web/index.php/auth/login,24,0,1
+1768635194829,24,04 - View My Timesheet-0,302,Found,Timesheet Users 1-47,text,true,,698,197,4,4,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,1
+1768635194853,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-47,text,true,,3700,187,4,4,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635194974,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-48,text,true,,4383,390,3,3,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635194974,24,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-48,text,true,,698,203,3,3,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635194998,27,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-48,text,true,,3685,187,3,3,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635195129,50,02 - Submit Login,200,OK,Timesheet Users 1-49,text,true,,4526,512,3,3,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635195129,23,02 - Submit Login-0,302,Found,Timesheet Users 1-49,text,true,,698,325,3,3,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635195152,27,02 - Submit Login-1,200,OK,Timesheet Users 1-49,text,true,,3828,187,3,3,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635195298,27,01 - Get Login Page,200,OK,Timesheet Users 1-50,text,true,,3760,140,3,3,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635196026,50,04 - View My Timesheet,200,OK,Timesheet Users 1-48,text,true,,4384,384,3,3,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635196026,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-48,text,true,,698,197,3,3,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635196050,26,04 - View My Timesheet-1,200,OK,Timesheet Users 1-48,text,true,,3686,187,3,3,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635196179,51,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-49,text,true,,4398,390,2,2,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635196179,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-49,text,true,,698,203,2,2,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635196202,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-49,text,true,,3700,187,2,2,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635196326,50,02 - Submit Login,200,OK,Timesheet Users 1-50,text,true,,4513,520,2,2,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635196326,23,02 - Submit Login-0,302,Found,Timesheet Users 1-50,text,true,,698,333,2,2,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635196349,27,02 - Submit Login-1,200,OK,Timesheet Users 1-50,text,true,,3815,187,2,2,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635197231,50,04 - View My Timesheet,200,OK,Timesheet Users 1-49,text,true,,4378,384,2,2,http://localhost:8080/web/index.php/auth/login,22,0,0
+1768635197231,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-49,text,true,,698,197,2,2,http://localhost:8080/web/index.php/time/viewMyTimesheet,22,0,0
+1768635197254,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-49,text,true,,3680,187,2,2,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635197377,50,03 - Navigate to Timesheet,200,OK,Timesheet Users 1-50,text,true,,4398,390,1,1,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635197377,23,03 - Navigate to Timesheet-0,302,Found,Timesheet Users 1-50,text,true,,698,203,1,1,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,23,0,0
+1768635197399,28,03 - Navigate to Timesheet-1,200,OK,Timesheet Users 1-50,text,true,,3700,187,1,1,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635198428,50,04 - View My Timesheet,200,OK,Timesheet Users 1-50,text,true,,4386,384,1,1,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635198428,23,04 - View My Timesheet-0,302,Found,Timesheet Users 1-50,text,true,,698,197,1,1,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635198451,27,04 - View My Timesheet-1,200,OK,Timesheet Users 1-50,text,true,,3688,187,1,1,http://localhost:8080/web/index.php/auth/login,26,0,0

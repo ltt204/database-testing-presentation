@@ -1,0 +1,25 @@
+# Core Selenium and pytest
+selenium==4.27.1
+pytest==8.3.4
+pytest-html==4.1.1
+pytest-xdist==3.6.1          # Parallel execution
+pytest-rerunfailures==15.0   # Retry flaky tests
+
+# Allure reporting
+allure-pytest==2.13.5
+
+# WebDriver management
+webdriver-manager==4.0.2
+
+# Data handling
+pandas==2.2.3                # For CSV/Excel report validation
+openpyxl==3.1.5              # Excel support
+python-dotenv==1.0.1         # Environment variables
+
+# Utilities
+Faker==33.1.0                # Test data generation
+pillow==11.0.0               # Screenshot processing
+PyPDF2==3.0.1                # PDF validation
+
+# Optional: API testing for setup/teardown
+requests==2.32.3

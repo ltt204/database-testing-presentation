@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Apache Software Foundation - Apache Bloodhound",
+    "short_name": "Project A",
+    "activities": ["Development", "Testing", "Design", "Meeting", "Code Review"]
+  },
+  {
+    "id": 2,
+    "name": "Internal - OrangeHRM",
+    "short_name": "Project B",
+    "activities": ["Development", "Testing", "Meeting", "Documentation", "Bug Fixing"]
+  },
+  {
+    "id": 3,
+    "name": "Customer Project - ABC Corp",
+    "short_name": "Project C",
+    "activities": ["Development", "Testing", "Meeting", "Deployment", "Support"]
+  }
+]

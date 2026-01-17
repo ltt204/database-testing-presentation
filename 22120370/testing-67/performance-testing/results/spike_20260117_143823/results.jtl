@@ -1,0 +1,1001 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1768635505086,48,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-4,text,true,,3781,140,21,21,http://localhost:8080/web/index.php/auth/login,47,0,9
+1768635505080,54,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-1,text,true,,3773,140,21,21,http://localhost:8080/web/index.php/auth/login,54,0,14
+1768635505080,53,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-3,text,true,,3781,140,21,21,http://localhost:8080/web/index.php/auth/login,52,0,14
+1768635505080,59,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-2,text,true,,3779,140,22,22,http://localhost:8080/web/index.php/auth/login,58,0,14
+1768635505106,40,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-5,text,true,,3766,140,22,22,http://localhost:8080/web/index.php/auth/login,40,0,1
+1768635505125,33,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-6,text,true,,3779,140,23,23,http://localhost:8080/web/index.php/auth/login,33,0,1
+1768635505144,33,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-7,text,true,,3760,140,24,24,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505163,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-8,text,true,,3767,140,24,24,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505184,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-9,text,true,,3766,140,25,25,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505203,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-10,text,true,,3782,140,26,26,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505223,29,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-11,text,true,,3783,140,27,27,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635505242,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-12,text,true,,3765,140,28,28,http://localhost:8080/web/index.php/auth/login,30,0,1
+1768635505262,31,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-13,text,true,,3774,140,29,29,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505281,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-14,text,true,,3773,140,30,30,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635505303,31,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-15,text,true,,3771,140,32,32,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635505320,29,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-16,text,true,,3767,140,32,32,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635505340,31,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-17,text,true,,3777,140,33,33,http://localhost:8080/web/index.php/auth/login,30,0,1
+1768635505362,31,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-18,text,true,,3789,140,35,35,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505380,33,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-19,text,true,,3781,140,36,36,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635505398,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-20,text,true,,3782,140,36,36,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505418,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-21,text,true,,3761,140,37,37,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505438,36,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-22,text,true,,3790,140,39,39,http://localhost:8080/web/index.php/auth/login,35,0,0
+1768635505459,51,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-23,text,true,,3759,140,40,40,http://localhost:8080/web/index.php/auth/login,51,0,1
+1768635505476,44,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-24,text,true,,3774,140,41,41,http://localhost:8080/web/index.php/auth/login,43,0,0
+1768635505437,87,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-3,text,true,,4508,514,41,41,http://localhost:8080/web/index.php/auth/login,38,0,2
+1768635505437,38,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-3,text,true,,698,327,41,41,http://localhost:8080/web/index.php/auth/validate,38,0,2
+1768635505476,48,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-3,text,true,,3810,187,41,41,http://localhost:8080/web/index.php/auth/login,48,0,1
+1768635505437,88,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-1,text,true,,4517,513,41,41,http://localhost:8080/web/index.php/auth/login,39,0,2
+1768635505437,40,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-1,text,true,,698,326,41,41,http://localhost:8080/web/index.php/auth/validate,39,0,2
+1768635505477,48,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-1,text,true,,3819,187,41,41,http://localhost:8080/web/index.php/auth/login,48,0,0
+1768635505447,80,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-5,text,true,,4519,514,41,41,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635505447,33,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-5,text,true,,698,327,41,41,http://localhost:8080/web/index.php/auth/validate,32,0,1
+1768635505480,47,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-5,text,true,,3821,187,41,41,http://localhost:8080/web/index.php/auth/login,46,0,1
+1768635505437,90,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-4,text,true,,4524,511,41,41,http://localhost:8080/web/index.php/auth/login,38,0,2
+1768635505437,38,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-4,text,true,,698,324,41,41,http://localhost:8080/web/index.php/auth/validate,38,0,2
+1768635505476,51,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-4,text,true,,3826,187,41,41,http://localhost:8080/web/index.php/auth/login,50,0,1
+1768635505440,89,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-2,text,true,,4514,512,42,42,http://localhost:8080/web/index.php/auth/login,35,0,1
+1768635505440,35,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-2,text,true,,698,325,42,42,http://localhost:8080/web/index.php/auth/validate,35,0,1
+1768635505477,52,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-2,text,true,,3816,187,42,42,http://localhost:8080/web/index.php/auth/login,52,0,0
+1768635505498,50,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-25,text,true,,3762,140,42,42,http://localhost:8080/web/index.php/auth/login,49,0,1
+1768635505459,93,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-6,text,true,,4508,513,43,43,http://localhost:8080/web/index.php/auth/login,45,0,1
+1768635505459,46,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-6,text,true,,698,326,43,43,http://localhost:8080/web/index.php/auth/validate,45,0,1
+1768635505505,47,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-6,text,true,,3810,187,43,43,http://localhost:8080/web/index.php/auth/login,46,0,1
+1768635505477,76,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-7,text,true,,4525,516,43,43,http://localhost:8080/web/index.php/auth/login,39,0,1
+1768635505477,39,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-7,text,true,,698,329,43,43,http://localhost:8080/web/index.php/auth/validate,39,0,1
+1768635505517,36,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-7,text,true,,3827,187,43,43,http://localhost:8080/web/index.php/auth/login,36,0,1
+1768635505518,49,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-26,text,true,,3776,140,43,43,http://localhost:8080/web/index.php/auth/login,49,0,1
+1768635505537,33,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-27,text,true,,3784,140,44,44,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635505494,79,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-8,text,true,,4516,516,44,44,http://localhost:8080/web/index.php/auth/login,39,0,0
+1768635505494,39,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-8,text,true,,698,329,44,44,http://localhost:8080/web/index.php/auth/validate,39,0,0
+1768635505534,39,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-8,text,true,,3818,187,44,44,http://localhost:8080/web/index.php/auth/login,38,0,0
+1768635505515,63,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-9,text,true,,4513,510,44,44,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635505515,31,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-9,text,true,,698,323,44,44,http://localhost:8080/web/index.php/auth/validate,31,0,1
+1768635505547,31,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-9,text,true,,3815,187,44,44,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505555,36,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-28,text,true,,3764,140,45,45,http://localhost:8080/web/index.php/auth/login,36,0,0
+1768635505534,67,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-10,text,true,,4509,510,45,45,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635505534,33,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-10,text,true,,698,323,45,45,http://localhost:8080/web/index.php/auth/validate,33,0,0
+1768635505567,34,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-10,text,true,,3811,187,45,45,http://localhost:8080/web/index.php/auth/login,34,0,1
+1768635505575,34,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-29,text,true,,3770,140,46,46,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635505552,71,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-11,text,true,,4518,515,46,46,http://localhost:8080/web/index.php/auth/login,34,0,1
+1768635505552,34,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-11,text,true,,698,328,46,46,http://localhost:8080/web/index.php/auth/validate,34,0,1
+1768635505587,36,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-11,text,true,,3820,187,46,46,http://localhost:8080/web/index.php/auth/login,36,0,0
+1768635505596,36,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-30,text,true,,3779,140,47,47,http://localhost:8080/web/index.php/auth/login,36,0,0
+1768635505573,61,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-12,text,true,,4516,512,47,47,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505573,30,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-12,text,true,,698,325,47,47,http://localhost:8080/web/index.php/auth/validate,30,0,0
+1768635505603,31,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-12,text,true,,3818,187,47,47,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505613,35,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-31,text,true,,3773,140,47,47,http://localhost:8080/web/index.php/auth/login,35,0,0
+1768635505594,66,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-13,text,true,,4515,515,48,48,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635505594,31,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-13,text,true,,698,328,48,48,http://localhost:8080/web/index.php/auth/validate,31,0,1
+1768635505626,34,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-13,text,true,,3817,187,48,48,http://localhost:8080/web/index.php/auth/login,34,0,0
+1768635505635,33,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-32,text,true,,3777,140,49,49,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635505611,62,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-14,text,true,,4516,516,49,49,http://localhost:8080/web/index.php/auth/login,30,0,1
+1768635505611,30,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-14,text,true,,698,329,49,49,http://localhost:8080/web/index.php/auth/validate,30,0,1
+1768635505641,32,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-14,text,true,,3818,187,49,49,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505653,31,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-33,text,true,,3779,140,49,49,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505635,64,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-15,text,true,,4519,515,50,50,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635505635,25,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-15,text,true,,698,328,50,50,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635505660,39,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-15,text,true,,3821,187,50,50,http://localhost:8080/web/index.php/auth/login,39,0,1
+1768635505673,34,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-34,text,true,,3763,140,51,51,http://localhost:8080/web/index.php/auth/login,34,0,1
+1768635505650,57,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-16,text,true,,4521,512,51,51,http://localhost:8080/web/index.php/auth/login,26,0,1
+1768635505650,26,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-16,text,true,,698,325,51,51,http://localhost:8080/web/index.php/auth/validate,26,0,1
+1768635505677,30,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-16,text,true,,3823,187,51,51,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505692,39,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-35,text,true,,3773,140,52,52,http://localhost:8080/web/index.php/auth/login,39,0,0
+1768635505671,60,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-17,text,true,,4535,513,52,52,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635505671,28,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-17,text,true,,698,326,52,52,http://localhost:8080/web/index.php/auth/validate,28,0,1
+1768635505699,32,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-17,text,true,,3837,187,52,52,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635505712,39,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-36,text,true,,3785,140,53,53,http://localhost:8080/web/index.php/auth/login,39,0,0
+1768635505694,61,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-18,text,true,,4533,512,53,53,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635505694,26,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-18,text,true,,698,325,53,53,http://localhost:8080/web/index.php/auth/validate,26,0,0
+1768635505720,35,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-18,text,true,,3835,187,53,53,http://localhost:8080/web/index.php/auth/login,34,0,1
+1768635505732,33,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-37,text,true,,3768,140,53,53,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635505714,59,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-19,text,true,,4513,515,54,54,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635505714,26,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-19,text,true,,698,328,54,54,http://localhost:8080/web/index.php/auth/validate,26,0,0
+1768635505740,33,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-19,text,true,,3815,187,54,54,http://localhost:8080/web/index.php/auth/login,33,0,1
+1768635505751,35,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-38,text,true,,3762,140,55,55,http://localhost:8080/web/index.php/auth/login,35,0,1
+1768635505729,63,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-20,text,true,,4522,514,55,55,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635505729,31,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-20,text,true,,698,327,55,55,http://localhost:8080/web/index.php/auth/validate,31,0,0
+1768635505760,32,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-20,text,true,,3824,187,55,55,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635505771,30,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-39,text,true,,3771,140,55,55,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635505749,54,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-21,text,true,,4510,510,55,55,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635505749,25,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-21,text,true,,698,323,55,55,http://localhost:8080/web/index.php/auth/validate,25,0,0
+1768635505774,29,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-21,text,true,,3812,187,55,55,http://localhost:8080/web/index.php/auth/login,29,0,1
+1768635505791,32,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-40,text,true,,3768,140,56,56,http://localhost:8080/web/index.php/auth/login,32,0,0
+1768635505775,67,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-22,text,true,,4532,511,57,57,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635505775,24,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-22,text,true,,698,324,57,57,http://localhost:8080/web/index.php/auth/validate,23,0,0
+1768635505799,43,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-22,text,true,,3834,187,57,57,http://localhost:8080/web/index.php/auth/login,42,0,0
+1768635505812,40,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-41,text,true,,3789,140,58,58,http://localhost:8080/web/index.php/auth/login,39,0,1
+1768635505830,41,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-42,text,true,,3786,140,59,59,http://localhost:8080/web/index.php/auth/login,41,0,0
+1768635505811,74,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-23,text,true,,4504,517,60,60,http://localhost:8080/web/index.php/auth/login,31,0,1
+1768635505811,31,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-23,text,true,,698,330,60,60,http://localhost:8080/web/index.php/auth/validate,31,0,1
+1768635505842,43,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-23,text,true,,3806,187,60,60,http://localhost:8080/web/index.php/auth/login,42,0,1
+1768635505852,42,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-43,text,true,,3765,140,60,60,http://localhost:8080/web/index.php/auth/login,41,0,1
+1768635505823,88,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-24,text,true,,4530,513,61,61,http://localhost:8080/web/index.php/auth/login,39,0,1
+1768635505823,40,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-24,text,true,,698,326,61,61,http://localhost:8080/web/index.php/auth/validate,39,0,1
+1768635505863,48,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-24,text,true,,3832,187,61,61,http://localhost:8080/web/index.php/auth/login,47,0,3
+1768635505825,87,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-3,text,true,,4384,390,61,61,http://localhost:8080/web/index.php/auth/login,40,0,1
+1768635505825,40,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-3,text,true,,698,203,61,61,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,40,0,1
+1768635505865,47,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-3,text,true,,3686,187,61,61,http://localhost:8080/web/index.php/auth/login,46,0,1
+1768635505826,91,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-1,text,true,,4401,390,61,61,http://localhost:8080/web/index.php/auth/login,40,0,0
+1768635505826,41,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-1,text,true,,698,203,61,61,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,40,0,0
+1768635505867,50,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-1,text,true,,3703,187,61,61,http://localhost:8080/web/index.php/auth/login,47,0,1
+1768635505827,90,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-5,text,true,,4401,390,61,61,http://localhost:8080/web/index.php/auth/login,35,0,1
+1768635505827,36,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-5,text,true,,698,203,61,61,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,35,0,1
+1768635505864,53,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-5,text,true,,3703,187,61,61,http://localhost:8080/web/index.php/auth/login,53,0,2
+1768635505828,95,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-4,text,true,,4386,390,62,62,http://localhost:8080/web/index.php/auth/login,40,0,0
+1768635505828,40,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-4,text,true,,698,203,62,62,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,40,0,0
+1768635505868,55,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-4,text,true,,3688,187,62,62,http://localhost:8080/web/index.php/auth/login,55,0,1
+1768635505870,73,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-44,text,true,,3768,140,63,63,http://localhost:8080/web/index.php/auth/login,71,0,1
+1768635505830,126,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-2,text,true,,4401,390,63,63,http://localhost:8080/web/index.php/auth/login,44,0,2
+1768635505830,45,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-2,text,true,,698,203,63,63,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,44,0,2
+1768635505875,81,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-2,text,true,,3703,187,63,63,http://localhost:8080/web/index.php/auth/login,80,0,0
+1768635505848,114,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-25,text,true,,4530,511,63,63,http://localhost:8080/web/index.php/auth/login,39,0,1
+1768635505848,40,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-25,text,true,,698,324,63,63,http://localhost:8080/web/index.php/auth/validate,39,0,1
+1768635505888,74,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-25,text,true,,3832,187,63,63,http://localhost:8080/web/index.php/auth/login,73,0,1
+1768635505891,72,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-45,text,true,,3776,140,63,63,http://localhost:8080/web/index.php/auth/login,71,0,0
+1768635505854,118,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-7,text,true,,4385,390,64,64,http://localhost:8080/web/index.php/auth/login,48,0,1
+1768635505854,49,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-7,text,true,,698,203,64,64,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,48,0,1
+1768635505903,69,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-7,text,true,,3687,187,64,64,http://localhost:8080/web/index.php/auth/login,68,0,1
+1768635505852,126,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-6,text,true,,4400,390,64,64,http://localhost:8080/web/index.php/auth/login,52,0,1
+1768635505852,53,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-6,text,true,,698,203,64,64,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,52,0,1
+1768635505905,73,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-6,text,true,,3702,187,64,64,http://localhost:8080/web/index.php/auth/login,72,0,0
+1768635505868,122,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-26,text,true,,4525,511,65,65,http://localhost:8080/web/index.php/auth/login,49,0,2
+1768635505868,49,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-26,text,true,,698,324,65,65,http://localhost:8080/web/index.php/auth/validate,49,0,2
+1768635505917,73,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-26,text,true,,3827,187,65,65,http://localhost:8080/web/index.php/auth/login,72,0,1
+1768635505910,81,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-46,text,true,,3783,140,65,65,http://localhost:8080/web/index.php/auth/login,81,0,0
+1768635505928,75,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-47,text,true,,3772,140,66,66,http://localhost:8080/web/index.php/auth/login,74,0,1
+1768635505871,134,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-27,text,true,,4508,510,66,66,http://localhost:8080/web/index.php/auth/login,58,0,0
+1768635505871,60,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-27,text,true,,698,323,66,66,http://localhost:8080/web/index.php/auth/validate,58,0,0
+1768635505931,74,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-27,text,true,,3810,187,66,66,http://localhost:8080/web/index.php/auth/login,73,0,0
+1768635505873,153,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-8,text,true,,4396,390,67,67,http://localhost:8080/web/index.php/auth/login,71,0,2
+1768635505873,72,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-8,text,true,,698,203,67,67,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,71,0,2
+1768635505945,81,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-8,text,true,,3698,187,67,67,http://localhost:8080/web/index.php/auth/login,81,0,1
+1768635505892,141,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-28,text,true,,4518,509,67,67,http://localhost:8080/web/index.php/auth/login,56,0,0
+1768635505892,57,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-28,text,true,,698,322,67,67,http://localhost:8080/web/index.php/auth/validate,56,0,0
+1768635505949,84,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-28,text,true,,3820,187,67,67,http://localhost:8080/web/index.php/auth/login,84,0,2
+1768635505950,84,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-48,text,true,,3759,140,67,67,http://localhost:8080/web/index.php/auth/login,83,0,0
+1768635505880,154,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-9,text,true,,4402,390,67,67,http://localhost:8080/web/index.php/auth/login,72,0,0
+1768635505880,74,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-9,text,true,,698,203,67,67,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,72,0,0
+1768635505954,80,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-9,text,true,,3704,187,67,67,http://localhost:8080/web/index.php/auth/login,80,0,1
+1768635505902,137,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-10,text,true,,4374,390,67,67,http://localhost:8080/web/index.php/auth/login,51,0,1
+1768635505902,52,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-10,text,true,,698,203,67,67,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,51,0,1
+1768635505954,85,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-10,text,true,,3676,187,67,67,http://localhost:8080/web/index.php/auth/login,84,0,0
+1768635505968,87,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-49,text,true,,3760,140,68,68,http://localhost:8080/web/index.php/auth/login,86,0,1
+1768635505989,84,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-50,text,true,,3759,140,69,69,http://localhost:8080/web/index.php/auth/login,84,0,1
+1768635505909,170,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-29,text,true,,4521,511,70,70,http://localhost:8080/web/index.php/auth/login,76,0,2
+1768635505909,77,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-29,text,true,,698,324,70,70,http://localhost:8080/web/index.php/auth/validate,76,0,2
+1768635505986,93,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-29,text,true,,3823,187,70,70,http://localhost:8080/web/index.php/auth/login,90,0,2
+1768635505924,158,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-11,text,true,,4389,390,70,70,http://localhost:8080/web/index.php/auth/login,69,0,1
+1768635505924,70,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-11,text,true,,698,203,70,70,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,69,0,1
+1768635505994,88,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-11,text,true,,3691,187,70,70,http://localhost:8080/web/index.php/auth/login,87,0,2
+1768635505933,156,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-30,text,true,,4532,513,70,70,http://localhost:8080/web/index.php/auth/login,68,0,0
+1768635505933,69,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-30,text,true,,698,326,70,70,http://localhost:8080/web/index.php/auth/validate,68,0,0
+1768635506003,86,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-30,text,true,,3834,187,70,70,http://localhost:8080/web/index.php/auth/login,86,0,0
+1768635505936,154,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-12,text,true,,4380,390,70,70,http://localhost:8080/web/index.php/auth/login,68,0,0
+1768635505936,68,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-12,text,true,,698,203,70,70,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,68,0,0
+1768635506004,86,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-12,text,true,,3682,187,70,70,http://localhost:8080/web/index.php/auth/login,85,0,1
+1768635506008,99,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-51,text,true,,3762,140,71,71,http://localhost:8080/web/index.php/auth/login,98,0,0
+1768635506031,77,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-52,text,true,,3788,140,71,71,http://localhost:8080/web/index.php/auth/login,76,0,1
+1768635505949,167,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-31,text,true,,4504,509,71,71,http://localhost:8080/web/index.php/auth/login,68,0,1
+1768635505949,69,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-31,text,true,,698,322,71,71,http://localhost:8080/web/index.php/auth/validate,68,0,1
+1768635506018,98,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-31,text,true,,3806,187,71,71,http://localhost:8080/web/index.php/auth/login,98,0,3
+1768635505973,159,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-14,text,true,,4402,390,72,72,http://localhost:8080/web/index.php/auth/login,72,0,2
+1768635505973,73,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-14,text,true,,698,203,72,72,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,72,0,2
+1768635506046,86,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-14,text,true,,3704,187,72,72,http://localhost:8080/web/index.php/auth/login,85,0,0
+1768635505961,172,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-13,text,true,,4385,390,72,72,http://localhost:8080/web/index.php/auth/login,80,0,1
+1768635505961,81,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-13,text,true,,698,203,72,72,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,80,0,1
+1768635506042,91,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-13,text,true,,3687,187,72,72,http://localhost:8080/web/index.php/auth/login,91,0,0
+1768635505969,167,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-32,text,true,,4526,516,72,72,http://localhost:8080/web/index.php/auth/login,80,0,1
+1768635505969,81,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-32,text,true,,698,329,72,72,http://localhost:8080/web/index.php/auth/validate,80,0,1
+1768635506050,86,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-32,text,true,,3828,187,72,72,http://localhost:8080/web/index.php/auth/login,86,0,2
+1768635506046,94,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-53,text,true,,3774,140,72,72,http://localhost:8080/web/index.php/auth/login,93,0,1
+1768635505985,169,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-33,text,true,,4523,515,73,73,http://localhost:8080/web/index.php/auth/login,73,0,2
+1768635505985,74,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-33,text,true,,698,328,73,73,http://localhost:8080/web/index.php/auth/validate,73,0,2
+1768635506059,95,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-33,text,true,,3825,187,73,73,http://localhost:8080/web/index.php/auth/login,94,0,0
+1768635506068,86,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-54,text,true,,3766,140,73,73,http://localhost:8080/web/index.php/auth/login,85,0,0
+1768635506000,178,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-15,text,true,,4397,390,75,75,http://localhost:8080/web/index.php/auth/login,76,0,1
+1768635506000,77,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-15,text,true,,698,203,75,75,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,76,0,1
+1768635506077,101,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-15,text,true,,3699,187,75,75,http://localhost:8080/web/index.php/auth/login,100,0,1
+1768635506007,175,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-34,text,true,,4534,516,75,75,http://localhost:8080/web/index.php/auth/login,77,0,1
+1768635506007,78,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-34,text,true,,698,329,75,75,http://localhost:8080/web/index.php/auth/validate,77,0,1
+1768635506085,97,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-34,text,true,,3836,187,75,75,http://localhost:8080/web/index.php/auth/login,96,0,1
+1768635506086,99,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-55,text,true,,3788,140,75,75,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635506007,188,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-16,text,true,,4385,390,75,75,http://localhost:8080/web/index.php/auth/login,87,0,1
+1768635506007,89,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-16,text,true,,698,203,75,75,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,87,0,1
+1768635506096,99,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-16,text,true,,3687,187,75,75,http://localhost:8080/web/index.php/auth/login,99,0,2
+1768635506032,168,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-35,text,true,,4517,511,75,75,http://localhost:8080/web/index.php/auth/login,82,0,0
+1768635506032,82,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-35,text,true,,698,324,75,75,http://localhost:8080/web/index.php/auth/validate,82,0,0
+1768635506114,86,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-35,text,true,,3819,187,75,75,http://localhost:8080/web/index.php/auth/login,86,0,2
+1768635506105,95,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-56,text,true,,3777,140,75,75,http://localhost:8080/web/index.php/auth/login,95,0,1
+1768635506032,188,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-17,text,true,,4389,390,77,77,http://localhost:8080/web/index.php/auth/login,81,0,0
+1768635506032,81,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-17,text,true,,698,203,77,77,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,81,0,0
+1768635506116,104,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-17,text,true,,3691,187,77,77,http://localhost:8080/web/index.php/auth/login,104,0,1
+1768635506124,97,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-57,text,true,,3778,140,77,77,http://localhost:8080/web/index.php/auth/login,96,0,0
+1768635506145,89,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-58,text,true,,3763,140,77,77,http://localhost:8080/web/index.php/auth/login,89,0,0
+1768635506056,178,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-18,text,true,,4389,390,77,77,http://localhost:8080/web/index.php/auth/login,90,0,0
+1768635506056,91,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-18,text,true,,698,203,77,77,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,90,0,0
+1768635506147,87,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-18,text,true,,3691,187,77,77,http://localhost:8080/web/index.php/auth/login,86,0,1
+1768635506052,182,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-36,text,true,,4531,511,77,77,http://localhost:8080/web/index.php/auth/login,83,0,0
+1768635506052,83,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-36,text,true,,698,324,77,77,http://localhost:8080/web/index.php/auth/validate,83,0,0
+1768635506135,99,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-36,text,true,,3833,187,77,77,http://localhost:8080/web/index.php/auth/login,98,0,1
+1768635506065,178,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-37,text,true,,4508,514,78,78,http://localhost:8080/web/index.php/auth/login,85,0,1
+1768635506065,86,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-37,text,true,,698,327,78,78,http://localhost:8080/web/index.php/auth/validate,85,0,1
+1768635506151,92,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-37,text,true,,3810,187,78,78,http://localhost:8080/web/index.php/auth/login,92,0,0
+1768635506075,171,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-19,text,true,,4388,390,78,78,http://localhost:8080/web/index.php/auth/login,77,0,0
+1768635506075,77,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-19,text,true,,698,203,78,78,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,77,0,0
+1768635506153,93,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-19,text,true,,3690,187,78,78,http://localhost:8080/web/index.php/auth/login,93,0,0
+1768635506164,91,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-59,text,true,,3762,140,78,78,http://localhost:8080/web/index.php/auth/login,91,0,1
+1768635506183,84,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-60,text,true,,3783,140,79,79,http://localhost:8080/web/index.php/auth/login,83,0,0
+1768635506088,180,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-38,text,true,,4519,510,79,79,http://localhost:8080/web/index.php/auth/login,84,0,1
+1768635506088,84,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-38,text,true,,698,323,79,79,http://localhost:8080/web/index.php/auth/validate,84,0,1
+1768635506173,95,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-38,text,true,,3821,187,79,79,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635506102,174,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-39,text,true,,4504,514,79,79,http://localhost:8080/web/index.php/auth/login,81,0,2
+1768635506102,81,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-39,text,true,,698,327,79,79,http://localhost:8080/web/index.php/auth/validate,81,0,2
+1768635506183,93,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-39,text,true,,3806,187,79,79,http://localhost:8080/web/index.php/auth/login,93,0,1
+1768635506104,173,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-21,text,true,,4389,390,79,79,http://localhost:8080/web/index.php/auth/login,84,0,0
+1768635506104,85,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-21,text,true,,698,203,79,79,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,84,0,0
+1768635506189,88,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-21,text,true,,3691,187,79,79,http://localhost:8080/web/index.php/auth/login,88,0,2
+1768635506093,185,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-20,text,true,,4384,390,79,79,http://localhost:8080/web/index.php/auth/login,88,0,1
+1768635506093,89,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-20,text,true,,698,203,79,79,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,88,0,1
+1768635506183,95,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-20,text,true,,3686,187,79,79,http://localhost:8080/web/index.php/auth/login,95,0,2
+1768635506204,84,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-61,text,true,,3788,140,80,80,http://localhost:8080/web/index.php/auth/login,84,0,0
+1768635506142,173,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-22,text,true,,4372,390,81,81,http://localhost:8080/web/index.php/auth/login,76,0,2
+1768635506142,77,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-22,text,true,,698,203,81,81,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,76,0,2
+1768635506219,96,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-22,text,true,,3674,187,81,81,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635506224,91,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-62,text,true,,3770,140,81,81,http://localhost:8080/web/index.php/auth/login,91,0,2
+1768635506154,162,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-41,text,true,,4521,511,81,81,http://localhost:8080/web/index.php/auth/login,83,0,1
+1768635506154,83,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-41,text,true,,698,324,81,81,http://localhost:8080/web/index.php/auth/validate,83,0,1
+1768635506237,79,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-41,text,true,,3823,187,81,81,http://localhost:8080/web/index.php/auth/login,78,0,1
+1768635506124,200,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-40,text,true,,4524,511,82,82,http://localhost:8080/web/index.php/auth/login,101,0,1
+1768635506124,102,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-40,text,true,,698,324,82,82,http://localhost:8080/web/index.php/auth/validate,101,0,1
+1768635506226,98,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-40,text,true,,3826,187,82,82,http://localhost:8080/web/index.php/auth/login,98,0,0
+1768635506242,84,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-63,text,true,,3776,140,82,82,http://localhost:8080/web/index.php/auth/login,84,0,1
+1768635506173,163,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-42,text,true,,4533,513,83,83,http://localhost:8080/web/index.php/auth/login,83,0,0
+1768635506173,83,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-42,text,true,,698,326,83,83,http://localhost:8080/web/index.php/auth/validate,83,0,0
+1768635506256,80,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-42,text,true,,3835,187,83,83,http://localhost:8080/web/index.php/auth/login,80,0,1
+1768635506267,87,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-64,text,true,,3781,140,84,84,http://localhost:8080/web/index.php/auth/login,87,0,0
+1768635506185,175,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-23,text,true,,4400,390,84,84,http://localhost:8080/web/index.php/auth/login,85,0,1
+1768635506185,85,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-23,text,true,,698,203,84,84,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,85,0,1
+1768635506270,90,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-23,text,true,,3702,187,84,84,http://localhost:8080/web/index.php/auth/login,90,0,1
+1768635506287,79,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-65,text,true,,3770,140,84,84,http://localhost:8080/web/index.php/auth/login,79,0,0
+1768635506195,177,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-43,text,true,,4505,517,84,84,http://localhost:8080/web/index.php/auth/login,85,0,0
+1768635506195,86,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-43,text,true,,698,330,84,84,http://localhost:8080/web/index.php/auth/validate,85,0,0
+1768635506281,91,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-43,text,true,,3807,187,84,84,http://localhost:8080/web/index.php/auth/login,91,0,1
+1768635506213,177,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-24,text,true,,4386,390,85,85,http://localhost:8080/web/index.php/auth/login,80,0,0
+1768635506213,81,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-24,text,true,,698,203,85,85,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,80,0,0
+1768635506294,96,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-24,text,true,,3688,187,85,85,http://localhost:8080/web/index.php/auth/login,96,0,1
+1768635506212,178,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-3,text,true,,4381,384,85,85,http://localhost:8080/web/index.php/auth/login,82,0,2
+1768635506212,83,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-3,text,true,,698,197,85,85,http://localhost:8080/web/index.php/time/viewMyTimesheet,82,0,2
+1768635506295,95,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-3,text,true,,3683,187,85,85,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635506303,95,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-66,text,true,,3787,140,85,85,http://localhost:8080/web/index.php/auth/login,94,0,0
+1768635506218,185,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-5,text,true,,4395,384,85,85,http://localhost:8080/web/index.php/auth/login,88,0,1
+1768635506218,88,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-5,text,true,,698,197,85,85,http://localhost:8080/web/index.php/time/viewMyTimesheet,88,0,1
+1768635506307,96,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-5,text,true,,3697,187,85,85,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635506224,187,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-4,text,true,,4394,384,84,84,http://localhost:8080/web/index.php/auth/login,85,0,1
+1768635506224,86,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-4,text,true,,698,197,84,84,http://localhost:8080/web/index.php/time/viewMyTimesheet,85,0,1
+1768635506310,101,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-4,text,true,,3696,187,84,84,http://localhost:8080/web/index.php/auth/login,101,0,1
+1768635506219,193,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-1,text,true,,4374,384,83,83,http://localhost:8080/web/index.php/auth/login,92,0,0
+1768635506219,92,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-1,text,true,,698,197,83,83,http://localhost:8080/web/index.php/time/viewMyTimesheet,92,0,0
+1768635506311,101,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-1,text,true,,3676,187,83,83,http://localhost:8080/web/index.php/auth/login,101,0,2
+1768635506322,98,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-67,text,true,,3773,140,83,83,http://localhost:8080/web/index.php/auth/login,98,0,0
+1768635506243,181,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-44,text,true,,4516,512,83,83,http://localhost:8080/web/index.php/auth/login,82,0,1
+1768635506243,82,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-44,text,true,,698,325,83,83,http://localhost:8080/web/index.php/auth/validate,82,0,1
+1768635506325,99,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-44,text,true,,3818,187,83,83,http://localhost:8080/web/index.php/auth/login,98,0,1
+1768635506272,170,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-7,text,true,,4381,384,84,84,http://localhost:8080/web/index.php/auth/login,72,0,1
+1768635506272,73,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-7,text,true,,698,197,84,84,http://localhost:8080/web/index.php/time/viewMyTimesheet,72,0,1
+1768635506345,97,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-7,text,true,,3683,187,84,84,http://localhost:8080/web/index.php/auth/login,97,0,0
+1768635506257,191,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-2,text,true,,4390,384,83,83,http://localhost:8080/web/index.php/auth/login,89,0,0
+1768635506257,89,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-2,text,true,,698,197,83,83,http://localhost:8080/web/index.php/time/viewMyTimesheet,89,0,0
+1768635506346,102,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-2,text,true,,3692,187,83,83,http://localhost:8080/web/index.php/auth/login,102,0,0
+1768635506264,195,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-45,text,true,,4512,514,83,83,http://localhost:8080/web/index.php/auth/login,85,0,1
+1768635506264,86,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-45,text,true,,698,327,83,83,http://localhost:8080/web/index.php/auth/validate,85,0,1
+1768635506350,109,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-45,text,true,,3814,187,83,83,http://localhost:8080/web/index.php/auth/login,108,0,0
+1768635506346,115,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-68,text,true,,3766,140,83,83,http://localhost:8080/web/index.php/auth/login,114,0,0
+1768635506262,208,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-25,text,true,,4393,390,83,83,http://localhost:8080/web/index.php/auth/login,89,0,1
+1768635506262,89,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-25,text,true,,698,203,83,83,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,89,0,1
+1768635506351,119,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-25,text,true,,3695,187,83,83,http://localhost:8080/web/index.php/auth/login,118,0,0
+1768635506291,182,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-26,text,true,,4387,390,84,84,http://localhost:8080/web/index.php/auth/login,85,0,0
+1768635506291,86,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-26,text,true,,698,203,84,84,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,85,0,0
+1768635506377,96,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-26,text,true,,3689,187,84,84,http://localhost:8080/web/index.php/auth/login,96,0,0
+1768635506279,194,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-6,text,true,,4397,384,84,84,http://localhost:8080/web/index.php/auth/login,83,0,0
+1768635506279,83,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-6,text,true,,698,197,84,84,http://localhost:8080/web/index.php/time/viewMyTimesheet,83,0,0
+1768635506362,111,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-6,text,true,,3699,187,84,84,http://localhost:8080/web/index.php/auth/login,111,0,2
+1768635506364,117,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-69,text,true,,3759,140,83,83,http://localhost:8080/web/index.php/auth/login,116,0,0
+1768635506381,108,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-70,text,true,,3767,140,83,83,http://localhost:8080/web/index.php/auth/login,108,0,1
+1768635506291,214,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-46,text,true,,4516,515,84,84,http://localhost:8080/web/index.php/auth/login,95,0,1
+1768635506291,96,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-46,text,true,,698,328,84,84,http://localhost:8080/web/index.php/auth/validate,95,0,1
+1768635506387,118,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-46,text,true,,3818,187,84,84,http://localhost:8080/web/index.php/auth/login,117,0,0
+1768635506304,204,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-47,text,true,,4524,515,84,84,http://localhost:8080/web/index.php/auth/login,84,0,0
+1768635506304,85,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-47,text,true,,698,328,84,84,http://localhost:8080/web/index.php/auth/validate,84,0,0
+1768635506389,119,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-47,text,true,,3826,187,84,84,http://localhost:8080/web/index.php/auth/login,119,0,0
+1768635506305,218,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-27,text,true,,4383,390,85,85,http://localhost:8080/web/index.php/auth/login,90,0,1
+1768635506305,91,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-27,text,true,,698,203,85,85,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,90,0,1
+1768635506396,127,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-27,text,true,,3685,187,85,85,http://localhost:8080/web/index.php/auth/login,126,0,0
+1768635506401,122,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-71,text,true,,3789,140,85,85,http://localhost:8080/web/index.php/auth/login,121,0,1
+1768635506334,203,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-28,text,true,,4389,390,86,86,http://localhost:8080/web/index.php/auth/login,92,0,0
+1768635506334,92,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-28,text,true,,698,203,86,86,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,92,0,0
+1768635506426,111,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-28,text,true,,3691,187,86,86,http://localhost:8080/web/index.php/auth/login,111,0,1
+1768635506422,116,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-72,text,true,,3773,140,86,86,http://localhost:8080/web/index.php/auth/login,114,0,0
+1768635506334,219,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-9,text,true,,4390,384,87,87,http://localhost:8080/web/index.php/auth/login,94,0,1
+1768635506334,94,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-9,text,true,,698,197,87,87,http://localhost:8080/web/index.php/time/viewMyTimesheet,94,0,1
+1768635506428,125,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-9,text,true,,3692,187,87,87,http://localhost:8080/web/index.php/auth/login,124,0,0
+1768635506334,220,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-48,text,true,,4525,510,87,87,http://localhost:8080/web/index.php/auth/login,94,0,1
+1768635506334,94,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-48,text,true,,698,323,87,87,http://localhost:8080/web/index.php/auth/validate,94,0,1
+1768635506428,126,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-48,text,true,,3827,187,87,87,http://localhost:8080/web/index.php/auth/login,125,0,0
+1768635506327,234,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-8,text,true,,4401,384,86,86,http://localhost:8080/web/index.php/auth/login,100,0,0
+1768635506327,101,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-8,text,true,,698,197,86,86,http://localhost:8080/web/index.php/time/viewMyTimesheet,100,0,0
+1768635506428,133,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-8,text,true,,3703,187,86,86,http://localhost:8080/web/index.php/auth/login,132,0,1
+1768635506339,238,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-10,text,true,,4376,384,86,86,http://localhost:8080/web/index.php/auth/login,96,0,1
+1768635506339,96,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-10,text,true,,698,197,86,86,http://localhost:8080/web/index.php/time/viewMyTimesheet,96,0,1
+1768635506436,141,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-10,text,true,,3678,187,86,86,http://localhost:8080/web/index.php/auth/login,140,0,0
+1768635506442,152,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-73,text,true,,3774,140,86,86,http://localhost:8080/web/index.php/auth/login,152,0,0
+1768635506356,241,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-49,text,true,,4516,513,86,86,http://localhost:8080/web/index.php/auth/login,103,0,0
+1768635506356,103,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-49,text,true,,698,326,86,86,http://localhost:8080/web/index.php/auth/validate,103,0,0
+1768635506460,137,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-49,text,true,,3818,187,86,86,http://localhost:8080/web/index.php/auth/login,136,0,0
+1768635506461,140,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-74,text,true,,3776,140,86,86,http://localhost:8080/web/index.php/auth/login,139,0,0
+1768635506380,223,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-29,text,true,,4386,390,86,86,http://localhost:8080/web/index.php/auth/login,96,0,0
+1768635506380,96,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-29,text,true,,698,203,86,86,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,96,0,0
+1768635506477,126,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-29,text,true,,3688,187,86,86,http://localhost:8080/web/index.php/auth/login,125,0,0
+1768635506374,232,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-50,text,true,,4525,513,86,86,http://localhost:8080/web/index.php/auth/login,92,0,0
+1768635506374,92,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-50,text,true,,698,326,86,86,http://localhost:8080/web/index.php/auth/validate,92,0,0
+1768635506466,140,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-50,text,true,,3827,187,86,86,http://localhost:8080/web/index.php/auth/login,140,0,1
+1768635506478,134,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-75,text,true,,3790,140,87,87,http://localhost:8080/web/index.php/auth/login,134,0,1
+1768635506382,237,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-11,text,true,,4383,384,87,87,http://localhost:8080/web/index.php/auth/login,105,0,1
+1768635506382,106,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-11,text,true,,698,197,87,87,http://localhost:8080/web/index.php/time/viewMyTimesheet,105,0,1
+1768635506488,131,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-11,text,true,,3685,187,87,87,http://localhost:8080/web/index.php/auth/login,131,0,0
+1768635506501,142,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-76,text,true,,3782,140,87,87,http://localhost:8080/web/index.php/auth/login,142,0,1
+1768635506408,235,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-51,text,true,,4529,514,87,87,http://localhost:8080/web/index.php/auth/login,110,0,1
+1768635506408,111,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-51,text,true,,698,327,87,87,http://localhost:8080/web/index.php/auth/validate,110,0,1
+1768635506519,124,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-51,text,true,,3831,187,87,87,http://localhost:8080/web/index.php/auth/login,124,0,1
+1768635506389,256,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-30,text,true,,4386,390,87,87,http://localhost:8080/web/index.php/auth/login,113,0,1
+1768635506389,113,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-30,text,true,,698,203,87,87,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,113,0,1
+1768635506502,143,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-30,text,true,,3688,187,87,87,http://localhost:8080/web/index.php/auth/login,142,0,0
+1768635506408,240,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-52,text,true,,4515,511,88,88,http://localhost:8080/web/index.php/auth/login,104,0,1
+1768635506408,104,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-52,text,true,,698,324,88,88,http://localhost:8080/web/index.php/auth/validate,104,0,1
+1768635506512,136,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-52,text,true,,3817,187,88,88,http://localhost:8080/web/index.php/auth/login,136,0,1
+1768635506390,260,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-12,text,true,,4380,384,88,88,http://localhost:8080/web/index.php/auth/login,124,0,1
+1768635506390,124,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-12,text,true,,698,197,88,88,http://localhost:8080/web/index.php/time/viewMyTimesheet,124,0,1
+1768635506514,136,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-12,text,true,,3682,187,88,88,http://localhost:8080/web/index.php/auth/login,136,0,0
+1768635506519,134,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-77,text,true,,3773,140,87,87,http://localhost:8080/web/index.php/auth/login,134,0,1
+1768635506417,261,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-31,text,true,,4385,390,88,88,http://localhost:8080/web/index.php/auth/login,109,0,0
+1768635506417,110,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-31,text,true,,698,203,88,88,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,109,0,0
+1768635506527,151,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-31,text,true,,3687,187,88,88,http://localhost:8080/web/index.php/auth/login,151,0,0
+1768635506433,256,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-13,text,true,,4390,384,88,88,http://localhost:8080/web/index.php/auth/login,117,0,1
+1768635506433,117,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-13,text,true,,698,197,88,88,http://localhost:8080/web/index.php/time/viewMyTimesheet,117,0,1
+1768635506551,138,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-13,text,true,,3692,187,88,88,http://localhost:8080/web/index.php/auth/login,138,0,0
+1768635506537,154,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-78,text,true,,3789,140,87,87,http://localhost:8080/web/index.php/auth/login,153,0,0
+1768635506432,268,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-14,text,true,,4382,384,87,87,http://localhost:8080/web/index.php/auth/login,124,0,1
+1768635506432,124,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-14,text,true,,698,197,87,87,http://localhost:8080/web/index.php/time/viewMyTimesheet,124,0,1
+1768635506557,143,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-14,text,true,,3684,187,87,87,http://localhost:8080/web/index.php/auth/login,143,0,0
+1768635506559,144,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-79,text,true,,3787,140,86,86,http://localhost:8080/web/index.php/auth/login,143,0,1
+1768635506440,283,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-53,text,true,,4530,512,86,86,http://localhost:8080/web/index.php/auth/login,128,0,1
+1768635506440,128,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-53,text,true,,698,325,86,86,http://localhost:8080/web/index.php/auth/validate,128,0,1
+1768635506568,155,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-53,text,true,,3832,187,86,86,http://localhost:8080/web/index.php/auth/login,155,0,1
+1768635506436,287,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-32,text,true,,4373,390,86,86,http://localhost:8080/web/index.php/auth/login,131,0,1
+1768635506436,131,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-32,text,true,,698,203,86,86,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,131,0,1
+1768635506567,156,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-32,text,true,,3675,187,86,86,http://localhost:8080/web/index.php/auth/login,155,0,1
+1768635506455,271,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-54,text,true,,4528,515,86,86,http://localhost:8080/web/index.php/auth/login,120,0,2
+1768635506455,121,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-54,text,true,,698,328,86,86,http://localhost:8080/web/index.php/auth/validate,120,0,2
+1768635506576,150,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-54,text,true,,3830,187,86,86,http://localhost:8080/web/index.php/auth/login,150,0,0
+1768635506579,166,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-80,text,true,,3790,140,86,86,http://localhost:8080/web/index.php/auth/login,166,0,0
+1768635506457,290,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-33,text,true,,4377,390,86,86,http://localhost:8080/web/index.php/auth/login,137,0,0
+1768635506457,137,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-33,text,true,,698,203,86,86,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,137,0,0
+1768635506594,153,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-33,text,true,,3679,187,86,86,http://localhost:8080/web/index.php/auth/login,153,0,1
+1768635506478,281,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-15,text,true,,4398,384,86,86,http://localhost:8080/web/index.php/auth/login,126,0,1
+1768635506478,127,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-15,text,true,,698,197,86,86,http://localhost:8080/web/index.php/time/viewMyTimesheet,126,0,1
+1768635506605,154,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-15,text,true,,3700,187,86,86,http://localhost:8080/web/index.php/auth/login,153,0,0
+1768635506597,163,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-81,text,true,,3787,140,86,86,http://localhost:8080/web/index.php/auth/login,162,0,0
+1768635506483,278,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-34,text,true,,4376,390,85,85,http://localhost:8080/web/index.php/auth/login,117,0,0
+1768635506483,117,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-34,text,true,,698,203,85,85,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,117,0,0
+1768635506600,161,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-34,text,true,,3678,187,85,85,http://localhost:8080/web/index.php/auth/login,161,0,1
+1768635506485,287,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-55,text,true,,4506,512,85,85,http://localhost:8080/web/index.php/auth/login,130,0,1
+1768635506485,130,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-55,text,true,,698,325,85,85,http://localhost:8080/web/index.php/auth/validate,130,0,1
+1768635506615,157,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-55,text,true,,3808,187,85,85,http://localhost:8080/web/index.php/auth/login,156,0,1
+1768635506618,160,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-82,text,true,,3783,140,85,85,http://localhost:8080/web/index.php/auth/login,159,0,0
+1768635506501,294,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-35,text,true,,4392,390,85,85,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635506501,133,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-35,text,true,,698,203,85,85,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,132,0,0
+1768635506634,161,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-35,text,true,,3694,187,85,85,http://localhost:8080/web/index.php/auth/login,160,0,0
+1768635506496,305,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-16,text,true,,4388,384,85,85,http://localhost:8080/web/index.php/auth/login,137,0,0
+1768635506496,139,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-16,text,true,,698,197,85,85,http://localhost:8080/web/index.php/time/viewMyTimesheet,137,0,0
+1768635506635,166,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-16,text,true,,3690,187,85,85,http://localhost:8080/web/index.php/auth/login,166,0,0
+1768635506637,170,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-83,text,true,,3786,140,84,84,http://localhost:8080/web/index.php/auth/login,169,0,0
+1768635506501,307,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-56,text,true,,4507,517,84,84,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635506501,133,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-56,text,true,,698,330,84,84,http://localhost:8080/web/index.php/auth/validate,132,0,0
+1768635506634,174,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-56,text,true,,3809,187,84,84,http://localhost:8080/web/index.php/auth/login,174,0,0
+1768635506521,289,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-17,text,true,,4380,384,84,84,http://localhost:8080/web/index.php/auth/login,135,0,0
+1768635506521,136,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-17,text,true,,698,197,84,84,http://localhost:8080/web/index.php/time/viewMyTimesheet,135,0,0
+1768635506657,153,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-17,text,true,,3682,187,84,84,http://localhost:8080/web/index.php/auth/login,153,0,0
+1768635506655,157,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-84,text,true,,3786,140,84,84,http://localhost:8080/web/index.php/auth/login,156,0,0
+1768635506521,301,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-57,text,true,,4525,515,83,83,http://localhost:8080/web/index.php/auth/login,137,0,1
+1768635506521,137,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-57,text,true,,698,328,83,83,http://localhost:8080/web/index.php/auth/validate,137,0,1
+1768635506658,164,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-57,text,true,,3827,187,83,83,http://localhost:8080/web/index.php/auth/login,163,0,0
+1768635506534,309,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-18,text,true,,4385,384,83,83,http://localhost:8080/web/index.php/auth/login,139,0,1
+1768635506534,140,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-18,text,true,,698,197,83,83,http://localhost:8080/web/index.php/time/viewMyTimesheet,139,0,1
+1768635506674,169,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-18,text,true,,3687,187,83,83,http://localhost:8080/web/index.php/auth/login,168,0,2
+1768635506675,171,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-85,text,true,,3762,140,82,82,http://localhost:8080/web/index.php/auth/login,171,0,0
+1768635506546,307,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-19,text,true,,4379,384,82,82,http://localhost:8080/web/index.php/auth/login,143,0,1
+1768635506546,143,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-19,text,true,,698,197,82,82,http://localhost:8080/web/index.php/time/viewMyTimesheet,143,0,1
+1768635506689,164,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-19,text,true,,3681,187,82,82,http://localhost:8080/web/index.php/auth/login,164,0,1
+1768635506534,320,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-36,text,true,,4381,390,82,82,http://localhost:8080/web/index.php/auth/login,141,0,1
+1768635506534,141,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-36,text,true,,698,203,82,82,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,141,0,1
+1768635506675,179,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-36,text,true,,3683,187,82,82,http://localhost:8080/web/index.php/auth/login,179,0,1
+1768635506534,320,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-58,text,true,,4532,513,82,82,http://localhost:8080/web/index.php/auth/login,141,0,1
+1768635506534,141,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-58,text,true,,698,326,82,82,http://localhost:8080/web/index.php/auth/validate,141,0,1
+1768635506675,179,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-58,text,true,,3834,187,82,82,http://localhost:8080/web/index.php/auth/login,179,0,1
+1768635506543,312,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-37,text,true,,4386,390,81,81,http://localhost:8080/web/index.php/auth/login,141,0,1
+1768635506543,142,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-37,text,true,,698,203,81,81,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,141,0,1
+1768635506685,170,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-37,text,true,,3688,187,81,81,http://localhost:8080/web/index.php/auth/login,170,0,0
+1768635506693,175,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-86,text,true,,3771,140,81,81,http://localhost:8080/web/index.php/auth/login,175,0,1
+1768635506556,313,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-59,text,true,,4519,509,81,81,http://localhost:8080/web/index.php/auth/login,140,0,1
+1768635506556,140,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-59,text,true,,698,322,81,81,http://localhost:8080/web/index.php/auth/validate,140,0,1
+1768635506696,173,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-59,text,true,,3821,187,81,81,http://localhost:8080/web/index.php/auth/login,172,0,0
+1768635506714,169,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-87,text,true,,3779,140,81,81,http://localhost:8080/web/index.php/auth/login,168,0,0
+1768635506569,322,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-38,text,true,,4374,390,81,81,http://localhost:8080/web/index.php/auth/login,145,0,0
+1768635506569,146,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-38,text,true,,698,203,81,81,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,145,0,0
+1768635506715,176,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-38,text,true,,3676,187,81,81,http://localhost:8080/web/index.php/auth/login,175,0,0
+1768635506567,324,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-60,text,true,,4505,513,81,81,http://localhost:8080/web/index.php/auth/login,146,0,1
+1768635506567,147,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-60,text,true,,698,326,81,81,http://localhost:8080/web/index.php/auth/validate,146,0,1
+1768635506714,177,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-60,text,true,,3807,187,81,81,http://localhost:8080/web/index.php/auth/login,176,0,0
+1768635506578,322,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-21,text,true,,4372,384,81,81,http://localhost:8080/web/index.php/auth/login,148,0,0
+1768635506578,148,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-21,text,true,,698,197,81,81,http://localhost:8080/web/index.php/time/viewMyTimesheet,148,0,0
+1768635506726,174,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-21,text,true,,3674,187,81,81,http://localhost:8080/web/index.php/auth/login,174,0,1
+1768635506577,324,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-39,text,true,,4398,390,80,80,http://localhost:8080/web/index.php/auth/login,148,0,0
+1768635506577,148,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-39,text,true,,698,203,80,80,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,148,0,0
+1768635506726,175,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-39,text,true,,3700,187,80,80,http://localhost:8080/web/index.php/auth/login,175,0,0
+1768635506588,314,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-61,text,true,,4529,517,80,80,http://localhost:8080/web/index.php/auth/login,143,0,1
+1768635506588,143,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-61,text,true,,698,330,80,80,http://localhost:8080/web/index.php/auth/validate,143,0,1
+1768635506731,171,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-61,text,true,,3831,187,80,80,http://localhost:8080/web/index.php/auth/login,170,0,1
+1768635506578,330,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-20,text,true,,4386,384,80,80,http://localhost:8080/web/index.php/auth/login,154,0,1
+1768635506578,154,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-20,text,true,,698,197,80,80,http://localhost:8080/web/index.php/time/viewMyTimesheet,154,0,1
+1768635506732,176,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-20,text,true,,3688,187,80,80,http://localhost:8080/web/index.php/auth/login,175,0,1
+1768635506752,158,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-89,text,true,,3767,140,79,79,http://localhost:8080/web/index.php/auth/login,158,0,0
+1768635506735,180,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-88,text,true,,3774,140,79,79,http://localhost:8080/web/index.php/auth/login,180,0,0
+1768635506617,318,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-41,text,true,,4395,390,79,79,http://localhost:8080/web/index.php/auth/login,150,0,0
+1768635506617,150,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-41,text,true,,698,203,79,79,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,150,0,0
+1768635506768,167,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-41,text,true,,3697,187,79,79,http://localhost:8080/web/index.php/auth/login,167,0,0
+1768635506615,322,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-62,text,true,,4524,511,79,79,http://localhost:8080/web/index.php/auth/login,152,0,1
+1768635506615,153,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-62,text,true,,698,324,79,79,http://localhost:8080/web/index.php/auth/validate,152,0,1
+1768635506768,169,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-62,text,true,,3826,187,79,79,http://localhost:8080/web/index.php/auth/login,168,0,0
+1768635506615,322,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-22,text,true,,4378,384,79,79,http://localhost:8080/web/index.php/auth/login,146,0,1
+1768635506615,147,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-22,text,true,,698,197,79,79,http://localhost:8080/web/index.php/time/viewMyTimesheet,146,0,1
+1768635506762,175,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-22,text,true,,3680,187,79,79,http://localhost:8080/web/index.php/auth/login,174,0,0
+1768635506771,176,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-90,text,true,,3785,140,78,78,http://localhost:8080/web/index.php/auth/login,176,0,0
+1768635506625,334,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-40,text,true,,4371,390,78,78,http://localhost:8080/web/index.php/auth/login,149,0,0
+1768635506625,150,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-40,text,true,,698,203,78,78,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,149,0,0
+1768635506775,184,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-40,text,true,,3673,187,78,78,http://localhost:8080/web/index.php/auth/login,183,0,0
+1768635506627,336,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-63,text,true,,4531,514,78,78,http://localhost:8080/web/index.php/auth/login,157,0,0
+1768635506627,157,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-63,text,true,,698,327,78,78,http://localhost:8080/web/index.php/auth/validate,157,0,0
+1768635506785,178,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-63,text,true,,3833,187,78,78,http://localhost:8080/web/index.php/auth/login,176,0,0
+1768635506791,181,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-91,text,true,,3789,140,78,78,http://localhost:8080/web/index.php/auth/login,181,0,0
+1768635506637,350,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-42,text,true,,4377,390,78,78,http://localhost:8080/web/index.php/auth/login,157,0,0
+1768635506637,159,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-42,text,true,,698,203,78,78,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,157,0,0
+1768635506796,191,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-42,text,true,,3679,187,78,78,http://localhost:8080/web/index.php/auth/login,188,0,0
+1768635506662,326,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-23,text,true,,4396,384,78,78,http://localhost:8080/web/index.php/auth/login,157,0,0
+1768635506662,157,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-23,text,true,,698,197,78,78,http://localhost:8080/web/index.php/time/viewMyTimesheet,157,0,0
+1768635506820,168,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-23,text,true,,3698,187,78,78,http://localhost:8080/web/index.php/auth/login,167,0,0
+1768635506811,178,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-92,text,true,,3782,140,77,77,http://localhost:8080/web/index.php/auth/login,177,0,0
+1768635506655,336,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-64,text,true,,4523,517,77,77,http://localhost:8080/web/index.php/auth/login,151,0,1
+1768635506655,151,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-64,text,true,,698,330,77,77,http://localhost:8080/web/index.php/auth/validate,151,0,1
+1768635506806,185,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-64,text,true,,3825,187,77,77,http://localhost:8080/web/index.php/auth/login,185,0,0
+1768635506832,178,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-93,text,true,,3775,140,77,77,http://localhost:8080/web/index.php/auth/login,178,0,1
+1768635506667,348,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-65,text,true,,4514,511,77,77,http://localhost:8080/web/index.php/auth/login,157,0,0
+1768635506667,157,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-65,text,true,,698,324,77,77,http://localhost:8080/web/index.php/auth/validate,157,0,0
+1768635506824,191,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-65,text,true,,3816,187,77,77,http://localhost:8080/web/index.php/auth/login,191,0,0
+1768635506673,350,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-43,text,true,,4387,390,77,77,http://localhost:8080/web/index.php/auth/login,163,0,0
+1768635506673,163,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-43,text,true,,698,203,77,77,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,163,0,0
+1768635506836,187,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-43,text,true,,3689,187,77,77,http://localhost:8080/web/index.php/auth/login,185,0,0
+1768635506690,342,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-24,text,true,,4390,384,77,77,http://localhost:8080/web/index.php/auth/login,160,0,1
+1768635506690,160,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-24,text,true,,698,197,77,77,http://localhost:8080/web/index.php/time/viewMyTimesheet,160,0,1
+1768635506850,182,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-24,text,true,,3692,187,77,77,http://localhost:8080/web/index.php/auth/login,181,0,1
+1768635506870,162,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-95,text,true,,3762,140,77,77,http://localhost:8080/web/index.php/auth/login,161,0,0
+1768635506851,188,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-94,text,true,,3762,140,76,76,http://localhost:8080/web/index.php/auth/login,187,0,1
+1768635506698,345,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-66,text,true,,4514,520,76,76,http://localhost:8080/web/index.php/auth/login,163,0,1
+1768635506698,163,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-66,text,true,,698,333,76,76,http://localhost:8080/web/index.php/auth/validate,163,0,1
+1768635506861,182,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-66,text,true,,3816,187,76,76,http://localhost:8080/web/index.php/auth/login,181,0,0
+1768635506889,154,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-96,text,true,,3765,140,76,76,http://localhost:8080/web/index.php/auth/login,153,0,0
+1768635506721,337,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-67,text,true,,4510,514,76,76,http://localhost:8080/web/index.php/auth/login,169,0,0
+1768635506721,169,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-67,text,true,,698,327,76,76,http://localhost:8080/web/index.php/auth/validate,169,0,0
+1768635506890,168,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-67,text,true,,3812,187,76,76,http://localhost:8080/web/index.php/auth/login,167,0,0
+1768635506724,340,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-44,text,true,,4388,390,76,76,http://localhost:8080/web/index.php/auth/login,167,0,0
+1768635506724,167,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-44,text,true,,698,203,76,76,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,167,0,0
+1768635506891,173,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-44,text,true,,3690,187,76,76,http://localhost:8080/web/index.php/auth/login,172,0,1
+1768635506910,162,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-97,text,true,,3759,140,76,76,http://localhost:8080/web/index.php/auth/login,162,0,0
+1768635506760,329,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-45,text,true,,4373,390,76,76,http://localhost:8080/web/index.php/auth/login,164,0,0
+1768635506760,164,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-45,text,true,,698,203,76,76,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,164,0,0
+1768635506924,165,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-45,text,true,,3675,187,76,76,http://localhost:8080/web/index.php/auth/login,163,0,1
+1768635506762,327,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-68,text,true,,4517,517,76,76,http://localhost:8080/web/index.php/auth/login,166,0,0
+1768635506762,166,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-68,text,true,,698,330,76,76,http://localhost:8080/web/index.php/auth/validate,166,0,0
+1768635506928,161,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-68,text,true,,3819,187,76,76,http://localhost:8080/web/index.php/auth/login,159,0,3
+1768635506931,170,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-98,text,true,,3767,140,76,76,http://localhost:8080/web/index.php/auth/login,170,0,1
+1768635506770,332,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-25,text,true,,4373,384,76,76,http://localhost:8080/web/index.php/auth/login,165,0,0
+1768635506770,166,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-25,text,true,,698,197,76,76,http://localhost:8080/web/index.php/time/viewMyTimesheet,165,0,0
+1768635506936,166,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-25,text,true,,3675,187,76,76,http://localhost:8080/web/index.php/auth/login,166,0,0
+1768635506773,331,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-26,text,true,,4391,384,75,75,http://localhost:8080/web/index.php/auth/login,169,0,1
+1768635506773,169,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-26,text,true,,698,197,75,75,http://localhost:8080/web/index.php/time/viewMyTimesheet,169,0,1
+1768635506943,161,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-26,text,true,,3693,187,75,75,http://localhost:8080/web/index.php/auth/login,160,0,0
+1768635506781,328,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-69,text,true,,4515,513,74,74,http://localhost:8080/web/index.php/auth/login,166,0,1
+1768635506781,166,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-69,text,true,,698,326,74,74,http://localhost:8080/web/index.php/auth/validate,166,0,1
+1768635506947,162,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-69,text,true,,3817,187,74,74,http://localhost:8080/web/index.php/auth/login,160,0,2
+1768635506948,163,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-99,text,true,,3771,140,74,74,http://localhost:8080/web/index.php/auth/login,162,0,0
+1768635506789,344,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-70,text,true,,4523,513,74,74,http://localhost:8080/web/index.php/auth/login,172,0,1
+1768635506789,173,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-70,text,true,,698,326,74,74,http://localhost:8080/web/index.php/auth/validate,172,0,1
+1768635506962,171,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-70,text,true,,3825,187,74,74,http://localhost:8080/web/index.php/auth/login,170,0,0
+1768635506968,174,01 - Get Login Page,200,OK,Timesheet Spike Test Users 1-100,text,true,,3774,140,74,74,http://localhost:8080/web/index.php/auth/login,174,0,2
+1768635506809,336,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-47,text,true,,4400,390,74,74,http://localhost:8080/web/index.php/auth/login,167,0,0
+1768635506809,167,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-47,text,true,,698,203,74,74,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,167,0,0
+1768635506976,169,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-47,text,true,,3702,187,74,74,http://localhost:8080/web/index.php/auth/login,168,0,1
+1768635506806,339,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-46,text,true,,4385,390,74,74,http://localhost:8080/web/index.php/auth/login,171,0,1
+1768635506806,172,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-46,text,true,,698,203,74,74,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,171,0,1
+1768635506978,167,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-46,text,true,,3687,187,74,74,http://localhost:8080/web/index.php/auth/login,166,0,0
+1768635506823,328,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-71,text,true,,4505,515,74,74,http://localhost:8080/web/index.php/auth/login,163,0,0
+1768635506823,164,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-71,text,true,,698,328,74,74,http://localhost:8080/web/index.php/auth/validate,163,0,0
+1768635506987,164,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-71,text,true,,3807,187,74,74,http://localhost:8080/web/index.php/auth/login,164,0,0
+1768635506823,329,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-27,text,true,,4392,384,74,74,http://localhost:8080/web/index.php/auth/login,177,0,0
+1768635506823,178,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-27,text,true,,698,197,74,74,http://localhost:8080/web/index.php/time/viewMyTimesheet,177,0,0
+1768635507001,151,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-27,text,true,,3694,187,74,74,http://localhost:8080/web/index.php/auth/login,151,0,1
+1768635506838,326,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-28,text,true,,4391,384,73,73,http://localhost:8080/web/index.php/auth/login,180,0,0
+1768635506838,180,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-28,text,true,,698,197,73,73,http://localhost:8080/web/index.php/time/viewMyTimesheet,180,0,0
+1768635507019,145,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-28,text,true,,3693,187,73,73,http://localhost:8080/web/index.php/auth/login,145,0,0
+1768635506840,327,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-72,text,true,,4506,513,72,72,http://localhost:8080/web/index.php/auth/login,178,0,0
+1768635506840,178,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-72,text,true,,698,326,72,72,http://localhost:8080/web/index.php/auth/validate,178,0,0
+1768635507018,149,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-72,text,true,,3808,187,72,72,http://localhost:8080/web/index.php/auth/login,149,0,2
+1768635506854,324,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-48,text,true,,4398,390,72,72,http://localhost:8080/web/index.php/auth/login,172,0,1
+1768635506854,172,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-48,text,true,,698,203,72,72,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,172,0,1
+1768635507027,151,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-48,text,true,,3700,187,72,72,http://localhost:8080/web/index.php/auth/login,151,0,0
+1768635506901,287,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-74,text,true,,4506,519,72,72,http://localhost:8080/web/index.php/auth/login,154,0,1
+1768635506901,154,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-74,text,true,,698,332,72,72,http://localhost:8080/web/index.php/auth/validate,154,0,1
+1768635507055,133,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-74,text,true,,3808,187,72,72,http://localhost:8080/web/index.php/auth/login,132,0,1
+1768635506894,304,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-73,text,true,,4505,515,72,72,http://localhost:8080/web/index.php/auth/login,163,0,1
+1768635506894,164,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-73,text,true,,698,328,72,72,http://localhost:8080/web/index.php/auth/validate,163,0,1
+1768635507058,140,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-73,text,true,,3807,187,72,72,http://localhost:8080/web/index.php/auth/login,140,0,0
+1768635506898,306,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-49,text,true,,4396,390,72,72,http://localhost:8080/web/index.php/auth/login,162,0,0
+1768635506898,162,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-49,text,true,,698,203,72,72,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,162,0,0
+1768635507060,144,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-49,text,true,,3698,187,72,72,http://localhost:8080/web/index.php/auth/login,143,0,1
+1768635506904,313,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-29,text,true,,4387,384,72,72,http://localhost:8080/web/index.php/auth/login,162,0,0
+1768635506904,162,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-29,text,true,,698,197,72,72,http://localhost:8080/web/index.php/time/viewMyTimesheet,162,0,0
+1768635507066,151,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-29,text,true,,3689,187,72,72,http://localhost:8080/web/index.php/auth/login,151,0,1
+1768635506913,311,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-75,text,true,,4531,515,71,71,http://localhost:8080/web/index.php/auth/login,164,0,0
+1768635506913,164,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-75,text,true,,698,328,71,71,http://localhost:8080/web/index.php/auth/validate,164,0,0
+1768635507077,147,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-75,text,true,,3833,187,71,71,http://localhost:8080/web/index.php/auth/login,147,0,0
+1768635506906,318,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-50,text,true,,4373,390,71,71,http://localhost:8080/web/index.php/auth/login,162,0,1
+1768635506906,162,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-50,text,true,,698,203,71,71,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,162,0,1
+1768635507069,155,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-50,text,true,,3675,187,71,71,http://localhost:8080/web/index.php/auth/login,155,0,0
+1768635506945,288,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-76,text,true,,4523,515,71,71,http://localhost:8080/web/index.php/auth/login,158,0,0
+1768635506945,158,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-76,text,true,,698,328,71,71,http://localhost:8080/web/index.php/auth/validate,158,0,0
+1768635507103,130,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-76,text,true,,3825,187,71,71,http://localhost:8080/web/index.php/auth/login,130,0,1
+1768635506944,290,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-51,text,true,,4388,390,71,71,http://localhost:8080/web/index.php/auth/login,155,0,0
+1768635506944,155,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-51,text,true,,698,203,71,71,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,155,0,0
+1768635507099,135,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-51,text,true,,3690,187,71,71,http://localhost:8080/web/index.php/auth/login,134,0,1
+1768635506946,300,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-30,text,true,,4388,384,71,71,http://localhost:8080/web/index.php/auth/login,160,0,0
+1768635506946,161,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-30,text,true,,698,197,71,71,http://localhost:8080/web/index.php/time/viewMyTimesheet,160,0,0
+1768635507107,139,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-30,text,true,,3690,187,71,71,http://localhost:8080/web/index.php/auth/login,138,0,0
+1768635506950,315,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-52,text,true,,4394,390,70,70,http://localhost:8080/web/index.php/auth/login,167,0,0
+1768635506950,167,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-52,text,true,,698,203,70,70,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,167,0,0
+1768635507118,147,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-52,text,true,,3696,187,70,70,http://localhost:8080/web/index.php/auth/login,145,0,0
+1768635506954,314,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-77,text,true,,4506,515,70,70,http://localhost:8080/web/index.php/auth/login,171,0,0
+1768635506954,172,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-77,text,true,,698,328,70,70,http://localhost:8080/web/index.php/auth/validate,171,0,0
+1768635507126,142,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-77,text,true,,3808,187,70,70,http://localhost:8080/web/index.php/auth/login,142,0,0
+1768635506979,290,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-31,text,true,,4371,384,70,70,http://localhost:8080/web/index.php/auth/login,163,0,0
+1768635506979,164,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-31,text,true,,698,197,70,70,http://localhost:8080/web/index.php/time/viewMyTimesheet,163,0,0
+1768635507143,126,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-31,text,true,,3673,187,70,70,http://localhost:8080/web/index.php/auth/login,126,0,1
+1768635507004,265,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-79,text,true,,4521,513,70,70,http://localhost:8080/web/index.php/auth/login,137,0,0
+1768635507004,137,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-79,text,true,,698,326,70,70,http://localhost:8080/web/index.php/auth/validate,137,0,0
+1768635507142,127,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-79,text,true,,3823,187,70,70,http://localhost:8080/web/index.php/auth/login,127,0,0
+1768635506991,288,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-78,text,true,,4515,516,69,69,http://localhost:8080/web/index.php/auth/login,155,0,1
+1768635506991,155,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-78,text,true,,698,329,69,69,http://localhost:8080/web/index.php/auth/validate,155,0,1
+1768635507147,132,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-78,text,true,,3817,187,69,69,http://localhost:8080/web/index.php/auth/login,131,0,0
+1768635507024,278,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-32,text,true,,4373,384,69,69,http://localhost:8080/web/index.php/auth/login,156,0,0
+1768635507024,156,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-32,text,true,,698,197,69,69,http://localhost:8080/web/index.php/time/viewMyTimesheet,156,0,0
+1768635507180,122,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-32,text,true,,3675,187,69,69,http://localhost:8080/web/index.php/auth/login,121,0,1
+1768635507023,285,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-53,text,true,,4402,390,68,68,http://localhost:8080/web/index.php/auth/login,150,0,1
+1768635507023,150,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-53,text,true,,698,203,68,68,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,150,0,1
+1768635507173,135,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-53,text,true,,3704,187,68,68,http://localhost:8080/web/index.php/auth/login,134,0,0
+1768635507046,266,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-80,text,true,,4533,517,68,68,http://localhost:8080/web/index.php/auth/login,138,0,0
+1768635507046,138,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-80,text,true,,698,330,68,68,http://localhost:8080/web/index.php/auth/validate,138,0,0
+1768635507184,128,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-80,text,true,,3835,187,68,68,http://localhost:8080/web/index.php/auth/login,127,0,1
+1768635507026,286,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-54,text,true,,4388,390,68,68,http://localhost:8080/web/index.php/auth/login,154,0,0
+1768635507026,154,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-54,text,true,,698,203,68,68,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,154,0,0
+1768635507180,132,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-54,text,true,,3690,187,68,68,http://localhost:8080/web/index.php/auth/login,132,0,1
+1768635507047,273,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-33,text,true,,4394,384,68,68,http://localhost:8080/web/index.php/auth/login,137,0,1
+1768635507047,137,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-33,text,true,,698,197,68,68,http://localhost:8080/web/index.php/time/viewMyTimesheet,137,0,1
+1768635507184,136,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-33,text,true,,3696,187,68,68,http://localhost:8080/web/index.php/auth/login,136,0,1
+1768635507060,264,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-81,text,true,,4523,516,67,67,http://localhost:8080/web/index.php/auth/login,130,0,0
+1768635507060,131,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-81,text,true,,698,329,67,67,http://localhost:8080/web/index.php/auth/validate,130,0,0
+1768635507191,133,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-81,text,true,,3825,187,67,67,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635507062,270,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-34,text,true,,4397,384,67,67,http://localhost:8080/web/index.php/auth/login,139,0,0
+1768635507062,140,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-34,text,true,,698,197,67,67,http://localhost:8080/web/index.php/time/viewMyTimesheet,139,0,0
+1768635507202,130,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-34,text,true,,3699,187,67,67,http://localhost:8080/web/index.php/auth/login,130,0,0
+1768635507078,279,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-82,text,true,,4515,515,66,66,http://localhost:8080/web/index.php/auth/login,145,0,0
+1768635507078,146,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-82,text,true,,698,328,66,66,http://localhost:8080/web/index.php/auth/validate,145,0,0
+1768635507224,133,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-82,text,true,,3817,187,66,66,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635507072,287,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-55,text,true,,4401,390,66,66,http://localhost:8080/web/index.php/auth/login,145,0,1
+1768635507072,147,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-55,text,true,,698,203,66,66,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,145,0,1
+1768635507219,140,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-55,text,true,,3703,187,66,66,http://localhost:8080/web/index.php/auth/login,140,0,0
+1768635507107,261,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-83,text,true,,4510,518,66,66,http://localhost:8080/web/index.php/auth/login,121,0,1
+1768635507107,121,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-83,text,true,,698,331,66,66,http://localhost:8080/web/index.php/auth/validate,121,0,1
+1768635507228,140,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-83,text,true,,3812,187,66,66,http://localhost:8080/web/index.php/auth/login,139,0,1
+1768635507095,279,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-35,text,true,,4383,384,66,66,http://localhost:8080/web/index.php/auth/login,128,0,0
+1768635507095,130,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-35,text,true,,698,197,66,66,http://localhost:8080/web/index.php/time/viewMyTimesheet,128,0,0
+1768635507225,149,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-35,text,true,,3685,187,66,66,http://localhost:8080/web/index.php/auth/login,149,0,0
+1768635507109,270,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-56,text,true,,4394,390,65,65,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635507109,133,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-56,text,true,,698,203,65,65,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,132,0,0
+1768635507242,137,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-56,text,true,,3696,187,65,65,http://localhost:8080/web/index.php/auth/login,137,0,0
+1768635507114,270,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-84,text,true,,4528,517,65,65,http://localhost:8080/web/index.php/auth/login,135,0,0
+1768635507114,135,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-84,text,true,,698,330,65,65,http://localhost:8080/web/index.php/auth/validate,135,0,0
+1768635507249,135,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-84,text,true,,3830,187,65,65,http://localhost:8080/web/index.php/auth/login,135,0,1
+1768635507147,258,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-85,text,true,,4530,515,65,65,http://localhost:8080/web/index.php/auth/login,114,0,0
+1768635507147,114,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-85,text,true,,698,328,65,65,http://localhost:8080/web/index.php/auth/validate,114,0,0
+1768635507261,144,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-85,text,true,,3832,187,65,65,http://localhost:8080/web/index.php/auth/login,144,0,0
+1768635507154,252,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-58,text,true,,4383,390,65,65,http://localhost:8080/web/index.php/auth/login,123,0,1
+1768635507154,123,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-58,text,true,,698,203,65,65,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,123,0,1
+1768635507278,128,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-58,text,true,,3685,187,65,65,http://localhost:8080/web/index.php/auth/login,127,0,0
+1768635507154,255,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-36,text,true,,4385,384,65,65,http://localhost:8080/web/index.php/auth/login,117,0,1
+1768635507154,117,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-36,text,true,,698,197,65,65,http://localhost:8080/web/index.php/time/viewMyTimesheet,117,0,1
+1768635507271,138,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-36,text,true,,3687,187,65,65,http://localhost:8080/web/index.php/auth/login,138,0,1
+1768635507169,242,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-86,text,true,,4525,516,64,64,http://localhost:8080/web/index.php/auth/login,113,0,0
+1768635507169,113,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-86,text,true,,698,329,64,64,http://localhost:8080/web/index.php/auth/validate,113,0,0
+1768635507283,128,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-86,text,true,,3827,187,64,64,http://localhost:8080/web/index.php/auth/login,127,0,0
+1768635507122,297,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-57,text,true,,4392,390,64,64,http://localhost:8080/web/index.php/auth/login,141,0,1
+1768635507122,141,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-57,text,true,,698,203,64,64,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,141,0,1
+1768635507263,156,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-57,text,true,,3694,187,64,64,http://localhost:8080/web/index.php/auth/login,155,0,0
+1768635507169,260,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-59,text,true,,4398,390,64,64,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635507169,132,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-59,text,true,,698,203,64,64,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,132,0,0
+1768635507302,127,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-59,text,true,,3700,187,64,64,http://localhost:8080/web/index.php/auth/login,126,0,0
+1768635507183,248,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-87,text,true,,4525,514,64,64,http://localhost:8080/web/index.php/auth/login,123,0,1
+1768635507183,123,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-87,text,true,,698,327,64,64,http://localhost:8080/web/index.php/auth/validate,123,0,1
+1768635507306,125,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-87,text,true,,3827,187,64,64,http://localhost:8080/web/index.php/auth/login,124,0,1
+1768635507156,282,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-37,text,true,,4372,384,64,64,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635507156,132,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-37,text,true,,698,197,64,64,http://localhost:8080/web/index.php/time/viewMyTimesheet,132,0,0
+1768635507288,150,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-37,text,true,,3674,187,64,64,http://localhost:8080/web/index.php/auth/login,150,0,1
+1768635507192,266,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-60,text,true,,4376,390,63,63,http://localhost:8080/web/index.php/auth/login,128,0,0
+1768635507192,129,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-60,text,true,,698,203,63,63,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,128,0,0
+1768635507321,137,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-60,text,true,,3678,187,63,63,http://localhost:8080/web/index.php/auth/login,136,0,1
+1768635507202,258,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-39,text,true,,4382,384,63,63,http://localhost:8080/web/index.php/auth/login,133,0,0
+1768635507202,134,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-39,text,true,,698,197,63,63,http://localhost:8080/web/index.php/time/viewMyTimesheet,133,0,0
+1768635507336,124,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-39,text,true,,3684,187,63,63,http://localhost:8080/web/index.php/auth/login,123,0,0
+1768635507191,269,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-38,text,true,,4385,384,63,63,http://localhost:8080/web/index.php/auth/login,129,0,0
+1768635507191,131,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-38,text,true,,698,197,63,63,http://localhost:8080/web/index.php/time/viewMyTimesheet,129,0,0
+1768635507322,138,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-38,text,true,,3687,187,63,63,http://localhost:8080/web/index.php/auth/login,138,0,0
+1768635507202,273,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-61,text,true,,4394,390,61,61,http://localhost:8080/web/index.php/auth/login,137,0,0
+1768635507202,137,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-61,text,true,,698,203,61,61,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,137,0,0
+1768635507339,136,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-61,text,true,,3696,187,61,61,http://localhost:8080/web/index.php/auth/login,135,0,1
+1768635507210,272,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-89,text,true,,4505,521,61,61,http://localhost:8080/web/index.php/auth/login,132,0,1
+1768635507210,132,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-89,text,true,,698,334,61,61,http://localhost:8080/web/index.php/auth/validate,132,0,1
+1768635507342,140,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-89,text,true,,3807,187,61,61,http://localhost:8080/web/index.php/auth/login,139,0,0
+1768635507215,270,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-88,text,true,,4511,519,61,61,http://localhost:8080/web/index.php/auth/login,130,0,1
+1768635507215,131,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-88,text,true,,698,332,61,61,http://localhost:8080/web/index.php/auth/validate,130,0,1
+1768635507346,139,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-88,text,true,,3813,187,61,61,http://localhost:8080/web/index.php/auth/login,139,0,0
+1768635507237,264,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-62,text,true,,4377,390,61,61,http://localhost:8080/web/index.php/auth/login,123,0,0
+1768635507237,124,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-62,text,true,,698,203,61,61,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,123,0,0
+1768635507361,140,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-62,text,true,,3679,187,61,61,http://localhost:8080/web/index.php/auth/login,140,0,0
+1768635507248,256,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-90,text,true,,4530,512,61,61,http://localhost:8080/web/index.php/auth/login,131,0,0
+1768635507248,131,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-90,text,true,,698,325,61,61,http://localhost:8080/web/index.php/auth/validate,131,0,0
+1768635507379,125,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-90,text,true,,3832,187,61,61,http://localhost:8080/web/index.php/auth/login,125,0,0
+1768635507235,269,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-41,text,true,,4380,384,61,61,http://localhost:8080/web/index.php/auth/login,125,0,1
+1768635507235,126,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-41,text,true,,698,197,61,61,http://localhost:8080/web/index.php/time/viewMyTimesheet,125,0,1
+1768635507361,143,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-41,text,true,,3682,187,61,61,http://localhost:8080/web/index.php/auth/login,142,0,0
+1768635507263,245,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-63,text,true,,4385,390,60,60,http://localhost:8080/web/index.php/auth/login,124,0,0
+1768635507263,124,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-63,text,true,,698,203,60,60,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,124,0,0
+1768635507387,121,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-63,text,true,,3687,187,60,60,http://localhost:8080/web/index.php/auth/login,120,0,0
+1768635507261,248,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-40,text,true,,4387,384,60,60,http://localhost:8080/web/index.php/auth/login,119,0,0
+1768635507261,120,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-40,text,true,,698,197,60,60,http://localhost:8080/web/index.php/time/viewMyTimesheet,119,0,0
+1768635507381,128,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-40,text,true,,3689,187,60,60,http://localhost:8080/web/index.php/auth/login,128,0,0
+1768635507273,267,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-91,text,true,,4521,518,59,59,http://localhost:8080/web/index.php/auth/login,123,0,0
+1768635507273,124,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-91,text,true,,698,331,59,59,http://localhost:8080/web/index.php/auth/validate,123,0,0
+1768635507397,143,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-91,text,true,,3823,187,59,59,http://localhost:8080/web/index.php/auth/login,141,0,0
+1768635507288,254,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-42,text,true,,4371,384,59,59,http://localhost:8080/web/index.php/auth/login,120,0,0
+1768635507288,121,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-42,text,true,,698,197,59,59,http://localhost:8080/web/index.php/time/viewMyTimesheet,120,0,0
+1768635507409,133,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-42,text,true,,3673,187,59,59,http://localhost:8080/web/index.php/auth/login,132,0,0
+1768635507290,253,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-92,text,true,,4511,515,59,59,http://localhost:8080/web/index.php/auth/login,128,0,0
+1768635507290,129,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-92,text,true,,698,328,59,59,http://localhost:8080/web/index.php/auth/validate,128,0,0
+1768635507419,124,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-92,text,true,,3813,187,59,59,http://localhost:8080/web/index.php/auth/login,123,0,0
+1768635507311,239,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-93,text,true,,4517,511,58,58,http://localhost:8080/web/index.php/auth/login,114,0,0
+1768635507311,114,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-93,text,true,,698,324,58,58,http://localhost:8080/web/index.php/auth/validate,114,0,0
+1768635507425,125,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-93,text,true,,3819,187,58,58,http://localhost:8080/web/index.php/auth/login,123,0,0
+1768635507291,264,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-64,text,true,,4376,390,58,58,http://localhost:8080/web/index.php/auth/login,141,0,1
+1768635507291,142,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-64,text,true,,698,203,58,58,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,141,0,1
+1768635507433,122,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-64,text,true,,3678,187,58,58,http://localhost:8080/web/index.php/auth/login,121,0,0
+1768635507318,240,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-65,text,true,,4387,390,58,58,http://localhost:8080/web/index.php/auth/login,127,0,0
+1768635507318,127,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-65,text,true,,698,203,58,58,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,127,0,0
+1768635507445,113,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-65,text,true,,3689,187,58,58,http://localhost:8080/web/index.php/auth/login,112,0,1
+1768635507323,252,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-43,text,true,,4401,384,58,58,http://localhost:8080/web/index.php/auth/login,126,0,0
+1768635507323,127,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-43,text,true,,698,197,58,58,http://localhost:8080/web/index.php/time/viewMyTimesheet,126,0,0
+1768635507450,125,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-43,text,true,,3703,187,58,58,http://localhost:8080/web/index.php/auth/login,122,0,1
+1768635507332,260,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-95,text,true,,4510,512,57,57,http://localhost:8080/web/index.php/auth/login,125,0,2
+1768635507332,128,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-95,text,true,,698,325,57,57,http://localhost:8080/web/index.php/auth/validate,125,0,2
+1768635507460,132,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-95,text,true,,3812,187,57,57,http://localhost:8080/web/index.php/auth/login,132,0,1
+1768635507339,256,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-94,text,true,,4507,515,57,57,http://localhost:8080/web/index.php/auth/login,119,0,1
+1768635507339,121,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-94,text,true,,698,328,57,57,http://localhost:8080/web/index.php/auth/validate,119,0,1
+1768635507460,135,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-94,text,true,,3809,187,57,57,http://localhost:8080/web/index.php/auth/login,135,0,1
+1768635507360,240,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-67,text,true,,4372,390,57,57,http://localhost:8080/web/index.php/auth/login,118,0,0
+1768635507360,118,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-67,text,true,,698,203,57,57,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,118,0,0
+1768635507478,122,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-67,text,true,,3674,187,57,57,http://localhost:8080/web/index.php/auth/login,121,0,1
+1768635507343,258,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-96,text,true,,4511,518,57,57,http://localhost:8080/web/index.php/auth/login,130,0,1
+1768635507343,130,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-96,text,true,,698,331,57,57,http://localhost:8080/web/index.php/auth/validate,130,0,1
+1768635507473,128,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-96,text,true,,3813,187,57,57,http://localhost:8080/web/index.php/auth/login,127,0,1
+1768635507343,258,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-66,text,true,,4376,390,57,57,http://localhost:8080/web/index.php/auth/login,144,0,0
+1768635507343,146,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-66,text,true,,698,203,57,57,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,144,0,0
+1768635507489,112,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-66,text,true,,3678,187,57,57,http://localhost:8080/web/index.php/auth/login,112,0,0
+1768635507364,249,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-44,text,true,,4381,384,57,57,http://localhost:8080/web/index.php/auth/login,131,0,1
+1768635507364,132,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-44,text,true,,698,197,57,57,http://localhost:8080/web/index.php/time/viewMyTimesheet,131,0,1
+1768635507496,117,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-44,text,true,,3683,187,57,57,http://localhost:8080/web/index.php/auth/login,116,0,0
+1768635507373,244,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-97,text,true,,4533,514,56,56,http://localhost:8080/web/index.php/auth/login,124,0,0
+1768635507373,125,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-97,text,true,,698,327,56,56,http://localhost:8080/web/index.php/auth/validate,124,0,0
+1768635507498,119,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-97,text,true,,3835,187,56,56,http://localhost:8080/web/index.php/auth/login,116,0,0
+1768635507389,255,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-68,text,true,,4390,390,56,56,http://localhost:8080/web/index.php/auth/login,123,0,0
+1768635507389,123,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-68,text,true,,698,203,56,56,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,123,0,0
+1768635507513,131,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-68,text,true,,3692,187,56,56,http://localhost:8080/web/index.php/auth/login,131,0,0
+1768635507389,260,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-45,text,true,,4388,384,56,56,http://localhost:8080/web/index.php/auth/login,129,0,0
+1768635507389,132,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-45,text,true,,698,197,56,56,http://localhost:8080/web/index.php/time/viewMyTimesheet,129,0,0
+1768635507521,128,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-45,text,true,,3690,187,56,56,http://localhost:8080/web/index.php/auth/login,128,0,0
+1768635507412,240,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-99,text,true,,4523,512,55,55,http://localhost:8080/web/index.php/auth/login,122,0,0
+1768635507412,123,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-99,text,true,,698,325,55,55,http://localhost:8080/web/index.php/auth/validate,122,0,0
+1768635507535,117,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-99,text,true,,3825,187,55,55,http://localhost:8080/web/index.php/auth/login,117,0,0
+1768635507409,248,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-69,text,true,,4375,390,55,55,http://localhost:8080/web/index.php/auth/login,133,0,2
+1768635507409,134,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-69,text,true,,698,203,55,55,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,133,0,2
+1768635507543,114,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-69,text,true,,3677,187,55,55,http://localhost:8080/web/index.php/auth/login,114,0,0
+1768635507402,261,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-98,text,true,,4529,517,55,55,http://localhost:8080/web/index.php/auth/login,120,0,0
+1768635507402,120,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-98,text,true,,698,330,55,55,http://localhost:8080/web/index.php/auth/validate,120,0,0
+1768635507522,141,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-98,text,true,,3831,187,55,55,http://localhost:8080/web/index.php/auth/login,140,0,0
+1768635507433,233,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-70,text,true,,4372,390,55,55,http://localhost:8080/web/index.php/auth/login,114,0,1
+1768635507433,114,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-70,text,true,,698,203,55,55,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,114,0,1
+1768635507547,119,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-70,text,true,,3674,187,55,55,http://localhost:8080/web/index.php/auth/login,119,0,1
+1768635507443,231,02 - Submit Login,200,OK,Timesheet Spike Test Users 1-100,text,true,,4525,520,55,55,http://localhost:8080/web/index.php/auth/login,102,0,1
+1768635507443,102,02 - Submit Login-0,302,Found,Timesheet Spike Test Users 1-100,text,true,,698,333,55,55,http://localhost:8080/web/index.php/auth/validate,102,0,1
+1768635507545,129,02 - Submit Login-1,200,OK,Timesheet Spike Test Users 1-100,text,true,,3827,187,55,55,http://localhost:8080/web/index.php/auth/login,128,0,1
+1768635507445,238,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-46,text,true,,4371,384,55,55,http://localhost:8080/web/index.php/auth/login,110,0,1
+1768635507445,110,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-46,text,true,,698,197,55,55,http://localhost:8080/web/index.php/time/viewMyTimesheet,110,0,1
+1768635507556,127,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-46,text,true,,3673,187,55,55,http://localhost:8080/web/index.php/auth/login,126,0,0
+1768635507445,249,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-47,text,true,,4383,384,54,54,http://localhost:8080/web/index.php/auth/login,125,0,1
+1768635507445,125,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-47,text,true,,698,197,54,54,http://localhost:8080/web/index.php/time/viewMyTimesheet,125,0,1
+1768635507570,124,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-47,text,true,,3685,187,54,54,http://localhost:8080/web/index.php/auth/login,122,0,0
+1768635507488,215,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-74,text,true,,4382,390,53,53,http://localhost:8080/web/index.php/auth/login,110,0,1
+1768635507488,111,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-74,text,true,,698,203,53,53,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,110,0,1
+1768635507599,104,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-74,text,true,,3684,187,53,53,http://localhost:8080/web/index.php/auth/login,104,0,0
+1768635507469,235,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-72,text,true,,4386,390,53,53,http://localhost:8080/web/index.php/auth/login,130,0,0
+1768635507469,131,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-72,text,true,,698,203,53,53,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,130,0,0
+1768635507600,104,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-72,text,true,,3688,187,53,53,http://localhost:8080/web/index.php/auth/login,103,0,0
+1768635507479,227,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-48,text,true,,4389,384,53,53,http://localhost:8080/web/index.php/auth/login,111,0,0
+1768635507479,111,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-48,text,true,,698,197,53,53,http://localhost:8080/web/index.php/time/viewMyTimesheet,111,0,0
+1768635507590,116,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-48,text,true,,3691,187,53,53,http://localhost:8080/web/index.php/auth/login,116,0,1
+1768635507452,261,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-71,text,true,,4375,390,52,52,http://localhost:8080/web/index.php/auth/login,149,0,0
+1768635507452,149,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-71,text,true,,698,203,52,52,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,149,0,0
+1768635507601,112,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-71,text,true,,3677,187,52,52,http://localhost:8080/web/index.php/auth/login,112,0,1
+1768635507499,226,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-73,text,true,,4392,390,52,52,http://localhost:8080/web/index.php/auth/login,115,0,0
+1768635507499,115,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-73,text,true,,698,203,52,52,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,115,0,0
+1768635507614,111,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-73,text,true,,3694,187,52,52,http://localhost:8080/web/index.php/auth/login,111,0,1
+1768635507525,211,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-50,text,true,,4377,384,52,52,http://localhost:8080/web/index.php/auth/login,120,0,0
+1768635507525,120,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-50,text,true,,698,197,52,52,http://localhost:8080/web/index.php/time/viewMyTimesheet,120,0,0
+1768635507645,91,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-50,text,true,,3679,187,52,52,http://localhost:8080/web/index.php/auth/login,91,0,0
+1768635507525,221,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-75,text,true,,4388,390,51,51,http://localhost:8080/web/index.php/auth/login,121,0,0
+1768635507525,121,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-75,text,true,,698,203,51,51,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,121,0,0
+1768635507646,100,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-75,text,true,,3690,187,51,51,http://localhost:8080/web/index.php/auth/login,99,0,1
+1768635507504,244,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-49,text,true,,4401,384,51,51,http://localhost:8080/web/index.php/auth/login,126,0,1
+1768635507504,126,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-49,text,true,,698,197,51,51,http://localhost:8080/web/index.php/time/viewMyTimesheet,126,0,1
+1768635507631,117,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-49,text,true,,3703,187,51,51,http://localhost:8080/web/index.php/auth/login,117,0,0
+1768635507535,216,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-51,text,true,,4388,384,50,50,http://localhost:8080/web/index.php/auth/login,124,0,0
+1768635507535,124,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-51,text,true,,698,197,50,50,http://localhost:8080/web/index.php/time/viewMyTimesheet,124,0,0
+1768635507659,92,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-51,text,true,,3690,187,50,50,http://localhost:8080/web/index.php/auth/login,90,0,1
+1768635507534,221,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-76,text,true,,4384,390,49,49,http://localhost:8080/web/index.php/auth/login,121,0,0
+1768635507534,122,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-76,text,true,,698,203,49,49,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,121,0,0
+1768635507656,99,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-76,text,true,,3686,187,49,49,http://localhost:8080/web/index.php/auth/login,99,0,0
+1768635507569,198,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-77,text,true,,4390,390,49,49,http://localhost:8080/web/index.php/auth/login,114,0,0
+1768635507569,115,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-77,text,true,,698,203,49,49,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,114,0,0
+1768635507684,83,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-77,text,true,,3692,187,49,49,http://localhost:8080/web/index.php/auth/login,82,0,0
+1768635507565,208,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-52,text,true,,4397,384,49,49,http://localhost:8080/web/index.php/auth/login,107,0,0
+1768635507565,107,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-52,text,true,,698,197,49,49,http://localhost:8080/web/index.php/time/viewMyTimesheet,107,0,0
+1768635507672,101,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-52,text,true,,3699,187,49,49,http://localhost:8080/web/index.php/auth/login,101,0,1
+1768635507570,212,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-79,text,true,,4401,390,48,48,http://localhost:8080/web/index.php/auth/login,122,0,0
+1768635507570,123,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-79,text,true,,698,203,48,48,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,122,0,0
+1768635507693,89,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-79,text,true,,3703,187,48,48,http://localhost:8080/web/index.php/auth/login,88,0,0
+1768635507579,203,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-78,text,true,,4377,390,48,48,http://localhost:8080/web/index.php/auth/login,108,0,1
+1768635507579,108,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-78,text,true,,698,203,48,48,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,108,0,1
+1768635507687,95,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-78,text,true,,3679,187,48,48,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635507612,181,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-80,text,true,,4381,390,48,48,http://localhost:8080/web/index.php/auth/login,94,0,1
+1768635507612,95,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-80,text,true,,698,203,48,48,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,94,0,1
+1768635507707,86,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-80,text,true,,3683,187,48,48,http://localhost:8080/web/index.php/auth/login,86,0,0
+1768635507608,185,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-53,text,true,,4391,384,48,48,http://localhost:8080/web/index.php/auth/login,95,0,0
+1768635507608,98,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-53,text,true,,698,197,48,48,http://localhost:8080/web/index.php/time/viewMyTimesheet,95,0,0
+1768635507706,87,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-53,text,true,,3693,187,48,48,http://localhost:8080/web/index.php/auth/login,87,0,0
+1768635507613,184,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-54,text,true,,4399,384,47,47,http://localhost:8080/web/index.php/auth/login,99,0,0
+1768635507613,100,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-54,text,true,,698,197,47,47,http://localhost:8080/web/index.php/time/viewMyTimesheet,99,0,0
+1768635507713,84,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-54,text,true,,3701,187,47,47,http://localhost:8080/web/index.php/auth/login,84,0,0
+1768635507624,188,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-81,text,true,,4375,390,46,46,http://localhost:8080/web/index.php/auth/login,98,0,0
+1768635507624,99,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-81,text,true,,698,203,46,46,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,98,0,0
+1768635507723,89,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-81,text,true,,3677,187,46,46,http://localhost:8080/web/index.php/auth/login,89,0,0
+1768635507657,165,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-82,text,true,,4391,390,46,46,http://localhost:8080/web/index.php/auth/login,87,0,1
+1768635507657,88,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-82,text,true,,698,203,46,46,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,87,0,1
+1768635507745,77,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-82,text,true,,3693,187,46,46,http://localhost:8080/web/index.php/auth/login,76,0,0
+1768635507659,170,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-55,text,true,,4389,384,46,46,http://localhost:8080/web/index.php/auth/login,88,0,1
+1768635507659,88,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-55,text,true,,698,197,46,46,http://localhost:8080/web/index.php/time/viewMyTimesheet,88,0,1
+1768635507747,82,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-55,text,true,,3691,187,46,46,http://localhost:8080/web/index.php/auth/login,82,0,1
+1768635507668,162,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-83,text,true,,4393,390,46,46,http://localhost:8080/web/index.php/auth/login,76,0,1
+1768635507668,78,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-83,text,true,,698,203,46,46,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,76,0,1
+1768635507746,84,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-83,text,true,,3695,187,46,46,http://localhost:8080/web/index.php/auth/login,83,0,0
+1768635507685,149,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-84,text,true,,4384,390,45,45,http://localhost:8080/web/index.php/auth/login,75,0,0
+1768635507685,75,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-84,text,true,,698,203,45,45,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,75,0,0
+1768635507760,74,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-84,text,true,,3686,187,45,45,http://localhost:8080/web/index.php/auth/login,74,0,1
+1768635507679,159,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-56,text,true,,4374,384,45,45,http://localhost:8080/web/index.php/auth/login,77,0,1
+1768635507679,77,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-56,text,true,,698,197,45,45,http://localhost:8080/web/index.php/time/viewMyTimesheet,77,0,1
+1768635507757,81,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-56,text,true,,3676,187,45,45,http://localhost:8080/web/index.php/auth/login,80,0,0
+1768635507711,147,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-86,text,true,,4385,390,44,44,http://localhost:8080/web/index.php/auth/login,76,0,1
+1768635507711,77,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-86,text,true,,698,203,44,44,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,76,0,1
+1768635507788,70,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-86,text,true,,3687,187,44,44,http://localhost:8080/web/index.php/auth/login,70,0,0
+1768635507729,138,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-59,text,true,,4397,384,44,44,http://localhost:8080/web/index.php/auth/login,70,0,1
+1768635507729,72,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-59,text,true,,698,197,44,44,http://localhost:8080/web/index.php/time/viewMyTimesheet,70,0,1
+1768635507801,66,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-59,text,true,,3699,187,44,44,http://localhost:8080/web/index.php/auth/login,66,0,0
+1768635507707,165,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-58,text,true,,4374,384,43,43,http://localhost:8080/web/index.php/auth/login,80,0,0
+1768635507707,81,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-58,text,true,,698,197,43,43,http://localhost:8080/web/index.php/time/viewMyTimesheet,80,0,0
+1768635507788,84,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-58,text,true,,3676,187,43,43,http://localhost:8080/web/index.php/auth/login,82,0,0
+1768635507705,167,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-85,text,true,,4375,390,43,43,http://localhost:8080/web/index.php/auth/login,81,0,1
+1768635507705,81,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-85,text,true,,698,203,43,43,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,81,0,1
+1768635507786,86,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-85,text,true,,3677,187,43,43,http://localhost:8080/web/index.php/auth/login,85,0,0
+1768635507732,144,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-87,text,true,,4385,390,42,42,http://localhost:8080/web/index.php/auth/login,75,0,0
+1768635507732,76,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-87,text,true,,698,203,42,42,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,75,0,0
+1768635507808,68,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-87,text,true,,3687,187,42,42,http://localhost:8080/web/index.php/auth/login,67,0,0
+1768635507719,160,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-57,text,true,,4374,384,42,42,http://localhost:8080/web/index.php/auth/login,93,0,1
+1768635507719,98,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-57,text,true,,698,197,42,42,http://localhost:8080/web/index.php/time/viewMyTimesheet,93,0,1
+1768635507817,62,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-57,text,true,,3676,187,42,42,http://localhost:8080/web/index.php/auth/login,62,0,0
+1768635507775,107,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-61,text,true,,4376,384,41,41,http://localhost:8080/web/index.php/auth/login,58,0,0
+1768635507775,58,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-61,text,true,,698,197,41,41,http://localhost:8080/web/index.php/time/viewMyTimesheet,58,0,0
+1768635507833,49,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-61,text,true,,3678,187,41,41,http://localhost:8080/web/index.php/auth/login,48,0,0
+1768635507758,126,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-60,text,true,,4400,384,40,40,http://localhost:8080/web/index.php/auth/login,69,0,0
+1768635507758,69,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-60,text,true,,698,197,40,40,http://localhost:8080/web/index.php/time/viewMyTimesheet,69,0,0
+1768635507828,56,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-60,text,true,,3702,187,40,40,http://localhost:8080/web/index.php/auth/login,56,0,0
+1768635507782,108,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-89,text,true,,4388,390,39,39,http://localhost:8080/web/index.php/auth/login,55,0,1
+1768635507782,56,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-89,text,true,,698,203,39,39,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,55,0,1
+1768635507838,52,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-89,text,true,,3690,187,39,39,http://localhost:8080/web/index.php/auth/login,51,0,0
+1768635507785,119,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-88,text,true,,4401,390,39,39,http://localhost:8080/web/index.php/auth/login,53,0,0
+1768635507785,53,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-88,text,true,,698,203,39,39,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,53,0,0
+1768635507839,65,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-88,text,true,,3703,187,39,39,http://localhost:8080/web/index.php/auth/login,64,0,0
+1768635507801,121,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-62,text,true,,4395,384,39,39,http://localhost:8080/web/index.php/auth/login,57,0,0
+1768635507801,58,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-62,text,true,,698,197,39,39,http://localhost:8080/web/index.php/time/viewMyTimesheet,57,0,0
+1768635507859,63,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-62,text,true,,3697,187,39,39,http://localhost:8080/web/index.php/auth/login,60,0,0
+1768635507808,117,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-63,text,true,,4393,384,38,38,http://localhost:8080/web/index.php/auth/login,67,0,0
+1768635507808,68,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-63,text,true,,698,197,38,38,http://localhost:8080/web/index.php/time/viewMyTimesheet,67,0,0
+1768635507876,49,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-63,text,true,,3695,187,38,38,http://localhost:8080/web/index.php/auth/login,48,0,0
+1768635507804,123,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-90,text,true,,4386,390,37,37,http://localhost:8080/web/index.php/auth/login,65,0,0
+1768635507804,67,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-90,text,true,,698,203,37,37,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,65,0,0
+1768635507871,56,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-90,text,true,,3688,187,37,37,http://localhost:8080/web/index.php/auth/login,54,0,0
+1768635507843,102,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-92,text,true,,4391,390,37,37,http://localhost:8080/web/index.php/auth/login,56,0,0
+1768635507843,57,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-92,text,true,,698,203,37,37,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,56,0,0
+1768635507900,45,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-92,text,true,,3693,187,37,37,http://localhost:8080/web/index.php/auth/login,44,0,0
+1768635507840,106,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-91,text,true,,4387,390,37,37,http://localhost:8080/web/index.php/auth/login,58,0,0
+1768635507840,59,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-91,text,true,,698,203,37,37,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,58,0,0
+1768635507899,47,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-91,text,true,,3689,187,37,37,http://localhost:8080/web/index.php/auth/login,46,0,0
+1768635507850,108,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-93,text,true,,4399,390,37,37,http://localhost:8080/web/index.php/auth/login,56,0,0
+1768635507850,57,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-93,text,true,,698,203,37,37,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,56,0,0
+1768635507908,50,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-93,text,true,,3701,187,37,37,http://localhost:8080/web/index.php/auth/login,50,0,0
+1768635507855,104,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-64,text,true,,4394,384,37,37,http://localhost:8080/web/index.php/auth/login,55,0,1
+1768635507855,56,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-64,text,true,,698,197,37,37,http://localhost:8080/web/index.php/time/viewMyTimesheet,55,0,1
+1768635507911,48,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-64,text,true,,3696,187,37,37,http://localhost:8080/web/index.php/auth/login,47,0,0
+1768635507858,115,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-65,text,true,,4397,384,36,36,http://localhost:8080/web/index.php/auth/login,57,0,0
+1768635507858,61,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-65,text,true,,698,197,36,36,http://localhost:8080/web/index.php/time/viewMyTimesheet,57,0,0
+1768635507919,54,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-65,text,true,,3699,187,36,36,http://localhost:8080/web/index.php/auth/login,53,0,0
+1768635507893,91,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-95,text,true,,4386,390,35,35,http://localhost:8080/web/index.php/auth/login,46,0,0
+1768635507893,46,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-95,text,true,,698,203,35,35,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,46,0,0
+1768635507940,44,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-95,text,true,,3688,187,35,35,http://localhost:8080/web/index.php/auth/login,43,0,0
+1768635507902,82,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-66,text,true,,4372,384,35,35,http://localhost:8080/web/index.php/auth/login,43,0,0
+1768635507902,43,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-66,text,true,,698,197,35,35,http://localhost:8080/web/index.php/time/viewMyTimesheet,43,0,0
+1768635507945,39,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-66,text,true,,3674,187,35,35,http://localhost:8080/web/index.php/auth/login,38,0,1
+1768635507901,86,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-96,text,true,,4379,390,34,34,http://localhost:8080/web/index.php/auth/login,41,0,0
+1768635507901,42,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-96,text,true,,698,203,34,34,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,41,0,0
+1768635507943,44,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-96,text,true,,3681,187,34,34,http://localhost:8080/web/index.php/auth/login,44,0,0
+1768635507900,89,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-67,text,true,,4401,384,34,34,http://localhost:8080/web/index.php/auth/login,44,0,0
+1768635507900,44,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-67,text,true,,698,197,34,34,http://localhost:8080/web/index.php/time/viewMyTimesheet,44,0,0
+1768635507944,45,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-67,text,true,,3703,187,34,34,http://localhost:8080/web/index.php/auth/login,45,0,1
+1768635507896,102,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-94,text,true,,4382,390,33,33,http://localhost:8080/web/index.php/auth/login,54,0,0
+1768635507896,54,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-94,text,true,,698,203,33,33,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,54,0,0
+1768635507951,47,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-94,text,true,,3684,187,33,33,http://localhost:8080/web/index.php/auth/login,47,0,0
+1768635507917,85,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-97,text,true,,4387,390,33,33,http://localhost:8080/web/index.php/auth/login,43,0,1
+1768635507917,44,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-97,text,true,,698,203,33,33,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,43,0,1
+1768635507961,41,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-97,text,true,,3689,187,33,33,http://localhost:8080/web/index.php/auth/login,41,0,0
+1768635507952,65,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-99,text,true,,4399,390,33,33,http://localhost:8080/web/index.php/auth/login,33,0,1
+1768635507952,33,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-99,text,true,,698,203,33,33,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,33,0,1
+1768635507985,32,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-99,text,true,,3701,187,33,33,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635507945,74,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-68,text,true,,4389,384,33,33,http://localhost:8080/web/index.php/auth/login,38,0,0
+1768635507945,39,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-68,text,true,,698,197,33,33,http://localhost:8080/web/index.php/time/viewMyTimesheet,38,0,0
+1768635507984,35,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-68,text,true,,3691,187,33,33,http://localhost:8080/web/index.php/auth/login,34,0,1
+1768635507958,73,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-69,text,true,,4387,384,32,32,http://localhost:8080/web/index.php/auth/login,37,0,0
+1768635507958,38,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-69,text,true,,698,197,32,32,http://localhost:8080/web/index.php/time/viewMyTimesheet,37,0,0
+1768635507996,35,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-69,text,true,,3689,187,32,32,http://localhost:8080/web/index.php/auth/login,35,0,0
+1768635507967,68,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-70,text,true,,4387,384,31,31,http://localhost:8080/web/index.php/auth/login,35,0,0
+1768635507967,36,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-70,text,true,,698,197,31,31,http://localhost:8080/web/index.php/time/viewMyTimesheet,35,0,0
+1768635508003,32,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-70,text,true,,3689,187,31,31,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635507963,73,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-98,text,true,,4377,390,30,30,http://localhost:8080/web/index.php/auth/login,32,0,0
+1768635507963,33,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-98,text,true,,698,203,30,30,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,32,0,0
+1768635507996,40,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-98,text,true,,3679,187,30,30,http://localhost:8080/web/index.php/auth/login,40,0,0
+1768635507974,71,03 - Navigate to Timesheet,200,OK,Timesheet Spike Test Users 1-100,text,true,,4396,390,30,30,http://localhost:8080/web/index.php/auth/login,38,0,0
+1768635507974,38,03 - Navigate to Timesheet-0,302,Found,Timesheet Spike Test Users 1-100,text,true,,698,203,30,30,http://localhost:8080/web/index.php/time/viewEmployeeTimesheet,38,0,0
+1768635508013,32,03 - Navigate to Timesheet-1,200,OK,Timesheet Spike Test Users 1-100,text,true,,3698,187,30,30,http://localhost:8080/web/index.php/auth/login,32,0,0
+1768635508014,56,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-71,text,true,,4382,384,30,30,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635508014,27,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-71,text,true,,698,197,30,30,http://localhost:8080/web/index.php/time/viewMyTimesheet,27,0,0
+1768635508041,29,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-71,text,true,,3684,187,30,30,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635508004,66,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-72,text,true,,4381,384,30,30,http://localhost:8080/web/index.php/auth/login,34,0,0
+1768635508004,34,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-72,text,true,,698,197,30,30,http://localhost:8080/web/index.php/time/viewMyTimesheet,34,0,0
+1768635508038,32,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-72,text,true,,3683,187,30,30,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635508003,69,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-74,text,true,,4377,384,28,28,http://localhost:8080/web/index.php/auth/login,36,0,0
+1768635508003,36,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-74,text,true,,698,197,28,28,http://localhost:8080/web/index.php/time/viewMyTimesheet,36,0,0
+1768635508040,32,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-74,text,true,,3679,187,28,28,http://localhost:8080/web/index.php/auth/login,32,0,0
+1768635508026,63,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-73,text,true,,4398,384,27,27,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508026,30,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-73,text,true,,698,197,27,27,http://localhost:8080/web/index.php/time/viewMyTimesheet,30,0,0
+1768635508056,33,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-73,text,true,,3700,187,27,27,http://localhost:8080/web/index.php/auth/login,32,0,1
+1768635508046,55,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-75,text,true,,4378,384,26,26,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635508046,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-75,text,true,,698,197,26,26,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635508071,30,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-75,text,true,,3680,187,26,26,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508055,62,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-76,text,true,,4398,384,25,25,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635508055,28,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-76,text,true,,698,197,25,25,http://localhost:8080/web/index.php/time/viewMyTimesheet,28,0,1
+1768635508083,34,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-76,text,true,,3700,187,25,25,http://localhost:8080/web/index.php/auth/login,33,0,1
+1768635508067,54,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-77,text,true,,4387,384,24,24,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635508067,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-77,text,true,,698,197,24,24,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635508092,29,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-77,text,true,,3689,187,24,24,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508083,54,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-78,text,true,,4400,384,23,23,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508083,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-78,text,true,,698,197,23,23,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508107,30,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-78,text,true,,3702,187,23,23,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508082,56,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-79,text,true,,4387,384,22,22,http://localhost:8080/web/index.php/auth/login,26,0,1
+1768635508082,26,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-79,text,true,,698,197,22,22,http://localhost:8080/web/index.php/time/viewMyTimesheet,26,0,1
+1768635508108,30,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-79,text,true,,3689,187,22,22,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508093,61,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-80,text,true,,4378,384,21,21,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635508093,28,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-80,text,true,,698,197,21,21,http://localhost:8080/web/index.php/time/viewMyTimesheet,28,0,1
+1768635508121,33,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-80,text,true,,3680,187,21,21,http://localhost:8080/web/index.php/auth/login,33,0,0
+1768635508113,57,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-81,text,true,,4385,384,20,20,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508113,29,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-81,text,true,,698,197,20,20,http://localhost:8080/web/index.php/time/viewMyTimesheet,28,0,0
+1768635508142,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-81,text,true,,3687,187,20,20,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508130,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-83,text,true,,4381,384,19,19,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508130,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-83,text,true,,698,197,19,19,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508155,27,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-83,text,true,,3683,187,19,19,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635508122,61,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-82,text,true,,4396,384,18,18,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635508122,31,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-82,text,true,,698,197,18,18,http://localhost:8080/web/index.php/time/viewMyTimesheet,31,0,0
+1768635508153,30,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-82,text,true,,3698,187,18,18,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508135,59,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-84,text,true,,4382,384,17,17,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508135,28,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-84,text,true,,698,197,17,17,http://localhost:8080/web/index.php/time/viewMyTimesheet,28,0,0
+1768635508163,31,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-84,text,true,,3684,187,17,17,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635508159,53,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-86,text,true,,4398,384,16,16,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508159,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-86,text,true,,698,197,16,16,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508183,29,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-86,text,true,,3700,187,16,16,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635508172,54,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-85,text,true,,4399,384,15,15,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635508172,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-85,text,true,,698,197,15,15,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635508197,29,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-85,text,true,,3701,187,15,15,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508177,53,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-87,text,true,,4386,384,14,14,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508177,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-87,text,true,,698,197,14,14,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508202,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-87,text,true,,3688,187,14,14,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508190,53,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-89,text,true,,4395,384,13,13,http://localhost:8080/web/index.php/auth/login,25,0,0
+1768635508190,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-89,text,true,,698,197,13,13,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,0
+1768635508215,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-89,text,true,,3697,187,13,13,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508204,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-88,text,true,,4390,384,12,12,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508204,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-88,text,true,,698,197,12,12,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508228,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-88,text,true,,3692,187,12,12,http://localhost:8080/web/index.php/auth/login,27,0,1
+1768635508227,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-90,text,true,,4386,384,11,11,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508227,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-90,text,true,,698,197,11,11,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508251,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-90,text,true,,3688,187,11,11,http://localhost:8080/web/index.php/auth/login,28,0,1
+1768635508246,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-91,text,true,,4396,384,10,10,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508246,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-92,text,true,,4390,384,10,10,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635508246,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-91,text,true,,698,197,10,10,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508246,23,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-92,text,true,,698,197,10,10,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635508270,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-91,text,true,,3698,187,10,10,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508269,29,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-92,text,true,,3692,187,10,10,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635508259,55,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-93,text,true,,4383,384,8,8,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635508259,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-93,text,true,,698,197,8,8,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635508283,31,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-93,text,true,,3685,187,8,8,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508284,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-95,text,true,,4402,384,7,7,http://localhost:8080/web/index.php/auth/login,23,0,0
+1768635508284,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-95,text,true,,698,197,7,7,http://localhost:8080/web/index.php/time/viewMyTimesheet,23,0,0
+1768635508308,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-95,text,true,,3704,187,7,7,http://localhost:8080/web/index.php/auth/login,28,0,0
+1768635508288,57,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-96,text,true,,4380,384,6,6,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635508288,26,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-96,text,true,,698,197,6,6,http://localhost:8080/web/index.php/time/viewMyTimesheet,26,0,0
+1768635508314,31,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-96,text,true,,3682,187,6,6,http://localhost:8080/web/index.php/auth/login,31,0,0
+1768635508299,57,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-94,text,true,,4377,384,5,5,http://localhost:8080/web/index.php/auth/login,26,0,0
+1768635508299,27,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-94,text,true,,698,197,5,5,http://localhost:8080/web/index.php/time/viewMyTimesheet,26,0,0
+1768635508326,30,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-94,text,true,,3679,187,5,5,http://localhost:8080/web/index.php/auth/login,30,0,0
+1768635508303,58,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-97,text,true,,4379,384,4,4,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635508303,29,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-97,text,true,,698,197,4,4,http://localhost:8080/web/index.php/time/viewMyTimesheet,29,0,0
+1768635508332,29,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-97,text,true,,3681,187,4,4,http://localhost:8080/web/index.php/auth/login,29,0,0
+1768635508317,51,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-99,text,true,,4374,384,3,3,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508317,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-99,text,true,,698,197,3,3,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508341,27,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-99,text,true,,3676,187,3,3,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635508336,53,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-98,text,true,,4386,384,2,2,http://localhost:8080/web/index.php/auth/login,25,0,1
+1768635508336,25,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-98,text,true,,698,197,2,2,http://localhost:8080/web/index.php/time/viewMyTimesheet,25,0,1
+1768635508362,27,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-98,text,true,,3688,187,2,2,http://localhost:8080/web/index.php/auth/login,27,0,0
+1768635508346,52,04 - View My Timesheet,200,OK,Timesheet Spike Test Users 1-100,text,true,,4387,384,1,1,http://localhost:8080/web/index.php/auth/login,24,0,0
+1768635508346,24,04 - View My Timesheet-0,302,Found,Timesheet Spike Test Users 1-100,text,true,,698,197,1,1,http://localhost:8080/web/index.php/time/viewMyTimesheet,24,0,0
+1768635508370,28,04 - View My Timesheet-1,200,OK,Timesheet Spike Test Users 1-100,text,true,,3689,187,1,1,http://localhost:8080/web/index.php/auth/login,28,0,0

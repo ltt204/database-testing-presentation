@@ -1,0 +1,40 @@
+
+================================================================================
+  OrangeHRM API Testing Suite
+================================================================================
+  Base URL: http://localhost:8080
+  API Path: /web/index.php/api/v2
+================================================================================
+
+🎯 Running ALL test cases
+
+📊 HTML report: ./results/test_report_20260117_170910.html
+
+🚀 Starting test execution...
+--------------------------------------------------------------------------------
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+=================================== FAILURES ===================================
+[31m[1m__________ TestNegativeCases.test_neg_010_invalid_employee_id_format ___________[0m
+[1m[31mtest_timesheets_pytest.py[0m:248: in test_neg_010_invalid_employee_id_format
+    [0m[94massert[39;49;00m response.status_code == [94m404[39;49;00m[90m[39;49;00m
+[1m[31mE   assert 422 == 404[0m
+[1m[31mE    +  where 422 = <Response [422]>.status_code[0m
+[31m[1m____________ TestNegativeCases.test_neg_012_delete_invalid_customer ____________[0m
+[1m[31mtest_timesheets_pytest.py[0m:265: in test_neg_012_delete_invalid_customer
+    [0m[94massert[39;49;00m response.status_code == [94m404[39;49;00m[90m[39;49;00m
+[1m[31mE   assert 405 == 404[0m
+[1m[31mE    +  where 405 = <Response [405]>.status_code[0m
+- Generated html report: file:///home/tien/projects/school/testing-67/api-testing/results/test_report_20260117_170910.html -
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test_timesheets_pytest.py::[1mTestNegativeCases::test_neg_010_invalid_employee_id_format[0m - assert 422 == 404
+[31mFAILED[0m test_timesheets_pytest.py::[1mTestNegativeCases::test_neg_012_delete_invalid_customer[0m - assert 405 == 404
+[31m[31m[1m2 failed[0m, [32m32 passed[0m[31m in 1.15s[0m[0m
+
+--------------------------------------------------------------------------------
+
+⚠️  Some tests failed. Check the output above.
+
+================================================================================
+  Completed at 2026-01-17 17:09:11
+================================================================================
+

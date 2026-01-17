@@ -1,0 +1,41 @@
+TC_ID,Loại Test,Tên Test Case,Mô tả,Endpoint,Method,Input Data,Expected Result,Actual Result,Status,Ghi chú
+TC-POS-001,Positive,List all timesheets,Lấy danh sách tất cả bảng chấm công,/time/timesheets,GET,None,Status 200 + data array,Status 200 + data array,PASS,
+TC-POS-002,Positive,List with limit,Lấy danh sách với giới hạn số lượng,/time/timesheets?limit=5,GET,limit=5,Status 200 + max 5 items,Status 200 + ≤5 items,PASS,
+TC-POS-003,Positive,List with offset,Lấy danh sách với phân trang,/time/timesheets?limit=5&offset=0,GET,limit=5 offset=0,Status 200 + data array,Status 200 + data array,PASS,
+TC-POS-004,Positive,Get employee timesheets,Lấy bảng chấm công của nhân viên cụ thể,/time/employees/1/timesheets,GET,empId=1,Status 200 + data,Status 200 + data,PASS,
+TC-POS-005,Positive,Get timesheet period,Lấy cấu hình chu kỳ chấm công,/time/time-sheet-period,GET,None,Status 200 + startDay as integer,Status 200 + startDay as string,FAIL,BUG-002: startDay trả về string thay vì integer
+TC-POS-006,Positive,List customers,Lấy danh sách khách hàng,/time/customers,GET,None,Status 200 + data array,Status 200 + data array,PASS,
+TC-POS-007,Positive,List customers with limit,Lấy danh sách khách hàng với giới hạn,/time/customers?limit=5,GET,limit=5,Status 200 + max 5 items,Status 200 + ≤5 items,PASS,
+TC-POS-008,Positive,Get customer by ID,Lấy thông tin khách hàng theo ID,/time/customers/1,GET,customerId=1,Status 200 + customer data,Status 200 + customer data,PASS,
+TC-POS-009,Positive,List projects,Lấy danh sách dự án,/time/projects,GET,None,Status 200 + data with customer relationship,Status 200 but missing customer field,FAIL,BUG-003: Projects list thiếu customer relationship
+TC-POS-010,Positive,List projects with limit,Lấy danh sách dự án với giới hạn,/time/projects?limit=5,GET,limit=5,Status 200 + max 5 items,Status 200 + ≤5 items,PASS,
+TC-POS-011,Positive,Get project by ID,Lấy thông tin dự án theo ID,/time/projects/1,GET,projectId=1,Status 200 + project with customer,Status 200 + project with customer,PASS,Has customer but list endpoint doesn't
+TC-POS-012,Positive,Create customer,Tạo khách hàng mới với dữ liệu hợp lệ,/time/customers,POST,{"name": "Test" "description": "Test"},Status 200 + created customer,Status 200 + created customer,PASS,
+TC-POS-013,Positive,Create project,Tạo dự án mới với dữ liệu hợp lệ,/time/projects,POST,{"name": "Test" "customerId": 1},Status 200 + created project,Status 200 + created project,PASS,
+TC-POS-014,Positive,Update customer,Cập nhật thông tin khách hàng,/time/customers/1,PUT,{"name": "Updated" "description": "Updated"},Status 200 + updated customer,Status 200 + updated customer,PASS,
+TC-NEG-001,Negative,Invalid employee timesheets,Lấy chấm công của nhân viên không tồn tại,/time/employees/99999/timesheets,GET,empId=99999,Status 404 Not Found,Status 422 Unprocessable Entity,FAIL,BUG-001: API trả về 422 thay vì 404 (inconsistent với customers/projects)
+TC-NEG-002,Negative,Invalid customer ID,Lấy khách hàng không tồn tại,/time/customers/99999,GET,customerId=99999,Status 404,Status 404,PASS,
+TC-NEG-003,Negative,Invalid project ID,Lấy dự án không tồn tại,/time/projects/99999,GET,projectId=99999,Status 404,Status 404,PASS,
+TC-NEG-004,Negative,Create customer missing name,Tạo khách hàng thiếu trường name,/time/customers,POST,{"description": "Test"},Status 422,Status 422,PASS,
+TC-NEG-005,Negative,Create customer empty name,Tạo khách hàng với name rỗng,/time/customers,POST,{"name": "" "description": "Test"},Status 422,Status 422,PASS,
+TC-NEG-006,Negative,Create customer long name,Tạo khách hàng với name quá dài (100 chars),/time/customers,POST,{"name": "A"*100},Status 422,Status 422,PASS,
+TC-NEG-007,Negative,Create project missing customer,Tạo dự án không có customerId,/time/projects,POST,{"name": "Test Project"},Status 422,Status 422,PASS,
+TC-NEG-008,Negative,Create project invalid customer,Tạo dự án với customerId không tồn tại,/time/projects,POST,{"name": "Test" "customerId": 99999},Status 422,Status 422,PASS,
+TC-NEG-009,Negative,Negative limit,Yêu cầu danh sách với limit âm,/time/timesheets?limit=-5,GET,limit=-5,Status 422,Status 422,PASS,
+TC-NEG-010,Negative,Negative offset,Yêu cầu danh sách với offset âm,/time/customers?offset=-10,GET,offset=-10,Status 422,Status 422,PASS,
+TC-NEG-011,Negative,Invalid employee ID format,Yêu cầu với employee ID không hợp lệ,/time/employees/invalid/timesheets,GET,empId=invalid,Status 422,Status 422,PASS,
+TC-NEG-012,Negative,Update invalid customer,Cập nhật khách hàng không tồn tại,/time/customers/99999,PUT,{"name": "Updated"},Status 404,Status 404,PASS,
+TC-NEG-013,Negative,Create project empty name,Tạo dự án với name rỗng,/time/projects,POST,{"name": "" "customerId": 1},Status 422,Status 422,PASS,
+TC-NEG-014,Negative,Exceed max limit,Yêu cầu với limit quá lớn (10000),/time/customers?limit=10000,GET,limit=10000,Status 422 (reject),Status 200 (accepts),FAIL,BUG-004: API không validate limit quá lớn - DoS vulnerability
+TC-SEC-001,Security,No auth list timesheets,Truy cập endpoint không có authentication,/time/timesheets,GET,No cookie,Status 401,Status 401,PASS,Authentication bypass test
+TC-SEC-002,Security,No auth list customers,Truy cập danh sách khách hàng không xác thực,/time/customers,GET,No cookie,Status 401,Status 401,PASS,Authentication bypass test
+TC-SEC-003,Security,No auth create customer,Tạo khách hàng không xác thực,/time/customers,POST,No cookie + {"name": "Test"},Status 401,Status 401,PASS,Authentication bypass test
+TC-SEC-004,Security,No auth list projects,Truy cập projects không xác thực,/time/projects,GET,No cookie,Status 401,Status 401,PASS,Authentication bypass test
+TC-SEC-005,Security,SQL injection customer name,Tiêm SQL trong trường name,/time/customers,POST,{"name": "'; DROP TABLE customers; --"},Status 200 or 422 (sanitized),Status 200/422,PASS,SQL Injection test - protected
+TC-SEC-006,Security,XSS attack customer name,Tiêm script XSS trong name,/time/customers,POST,{"name": "<script>alert('XSS')</script>"},Status 200 or 422 (sanitized),Status 200/422,PASS,XSS test - sanitized
+TC-SEC-007,Security,SQL injection project name,Tiêm SQL trong tên dự án,/time/projects,POST,{"name": "' OR '1'='1" "customerId": 1},Status 200 or 422 (sanitized),Status 200/422,PASS,SQL Injection test - protected
+TC-SEC-008,Security,Command injection,Tiêm OS command,/time/customers,POST,{"name": "; ls -la"},Status 200 or 422 (sanitized),Status 200/422,PASS,Command injection test - protected
+TC-SEC-009,Security,HTTP verb tampering,Sử dụng PATCH method không được hỗ trợ,/time/timesheets,PATCH,{"test": "data"},Status 405,Status 405,PASS,HTTP verb tampering test
+TC-SEC-010,Security,Oversized payload,Gửi payload quá lớn (100KB),/time/customers,POST,{"description": "A"*100000},Status 200/400/422 (handled),Status 200/400/422,PASS,DoS attack test - handled gracefully
+TC-SEC-011,Security,Path traversal,Tấn công path traversal để truy cập admin endpoints,/time/customers/../../admin/users,GET,Path traversal string,Status 403/404 (blocked),Status 200 (exposes admin data),FAIL,BUG-005 (CRITICAL): Path traversal vulnerability - lộ 188 users
+TC-SEC-012,Security,DELETE method not allowed,Verify DELETE không được phép,/time/customers/1,DELETE,None,Status 405,Status 405,PASS,Authorization test - DELETE properly restricted

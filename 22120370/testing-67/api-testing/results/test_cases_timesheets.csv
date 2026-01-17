@@ -1,0 +1,209 @@
+Feature ID,Test case ID,Test Description,Test Steps,Expected Result,Actual Result,Status,Tester,Tested Date,Remark
+TIME-001,TC-POS-001,List all timesheets,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/timesheets
+3. Verify response","- Status Code: 200 OK
+- Response contains list of timesheets
+- Response structure: {data: [], meta: {}, rels: []}","Status Code: 200 OK
+Response contains timesheets array",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-001,TC-POS-002,List timesheets with limit,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/timesheets?limit=5
+3. Verify response contains max 5 records","- Status Code: 200 OK
+- Response contains max 5 timesheets
+- Meta field shows total count","Status Code: 200 OK
+Response limited to 5 records",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-001,TC-POS-003,List timesheets with offset,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/timesheets?limit=5&offset=5
+3. Verify pagination works","- Status Code: 200 OK
+- Response skips first 5 records
+- Returns next 5 records","Status Code: 200 OK
+Pagination working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-002,TC-POS-004,Get employee timesheets,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/employees/1/timesheets
+3. Verify response","- Status Code: 200 OK
+- Response contains timesheets for employee ID=1","Status Code: 200 OK
+Employee timesheets returned",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-003,TC-POS-005,Get timesheet period configuration,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/time-sheet-period
+3. Verify response contains startDay field as integer","- Status Code: 200 OK
+- Response contains startDay as integer (e.g. 1)
+- Type should be <class 'int'>","Status Code: 200 OK
+startDay returned as string ""1"" instead of integer 1",FAIL,Nguyễn Bùi Vương Tiễn,17/01/2026,BUG-002: Data type inconsistency
+TIME-004,TC-POS-006,List customers,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/customers
+3. Verify response","- Status Code: 200 OK
+- Response contains list of customers","Status Code: 200 OK
+Customers list returned",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-POS-007,List customers with pagination,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/customers?limit=10&offset=0
+3. Verify pagination","- Status Code: 200 OK
+- Response contains max 10 customers","Status Code: 200 OK
+Pagination working",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-POS-008,Get customer by ID,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/customers/1
+3. Verify response","- Status Code: 200 OK
+- Response contains customer with ID=1","Status Code: 200 OK
+Customer details returned",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-POS-009,List projects,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/projects
+3. Verify response includes customer relationship","- Status Code: 200 OK
+- Each project includes customer object
+- Customer: {id, name}","Status Code: 200 OK
+Projects returned but missing customer relationship",FAIL,Nguyễn Bùi Vương Tiễn,17/01/2026,BUG-003: N+1 query problem
+TIME-005,TC-POS-010,List projects with pagination,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/projects?limit=10
+3. Verify pagination","- Status Code: 200 OK
+- Response limited to 10 records","Status Code: 200 OK
+Pagination working",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-POS-011,Get project by ID,"1. Login to OrangeHRM
+2. Send GET request to /api/v2/time/projects/1
+3. Verify customer relationship included","- Status Code: 200 OK
+- Project includes customer object","Status Code: 200 OK
+Customer included in detail endpoint only",FAIL,Nguyễn Bùi Vương Tiễn,17/01/2026,BUG-003: Inconsistent between list and detail
+TIME-004,TC-POS-012,Create customer,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/customers with valid data: {name: ""Test Customer"", description: ""Test""}
+3. Verify response","- Status Code: 200 OK
+- Response contains created customer
+- Customer has valid ID","Status Code: 200 OK
+Customer created successfully",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-POS-013,Create project,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/projects with valid data: {name: ""Test Project"", customerId: 1}
+3. Verify response","- Status Code: 200 OK
+- Response contains created project
+- Project has valid ID","Status Code: 200 OK
+Project created successfully",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-POS-014,Update customer,"1. Login to OrangeHRM
+2. Send PUT to /api/v2/time/customers/1 with updated data
+3. Verify response","- Status Code: 200 OK
+- Response shows updated customer data","Status Code: 200 OK
+Customer updated successfully",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-002,TC-NEG-001,Get nonexistent employee timesheets,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/employees/99999/timesheets
+3. Verify error handling","- Status Code: 404 Not Found
+- Error message: Employee Not Found","Status Code: 422 Unprocessable Entity
+Error message: Invalid Parameter",FAIL,Nguyễn Bùi Vương Tiễn,17/01/2026,BUG-001: API inconsistency
+TIME-004,TC-NEG-002,Get nonexistent customer,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/customers/99999
+3. Verify error handling","- Status Code: 404 Not Found
+- Error message: Customer Not Found","Status Code: 404 Not Found
+Correct error handling",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-NEG-003,Get nonexistent project,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/projects/99999
+3. Verify error handling","- Status Code: 404 Not Found
+- Error message: Project Not Found","Status Code: 404 Not Found
+Correct error handling",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-NEG-004,Create customer missing name,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/customers with missing name field: {}
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates name is required","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-NEG-005,Create customer empty name,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/customers with empty name: {name: """"}
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates name cannot be empty","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-NEG-006,Create customer name too long,"1. Login to OrangeHRM
+2. Send POST with name > 50 characters (100 chars)
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates name exceeds max length","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-NEG-007,Create project missing customer,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/projects without customerId
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates customerId is required","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-NEG-008,Create project invalid customer,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/projects with customerId=99999
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates customer does not exist","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-001,TC-NEG-009,List with negative limit,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/timesheets?limit=-5
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates limit must be positive","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-001,TC-NEG-010,List with negative offset,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/timesheets?offset=-10
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates offset must be non-negative","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-002,TC-NEG-011,Invalid employee ID format,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/employees/invalid/timesheets
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates invalid ID format","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-004,TC-NEG-012,Update nonexistent customer,"1. Login to OrangeHRM
+2. Send PUT to /api/v2/time/customers/99999 with valid data
+3. Verify error handling","- Status Code: 404 Not Found
+- Error message: Customer Not Found","Status Code: 404
+Correct error handling",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-005,TC-NEG-013,Create project empty name,"1. Login to OrangeHRM
+2. Send POST with empty project name: {name: """", customerId: 1}
+3. Verify validation","- Status Code: 422 Unprocessable Entity
+- Error message indicates name cannot be empty","Status Code: 422
+Validation working correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+TIME-001,TC-NEG-014,Exceed max limit,"1. Login to OrangeHRM
+2. Send GET to /api/v2/time/timesheets?limit=10000
+3. Verify limit validation","- Status Code: 422 Unprocessable Entity
+- Error message: Limit exceeds maximum allowed value","Status Code: 200 OK
+API accepts large limit value without validation",FAIL,Nguyễn Bùi Vương Tiễn,17/01/2026,BUG-004: DoS vulnerability
+SEC-001,TC-SEC-001,No auth list timesheets,"1. Do NOT login
+2. Send GET to /api/v2/time/timesheets without authentication cookie
+3. Verify access denied","- Status Code: 401 Unauthorized
+- Error message indicates authentication required","Status Code: 401
+Authentication enforced correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-001,TC-SEC-002,No auth list customers,"1. Do NOT login
+2. Send GET to /api/v2/time/customers without authentication
+3. Verify access denied","- Status Code: 401 Unauthorized
+- Error message indicates authentication required","Status Code: 401
+Authentication enforced correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-001,TC-SEC-003,No auth create customer,"1. Do NOT login
+2. Send POST to /api/v2/time/customers without authentication
+3. Verify access denied","- Status Code: 401 Unauthorized
+- Error message indicates authentication required","Status Code: 401
+Authentication enforced correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-001,TC-SEC-004,No auth list projects,"1. Do NOT login
+2. Send GET to /api/v2/time/projects without authentication
+3. Verify access denied","- Status Code: 401 Unauthorized
+- Error message indicates authentication required","Status Code: 401
+Authentication enforced correctly",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-002,TC-SEC-005,SQL injection customer name,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/customers with SQL injection payload: {name: ""'; DROP TABLE customers; --""}
+3. Verify SQL injection is prevented","- Status Code: 200 or 422
+- SQL injection is blocked/sanitized
+- Database table not dropped","Status Code: 422
+Input sanitized, SQL injection prevented",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-003,TC-SEC-006,XSS attack customer name,"1. Login to OrangeHRM
+2. Send POST with XSS payload: {name: ""<script>alert('XSS')</script>""}
+3. Verify XSS is prevented","- Script tags are escaped/sanitized
+- No script execution when data is rendered","Input sanitized, XSS prevented",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-002,TC-SEC-007,SQL injection project name,"1. Login to OrangeHRM
+2. Send POST to /api/v2/time/projects with SQL payload: {name: ""' OR '1'='1"", customerId: 1}
+3. Verify SQL injection is prevented","- SQL injection is blocked/sanitized
+- No unauthorized data access","Status Code: 200
+Input sanitized, SQL injection prevented",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-004,TC-SEC-008,Command injection,"1. Login to OrangeHRM
+2. Send POST with command injection: {name: ""; ls -la""}
+3. Verify OS commands cannot be executed","- Command injection is prevented
+- No system commands executed","Input sanitized, command injection prevented",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-005,TC-SEC-009,HTTP verb tampering,"1. Login to OrangeHRM
+2. Send PATCH request to /api/v2/time/customers/1 (unsupported method)
+3. Verify proper HTTP method validation","- Status Code: 405 Method Not Allowed
+- Error message indicates PATCH is not supported","Status Code: 405
+HTTP method validation working",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,
+SEC-006,TC-SEC-010,Oversized payload,"1. Login to OrangeHRM
+2. Send POST with 100,000 character payload
+3. Verify payload size is validated","- Status Code: 413 or 422
+- Error message indicates payload too large
+- Server handles gracefully without crash","Request handled without crash
+Payload accepted",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,Server handled large payload
+SEC-007,TC-SEC-011,Path traversal attack,"1. Login as normal user (not admin)
+2. Send GET to /api/v2/time/customers/../../admin/users
+3. Verify path traversal is prevented","- Status Code: 403 Forbidden or 404 Not Found
+- Path is normalized
+- Admin endpoints are not accessible to normal users","Status Code: 200 OK
+Response contains 188 admin users - SECURITY BREACH",FAIL,Nguyễn Bùi Vương Tiễn,17/01/2026,BUG-005: CRITICAL security vulnerability
+SEC-008,TC-SEC-012,DELETE method not allowed,"1. Login to OrangeHRM
+2. Send DELETE to /api/v2/time/customers/1
+3. Verify DELETE is not permitted","- Status Code: 405 Method Not Allowed
+- Error message indicates DELETE is not supported","Status Code: 405
+DELETE properly restricted",PASS,Nguyễn Bùi Vương Tiễn,17/01/2026,

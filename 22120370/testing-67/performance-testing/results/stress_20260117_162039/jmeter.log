@@ -1,0 +1,748 @@
+2026-01-17 16:20:39,744 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-01-17 16:20:39,755 INFO o.a.j.JMeter: Loading user properties from: /home/tien/projects/school/testing-67/performance-testing/jmeter/bin/user.properties
+2026-01-17 16:20:39,756 INFO o.a.j.JMeter: Loading system properties from: /home/tien/projects/school/testing-67/performance-testing/jmeter/bin/system.properties
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: Version 5.6.3
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: java.version=21.0.9
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: os.name=Linux
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: os.arch=amd64
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: os.version=6.12.41-amd64-desktop-rolling
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-01-17 16:20:39,759 INFO o.a.j.JMeter: java.awt.headless=true
+2026-01-17 16:20:39,760 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-01-17 16:20:39,760 INFO o.a.j.JMeter: Available Processors =12
+2026-01-17 16:20:39,766 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-01-17 16:20:39,766 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-01-17 16:20:39,766 INFO o.a.j.JMeter: JMeterHome=/home/tien/projects/school/testing-67/performance-testing/jmeter
+2026-01-17 16:20:39,766 INFO o.a.j.JMeter: user.dir  =/home/tien/projects/school/testing-67
+2026-01-17 16:20:39,766 INFO o.a.j.JMeter: PWD       =/home/tien/projects/school/testing-67
+2026-01-17 16:20:39,828 INFO o.a.j.JMeter: IP: 192.168.100.141 Name: tien-PC FullName: tien-PC
+2026-01-17 16:20:39,836 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard'
+2026-01-17 16:20:39,838 INFO o.a.j.s.FileServer: Default base='/home/tien/projects/school/testing-67'
+2026-01-17 16:20:39,839 INFO o.a.j.s.FileServer: Set new base='/home/tien/projects/school/testing-67/performance-testing/jmeter-scripts'
+2026-01-17 16:20:39,962 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-01-17 16:20:39,974 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-01-17 16:20:39,976 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-01-17 16:20:39,978 INFO o.a.j.s.SaveService: Loading file: /home/tien/projects/school/testing-67/performance-testing/jmeter-scripts/leave_application_stress.jmx
+2026-01-17 16:20:39,998 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-01-17 16:20:40,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 16:20:40,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 16:20:40,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 16:20:40,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 16:20:40,010 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-01-17 16:20:40,011 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-01-17 16:20:40,028 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-01-17 16:20:40,030 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-01-17 16:20:40,030 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: /home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/results.jtl
+2026-01-17 16:20:40,031 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/tien/projects/school/testing-67/performance-testing/jmeter/bin/reportgenerator.properties
+2026-01-17 16:20:40,031 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-01-17 16:20:40,034 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-01-17 16:20:40,035 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-01-17 16:20:40,035 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-01-17 16:20:40,035 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-01-17 16:20:40,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-01-17 16:20:40,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-01-17 16:20:40,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-01-17 16:20:40,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-01-17 16:20:40,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-01-17 16:20:40,038 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,038 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,039 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 16:20:40,040 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-01-17 16:20:40,040 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-01-17 16:20:40,040 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-01-17 16:20:40,040 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-01-17 16:20:40,040 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-01-17 16:20:40,040 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-01-17 16:20:40,048 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-17 16:20:40,049 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-17 16:20:40,049 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-17 16:20:40,053 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-01-17 16:20:40,053 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-01-17 16:20:40,114 INFO o.a.j.JMeter: Running test (1768641640114)
+2026-01-17 16:20:40,126 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Timesheet Stress Test Users
+2026-01-17 16:20:40,127 INFO o.a.j.e.StandardJMeterEngine: Starting 200 threads for group Timesheet Stress Test Users.
+2026-01-17 16:20:40,127 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-17 16:20:40,127 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=200 ramp-up=300 delayedStart=false
+2026-01-17 16:20:40,191 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-1
+2026-01-17 16:20:40,193 INFO o.a.j.s.FileServer: Stored: ../test-data/users.csv
+2026-01-17 16:20:40,205 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-17 16:20:40,205 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-17 16:20:40,710 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = tien-PC
+2026-01-17 16:20:40,713 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-01-17 16:20:40,715 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-01-17 16:20:40,715 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-01-17 16:20:40,715 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-01-17 16:20:40,715 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-01-17 16:20:41,687 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-2
+2026-01-17 16:20:42,453 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-1
+2026-01-17 16:20:42,453 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-1
+2026-01-17 16:20:43,190 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-3
+2026-01-17 16:20:43,871 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-2
+2026-01-17 16:20:43,871 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-2
+2026-01-17 16:20:44,686 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-4
+2026-01-17 16:20:45,374 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-3
+2026-01-17 16:20:45,374 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-3
+2026-01-17 16:20:46,189 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-5
+2026-01-17 16:20:46,869 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-4
+2026-01-17 16:20:46,869 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-4
+2026-01-17 16:20:47,686 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-6
+2026-01-17 16:20:48,373 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-5
+2026-01-17 16:20:48,373 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-5
+2026-01-17 16:20:49,185 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-7
+2026-01-17 16:20:49,870 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-6
+2026-01-17 16:20:49,870 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-6
+2026-01-17 16:20:50,684 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-8
+2026-01-17 16:20:51,370 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-7
+2026-01-17 16:20:51,370 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-7
+2026-01-17 16:20:52,184 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-9
+2026-01-17 16:20:52,867 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-8
+2026-01-17 16:20:52,867 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-8
+2026-01-17 16:20:53,684 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-10
+2026-01-17 16:20:54,370 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-9
+2026-01-17 16:20:54,370 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-9
+2026-01-17 16:20:55,185 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-11
+2026-01-17 16:20:55,867 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-10
+2026-01-17 16:20:55,867 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-10
+2026-01-17 16:20:56,682 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-12
+2026-01-17 16:20:57,369 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-11
+2026-01-17 16:20:57,369 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-11
+2026-01-17 16:20:58,186 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-13
+2026-01-17 16:20:58,867 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-12
+2026-01-17 16:20:58,867 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-12
+2026-01-17 16:20:59,683 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-14
+2026-01-17 16:21:00,214 INFO o.a.j.r.Summariser: summary +     52 in 00:00:20 =    2.6/s Avg:    45 Min:    27 Max:    54 Err:     0 (0.00%) Active: 2 Started: 14 Finished: 12
+2026-01-17 16:21:00,371 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-13
+2026-01-17 16:21:00,371 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-13
+2026-01-17 16:21:01,181 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-15
+2026-01-17 16:21:01,868 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-14
+2026-01-17 16:21:01,868 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-14
+2026-01-17 16:21:02,680 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-16
+2026-01-17 16:21:03,365 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-15
+2026-01-17 16:21:03,365 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-15
+2026-01-17 16:21:04,180 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-17
+2026-01-17 16:21:04,864 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-16
+2026-01-17 16:21:04,865 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-16
+2026-01-17 16:21:05,680 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-18
+2026-01-17 16:21:06,370 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-17
+2026-01-17 16:21:06,370 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-17
+2026-01-17 16:21:07,181 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-19
+2026-01-17 16:21:07,864 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-18
+2026-01-17 16:21:07,864 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-18
+2026-01-17 16:21:08,681 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-20
+2026-01-17 16:21:09,362 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-19
+2026-01-17 16:21:09,362 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-19
+2026-01-17 16:21:10,179 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-21
+2026-01-17 16:21:10,869 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-20
+2026-01-17 16:21:10,869 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-20
+2026-01-17 16:21:11,678 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-22
+2026-01-17 16:21:12,361 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-21
+2026-01-17 16:21:12,361 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-21
+2026-01-17 16:21:13,177 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-23
+2026-01-17 16:21:13,861 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-22
+2026-01-17 16:21:13,862 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-22
+2026-01-17 16:21:14,676 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-24
+2026-01-17 16:21:15,360 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-23
+2026-01-17 16:21:15,360 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-23
+2026-01-17 16:21:16,177 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-25
+2026-01-17 16:21:16,860 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-24
+2026-01-17 16:21:16,860 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-24
+2026-01-17 16:21:17,677 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-26
+2026-01-17 16:21:18,361 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-25
+2026-01-17 16:21:18,361 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-25
+2026-01-17 16:21:19,175 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-27
+2026-01-17 16:21:19,860 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-26
+2026-01-17 16:21:19,860 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-26
+2026-01-17 16:21:20,675 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-28
+2026-01-17 16:21:21,357 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-27
+2026-01-17 16:21:21,357 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-27
+2026-01-17 16:21:22,177 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-29
+2026-01-17 16:21:22,858 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-28
+2026-01-17 16:21:22,858 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-28
+2026-01-17 16:21:23,676 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-30
+2026-01-17 16:21:24,362 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-29
+2026-01-17 16:21:24,362 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-29
+2026-01-17 16:21:25,177 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-31
+2026-01-17 16:21:25,867 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-30
+2026-01-17 16:21:25,867 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-30
+2026-01-17 16:21:26,673 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-32
+2026-01-17 16:21:27,370 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-31
+2026-01-17 16:21:27,370 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-31
+2026-01-17 16:21:28,173 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-33
+2026-01-17 16:21:28,855 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-32
+2026-01-17 16:21:28,856 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-32
+2026-01-17 16:21:29,674 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-34
+2026-01-17 16:21:30,203 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%) Active: 2 Started: 34 Finished: 32
+2026-01-17 16:21:30,204 INFO o.a.j.r.Summariser: summary =    132 in 00:00:50 =    2.6/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:21:30,356 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-33
+2026-01-17 16:21:30,356 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-33
+2026-01-17 16:21:31,173 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-35
+2026-01-17 16:21:31,859 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-34
+2026-01-17 16:21:31,859 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-34
+2026-01-17 16:21:32,674 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-36
+2026-01-17 16:21:33,361 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-35
+2026-01-17 16:21:33,361 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-35
+2026-01-17 16:21:34,172 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-37
+2026-01-17 16:21:34,863 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-36
+2026-01-17 16:21:34,863 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-36
+2026-01-17 16:21:35,672 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-38
+2026-01-17 16:21:36,356 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-37
+2026-01-17 16:21:36,356 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-37
+2026-01-17 16:21:37,172 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-39
+2026-01-17 16:21:37,854 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-38
+2026-01-17 16:21:37,854 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-38
+2026-01-17 16:21:38,671 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-40
+2026-01-17 16:21:39,354 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-39
+2026-01-17 16:21:39,355 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-39
+2026-01-17 16:21:40,172 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-41
+2026-01-17 16:21:40,855 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-40
+2026-01-17 16:21:40,855 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-40
+2026-01-17 16:21:41,673 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-42
+2026-01-17 16:21:42,355 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-41
+2026-01-17 16:21:42,355 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-41
+2026-01-17 16:21:43,172 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-43
+2026-01-17 16:21:43,854 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-42
+2026-01-17 16:21:43,854 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-42
+2026-01-17 16:21:44,673 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-44
+2026-01-17 16:21:45,360 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-43
+2026-01-17 16:21:45,360 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-43
+2026-01-17 16:21:46,170 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-45
+2026-01-17 16:21:46,857 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-44
+2026-01-17 16:21:46,857 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-44
+2026-01-17 16:21:47,670 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-46
+2026-01-17 16:21:48,354 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-45
+2026-01-17 16:21:48,354 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-45
+2026-01-17 16:21:49,170 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-47
+2026-01-17 16:21:49,852 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-46
+2026-01-17 16:21:49,852 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-46
+2026-01-17 16:21:50,670 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-48
+2026-01-17 16:21:51,354 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-47
+2026-01-17 16:21:51,354 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-47
+2026-01-17 16:21:52,168 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-49
+2026-01-17 16:21:52,855 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-48
+2026-01-17 16:21:52,856 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-48
+2026-01-17 16:21:53,668 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-50
+2026-01-17 16:21:54,349 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-49
+2026-01-17 16:21:54,350 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-49
+2026-01-17 16:21:55,168 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-51
+2026-01-17 16:21:55,853 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-50
+2026-01-17 16:21:55,853 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-50
+2026-01-17 16:21:56,668 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-52
+2026-01-17 16:21:57,352 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-51
+2026-01-17 16:21:57,352 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-51
+2026-01-17 16:21:58,168 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-53
+2026-01-17 16:21:58,850 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-52
+2026-01-17 16:21:58,850 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-52
+2026-01-17 16:21:59,667 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-54
+2026-01-17 16:22:00,197 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    27 Max:    55 Err:     0 (0.00%) Active: 2 Started: 54 Finished: 52
+2026-01-17 16:22:00,197 INFO o.a.j.r.Summariser: summary =    212 in 00:01:20 =    2.6/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:22:00,352 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-53
+2026-01-17 16:22:00,352 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-53
+2026-01-17 16:22:01,166 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-55
+2026-01-17 16:22:01,852 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-54
+2026-01-17 16:22:01,852 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-54
+2026-01-17 16:22:02,666 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-56
+2026-01-17 16:22:03,348 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-55
+2026-01-17 16:22:03,348 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-55
+2026-01-17 16:22:04,168 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-57
+2026-01-17 16:22:04,848 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-56
+2026-01-17 16:22:04,849 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-56
+2026-01-17 16:22:05,668 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-58
+2026-01-17 16:22:06,349 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-57
+2026-01-17 16:22:06,349 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-57
+2026-01-17 16:22:07,166 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-59
+2026-01-17 16:22:07,849 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-58
+2026-01-17 16:22:07,849 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-58
+2026-01-17 16:22:08,667 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-60
+2026-01-17 16:22:09,348 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-59
+2026-01-17 16:22:09,348 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-59
+2026-01-17 16:22:10,166 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-61
+2026-01-17 16:22:10,855 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-60
+2026-01-17 16:22:10,855 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-60
+2026-01-17 16:22:11,663 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-62
+2026-01-17 16:22:12,347 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-61
+2026-01-17 16:22:12,347 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-61
+2026-01-17 16:22:13,165 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-63
+2026-01-17 16:22:13,845 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-62
+2026-01-17 16:22:13,845 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-62
+2026-01-17 16:22:14,662 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-64
+2026-01-17 16:22:15,348 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-63
+2026-01-17 16:22:15,348 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-63
+2026-01-17 16:22:16,163 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-65
+2026-01-17 16:22:16,847 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-64
+2026-01-17 16:22:16,847 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-64
+2026-01-17 16:22:17,664 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-66
+2026-01-17 16:22:18,345 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-65
+2026-01-17 16:22:18,345 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-65
+2026-01-17 16:22:19,162 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-67
+2026-01-17 16:22:19,846 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-66
+2026-01-17 16:22:19,846 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-66
+2026-01-17 16:22:20,664 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-68
+2026-01-17 16:22:21,344 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-67
+2026-01-17 16:22:21,344 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-67
+2026-01-17 16:22:22,161 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-69
+2026-01-17 16:22:22,844 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-68
+2026-01-17 16:22:22,844 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-68
+2026-01-17 16:22:23,662 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-70
+2026-01-17 16:22:24,348 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-69
+2026-01-17 16:22:24,348 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-69
+2026-01-17 16:22:25,161 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-71
+2026-01-17 16:22:25,849 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-70
+2026-01-17 16:22:25,849 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-70
+2026-01-17 16:22:26,661 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-72
+2026-01-17 16:22:27,345 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-71
+2026-01-17 16:22:27,345 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-71
+2026-01-17 16:22:28,161 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-73
+2026-01-17 16:22:28,843 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-72
+2026-01-17 16:22:28,843 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-72
+2026-01-17 16:22:29,661 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-74
+2026-01-17 16:22:30,190 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    27 Max:    57 Err:     0 (0.00%) Active: 2 Started: 74 Finished: 72
+2026-01-17 16:22:30,190 INFO o.a.j.r.Summariser: summary =    292 in 00:01:50 =    2.7/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:22:30,344 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-73
+2026-01-17 16:22:30,344 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-73
+2026-01-17 16:22:31,161 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-75
+2026-01-17 16:22:31,844 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-74
+2026-01-17 16:22:31,844 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-74
+2026-01-17 16:22:32,660 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-76
+2026-01-17 16:22:33,346 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-75
+2026-01-17 16:22:33,346 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-75
+2026-01-17 16:22:34,159 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-77
+2026-01-17 16:22:34,845 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-76
+2026-01-17 16:22:34,845 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-76
+2026-01-17 16:22:35,660 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-78
+2026-01-17 16:22:36,341 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-77
+2026-01-17 16:22:36,341 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-77
+2026-01-17 16:22:37,158 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-79
+2026-01-17 16:22:37,843 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-78
+2026-01-17 16:22:37,843 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-78
+2026-01-17 16:22:38,659 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-80
+2026-01-17 16:22:39,340 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-79
+2026-01-17 16:22:39,340 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-79
+2026-01-17 16:22:40,160 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-81
+2026-01-17 16:22:40,841 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-80
+2026-01-17 16:22:40,841 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-80
+2026-01-17 16:22:41,658 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-82
+2026-01-17 16:22:42,348 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-81
+2026-01-17 16:22:42,348 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-81
+2026-01-17 16:22:43,158 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-83
+2026-01-17 16:22:43,838 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-82
+2026-01-17 16:22:43,838 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-82
+2026-01-17 16:22:44,657 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-84
+2026-01-17 16:22:45,340 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-83
+2026-01-17 16:22:45,340 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-83
+2026-01-17 16:22:46,158 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-85
+2026-01-17 16:22:46,837 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-84
+2026-01-17 16:22:46,837 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-84
+2026-01-17 16:22:47,657 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-86
+2026-01-17 16:22:48,340 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-85
+2026-01-17 16:22:48,340 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-85
+2026-01-17 16:22:49,157 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-87
+2026-01-17 16:22:49,840 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-86
+2026-01-17 16:22:49,840 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-86
+2026-01-17 16:22:50,657 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-88
+2026-01-17 16:22:51,338 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-87
+2026-01-17 16:22:51,338 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-87
+2026-01-17 16:22:52,157 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-89
+2026-01-17 16:22:52,839 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-88
+2026-01-17 16:22:52,839 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-88
+2026-01-17 16:22:53,655 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-90
+2026-01-17 16:22:54,338 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-89
+2026-01-17 16:22:54,338 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-89
+2026-01-17 16:22:55,155 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-91
+2026-01-17 16:22:55,837 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-90
+2026-01-17 16:22:55,837 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-90
+2026-01-17 16:22:56,655 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-92
+2026-01-17 16:22:57,348 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-91
+2026-01-17 16:22:57,348 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-91
+2026-01-17 16:22:58,153 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-93
+2026-01-17 16:22:58,840 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-92
+2026-01-17 16:22:58,840 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-92
+2026-01-17 16:22:59,656 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-94
+2026-01-17 16:23:00,184 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    27 Max:    54 Err:     0 (0.00%) Active: 2 Started: 94 Finished: 92
+2026-01-17 16:23:00,185 INFO o.a.j.r.Summariser: summary =    372 in 00:02:20 =    2.7/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:23:00,333 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-93
+2026-01-17 16:23:00,333 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-93
+2026-01-17 16:23:01,156 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-95
+2026-01-17 16:23:01,837 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-94
+2026-01-17 16:23:01,837 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-94
+2026-01-17 16:23:02,654 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-96
+2026-01-17 16:23:03,337 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-95
+2026-01-17 16:23:03,337 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-95
+2026-01-17 16:23:04,153 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-97
+2026-01-17 16:23:04,836 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-96
+2026-01-17 16:23:04,836 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-96
+2026-01-17 16:23:05,652 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-98
+2026-01-17 16:23:06,335 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-97
+2026-01-17 16:23:06,335 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-97
+2026-01-17 16:23:07,152 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-99
+2026-01-17 16:23:07,831 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-98
+2026-01-17 16:23:07,831 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-98
+2026-01-17 16:23:08,651 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-100
+2026-01-17 16:23:09,334 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-99
+2026-01-17 16:23:09,334 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-99
+2026-01-17 16:23:10,154 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-101
+2026-01-17 16:23:10,842 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-100
+2026-01-17 16:23:10,842 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-100
+2026-01-17 16:23:11,655 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-102
+2026-01-17 16:23:12,336 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-101
+2026-01-17 16:23:12,336 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-101
+2026-01-17 16:23:13,150 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-103
+2026-01-17 16:23:13,836 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-102
+2026-01-17 16:23:13,836 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-102
+2026-01-17 16:23:14,650 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-104
+2026-01-17 16:23:15,331 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-103
+2026-01-17 16:23:15,331 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-103
+2026-01-17 16:23:16,149 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-105
+2026-01-17 16:23:16,832 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-104
+2026-01-17 16:23:16,832 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-104
+2026-01-17 16:23:17,651 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-106
+2026-01-17 16:23:18,333 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-105
+2026-01-17 16:23:18,333 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-105
+2026-01-17 16:23:19,147 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-107
+2026-01-17 16:23:19,833 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-106
+2026-01-17 16:23:19,833 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-106
+2026-01-17 16:23:20,651 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-108
+2026-01-17 16:23:21,330 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-107
+2026-01-17 16:23:21,330 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-107
+2026-01-17 16:23:22,147 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-109
+2026-01-17 16:23:22,836 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-108
+2026-01-17 16:23:22,836 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-108
+2026-01-17 16:23:23,647 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-110
+2026-01-17 16:23:24,332 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-109
+2026-01-17 16:23:24,333 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-109
+2026-01-17 16:23:25,147 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-111
+2026-01-17 16:23:25,833 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-110
+2026-01-17 16:23:25,833 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-110
+2026-01-17 16:23:26,646 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-112
+2026-01-17 16:23:27,333 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-111
+2026-01-17 16:23:27,333 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-111
+2026-01-17 16:23:28,146 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-113
+2026-01-17 16:23:28,826 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-112
+2026-01-17 16:23:28,826 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-112
+2026-01-17 16:23:29,647 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-114
+2026-01-17 16:23:30,176 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%) Active: 2 Started: 114 Finished: 112
+2026-01-17 16:23:30,176 INFO o.a.j.r.Summariser: summary =    452 in 00:02:50 =    2.7/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:23:30,328 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-113
+2026-01-17 16:23:30,328 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-113
+2026-01-17 16:23:31,147 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-115
+2026-01-17 16:23:31,827 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-114
+2026-01-17 16:23:31,828 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-114
+2026-01-17 16:23:32,646 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-116
+2026-01-17 16:23:33,329 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-115
+2026-01-17 16:23:33,329 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-115
+2026-01-17 16:23:34,146 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-117
+2026-01-17 16:23:34,827 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-116
+2026-01-17 16:23:34,827 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-116
+2026-01-17 16:23:35,644 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-118
+2026-01-17 16:23:36,333 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-117
+2026-01-17 16:23:36,333 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-117
+2026-01-17 16:23:37,142 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-119
+2026-01-17 16:23:37,839 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-118
+2026-01-17 16:23:37,839 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-118
+2026-01-17 16:23:38,646 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-120
+2026-01-17 16:23:39,325 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-119
+2026-01-17 16:23:39,325 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-119
+2026-01-17 16:23:40,142 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-121
+2026-01-17 16:23:40,828 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-120
+2026-01-17 16:23:40,828 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-120
+2026-01-17 16:23:41,641 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-122
+2026-01-17 16:23:42,324 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-121
+2026-01-17 16:23:42,324 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-121
+2026-01-17 16:23:43,141 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-123
+2026-01-17 16:23:43,821 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-122
+2026-01-17 16:23:43,821 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-122
+2026-01-17 16:23:44,640 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-124
+2026-01-17 16:23:45,322 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-123
+2026-01-17 16:23:45,322 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-123
+2026-01-17 16:23:46,141 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-125
+2026-01-17 16:23:46,820 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-124
+2026-01-17 16:23:46,820 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-124
+2026-01-17 16:23:47,642 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-126
+2026-01-17 16:23:48,322 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-125
+2026-01-17 16:23:48,322 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-125
+2026-01-17 16:23:49,143 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-127
+2026-01-17 16:23:49,824 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-126
+2026-01-17 16:23:49,824 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-126
+2026-01-17 16:23:50,639 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-128
+2026-01-17 16:23:51,334 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-127
+2026-01-17 16:23:51,334 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-127
+2026-01-17 16:23:52,139 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-129
+2026-01-17 16:23:52,822 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-128
+2026-01-17 16:23:52,822 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-128
+2026-01-17 16:23:53,639 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-130
+2026-01-17 16:23:54,322 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-129
+2026-01-17 16:23:54,322 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-129
+2026-01-17 16:23:55,140 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-131
+2026-01-17 16:23:55,822 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-130
+2026-01-17 16:23:55,822 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-130
+2026-01-17 16:23:56,640 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-132
+2026-01-17 16:23:57,323 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-131
+2026-01-17 16:23:57,323 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-131
+2026-01-17 16:23:58,139 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-133
+2026-01-17 16:23:58,823 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-132
+2026-01-17 16:23:58,823 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-132
+2026-01-17 16:23:59,638 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-134
+2026-01-17 16:24:00,167 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    27 Max:    56 Err:     0 (0.00%) Active: 2 Started: 134 Finished: 132
+2026-01-17 16:24:00,167 INFO o.a.j.r.Summariser: summary =    532 in 00:03:20 =    2.7/s Avg:    45 Min:    27 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:24:00,319 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-133
+2026-01-17 16:24:00,319 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-133
+2026-01-17 16:24:01,135 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-135
+2026-01-17 16:24:01,823 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-134
+2026-01-17 16:24:01,823 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-134
+2026-01-17 16:24:02,635 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-136
+2026-01-17 16:24:03,317 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-135
+2026-01-17 16:24:03,318 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-135
+2026-01-17 16:24:04,135 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-137
+2026-01-17 16:24:04,817 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-136
+2026-01-17 16:24:04,817 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-136
+2026-01-17 16:24:05,634 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-138
+2026-01-17 16:24:06,322 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-137
+2026-01-17 16:24:06,322 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-137
+2026-01-17 16:24:07,135 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-139
+2026-01-17 16:24:07,815 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-138
+2026-01-17 16:24:07,815 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-138
+2026-01-17 16:24:08,638 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-140
+2026-01-17 16:24:09,317 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-139
+2026-01-17 16:24:09,317 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-139
+2026-01-17 16:24:10,131 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-141
+2026-01-17 16:24:10,823 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-140
+2026-01-17 16:24:10,823 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-140
+2026-01-17 16:24:11,635 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-142
+2026-01-17 16:24:12,314 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-141
+2026-01-17 16:24:12,314 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-141
+2026-01-17 16:24:13,135 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-143
+2026-01-17 16:24:13,814 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-142
+2026-01-17 16:24:13,814 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-142
+2026-01-17 16:24:14,636 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-144
+2026-01-17 16:24:15,315 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-143
+2026-01-17 16:24:15,315 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-143
+2026-01-17 16:24:16,135 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-145
+2026-01-17 16:24:16,814 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-144
+2026-01-17 16:24:16,814 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-144
+2026-01-17 16:24:17,635 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-146
+2026-01-17 16:24:18,317 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-145
+2026-01-17 16:24:18,317 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-145
+2026-01-17 16:24:19,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-147
+2026-01-17 16:24:19,816 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-146
+2026-01-17 16:24:19,816 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-146
+2026-01-17 16:24:20,629 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-148
+2026-01-17 16:24:21,311 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-147
+2026-01-17 16:24:21,311 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-147
+2026-01-17 16:24:22,130 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-149
+2026-01-17 16:24:22,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-148
+2026-01-17 16:24:22,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-148
+2026-01-17 16:24:23,629 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-150
+2026-01-17 16:24:24,315 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-149
+2026-01-17 16:24:24,315 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-149
+2026-01-17 16:24:25,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-151
+2026-01-17 16:24:25,817 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-150
+2026-01-17 16:24:25,818 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-150
+2026-01-17 16:24:26,629 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-152
+2026-01-17 16:24:27,307 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-151
+2026-01-17 16:24:27,307 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-151
+2026-01-17 16:24:28,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-153
+2026-01-17 16:24:28,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-152
+2026-01-17 16:24:28,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-152
+2026-01-17 16:24:29,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-154
+2026-01-17 16:24:30,157 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    45 Min:    26 Max:    57 Err:     0 (0.00%) Active: 2 Started: 154 Finished: 152
+2026-01-17 16:24:30,157 INFO o.a.j.r.Summariser: summary =    612 in 00:03:50 =    2.7/s Avg:    45 Min:    26 Max:    58 Err:     0 (0.00%)
+2026-01-17 16:24:30,311 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-153
+2026-01-17 16:24:30,311 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-153
+2026-01-17 16:24:31,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-155
+2026-01-17 16:24:31,810 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-154
+2026-01-17 16:24:31,810 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-154
+2026-01-17 16:24:32,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-156
+2026-01-17 16:24:33,311 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-155
+2026-01-17 16:24:33,311 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-155
+2026-01-17 16:24:34,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-157
+2026-01-17 16:24:34,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-156
+2026-01-17 16:24:34,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-156
+2026-01-17 16:24:35,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-158
+2026-01-17 16:24:36,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-157
+2026-01-17 16:24:36,309 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-157
+2026-01-17 16:24:37,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-159
+2026-01-17 16:24:37,813 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-158
+2026-01-17 16:24:37,813 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-158
+2026-01-17 16:24:38,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-160
+2026-01-17 16:24:39,310 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-159
+2026-01-17 16:24:39,310 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-159
+2026-01-17 16:24:40,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-161
+2026-01-17 16:24:40,806 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-160
+2026-01-17 16:24:40,806 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-160
+2026-01-17 16:24:41,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-162
+2026-01-17 16:24:42,307 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-161
+2026-01-17 16:24:42,307 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-161
+2026-01-17 16:24:43,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-163
+2026-01-17 16:24:43,813 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-162
+2026-01-17 16:24:43,813 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-162
+2026-01-17 16:24:44,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-164
+2026-01-17 16:24:45,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-163
+2026-01-17 16:24:45,308 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-163
+2026-01-17 16:24:46,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-165
+2026-01-17 16:24:46,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-164
+2026-01-17 16:24:46,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-164
+2026-01-17 16:24:47,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-166
+2026-01-17 16:24:48,320 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-165
+2026-01-17 16:24:48,320 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-165
+2026-01-17 16:24:49,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-167
+2026-01-17 16:24:49,808 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-166
+2026-01-17 16:24:49,808 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-166
+2026-01-17 16:24:50,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-168
+2026-01-17 16:24:51,307 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-167
+2026-01-17 16:24:51,307 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-167
+2026-01-17 16:24:52,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-169
+2026-01-17 16:24:52,806 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-168
+2026-01-17 16:24:52,806 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-168
+2026-01-17 16:24:53,629 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-170
+2026-01-17 16:24:54,311 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-169
+2026-01-17 16:24:54,311 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-169
+2026-01-17 16:24:55,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-171
+2026-01-17 16:24:55,807 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-170
+2026-01-17 16:24:55,807 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-170
+2026-01-17 16:24:56,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-172
+2026-01-17 16:24:57,307 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-171
+2026-01-17 16:24:57,307 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-171
+2026-01-17 16:24:58,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-173
+2026-01-17 16:24:58,805 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-172
+2026-01-17 16:24:58,806 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-172
+2026-01-17 16:24:59,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-174
+2026-01-17 16:25:00,156 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    44 Min:    27 Max:    61 Err:     0 (0.00%) Active: 2 Started: 174 Finished: 172
+2026-01-17 16:25:00,157 INFO o.a.j.r.Summariser: summary =    692 in 00:04:20 =    2.7/s Avg:    45 Min:    26 Max:    61 Err:     0 (0.00%)
+2026-01-17 16:25:00,310 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-173
+2026-01-17 16:25:00,310 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-173
+2026-01-17 16:25:01,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-175
+2026-01-17 16:25:01,810 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-174
+2026-01-17 16:25:01,810 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-174
+2026-01-17 16:25:02,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-176
+2026-01-17 16:25:03,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-175
+2026-01-17 16:25:03,308 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-175
+2026-01-17 16:25:04,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-177
+2026-01-17 16:25:04,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-176
+2026-01-17 16:25:04,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-176
+2026-01-17 16:25:05,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-178
+2026-01-17 16:25:06,309 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-177
+2026-01-17 16:25:06,309 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-177
+2026-01-17 16:25:07,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-179
+2026-01-17 16:25:07,804 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-178
+2026-01-17 16:25:07,804 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-178
+2026-01-17 16:25:08,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-180
+2026-01-17 16:25:09,309 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-179
+2026-01-17 16:25:09,310 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-179
+2026-01-17 16:25:10,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-181
+2026-01-17 16:25:10,810 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-180
+2026-01-17 16:25:10,811 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-180
+2026-01-17 16:25:11,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-182
+2026-01-17 16:25:12,321 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-181
+2026-01-17 16:25:12,321 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-181
+2026-01-17 16:25:13,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-183
+2026-01-17 16:25:13,808 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-182
+2026-01-17 16:25:13,808 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-182
+2026-01-17 16:25:14,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-184
+2026-01-17 16:25:15,311 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-183
+2026-01-17 16:25:15,311 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-183
+2026-01-17 16:25:16,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-185
+2026-01-17 16:25:16,811 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-184
+2026-01-17 16:25:16,811 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-184
+2026-01-17 16:25:17,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-186
+2026-01-17 16:25:18,309 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-185
+2026-01-17 16:25:18,309 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-185
+2026-01-17 16:25:19,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-187
+2026-01-17 16:25:19,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-186
+2026-01-17 16:25:19,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-186
+2026-01-17 16:25:20,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-188
+2026-01-17 16:25:21,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-187
+2026-01-17 16:25:21,308 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-187
+2026-01-17 16:25:22,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-189
+2026-01-17 16:25:22,807 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-188
+2026-01-17 16:25:22,807 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-188
+2026-01-17 16:25:23,629 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-190
+2026-01-17 16:25:24,310 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-189
+2026-01-17 16:25:24,310 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-189
+2026-01-17 16:25:25,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-191
+2026-01-17 16:25:25,811 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-190
+2026-01-17 16:25:25,812 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-190
+2026-01-17 16:25:26,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-192
+2026-01-17 16:25:27,307 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-191
+2026-01-17 16:25:27,307 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-191
+2026-01-17 16:25:28,127 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-193
+2026-01-17 16:25:28,809 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-192
+2026-01-17 16:25:28,809 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-192
+2026-01-17 16:25:29,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-194
+2026-01-17 16:25:30,155 INFO o.a.j.r.Summariser: summary +     80 in 00:00:30 =    2.7/s Avg:    44 Min:    26 Max:    64 Err:     0 (0.00%) Active: 2 Started: 194 Finished: 192
+2026-01-17 16:25:30,156 INFO o.a.j.r.Summariser: summary =    772 in 00:04:50 =    2.7/s Avg:    45 Min:    26 Max:    64 Err:     0 (0.00%)
+2026-01-17 16:25:30,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-193
+2026-01-17 16:25:30,308 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-193
+2026-01-17 16:25:31,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-195
+2026-01-17 16:25:31,808 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-194
+2026-01-17 16:25:31,808 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-194
+2026-01-17 16:25:32,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-196
+2026-01-17 16:25:33,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-195
+2026-01-17 16:25:33,308 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-195
+2026-01-17 16:25:34,128 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-197
+2026-01-17 16:25:34,807 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-196
+2026-01-17 16:25:34,807 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-196
+2026-01-17 16:25:35,627 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-198
+2026-01-17 16:25:36,308 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-197
+2026-01-17 16:25:36,308 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-197
+2026-01-17 16:25:37,129 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-199
+2026-01-17 16:25:37,811 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-198
+2026-01-17 16:25:37,811 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-198
+2026-01-17 16:25:38,628 INFO o.a.j.t.JMeterThread: Thread started: Timesheet Stress Test Users 1-200
+2026-01-17 16:25:39,310 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-199
+2026-01-17 16:25:39,310 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-199
+2026-01-17 16:25:40,811 INFO o.a.j.t.JMeterThread: Thread is done: Timesheet Stress Test Users 1-200
+2026-01-17 16:25:40,811 INFO o.a.j.t.JMeterThread: Thread finished: Timesheet Stress Test Users 1-200
+2026-01-17 16:25:40,812 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-17 16:25:40,812 INFO o.a.j.s.FileServer: Close: ../test-data/users.csv
+2026-01-17 16:25:40,813 INFO o.a.j.r.Summariser: summary +     28 in 00:00:11 =    2.6/s Avg:    45 Min:    27 Max:    54 Err:     0 (0.00%) Active: 0 Started: 200 Finished: 200
+2026-01-17 16:25:40,813 INFO o.a.j.r.Summariser: summary =    800 in 00:05:01 =    2.7/s Avg:    45 Min:    26 Max:    64 Err:     0 (0.00%)
+2026-01-17 16:25:40,813 INFO o.a.j.JMeter: Generating Dashboard
+2026-01-17 16:25:40,813 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-01-17 16:25:40,820 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-01-17 16:25:40,911 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-01-17 16:25:40,911 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-01-17 16:25:40,912 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-01-17 16:25:40,912 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-01-17 16:25:40,916 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-01-17 16:25:40,917 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-01-17 16:25:40,917 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-01-17 16:25:40,917 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-01-17 16:25:40,938 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-01-17 16:25:40,938 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-01-17 16:25:40,939 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-01-17 16:25:40,939 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-01-17 16:25:40,952 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-01-17 16:25:40,952 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 14000 samples
+2026-01-17 16:25:40,952 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-01-17 16:25:40,953 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-01-17 16:25:40,953 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-01-17 16:25:40,953 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-01-17 16:25:40,953 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-01-17 16:25:40,953 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-01-17 16:25:40,955 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-01-17 16:25:40,956 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-01-17 16:25:40,956 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-01-17 16:25:40,956 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-01-17 16:25:40,956 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 30000 samples
+2026-01-17 16:25:40,956 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 6000 samples
+2026-01-17 16:25:40,956 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 2000 samples
+2026-01-17 16:25:40,957 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 2000 samples produced in 123ms on channel 0
+2026-01-17 16:25:40,957 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-01-17 16:25:41,000 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-01-17 16:25:41,001 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-01-17 16:25:41,001 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-01-17 16:25:41,001 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-01-17 16:25:41,001 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard/statistics.json
+2026-01-17 16:25:41,027 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-01-17 16:25:41,029 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard
+2026-01-17 16:25:41,105 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard, creating folder structure
+2026-01-17 16:25:41,106 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/tien/projects/school/testing-67/performance-testing/jmeter/bin/report-template' to '/home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard', got message: /home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard, found non empty folder with following content [/home/tien/projects/school/testing-67/performance-testing/results/stress_20260117_162039/dashboard/statistics.json], will be ignored
+2026-01-17 16:25:41,227 INFO o.a.j.JMeter: Dashboard generated

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Development",
+    "description": "Software development activities"
+  },
+  {
+    "name": "Testing",
+    "description": "QA and testing activities"
+  },
+  {
+    "name": "Meeting",
+    "description": "Team meetings and discussions"
+  },
+  {
+    "name": "Code Review",
+    "description": "Code review and feedback"
+  },
+  {
+    "name": "Documentation",
+    "description": "Writing technical documentation"
+  },
+  {
+    "name": "Design",
+    "description": "UI/UX and architecture design"
+  },
+  {
+    "name": "Bug Fixing",
+    "description": "Debugging and bug resolution"
+  }
+]

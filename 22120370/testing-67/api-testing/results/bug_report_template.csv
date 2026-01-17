@@ -1,0 +1,26 @@
+Bug_ID,Test_Case_ID,Tiêu đề,Mức độ nghiêm trọng,Độ ưu tiên,Trạng thái,Module,Endpoint,Method,Mô tả,Các bước tái tạo,Kết quả mong đợi,Kết quả thực tế,Phân tích,Ngày phát hiện,Người báo cáo
+BUG-001,TC-NEG-001,API trả về 422 thay vì 404 cho employee không tồn tại,Medium,Medium,Open,Timesheets - Employees,/time/employees/{id}/timesheets,GET,"API trả về mã lỗi 422 (Unprocessable Entity) khi truy cập timesheets của employee không tồn tại, trong khi các endpoints tương tự như /time/customers/{id} và /time/projects/{id} đều trả về 404 (Not Found).","1. Gửi request: GET /api/v2/time/employees/99999/timesheets
+2. Gửi request: GET /api/v2/time/customers/99999
+3. Gửi request: GET /api/v2/time/projects/99999
+4. So sánh status codes","Status Code: 404 Not Found
+Response: {""error"": {""status"": ""404"", ""message"": ""Employee Not Found""}}","Status Code: 422 Unprocessable Entity
+Response: {""error"": {""status"": ""422"", ""message"": ""Invalid Parameter""}}","API không nhất quán trong việc xử lý non-existent resources. Employee endpoints sử dụng 422 trong khi customer/project endpoints sử dụng 404. Theo chuẩn RESTful, 404 là phù hợp hơn cho trường hợp resource không tồn tại.",17/01/2026,API Tester
+BUG-002,TC-POS-005,startDay trả về string thay vì integer,Low,Low,Open,Time - Configuration,/time/time-sheet-period,GET,"API trả về startDay dưới dạng string (""1"") thay vì integer (1), gây khó khăn cho client trong việc xử lý dữ liệu.","1. Gửi request: GET /api/v2/time/time-sheet-period
+2. Kiểm tra kiểu dữ liệu của field startDay trong response","startDay: 1 (integer)
+Type: <class 'int'>","startDay: ""1"" (string)
+Type: <class 'str'>","Dữ liệu được lưu hoặc trả về dưới dạng string thay vì integer. Client phải convert string sang integer, gây thêm overhead và có thể dẫn đến lỗi runtime nếu không validate đúng.",17/01/2026,API Tester
+BUG-003,TC-POS-009,Projects endpoint thiếu customer relationship trong list,Medium,High,Open,Time - Projects,/time/projects,GET,"Khi lấy danh sách projects, API không trả về thông tin customer relationship. Điều này bắt client phải gọi thêm request để lấy customer info.","1. Gửi request: GET /api/v2/time/projects
+2. Kiểm tra response data
+3. So sánh với GET /api/v2/time/projects/{id}","Mỗi project trong array phải có field ""customer"" chứa {id, name, ...}","Project không có field ""customer"" trong list endpoint, chỉ có khi get by ID","Đây là thiếu sót về data optimization. List endpoint nên include related data để giảm số lượng API calls. Hiện tại client phải loop qua N projects và gọi N requests để lấy customer info.",17/01/2026,API Tester
+BUG-004,TC-NEG-014,API không validate limit quá lớn,High,High,Open,Time - All endpoints,/time/customers (và các endpoints khác),GET,"API chấp nhận limit=10000 và trả về 200 thay vì reject với 422. Điều này có thể dẫn đến resource exhaustion và DoS attacks.","1. Gửi request: GET /api/v2/time/customers?limit=10000
+2. Kiểm tra status code và response","Status Code: 422 Unprocessable Entity
+Error message về limit vượt quá giá trị max cho phép","Status Code: 200 OK
+Trả về toàn bộ records có trong database","API thiếu validation cho max limit value. Attacker có thể gửi limit rất lớn để exhaust memory/CPU, gây DoS. Best practice là set max limit (vd: 100) và reject requests vượt quá.",17/01/2026,API Tester
+BUG-005,TC-SEC-011,Path traversal vulnerability - Có thể truy cập admin endpoints,Critical,Critical,Open,Security - Authorization,/time/customers/../../admin/users,GET,"API cho phép path traversal, attacker có thể truy cập vào admin endpoints (/admin/users) thông qua manipulation của URL path.","1. Đăng nhập với user bình thường (không phải admin)
+2. Gửi request: GET /api/v2/time/customers/../../admin/users
+3. Verify response trả về user data thay vì reject hoặc normalize path","Status Code: 403 Forbidden hoặc 404 Not Found
+Không trả về admin user data","Status Code: 200 OK
+Response chứa danh sách tất cả users trong hệ thống bao gồm admin (188 users với username, employee info, userRole)","Đây là lỗ hổng bảo mật nghiêm trọng. API không normalize path và không enforce authorization đúng. Normal user có thể access admin endpoints, vi phạm principle of least privilege. Cần implement:
+1. Path normalization để prevent traversal
+2. Proper authorization checks
+3. Return 403 cho unauthorized access",17/01/2026,API Tester

@@ -1,0 +1,13 @@
+{
+  "name": "orangehrm-user-import",
+  "version": "1.0.0",
+  "description": "Scripts for managing OrangeHRM test data",
+  "scripts": {
+    "add-users": "node add-users.js",
+    "import-sample": "node add-users.js ../test-data/import-users.csv"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "mysql2": "^3.9.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "admin": {
+    "username": "Admin",
+    "password": "admin123",
+    "role": "Admin",
+    "description": "System administrator with full access"
+  },
+  "ess_user": {
+    "username": "EssUser",
+    "password": "EssUser123",
+    "role": "ESS",
+    "description": "Employee Self Service user"
+  },
+  "supervisor": {
+    "username": "Supervisor",
+    "password": "Supervisor123",
+    "role": "Supervisor",
+    "description": "Supervisor with approval rights"
+  }
+}
